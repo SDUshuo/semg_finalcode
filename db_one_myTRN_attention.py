@@ -10,7 +10,7 @@ import torchvision.models as models
 # import PyTorchImplementation.CWT.model.TRNmodule as TRNmodule
 import TRNmodule
 # from TRNmodule import return_TRN
-from params_dataaug import fushion_2_feature_bottleneck_,feature_bottleneck,attention_dim
+from params_contact import fushion_2_feature_bottleneck_,feature_bottleneck,attention_dim
 class Attention(nn.Module):
     def __init__(self, input_dim, attention_dim):
         super(Attention, self).__init__()

@@ -105,7 +105,7 @@ def calculate_fitness():
         # 准备训练集
         # directory = 'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/train'
         # directory = 'saved_data/DB1/52_5/52_5_exercise1/subject_'+ str(dataset_index) + '/train'
-        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_2ge_dataAug/subject_'+ str(dataset_index) + '/train'
+        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_'+ str(dataset_index) + '/train'
         X_fine_tune_train = np.load(directory + 'X_train_CWT.npy',encoding="bytes",allow_pickle=True)
         Y_fine_tune_train = np.load(directory + 'Y_train.npy',encoding="bytes",allow_pickle=True)
         X_TCN_fine_tune_train = np.load(directory + 'X_train.npy',encoding="bytes",allow_pickle=True)
@@ -121,7 +121,7 @@ def calculate_fitness():
         # 准备测试集0的数据
         # directory = 'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/test'aile
         # directory =  'saved_data/DB1/52_5/52_5_exercise1/subject_'+ str(dataset_index) + '/test'
-        directory =  'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_2ge_dataAug/subject_'+ str(dataset_index) + '/test'
+        directory =  'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_'+ str(dataset_index) + '/test'
         X_test_0 = np.load(directory + 'X_test_CWT.npy', encoding="bytes", allow_pickle=True)
         Y_test_0 = np.load(directory + 'Y_test.npy', encoding="bytes", allow_pickle=True)
         X_TCN_fine_tune_test = np.load(directory + 'X_test.npy', encoding="bytes", allow_pickle=True)
@@ -160,8 +160,8 @@ def calculate_fitness():
         # Y_fine_tune = Y_fine_tune[int(len(Y) * test_scale):]
         # X_fine_tune_TCN = X_fine_tune_TCN[int(len(X_tcn) * test_scale):]
         # 打乱用于微调的训练数据
-        # X_fine_tune, Y_fine_tune, X_fine_tune_TCN = scramble(X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train)
-        X_fine_tune, Y_fine_tune, X_fine_tune_TCN = X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train
+        X_fine_tune, Y_fine_tune, X_fine_tune_TCN = scramble(X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train)
+        # X_fine_tune, Y_fine_tune, X_fine_tune_TCN = X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train
 
         val_scale = 0.01
         # 划分验证集

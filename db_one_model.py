@@ -15,7 +15,7 @@ import TCN as TCNmodule
 import db_one_myTRN_attention as myTRN
 import Wavelet_CNN_Source_Network
 import TRNmodule
-from params_dataaug import fushion_dim ,rank,hidden_dim ,fushion_2_feature_bottleneck_,\
+from params_contact import fushion_dim ,rank,hidden_dim ,fushion_2_feature_bottleneck_,\
     num_channels,feature_bottleneck
 from final_eval_DB1 import window_len
 number_of_vector_per_example =window_len
@@ -36,7 +36,7 @@ class Net(nn.Module):
         # 这里的64指myTRN返回的64,不能随便改 也就是self.fushion_2_feature_bottleneck_
         self.LMF = LMFmodule.LMF((feature_bottleneck, number_of_vector_per_example), self.fushion_dim, self.rank, self.hidden_dim, number_of_classes).cuda()
         # 创建 TRN模型
-        self.TRN = myTRN.Net(number_of_class=number_of_classes, num_segments=12, fenlei=True).cuda()
+        self.TRN = myTRN.Net(number_of_class=number_of_classes, num_segments=12, fenlei=False).cuda()
 
         print("Number Parameters: DB1_finalemode", self.get_n_params())
     def get_n_params(self):
@@ -44,15 +44,14 @@ class Net(nn.Module):
             number_params = sum([np.prod(p.size()) for p in model_parameters])
             return number_params
     def forward(self, input_trn,input_tcn):
-        # tcn_output = self.TCN(input_tcn)
-        # trn_output = self.TRN(input_trn)
-        # # slow_fushion_output =self.Slowfushion(input_trn)
-        # # print("ssssssss")
-        # # print(tcn_output.shape)
-        # # print(trn_output.shape)
-        # lmf_output = self.LMF(trn_output,tcn_output)
-        # return lmf_output
-        # print(lmf_output)
-
+        tcn_output = self.TCN(input_tcn)
         trn_output = self.TRN(input_trn)
-        return trn_output
+        # slow_fushion_output =self.Slowfushion(input_trn)
+        # print("ssssssss")
+        # print(tcn_output.shape)
+        # print(trn_output.shape)
+        lmf_output = self.LMF(trn_output,tcn_output)
+        return lmf_output
+
+        # trn_output = self.TRN(input_trn)
+        # return trn_output
