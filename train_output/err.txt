@@ -1,0 +1,128 @@
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 101, in get_diversify
+    args = get_args()
+  File "/home/yanshuo/YS/FinalCode/utils/util.py", line 174, in get_args
+    args = act_param_init(args)
+  File "/home/yanshuo/YS/FinalCode/utils/util.py", line 119, in act_param_init
+    args.num_classes, args.input_shape, args.grid_size = tmp[
+KeyError: 'dsads'
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 101, in get_diversify
+    args = get_args()
+  File "/home/yanshuo/YS/FinalCode/utils/util.py", line 174, in get_args
+    args = act_param_init(args)
+  File "/home/yanshuo/YS/FinalCode/utils/util.py", line 119, in act_param_init
+    args.num_classes, args.input_shape, args.grid_size = tmp[
+KeyError: 'dsads'
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 105, in get_diversify
+    algorithm = algorithm_class(args)
+  File "/home/yanshuo/YS/FinalCode/alg/algs/diversify.py", line 39, in __init__
+    self.featurizer = get_fea(args)
+  File "/home/yanshuo/YS/FinalCode/alg/modelopera.py", line 13, in get_fea
+    net = act_network.ActNetwork(args.dataset)
+  File "/home/yanshuo/YS/FinalCode/network/act_network.py", line 31, in __init__
+    nn.Conv2d(in_channels=var_size[taskname]['in_size'], out_channels=16, kernel_size=(
+KeyError: 'dsads'
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 107, in get_diversify
+    algorithm.load_state_dict(torch.load('model2.pt'))
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'model2.pt'
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 107, in get_diversify
+    algorithm.load_state_dict(torch.load('model2.pt'))
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'model2.pt'
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 107, in get_diversify
+    algorithm.load_state_dict(torch.load('model2.pt'))
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 791, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 271, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/serialization.py", line 252, in __init__
+    super().__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'model2.pt'
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 107, in get_diversify
+    algorithm.load_state_dict(torch.load('/home/yanshuo/YS/FinalCode/model2.pt'))
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2041, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Diversify:
+	size mismatch for aclassifier.fc.weight: copying a param with shape torch.Size([70, 256]) from checkpoint, the shape in current model is torch.Size([21, 256]).
+	size mismatch for aclassifier.fc.bias: copying a param with shape torch.Size([70]) from checkpoint, the shape in current model is torch.Size([21]).
+	size mismatch for dclassifier.fc.weight: copying a param with shape torch.Size([10, 256]) from checkpoint, the shape in current model is torch.Size([3, 256]).
+	size mismatch for dclassifier.fc.bias: copying a param with shape torch.Size([10]) from checkpoint, the shape in current model is torch.Size([3]).
+	size mismatch for discriminator.layers.6.weight: copying a param with shape torch.Size([10, 256]) from checkpoint, the shape in current model is torch.Size([3, 256]).
+	size mismatch for discriminator.layers.6.bias: copying a param with shape torch.Size([10]) from checkpoint, the shape in current model is torch.Size([3]).
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 314, in <module>
+    accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 116, in calculate_fitness
+    cnn = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=50, number_of_channel=12,
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/Wavelet_CNN_Source_Network.py", line 16, in __init__
+    self.diversify=getdiversify.get_diversify()
+  File "/home/yanshuo/YS/FinalCode/train.py", line 107, in get_diversify
+    algorithm.load_state_dict(torch.load('/home/yanshuo/YS/FinalCode/model2.pt'))
+  File "/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2041, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for Diversify:
+	size mismatch for aclassifier.fc.weight: copying a param with shape torch.Size([70, 256]) from checkpoint, the shape in current model is torch.Size([21, 256]).
+	size mismatch for aclassifier.fc.bias: copying a param with shape torch.Size([70]) from checkpoint, the shape in current model is torch.Size([21]).
+	size mismatch for dclassifier.fc.weight: copying a param with shape torch.Size([10, 256]) from checkpoint, the shape in current model is torch.Size([3, 256]).
+	size mismatch for dclassifier.fc.bias: copying a param with shape torch.Size([10]) from checkpoint, the shape in current model is torch.Size([3]).
+	size mismatch for discriminator.layers.6.weight: copying a param with shape torch.Size([10, 256]) from checkpoint, the shape in current model is torch.Size([3, 256]).
+	size mismatch for discriminator.layers.6.bias: copying a param with shape torch.Size([10]) from checkpoint, the shape in current model is torch.Size([3]).

@@ -1,0 +1,2 @@
+directory1 = 'saved_data/DB1/52_5/52_5_norelax/subject_' + str(dataset_index) + '/train' 没有休息  'saved_data/DB1/52_5/52_5_norelax/subject_' + str(dataset_index) + '/test'
+directory2 = 'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/train'  全部的有休息'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/test'

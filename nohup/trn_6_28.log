@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/evaluate_wavelet_source_network.py", line 2, in <module>
+    import model.Wavelet_CNN_Source_Network as Wavelet_CNN_Source_Network
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/model/Wavelet_CNN_Source_Network.py", line 8, in <module>
+    import diversify_main as getdiversify
+ModuleNotFoundError: No module named 'diversify_main'

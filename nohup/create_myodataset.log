@@ -1,0 +1,9 @@
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/create_diversify_dataset.py:19: DeprecationWarning: elementwise comparison failed; this will raise an error in the future.
+  if example == []:
+Reading Data
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/create_diversify_dataset.py", line 179, in <module>
+    read_data("../../PreTrainingDataset")
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/create_diversify_dataset.py", line 117, in read_data
+    data_read_from_file = np.fromfile(path+'/Male'+str(candidate)+'/'+preOrEva+'/classe_%d.dat' % i, dtype=np.int16)
+FileNotFoundError: [Errno 2] No such file or directory: '../../PreTrainingDataset/Male12/training0/classe_0.dat'
