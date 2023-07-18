@@ -105,7 +105,7 @@ def calculate_fitness(seedlist):
     setup_seed(seed)
     model = db_one_model.Net(tcn_inputs_channal=10, number_of_classes=number_of_class)
 
-    for dataset_index in range(1, 2):
+    for dataset_index in range(1, 28):
         setup_seed(seed)
         # 在每次循环开始之前设置随机数种子
 
@@ -215,23 +215,13 @@ def calculate_fitness(seedlist):
             inputs_test_0, ground_truth_test_0, inputs_test_0_TCN = Variable(inputs_test_0.cuda()), Variable(
                 ground_truth_test_0.cuda()), Variable(inputs_test_0_TCN.cuda())
 
-            # 对trn测试
-            # concat_input = inputs_test_0
-            # 对TCN测试
-
             concat_input_TCN = inputs_test_0_TCN
             concat_input_trn = inputs_test_0
-            # for i in range(20):
-            #     concat_input_trn = torch.cat([concat_input_trn, inputs_test_0])
-            #     concat_input_TCN = torch.cat([concat_input_TCN, inputs_test_0_TCN])
-            # 将 inputs_test_0 连接（concatenate） 20 次，形成 concat_input，目的可能是扩充输入数据量，把test的数据一次20batchsize送进去。
 
             outputs_test_0 = multi_model(concat_input_trn, concat_input_TCN)
             _, predicted = torch.max(outputs_test_0.data, 1)
             # 将预测结果和真实标签进行比较，计算正确预测的数量 correct_prediction_test_0。
             # 这里使用了 mode() 函数来获取预测结果中出现最多的元素，并与真实标签进行比较。
-            # correct_prediction_test_0 += (mode(predicted.cpu().numpy())[0][0] ==
-            #                               ground_truth_test_0.data.cpu().numpy()).sum()
             correct_prediction_test_0 += (predicted.cpu().numpy() ==
                                           ground_truth_test_0.data.cpu().numpy()).sum()
             total += ground_truth_test_0.size(0)  # 总样本数量
@@ -342,21 +332,21 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
 
                 epoch_loss = running_loss / total  # 当前epoch的平均损失值。
                 epoch_acc = running_corrects / total  # 当前epoch的准确率。
-                print('{} Loss: {:.8f} Acc: {:.8}'.format(
-                    phase, epoch_loss, epoch_acc))
+                # print('{} Loss: {:.8f} Acc: {:.8}'.format(
+                #     phase, epoch_loss, epoch_acc))
 
                 # 90 85.4
                 # deep copy the model
                 if phase == 'val':
                     scheduler.step(epoch_loss)  # 根据当前epoch的验证损失值来调整学习率，使用预定义的学习率调整策略。
                     if epoch_loss + precision < best_loss:  # 当前验证损失值加上一个小的精度值小于最佳损失值best_loss
-                        print("New best validation loss:", epoch_loss)
+                        # print("New best validation loss:", epoch_loss)
                         best_loss = epoch_loss
                         # 在验证集上获得最佳损失时保存模型，并将其保存为文件
                         torch.save(model.state_dict(), 'best_weights_source_wavelet_db1.pt')
                         patience = patience_increase + epoch  # 更新耐心值为当前epoch加上预定义的耐心增加值。
-            print("Epoch {} of {} took {:.3f}s".format(
-                epoch + 1, num_epochs, time.time() - epoch_start))
+            # print("Epoch {} of {} took {:.3f}s".format(
+            #     epoch + 1, num_epochs, time.time() - epoch_start))
             if epoch > patience: #如果当前epoch大于耐心值，则跳出循环，结束训练过程
                 break
         print()
@@ -404,7 +394,7 @@ if __name__ == '__main__':
     test_0 = []
     test_1 = []
 
-    for i in range(1,2):
+    for i in range(0,1):
         accuracy_test_0 = calculate_fitness(i)
         print(accuracy_test_0)
 
