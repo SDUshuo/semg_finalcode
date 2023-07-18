@@ -96,7 +96,7 @@ def setup_seed(seed):
 # examples_training_TCN, examples_validation0_TCN
 def calculate_fitness(seedlist):
     accuracy_test0 = []  # 存储测试集0的准确率
-
+    top3_accuracy_test0=[]
     seed = 25
 # 4-82.651  3-
     # #创建slowfushion
@@ -204,7 +204,7 @@ def calculate_fitness(seedlist):
         multi_model.eval()
         total = 0
         correct_prediction_test_0 = 0
-
+        top3_correct_prediction_test_0=0
         """
         进行测试集测试
         由于测试集的 batch size 设置为1，每个样本都能独立地传递给模型，避免了批量归一化层等模型组件对批量大小的依赖。
@@ -219,18 +219,27 @@ def calculate_fitness(seedlist):
             concat_input_trn = inputs_test_0
 
             outputs_test_0 = multi_model(concat_input_trn, concat_input_TCN)
-            _, predicted = torch.max(outputs_test_0.data, 1)
-            # 将预测结果和真实标签进行比较，计算正确预测的数量 correct_prediction_test_0。
-            # 这里使用了 mode() 函数来获取预测结果中出现最多的元素，并与真实标签进行比较。
-            correct_prediction_test_0 += (predicted.cpu().numpy() ==
+            _, predicted_top1 = torch.max(outputs_test_0.data, 1)
+            _, predicted_top3 = outputs_test_0.data.topk(3, 1, True, True)
+
+            correct_prediction_test_0 += (predicted_top1.cpu().numpy() ==
                                           ground_truth_test_0.data.cpu().numpy()).sum()
+            top3_correct_prediction_test_0 += sum(
+                [ground_truth_test_0.data.cpu().numpy()[i] in predicted_top3.cpu().numpy()[i] for i in
+                 range(len(predicted_top3))])
+
             total += ground_truth_test_0.size(0)  # 总样本数量
-        print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
-        accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
+
+    print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
+    print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
+
+    accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
+    top3_accuracy_test0.append(100 * float(top3_correct_prediction_test_0) / float(total))
 
     print("AVERAGE ACCURACY TEST 0 %.3f" % np.array(accuracy_test0).mean())
+    print("AVERAGE TOP-3 ACCURACY TEST 0 %.3f" % np.array(top3_accuracy_test0).mean())
 
-    return accuracy_test0
+    return accuracy_test0,top3_accuracy_test0
 
 
 def combined_loss(features1, features2, labels, temperature=0.5):
@@ -395,9 +404,9 @@ if __name__ == '__main__':
     test_1 = []
 
     for i in range(0,1):
-        accuracy_test_0 = calculate_fitness(i)
+        accuracy_test_0,top3_accuracy_test0 = calculate_fitness(i)
         print(accuracy_test_0)
-
+        print(top3_accuracy_test0)
         test_0.append(accuracy_test_0)
 
         print("TEST 0 SO FAR: ", test_0)
