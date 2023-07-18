@@ -1,0 +1,1188 @@
+nohup: ignoring input
+++++++++++++
+Number Parameters: TCN 37742
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:42: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.image_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:43: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.time_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:44: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.fusion_weights)
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+New best validation loss: 1.0348708838747258
+New best validation loss: 1.0022774211147374
+New best validation loss: 0.8739257277103892
+New best validation loss: 0.8281598676714981
+New best validation loss: 0.749659273917215
+New best validation loss: 0.6705038873772873
+New best validation loss: 0.604427739193565
+New best validation loss: 0.5796397694370203
+New best validation loss: 0.5788160625256991
+New best validation loss: 0.5585759631374426
+New best validation loss: 0.5346593421802186
+New best validation loss: 0.5328191087957014
+New best validation loss: 0.5230121428506416
+New best validation loss: 0.5125553013985616
+New best validation loss: 0.4956429899784557
+New best validation loss: 0.4748560135824639
+New best validation loss: 0.4652616701628033
+New best validation loss: 0.4641696779351485
+New best validation loss: 0.4376738280580755
+Epoch 00037: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.4346174307036818
+New best validation loss: 0.4020846316688939
+New best validation loss: 0.39975712926764234
+New best validation loss: 0.39963376396580746
+New best validation loss: 0.3873841285705566
+New best validation loss: 0.3798835101880525
+New best validation loss: 0.37133744557698567
+New best validation loss: 0.3571550034640128
+New best validation loss: 0.3551875800417181
+New best validation loss: 0.33522125043367085
+
+Training complete in 1m 36s
+Best val loss: 0.335221
+ACCURACY TEST_0 FINAL : 82.756 %
+AVERAGE ACCURACY TEST 0 82.756
+[82.75620846449807]
+TEST 0 SO FAR:  [[82.75620846449807]]
+TEST 1 SO FAR:  []
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1376156723290158
+New best validation loss: 0.866492351732756
+New best validation loss: 0.7511913901881168
+New best validation loss: 0.6575148766500909
+New best validation loss: 0.6122336471289919
+New best validation loss: 0.5797635797868695
+New best validation loss: 0.5356183319761042
+New best validation loss: 0.48626764531721145
+New best validation loss: 0.4526802899544699
+New best validation loss: 0.4425598947625411
+New best validation loss: 0.3879961231298614
+Epoch 00030: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.3446118873462342
+New best validation loss: 0.3341593156781113
+New best validation loss: 0.31506315532483553
+New best validation loss: 0.3126636371277926
+New best validation loss: 0.3069123736599036
+New best validation loss: 0.2999652711968673
+Epoch 00050: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.29903843361034727
+New best validation loss: 0.2922615837632564
+New best validation loss: 0.2922306579455995
+
+Training complete in 1m 35s
+Best val loss: 0.292231
+ACCURACY TEST_0 FINAL : 84.330 %
+AVERAGE ACCURACY TEST 0 84.330
+[84.33018537950332]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.183468735008909
+New best validation loss: 1.0269300427353174
+New best validation loss: 0.9341963650887473
+New best validation loss: 0.8713586974562261
+New best validation loss: 0.8049986588327509
+New best validation loss: 0.7542952688116776
+New best validation loss: 0.7059758504231771
+New best validation loss: 0.6902828718486586
+New best validation loss: 0.6514237688298811
+New best validation loss: 0.6396173176012541
+New best validation loss: 0.57789665356017
+New best validation loss: 0.52943081604807
+New best validation loss: 0.5225703105591891
+Epoch 00029: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.49750642609177975
+New best validation loss: 0.4742017043264289
+New best validation loss: 0.47159693366602845
+New best validation loss: 0.4571065969634474
+Epoch 00042: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 15s
+Best val loss: 0.457107
+ACCURACY TEST_0 FINAL : 82.686 %
+AVERAGE ACCURACY TEST 0 82.686
+[82.68625393494229]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 0.9926876168502005
+New best validation loss: 0.9460709555107251
+New best validation loss: 0.8728429560075727
+New best validation loss: 0.7749678193477162
+New best validation loss: 0.7660920092934057
+New best validation loss: 0.6636678461442914
+New best validation loss: 0.5865850615919682
+New best validation loss: 0.4909486318889417
+New best validation loss: 0.4617575946607088
+New best validation loss: 0.43433934931169477
+New best validation loss: 0.4115616329929285
+New best validation loss: 0.3977085648921498
+New best validation loss: 0.3724824938857765
+New best validation loss: 0.365587726392244
+New best validation loss: 0.3570469387790613
+New best validation loss: 0.3330392636750874
+New best validation loss: 0.3326310291624906
+New best validation loss: 0.33002519942166514
+New best validation loss: 0.31687366251359905
+New best validation loss: 0.3138603294104861
+New best validation loss: 0.2983737042075709
+New best validation loss: 0.28957079167951616
+New best validation loss: 0.27234691736990946
+
+Training complete in 1m 35s
+Best val loss: 0.272347
+ACCURACY TEST_0 FINAL : 84.610 %
+AVERAGE ACCURACY TEST 0 84.610
+[84.61000349772648]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1714974118952166
+New best validation loss: 0.8755131738227709
+New best validation loss: 0.8050698598225912
+New best validation loss: 0.7003801580060992
+New best validation loss: 0.6472034822430528
+New best validation loss: 0.5411719288742334
+New best validation loss: 0.5115801476595694
+New best validation loss: 0.49175560599879214
+New best validation loss: 0.43395786285400395
+New best validation loss: 0.40976604495132174
+New best validation loss: 0.3809313606797603
+New best validation loss: 0.3392556541844418
+New best validation loss: 0.3340765635172526
+New best validation loss: 0.29682989789728537
+New best validation loss: 0.2927304334807814
+New best validation loss: 0.2533930343494081
+Epoch 00032: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.24566951132657236
+New best validation loss: 0.24038550309967577
+New best validation loss: 0.23246759029856898
+New best validation loss: 0.20991802048264888
+Epoch 00045: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.2086969208299068
+New best validation loss: 0.20432442112972862
+New best validation loss: 0.20272950707820422
+New best validation loss: 0.2008458698005007
+New best validation loss: 0.20078254164310924
+New best validation loss: 0.19586633213779384
+New best validation loss: 0.1957252301667866
+
+Training complete in 1m 35s
+Best val loss: 0.195725
+ACCURACY TEST_0 FINAL : 85.414 %
+AVERAGE ACCURACY TEST 0 85.414
+[85.41448058761804]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.2863054777446545
+New best validation loss: 1.2213530958744518
+New best validation loss: 1.104701470492179
+New best validation loss: 0.8666974787126508
+New best validation loss: 0.8239915412768983
+New best validation loss: 0.7811813889888295
+New best validation loss: 0.610418985601057
+New best validation loss: 0.5578290387203819
+New best validation loss: 0.5290116761860094
+New best validation loss: 0.4926723028484144
+New best validation loss: 0.4441018455906918
+Epoch 00024: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.4049927293208607
+New best validation loss: 0.39642277935095
+New best validation loss: 0.35453888407924716
+Epoch 00035: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.3518956887094598
+New best validation loss: 0.3423428535461426
+Epoch 00047: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 22s
+Best val loss: 0.342343
+ACCURACY TEST_0 FINAL : 85.292 %
+AVERAGE ACCURACY TEST 0 85.292
+[85.29206016089542]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.2445564939264666
+New best validation loss: 0.9458329050164473
+New best validation loss: 0.7496744590893126
+New best validation loss: 0.7067558556272272
+New best validation loss: 0.5863369958442554
+New best validation loss: 0.5079113140440824
+New best validation loss: 0.4910995265893769
+New best validation loss: 0.4572618835850766
+New best validation loss: 0.4555428136859023
+New best validation loss: 0.4086624864946332
+New best validation loss: 0.39144576223273025
+New best validation loss: 0.35161934066237066
+New best validation loss: 0.3055461080450761
+New best validation loss: 0.28580167000753837
+New best validation loss: 0.27874349125644615
+New best validation loss: 0.2566196357994749
+New best validation loss: 0.2528076121681615
+New best validation loss: 0.24356872993603088
+New best validation loss: 0.21583186283446193
+Epoch 00043: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.20088364617866383
+New best validation loss: 0.19755732553047045
+New best validation loss: 0.19242813210738333
+New best validation loss: 0.18448103687219453
+New best validation loss: 0.1824574445423327
+New best validation loss: 0.1806999507703279
+New best validation loss: 0.17148010521604304
+
+Training complete in 1m 36s
+Best val loss: 0.171480
+ACCURACY TEST_0 FINAL : 86.027 %
+AVERAGE ACCURACY TEST 0 86.027
+[86.0265827212312]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.4968941337183903
+New best validation loss: 1.2337092349403782
+New best validation loss: 1.109499272128992
+New best validation loss: 1.0205444202088474
+New best validation loss: 0.7983607643528988
+New best validation loss: 0.6860281961006031
+New best validation loss: 0.6585014075563665
+New best validation loss: 0.6582542185197796
+New best validation loss: 0.6035834898028458
+New best validation loss: 0.49809706671196113
+New best validation loss: 0.4403268914473684
+New best validation loss: 0.417547627499229
+New best validation loss: 0.3670361769826789
+New best validation loss: 0.3580385810450504
+New best validation loss: 0.3398084473191646
+New best validation loss: 0.31125430726168446
+Epoch 00041: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.2804355085941783
+New best validation loss: 0.26625207934463235
+New best validation loss: 0.25129033808122603
+New best validation loss: 0.25028564888134336
+New best validation loss: 0.24941229401973256
+Epoch 00056: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.24456803422225148
+New best validation loss: 0.24132500364069354
+New best validation loss: 0.23733566434759842
+
+Training complete in 1m 34s
+Best val loss: 0.237336
+ACCURACY TEST_0 FINAL : 85.082 %
+AVERAGE ACCURACY TEST 0 85.082
+[85.08219657222806]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.0439043647364565
+New best validation loss: 0.8731664021809896
+New best validation loss: 0.7838035048099986
+New best validation loss: 0.7730963322154262
+New best validation loss: 0.7570941322728207
+New best validation loss: 0.7018668191474781
+New best validation loss: 0.6862826464468973
+New best validation loss: 0.6365144394991691
+New best validation loss: 0.6131561680843955
+New best validation loss: 0.5592762244375128
+New best validation loss: 0.554539884600723
+New best validation loss: 0.5345684185362699
+New best validation loss: 0.5277482952987939
+New best validation loss: 0.4906002864503024
+New best validation loss: 0.48433307179233487
+New best validation loss: 0.45959255653515196
+Epoch 00028: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.41303965919896174
+New best validation loss: 0.40081016473602826
+New best validation loss: 0.38691265541210507
+New best validation loss: 0.37507940593518707
+New best validation loss: 0.3645118261638441
+New best validation loss: 0.36236378184536044
+Epoch 00044: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.36194539990341457
+New best validation loss: 0.3588291619953356
+New best validation loss: 0.3572329470985814
+
+Training complete in 1m 35s
+Best val loss: 0.357233
+ACCURACY TEST_0 FINAL : 81.375 %
+AVERAGE ACCURACY TEST 0 81.375
+[81.37460650577125]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 0.7992982161672492
+New best validation loss: 0.6964707993624504
+New best validation loss: 0.6706995913856908
+New best validation loss: 0.6065471348009611
+New best validation loss: 0.5941538425914029
+New best validation loss: 0.5847279063442297
+New best validation loss: 0.5508690198262532
+New best validation loss: 0.5304058208800199
+New best validation loss: 0.5038238642508523
+New best validation loss: 0.48575726726598906
+New best validation loss: 0.4601783886290433
+New best validation loss: 0.44754280291105575
+New best validation loss: 0.4207695090979861
+Epoch 00025: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.3992374420166016
+New best validation loss: 0.39480793768899486
+New best validation loss: 0.38599397090443394
+New best validation loss: 0.38582849000629627
+New best validation loss: 0.3785824892813699
+New best validation loss: 0.37069831814682275
+New best validation loss: 0.36666541183203977
+New best validation loss: 0.3653643892522444
+New best validation loss: 0.3583072812933671
+New best validation loss: 0.356570093255294
+New best validation loss: 0.35169803552460255
+New best validation loss: 0.33917262930619085
+New best validation loss: 0.3327797889709473
+New best validation loss: 0.3259823999906841
+
+Training complete in 1m 35s
+Best val loss: 0.325982
+ACCURACY TEST_0 FINAL : 80.570 %
+AVERAGE ACCURACY TEST 0 80.570
+[80.57012941587968]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1644136529219777
+New best validation loss: 1.0987441079658375
+New best validation loss: 0.9950333411233467
+New best validation loss: 0.9456096582245408
+New best validation loss: 0.8503877070912144
+New best validation loss: 0.7459468908477248
+New best validation loss: 0.685866305702611
+New best validation loss: 0.6555666304471199
+New best validation loss: 0.6457852179544015
+New best validation loss: 0.5800470720257676
+New best validation loss: 0.50250300189905
+New best validation loss: 0.47587955709089313
+New best validation loss: 0.42281145129287456
+New best validation loss: 0.41823297299836815
+New best validation loss: 0.39952545667949474
+New best validation loss: 0.3993011892887584
+New best validation loss: 0.3635416867440207
+New best validation loss: 0.36329038686919635
+New best validation loss: 0.3424946651124118
+New best validation loss: 0.3387683399936609
+New best validation loss: 0.32828322628088163
+New best validation loss: 0.2888378344084087
+New best validation loss: 0.28676663616247344
+New best validation loss: 0.2704959835922509
+New best validation loss: 0.24301945452104534
+Epoch 00052: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.231402027397825
+New best validation loss: 0.22727560829697993
+New best validation loss: 0.2123968709979141
+New best validation loss: 0.2122872360965662
+New best validation loss: 0.2078508410537452
+
+Training complete in 1m 36s
+Best val loss: 0.207851
+ACCURACY TEST_0 FINAL : 85.764 %
+AVERAGE ACCURACY TEST 0 85.764
+[85.76425323539699]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.314760174667626
+New best validation loss: 1.2210696170204565
+New best validation loss: 1.0640979566072162
+New best validation loss: 1.0580014011316132
+New best validation loss: 0.887141980622944
+New best validation loss: 0.7968812239797491
+New best validation loss: 0.6644726803428248
+New best validation loss: 0.6385506747061747
+New best validation loss: 0.572718436257881
+New best validation loss: 0.5711592958684553
+New best validation loss: 0.5222266163742333
+New best validation loss: 0.47684335708618164
+New best validation loss: 0.43814358460275754
+New best validation loss: 0.43393238469174034
+New best validation loss: 0.4271486165230734
+New best validation loss: 0.4102750410113418
+New best validation loss: 0.4006022085223282
+New best validation loss: 0.3795200431556032
+New best validation loss: 0.3620877851519668
+New best validation loss: 0.3548334406133284
+New best validation loss: 0.34885657293754707
+New best validation loss: 0.3441856735631039
+New best validation loss: 0.3224165933173999
+New best validation loss: 0.29316429506268415
+Epoch 00055: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.2676341073554859
+New best validation loss: 0.2533926328023275
+New best validation loss: 0.2438828050044545
+New best validation loss: 0.23242517856129427
+
+Training complete in 1m 34s
+Best val loss: 0.232425
+ACCURACY TEST_0 FINAL : 85.047 %
+AVERAGE ACCURACY TEST 0 85.047
+[85.04721930745016]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.2716457969263981
+New best validation loss: 1.2514909777724952
+New best validation loss: 1.119212960360343
+New best validation loss: 1.1011692247892682
+New best validation loss: 0.9281816047534608
+New best validation loss: 0.7816522163257265
+New best validation loss: 0.7696301041987904
+New best validation loss: 0.7370789812322248
+New best validation loss: 0.5889310334858141
+New best validation loss: 0.48697054344311097
+New best validation loss: 0.47275466249700177
+New best validation loss: 0.4304103148610968
+New best validation loss: 0.38602572491294457
+New best validation loss: 0.3813785519516259
+New best validation loss: 0.33539216560229923
+New best validation loss: 0.28902020370751097
+New best validation loss: 0.27555140863385114
+New best validation loss: 0.26924979477597955
+New best validation loss: 0.24835201564588044
+New best validation loss: 0.23218592175266198
+Epoch 00048: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.1957851209138569
+New best validation loss: 0.1932895635303698
+New best validation loss: 0.18922157120286373
+New best validation loss: 0.18117809881243788
+
+Training complete in 1m 34s
+Best val loss: 0.181178
+ACCURACY TEST_0 FINAL : 85.572 %
+AVERAGE ACCURACY TEST 0 85.572
+[85.57187827911858]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.367508603815447
+New best validation loss: 1.0978994469893606
+New best validation loss: 0.9459807479590701
+New best validation loss: 0.816065400106865
+New best validation loss: 0.7754993104098136
+New best validation loss: 0.7534152649996573
+New best validation loss: 0.7436124132390608
+New best validation loss: 0.6213254828202097
+New best validation loss: 0.5869746291846559
+New best validation loss: 0.5700347632692572
+New best validation loss: 0.5202636835867899
+New best validation loss: 0.49637940222756904
+New best validation loss: 0.443010129426655
+Epoch 00036: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.4348604302657278
+New best validation loss: 0.4307862365454958
+New best validation loss: 0.39464009100930736
+Epoch 00049: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 25s
+Best val loss: 0.394640
+ACCURACY TEST_0 FINAL : 82.826 %
+AVERAGE ACCURACY TEST 0 82.826
+[82.82616299405386]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1149854827345462
+New best validation loss: 0.9071529723050302
+New best validation loss: 0.7859370248359546
+New best validation loss: 0.6810420521518641
+New best validation loss: 0.6209426210637679
+New best validation loss: 0.5616617269683303
+New best validation loss: 0.5434696130585253
+New best validation loss: 0.4954070091247559
+New best validation loss: 0.4857031872397975
+New best validation loss: 0.4842375035871539
+New best validation loss: 0.462352384600723
+New best validation loss: 0.4522690020109478
+New best validation loss: 0.4110056107504326
+New best validation loss: 0.40008599298042163
+New best validation loss: 0.3907637663054884
+New best validation loss: 0.3679978889331483
+New best validation loss: 0.3557668351290519
+New best validation loss: 0.32595854642098415
+New best validation loss: 0.3254936017488178
+New best validation loss: 0.3253898570412084
+New best validation loss: 0.2987289445442066
+New best validation loss: 0.29117438835010195
+New best validation loss: 0.28210614856920746
+
+Training complete in 1m 34s
+Best val loss: 0.282106
+ACCURACY TEST_0 FINAL : 82.214 %
+AVERAGE ACCURACY TEST 0 82.214
+[82.21406086044071]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.3367687024568256
+New best validation loss: 1.1530602371483518
+New best validation loss: 1.071367327372233
+New best validation loss: 0.9840520457217568
+New best validation loss: 0.9645402506778116
+New best validation loss: 0.8300958466111569
+New best validation loss: 0.7659359413280822
+New best validation loss: 0.7335935893811678
+New best validation loss: 0.7082739746361448
+New best validation loss: 0.6915061214513947
+New best validation loss: 0.6769814742238898
+New best validation loss: 0.6544344584147136
+New best validation loss: 0.6178376482244123
+New best validation loss: 0.5973404867607252
+New best validation loss: 0.5710883023446066
+New best validation loss: 0.5092437811065138
+Epoch 00030: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.4999115257932429
+New best validation loss: 0.4769797576101203
+New best validation loss: 0.46619262193378647
+Epoch 00043: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 16s
+Best val loss: 0.466193
+ACCURACY TEST_0 FINAL : 82.721 %
+AVERAGE ACCURACY TEST 0 82.721
+[82.72123119972018]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.0349721908569336
+New best validation loss: 0.7853580207155462
+New best validation loss: 0.7389186122961211
+New best validation loss: 0.6993824473598547
+New best validation loss: 0.6676362589785927
+New best validation loss: 0.6607227660062021
+New best validation loss: 0.6259829939457408
+New best validation loss: 0.588268410532098
+New best validation loss: 0.5491364094248989
+New best validation loss: 0.532978151555647
+New best validation loss: 0.489730065329033
+New best validation loss: 0.46097498943931176
+New best validation loss: 0.4433201589082417
+Epoch 00031: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.42493616237975007
+New best validation loss: 0.42144405967310855
+New best validation loss: 0.4076690255549916
+New best validation loss: 0.40430260206523694
+Epoch 00046: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.4010149637858073
+New best validation loss: 0.3927656709102162
+Epoch 00059: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 35s
+Best val loss: 0.392766
+ACCURACY TEST_0 FINAL : 82.267 %
+AVERAGE ACCURACY TEST 0 82.267
+[82.26652675760755]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1269865939491674
+New best validation loss: 0.8551888850697299
+New best validation loss: 0.7859655681409334
+New best validation loss: 0.6122441877398574
+New best validation loss: 0.582307721857439
+New best validation loss: 0.5493375543962445
+New best validation loss: 0.4919964823806495
+New best validation loss: 0.4500547258477462
+New best validation loss: 0.42559827838027686
+New best validation loss: 0.4230838106389631
+New best validation loss: 0.4039500922487493
+New best validation loss: 0.38539979834305615
+New best validation loss: 0.359847559008682
+New best validation loss: 0.33746130926567214
+New best validation loss: 0.29631793038886894
+New best validation loss: 0.28645050316526177
+New best validation loss: 0.2705346559223376
+New best validation loss: 0.2593389168120267
+New best validation loss: 0.24931839474460535
+Epoch 00048: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.24439665894759327
+New best validation loss: 0.23901675040261788
+New best validation loss: 0.21983038919013842
+New best validation loss: 0.21361640879982396
+New best validation loss: 0.1963520786218476
+
+Training complete in 1m 35s
+Best val loss: 0.196352
+ACCURACY TEST_0 FINAL : 85.747 %
+AVERAGE ACCURACY TEST 0 85.747
+[85.74676460300805]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1954941331294544
+New best validation loss: 1.1951120744671737
+New best validation loss: 1.0665223138374196
+New best validation loss: 0.895472342507881
+New best validation loss: 0.7045997485779879
+New best validation loss: 0.5445411079808286
+New best validation loss: 0.5077594824004591
+New best validation loss: 0.43437959604096
+New best validation loss: 0.43076095581054685
+New best validation loss: 0.35098004592092413
+New best validation loss: 0.32159200802183985
+New best validation loss: 0.31615046952900133
+New best validation loss: 0.29443827679282736
+New best validation loss: 0.2546637167010391
+New best validation loss: 0.2535854833167896
+New best validation loss: 0.2337007857205575
+Epoch 00039: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.19774214510332075
+New best validation loss: 0.19310817300227648
+New best validation loss: 0.18553476082651238
+New best validation loss: 0.17568287180181136
+Epoch 00052: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.1688503859335916
+
+Training complete in 1m 34s
+Best val loss: 0.168850
+ACCURACY TEST_0 FINAL : 85.082 %
+AVERAGE ACCURACY TEST 0 85.082
+[85.08219657222806]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.2012827019942434
+New best validation loss: 0.9829363237347519
+New best validation loss: 0.8584929984912537
+New best validation loss: 0.7452611387821666
+New best validation loss: 0.7008071430942469
+New best validation loss: 0.5936483182405171
+New best validation loss: 0.554991300482499
+New best validation loss: 0.5225517272949218
+New best validation loss: 0.5214006524336966
+New best validation loss: 0.4857912030136376
+New best validation loss: 0.46055655228464226
+New best validation loss: 0.4472746598093133
+New best validation loss: 0.4028762800651684
+New best validation loss: 0.378299749943248
+New best validation loss: 0.3507435781913891
+Epoch 00025: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.30795244585003767
+New best validation loss: 0.3058146142123038
+New best validation loss: 0.30516702083119174
+New best validation loss: 0.27109212206121075
+New best validation loss: 0.26133187026308297
+New best validation loss: 0.24197281870925635
+New best validation loss: 0.23579734501085783
+New best validation loss: 0.22880356186314635
+New best validation loss: 0.2151508841598243
+New best validation loss: 0.20758462705110248
+New best validation loss: 0.19864676709760698
+
+Training complete in 1m 34s
+Best val loss: 0.198647
+ACCURACY TEST_0 FINAL : 84.662 %
+AVERAGE ACCURACY TEST 0 84.662
+[84.66246939489332]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.383638482344778
+New best validation loss: 1.2226170322351289
+New best validation loss: 1.0763073302151864
+New best validation loss: 0.9810315316183524
+New best validation loss: 0.7870538945783648
+New best validation loss: 0.7514982390822026
+New best validation loss: 0.7058096601251971
+New best validation loss: 0.6490319034509491
+New best validation loss: 0.6340221605802837
+New best validation loss: 0.6314483709502638
+New best validation loss: 0.5868920677586605
+New best validation loss: 0.5592826558832537
+New best validation loss: 0.5505311530933046
+New best validation loss: 0.5459334473860892
+New best validation loss: 0.5323924717150237
+New best validation loss: 0.49951436226828055
+New best validation loss: 0.4920972271969444
+New best validation loss: 0.4681860271253084
+New best validation loss: 0.4470200120357045
+New best validation loss: 0.43626473577399
+New best validation loss: 0.43331347013774674
+New best validation loss: 0.4031485858716463
+Epoch 00044: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.3952918889229758
+New best validation loss: 0.3926471409044768
+New best validation loss: 0.38403391419795524
+Epoch 00059: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 35s
+Best val loss: 0.384034
+ACCURACY TEST_0 FINAL : 82.022 %
+AVERAGE ACCURACY TEST 0 82.022
+[82.0216859041623]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.165479077790913
+New best validation loss: 1.0139215134737785
+New best validation loss: 0.8727069419726992
+New best validation loss: 0.8680502272488778
+New best validation loss: 0.6800749929327714
+New best validation loss: 0.6031055115816886
+New best validation loss: 0.45142498183668706
+New best validation loss: 0.4062272506847716
+New best validation loss: 0.4027263942517732
+New best validation loss: 0.3777675243846157
+New best validation loss: 0.33639590112786544
+New best validation loss: 0.27125318510490554
+Epoch 00026: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.2444283828400729
+New best validation loss: 0.24234068937468944
+New best validation loss: 0.240337778392591
+New best validation loss: 0.2338115834353263
+New best validation loss: 0.22569028201856112
+New best validation loss: 0.20913096310799584
+New best validation loss: 0.2063601912113658
+New best validation loss: 0.19114986637182402
+New best validation loss: 0.18799285303082383
+New best validation loss: 0.1866931497004994
+Epoch 00055: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.18413143827204118
+New best validation loss: 0.17442266648275812
+New best validation loss: 0.1661517444409822
+
+Training complete in 1m 35s
+Best val loss: 0.166152
+ACCURACY TEST_0 FINAL : 85.275 %
+AVERAGE ACCURACY TEST 0 85.275
+[85.27457152850647]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 0.9891793100457442
+New best validation loss: 0.8663870694344504
+New best validation loss: 0.7017570629454496
+New best validation loss: 0.6220102845576772
+New best validation loss: 0.5951826530590392
+New best validation loss: 0.5924933416801587
+New best validation loss: 0.5822555006596081
+New best validation loss: 0.5298064131485788
+New best validation loss: 0.5114503157766241
+New best validation loss: 0.5088731732284814
+New best validation loss: 0.5048080862614146
+New best validation loss: 0.4832510145086991
+New best validation loss: 0.4794882590310615
+New best validation loss: 0.4569678791782312
+New best validation loss: 0.43035904733758223
+New best validation loss: 0.4247166064747593
+New best validation loss: 0.40648564121179415
+New best validation loss: 0.3863185849106103
+Epoch 00038: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.37838924474883495
+New best validation loss: 0.36640994423314144
+New best validation loss: 0.36350376062225875
+New best validation loss: 0.34641619063260265
+Epoch 00058: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 34s
+Best val loss: 0.346416
+ACCURACY TEST_0 FINAL : 82.984 %
+AVERAGE ACCURACY TEST 0 82.984
+[82.9835606855544]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.0173593420731395
+New best validation loss: 0.8772545764320775
+New best validation loss: 0.8103819462290981
+New best validation loss: 0.7103701139751234
+New best validation loss: 0.6933945070233261
+New best validation loss: 0.6141093739292078
+New best validation loss: 0.5729240283631442
+New best validation loss: 0.5410173616911236
+New best validation loss: 0.5147413906298186
+New best validation loss: 0.4720890982109204
+New best validation loss: 0.4551137288411458
+New best validation loss: 0.41815556977924545
+New best validation loss: 0.3965088409289979
+New best validation loss: 0.3764754563047175
+New best validation loss: 0.3713696864613315
+New best validation loss: 0.3713617224442331
+New best validation loss: 0.37103775593272426
+New best validation loss: 0.34259187631439747
+New best validation loss: 0.3400271231668037
+New best validation loss: 0.3351471014190139
+New best validation loss: 0.315271912959584
+New best validation loss: 0.31127812569601493
+New best validation loss: 0.30051314705296567
+New best validation loss: 0.2824249535276179
+New best validation loss: 0.2786502913424843
+New best validation loss: 0.275221540216814
+New best validation loss: 0.2632264689395302
+Epoch 00056: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.2506855998122901
+New best validation loss: 0.24894136545950907
+
+Training complete in 1m 34s
+Best val loss: 0.248941
+ACCURACY TEST_0 FINAL : 81.375 %
+AVERAGE ACCURACY TEST 0 81.375
+[81.37460650577125]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 0.8915632147538034
+New best validation loss: 0.7622460482413309
+New best validation loss: 0.7032743755139803
+New best validation loss: 0.6877380337631493
+New best validation loss: 0.6002916704144394
+New best validation loss: 0.5323844156767192
+New best validation loss: 0.5311477627670556
+New best validation loss: 0.48988852249948606
+New best validation loss: 0.47952978067230756
+New best validation loss: 0.45946702789842037
+New best validation loss: 0.4421372614408794
+New best validation loss: 0.4350526357951917
+New best validation loss: 0.41034377081352363
+Epoch 00033: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.3984346088610197
+New best validation loss: 0.3835283245956689
+New best validation loss: 0.37392656761303283
+New best validation loss: 0.37282704637761704
+Epoch 00044: reducing learning rate of group 0 to 4.0000e-04.
+New best validation loss: 0.3723368059124863
+New best validation loss: 0.3681278295684279
+Epoch 00053: reducing learning rate of group 0 to 8.0000e-05.
+New best validation loss: 0.3615058480647572
+Epoch 00060: reducing learning rate of group 0 to 1.6000e-05.
+
+Training complete in 1m 33s
+Best val loss: 0.361506
+ACCURACY TEST_0 FINAL : 81.917 %
+AVERAGE ACCURACY TEST 0 81.917
+[81.91675410982862]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1807265699955456
+New best validation loss: 1.0262191504762883
+New best validation loss: 0.9448851200572231
+New best validation loss: 0.829597282409668
+New best validation loss: 0.7771234211168792
+New best validation loss: 0.7645266348855537
+New best validation loss: 0.6548764647099009
+New best validation loss: 0.6423171193976152
+New best validation loss: 0.5735120907164456
+New best validation loss: 0.5293913924903201
+New best validation loss: 0.4911367834660045
+New best validation loss: 0.46593676115337174
+New best validation loss: 0.4526635772303531
+New best validation loss: 0.4504831548322711
+New best validation loss: 0.41451812208744515
+New best validation loss: 0.40607559471799615
+New best validation loss: 0.3867493094059459
+New best validation loss: 0.37429676557842056
+New best validation loss: 0.3662718956930595
+New best validation loss: 0.3478014761941475
+New best validation loss: 0.32999831919084516
+New best validation loss: 0.3231699458339758
+New best validation loss: 0.312040228592722
+New best validation loss: 0.2957295886257239
+Epoch 00060: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 33s
+Best val loss: 0.295730
+ACCURACY TEST_0 FINAL : 85.974 %
+AVERAGE ACCURACY TEST 0 85.974
+[85.97411682406435]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862], [85.97411682406435]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.141189039799205
+New best validation loss: 1.0722968954789012
+New best validation loss: 0.9274073282877604
+New best validation loss: 0.7960723743104098
+New best validation loss: 0.7215859898349695
+New best validation loss: 0.6678568522135416
+New best validation loss: 0.6185077198764735
+New best validation loss: 0.5941291708695261
+New best validation loss: 0.5531235008908991
+New best validation loss: 0.5369331995646158
+New best validation loss: 0.5323310651277241
+New best validation loss: 0.5136601180361029
+New best validation loss: 0.49473414002803334
+New best validation loss: 0.49457874465406987
+New best validation loss: 0.45245632539715686
+Epoch 00040: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.4464927204868249
+New best validation loss: 0.42492689166152686
+New best validation loss: 0.41475982164081776
+New best validation loss: 0.397223767063074
+Epoch 00059: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 33s
+Best val loss: 0.397224
+ACCURACY TEST_0 FINAL : 82.162 %
+AVERAGE ACCURACY TEST 0 82.162
+[82.16159496327387]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862], [85.97411682406435], [82.16159496327387]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.325023048802426
+New best validation loss: 1.1821707809180544
+New best validation loss: 1.1111239383095188
+New best validation loss: 1.105082863255551
+New best validation loss: 0.824111831397341
+New best validation loss: 0.7672470494320518
+New best validation loss: 0.7228724195246111
+New best validation loss: 0.682144231963576
+New best validation loss: 0.623323631286621
+New best validation loss: 0.5905403806452165
+New best validation loss: 0.523043594025729
+New best validation loss: 0.4881708345915142
+New best validation loss: 0.4789190509863067
+New best validation loss: 0.4038221794262267
+New best validation loss: 0.32110001413445727
+New best validation loss: 0.2941115831073962
+New best validation loss: 0.2908148347285756
+New best validation loss: 0.28080214115611296
+New best validation loss: 0.2607193394711143
+New best validation loss: 0.2526120830000493
+New best validation loss: 0.23021809678328664
+New best validation loss: 0.2246446400357966
+Epoch 00048: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.19588453560544733
+New best validation loss: 0.1938594299450255
+New best validation loss: 0.1908005714416504
+New best validation loss: 0.18843608404460707
+
+Training complete in 1m 33s
+Best val loss: 0.188436
+ACCURACY TEST_0 FINAL : 84.942 %
+AVERAGE ACCURACY TEST 0 84.942
+[84.94228751311647]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862], [85.97411682406435], [82.16159496327387], [84.94228751311647]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.4340964334052906
+New best validation loss: 1.0418538344533819
+New best validation loss: 0.8636875587597228
+New best validation loss: 0.8036473592122396
+New best validation loss: 0.6204989918491297
+New best validation loss: 0.506223395832798
+New best validation loss: 0.4582666095934416
+New best validation loss: 0.3976509361936335
+New best validation loss: 0.3811968686287863
+New best validation loss: 0.36385700995461984
+New best validation loss: 0.32209401381643193
+New best validation loss: 0.3013403290196469
+New best validation loss: 0.2954386125531113
+New best validation loss: 0.277983442105745
+New best validation loss: 0.25934015407896877
+New best validation loss: 0.248900460360343
+New best validation loss: 0.24535113217537863
+New best validation loss: 0.23845570714850173
+New best validation loss: 0.23728364225019488
+New best validation loss: 0.2319774861921344
+New best validation loss: 0.20784690505579898
+Epoch 00049: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.1970554418731154
+New best validation loss: 0.1955864571688468
+New best validation loss: 0.1953819241440087
+New best validation loss: 0.18266535809165552
+New best validation loss: 0.18236065998412015
+New best validation loss: 0.16735954535634895
+
+Training complete in 1m 33s
+Best val loss: 0.167360
+ACCURACY TEST_0 FINAL : 84.837 %
+AVERAGE ACCURACY TEST 0 84.837
+[84.83735571878279]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862], [85.97411682406435], [82.16159496327387], [84.94228751311647], [84.83735571878279]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182452
+22572
+(22572, 12, 10, 7)
+New best validation loss: 1.1078779254043312
+New best validation loss: 0.993629693148429
+New best validation loss: 0.8162380686977453
+New best validation loss: 0.7696246665820741
+New best validation loss: 0.76288793463456
+New best validation loss: 0.698809396174916
+New best validation loss: 0.6711123282449287
+New best validation loss: 0.6498206958436129
+New best validation loss: 0.6083033544975415
+New best validation loss: 0.5965896071049205
+New best validation loss: 0.5722114830686335
+New best validation loss: 0.5610701243082682
+New best validation loss: 0.5456467829252544
+New best validation loss: 0.5371135678207666
+New best validation loss: 0.5119736186245032
+Epoch 00031: reducing learning rate of group 0 to 2.0000e-03.
+New best validation loss: 0.5020591317561635
+New best validation loss: 0.47945012878953364
+New best validation loss: 0.47239326008579186
+New best validation loss: 0.46540203763727556
+New best validation loss: 0.4415815035502116
+Epoch 00049: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 23s
+Best val loss: 0.441582
+ACCURACY TEST_0 FINAL : 81.864 %
+AVERAGE ACCURACY TEST 0 81.864
+[81.86428821266178]
+TEST 0 SO FAR:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862], [85.97411682406435], [82.16159496327387], [84.94228751311647], [84.83735571878279], [81.86428821266178]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+ACCURACY FINAL TEST 0:  [[82.75620846449807], [84.33018537950332], [82.68625393494229], [84.61000349772648], [85.41448058761804], [85.29206016089542], [86.0265827212312], [85.08219657222806], [81.37460650577125], [80.57012941587968], [85.76425323539699], [85.04721930745016], [85.57187827911858], [82.82616299405386], [82.21406086044071], [82.72123119972018], [82.26652675760755], [85.74676460300805], [85.08219657222806], [84.66246939489332], [82.0216859041623], [85.27457152850647], [82.9835606855544], [81.37460650577125], [81.91675410982862], [85.97411682406435], [82.16159496327387], [84.94228751311647], [84.83735571878279], [81.86428821266178]]
+ACCURACY FINAL TEST 0:  83.77987641366444
+ACCURACY FINAL TEST 1:  []
+ACCURACY FINAL TEST 1:  nan
+17\25

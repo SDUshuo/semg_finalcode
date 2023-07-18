@@ -68,7 +68,7 @@ fushion_dim = 100  #两个特征融合后的维度 （fushion_2_feature_bottlene
 rank = 6  # 10- 82.441 % 15-85.240 %
 hidden_dim = 100 #全连接层分类，前一层的维度
 """不适用lmf，使用contact测试 80最好  180-85%  140-85.152 % 100-86.551 % 80-86.516 %  60-80% 120-86.4% """
-feature_bottleneck = 80
+feature_bottleneck = 90
 """  使用autoencoder 分类层使用cat 参数会很多，他会在60左右的epoch就达到94%，可以尝试一下epoch早停
 最后使用180   150-84.348 % 180-85.88 190-84.9%"""
 # encoding_dim =180
