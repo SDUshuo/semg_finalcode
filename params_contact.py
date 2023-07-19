@@ -78,6 +78,6 @@ encoding_dim =180
 """ 使用attention做最后的融合 效果很差，放弃"""
 
 """加入对比学习损失函数 NCE_feature_dim 80-80% 120-81.007 %   """
-NCE_feature_dim =  120 # 把trn和tcn的输出都fc到这个维度，然后再进行多模态融合
-alpha=0.8
+NCE_feature_dim =  100 # 把trn和tcn的输出都fc到这个维度，然后再进行多模态融合
+alpha=0.5
 

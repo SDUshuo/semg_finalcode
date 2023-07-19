@@ -17,12 +17,12 @@ import myTRN as myTRN
 import TRNmodule
 from save_data import number_of_vector_per_example,number_of_classes,size_non_overlap,number_of_canals
 import os
-from params_contact import alpha
+
 from load_evaluation_dataset_DB1 import  newpath
 number_of_class =18
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 batchsize=512
-
+alpha = 0
 
 def infoNCE_loss(features1, features2, temperature=0.5):
     # 归一化特征
@@ -86,17 +86,16 @@ def setup_seed(seed):
     torch.backends.cudnn.enabled = True
 #examples_training, labels_training,examples_test_0, labels_test_0,
                       #examples_training_TCN, examples_validation0_TCN
-def calculate_fitness():
+def calculate_fitness(seedlist):
     accuracy_test0 = [] # 存储测试集0的准确率
 
-    seed = 4
+    seed = 25
     lr=0.01
-    # #创建slowfushion
-    # CNN = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=batchsize, number_of_channel=12,
-    #                                      learning_rate=0.0404709, dropout=.5).cuda()
-    model = db_one_model.Net(tcn_inputs_channal=10,number_of_classes=number_of_class)
+    setup_seed(seed)
 
-    for dataset_index in range(1, 2):
+    model = db_one_model.Net(tcn_inputs_channal=10,number_of_classes=number_of_class)
+    print(alpha)
+    for dataset_index in range(1, 28):
 
         # 在每次循环开始之前设置随机数种子
         setup_seed(seed)
@@ -134,7 +133,7 @@ def calculate_fitness():
         # 打乱用于微调的训练数据
         X_fine_tune, Y_fine_tune,X_fine_tune_TCN = scramble(X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train)
 
-        val_scale=0.1
+        val_scale=0.01
         # 划分验证集
         valid_examples = X_fine_tune[0:int(len(X_fine_tune) * val_scale)]
         labels_valid = Y_fine_tune[0:int(len(Y_fine_tune) * val_scale)]
@@ -260,8 +259,8 @@ def train_model(model,criterion, optimizer, scheduler,dataloaders, num_epochs=10
     if not justtest:
         for epoch in range(num_epochs):
             epoch_start = time.time()
-            print('Epoch {}/{}'.format(epoch, num_epochs - 1))
-            print('-' * 10)
+            # print('Epoch {}/{}'.format(epoch, num_epochs - 1))
+            # print('-' * 10)
 
             # 对于每个epoch都有train和val环节
             for phase in ['train', 'val']:
@@ -329,20 +328,20 @@ def train_model(model,criterion, optimizer, scheduler,dataloaders, num_epochs=10
 
                 epoch_loss = running_loss / total #当前epoch的平均损失值。
                 epoch_acc = running_corrects / total  #当前epoch的准确率。
-                print('{} Loss: {:.8f} Acc: {:.8}'.format(
-                    phase, epoch_loss, epoch_acc))
+                # print('{} Loss: {:.8f} Acc: {:.8}'.format(
+                #     phase, epoch_loss, epoch_acc))
 
                 # deep copy the model
                 if phase == 'val':
                     scheduler.step(epoch_loss)#根据当前epoch的验证损失值来调整学习率，使用预定义的学习率调整策略。
                     if epoch_loss+precision < best_loss:  #当前验证损失值加上一个小的精度值小于最佳损失值best_loss
-                        print("New best validation loss:", epoch_loss)
+                        # print("New best validation loss:", epoch_loss)
                         best_loss = epoch_loss
                         #在验证集上获得最佳损失时保存模型，并将其保存为文件
                         torch.save(model.state_dict(), 'best_weights_source_wavelet_db1.pt')
                         patience = patience_increase + epoch #更新耐心值为当前epoch加上预定义的耐心增加值。
-            print("Epoch {} of {} took {:.3f}s".format(
-                epoch + 1, num_epochs, time.time() - epoch_start))
+            # print("Epoch {} of {} took {:.3f}s".format(
+            #     epoch + 1, num_epochs, time.time() - epoch_start))
             if epoch > patience: #如果当前epoch大于耐心值，则跳出循环，结束训练过程
                 break
         print()
@@ -390,9 +389,10 @@ if __name__ == '__main__':
 
     test_0 = []
     test_1 = []
-
-    for i in range(1):
-        accuracy_test_0 = calculate_fitness()
+    alphalist=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
+    for i in range(0,1):
+        alpha = 0.5
+        accuracy_test_0 = calculate_fitness(i)
         print(accuracy_test_0)
 
         test_0.append(accuracy_test_0)

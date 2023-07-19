@@ -90,7 +90,7 @@ def setup_seed(seed):
 def calculate_fitness():
     accuracy_test0 = [] # 存储测试集0的准确率
 
-    seed = 4
+    seed = 25
 
     # #创建slowfushion
     # CNN = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=batchsize, number_of_channel=12,

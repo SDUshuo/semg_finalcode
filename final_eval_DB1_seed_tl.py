@@ -24,7 +24,7 @@ number_of_class = 18
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 batchsize = 512
 
-epochs = 60
+epochs = 120
 lr = 0.01
 
 
@@ -105,15 +105,15 @@ def calculate_fitness(seedlist):
     setup_seed(seed)
     model = db_one_model.Net(tcn_inputs_channal=10, number_of_classes=number_of_class)
 
-    for dataset_index in range(1, 28):
+    for dataset_index in range(1, 2):
         setup_seed(seed)
         # 在每次循环开始之前设置随机数种子
-
+        first_path ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_' + str(
+            dataset_index)
         # 准备训练集
         # directory = 'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/train'
         # directory = 'saved_data/DB1/52_5/52_5_exercise1/subject_'+ str(dataset_index) + '/train'
-        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_' + str(
-            dataset_index) + '/train'
+        directory = first_path + '/train'
         X_fine_tune_train = np.load(directory + 'X_train_CWT.npy', encoding="bytes", allow_pickle=True)
         Y_fine_tune_train = np.load(directory + 'Y_train.npy', encoding="bytes", allow_pickle=True)
         X_TCN_fine_tune_train = np.load(directory + 'X_train.npy', encoding="bytes", allow_pickle=True)
@@ -129,8 +129,7 @@ def calculate_fitness(seedlist):
         # 准备测试集0的数据
         # directory = 'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/test'aile
         # directory =  'saved_data/DB1/52_5/52_5_exercise1/subject_'+ str(dataset_index) + '/test'
-        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_' + str(
-            dataset_index) + '/test'
+        directory = first_path + '/test'
         X_test_0 = np.load(directory + 'X_test_CWT.npy', encoding="bytes", allow_pickle=True)
         Y_test_0 = np.load(directory + 'Y_test.npy', encoding="bytes", allow_pickle=True)
         X_TCN_fine_tune_test = np.load(directory + 'X_test.npy', encoding="bytes", allow_pickle=True)
@@ -230,11 +229,11 @@ def calculate_fitness(seedlist):
 
             total += ground_truth_test_0.size(0)  # 总样本数量
 
-    print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
-    print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
+        print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
+        print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
 
-    accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
-    top3_accuracy_test0.append(100 * float(top3_correct_prediction_test_0) / float(total))
+        accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
+        top3_accuracy_test0.append(100 * float(top3_correct_prediction_test_0) / float(total))
 
     print("AVERAGE ACCURACY TEST 0 %.3f" % np.array(accuracy_test0).mean())
     print("AVERAGE TOP-3 ACCURACY TEST 0 %.3f" % np.array(top3_accuracy_test0).mean())
@@ -263,9 +262,9 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
                 justtest=False):
     since = time.time()
     best_loss = float('inf')
-    if people > 1:
-        model_weights = torch.load('best_weights_source_wavelet_db1.pt')
-        model.load_state_dict(model_weights)
+    # if people > 1:
+    #     model_weights = torch.load('best_weights_source_wavelet_db1.pt')
+    #     model.load_state_dict(model_weights)
     # 耐心值 控制早停 。
     # 当验证损失值连续若干个周期没有改善时，耐心值逐渐减少，如果达到了设定的耐心值阈值，就会停止训练。
     patience = 30
@@ -341,8 +340,8 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
 
                 epoch_loss = running_loss / total  # 当前epoch的平均损失值。
                 epoch_acc = running_corrects / total  # 当前epoch的准确率。
-                # print('{} Loss: {:.8f} Acc: {:.8}'.format(
-                #     phase, epoch_loss, epoch_acc))
+                print('{} Loss: {:.8f} Acc: {:.8}'.format(
+                    phase, epoch_loss, epoch_acc))
 
                 # 90 85.4
                 # deep copy the model
@@ -354,8 +353,8 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
                         # 在验证集上获得最佳损失时保存模型，并将其保存为文件
                         torch.save(model.state_dict(), 'best_weights_source_wavelet_db1.pt')
                         patience = patience_increase + epoch  # 更新耐心值为当前epoch加上预定义的耐心增加值。
-            # print("Epoch {} of {} took {:.3f}s".format(
-            #     epoch + 1, num_epochs, time.time() - epoch_start))
+            print("Epoch {} of {} took {:.3f}s".format(
+                epoch + 1, num_epochs, time.time() - epoch_start))
             if epoch > patience: #如果当前epoch大于耐心值，则跳出循环，结束训练过程
                 break
         print()
@@ -401,6 +400,7 @@ if __name__ == '__main__':
     array_validation_error = []
 
     test_0 = []
+    top3_test_0=[]
     test_1 = []
 
     for i in range(0,1):
@@ -408,15 +408,12 @@ if __name__ == '__main__':
         print(accuracy_test_0)
         print(top3_accuracy_test0)
         test_0.append(accuracy_test_0)
+        top3_test_0.append(top3_accuracy_test0)
 
-        print("TEST 0 SO FAR: ", test_0)
-        print("TEST 1 SO FAR: ", test_1)
-        print("CURRENT AVERAGE : ", (np.mean(test_0) + np.mean(test_1)) / 2.)
 
     print("ACCURACY FINAL TEST 0: ", test_0)
     print("ACCURACY FINAL TEST 0: ", np.mean(test_0))
-    print("ACCURACY FINAL TEST 1: ", test_1)
-    print("ACCURACY FINAL TEST 1: ", np.mean(test_1))
+
 
     with open("../Pytorch_results_4_cycles.txt", "a") as myfile:
         myfile.write("CNN STFT: \n\n")

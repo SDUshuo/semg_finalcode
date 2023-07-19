@@ -81,7 +81,7 @@ def apply_jitter(X_train):
 window_len=52
 window_inc=5
 window_path=str(window_len)+'_'+str(window_inc)
-newpath ='saved_data/DB1/' + window_path + '/' + window_path + '_all_jitr_norm/subject_'
+newpath ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_'
 """
 _exercise1_jitr_norm训练及测试机都是用了家噪音和normlize  家噪音确实效果编号了
 _exercise1只用了norm
@@ -94,7 +94,7 @@ size_non_overlap = 50):
 
     for i in tqdm(range(2, 28)):
         #这是之前加载的字典的数据
-        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_all/data_dict_'
+        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/data_dict_'
         save_path = directory + str(i) + '.pkl'
         with open(save_path, 'rb') as file:
             data_dict = pickle.load(file)

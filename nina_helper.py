@@ -170,7 +170,7 @@ def import_db5(folder_path, subject, rest_length_cap=5):
     fs = 100
 
     data = sio.loadmat(
-        folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E2.mat')
+        folder_path + 's' + str(subject) + '/s' + str(subject)+ '/S' + str(subject) + '_E2_A1.mat')
     emg = np.squeeze(np.array(data['emg']))
     rep = np.squeeze(np.array(data['rerepetition']))
     move = np.squeeze(np.array(data['restimulus']))

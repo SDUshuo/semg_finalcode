@@ -12,7 +12,7 @@ from scipy.stats import mode
 
 import LMF as LMFmodule
 import TCN as TCNmodule
-import db_one_myTRN_attention as myTRN
+import db_one_myTRN_att3CNN as myTRN
 import Wavelet_CNN_Source_Network
 import TRNmodule
 from params_contact import fushion_dim ,rank,hidden_dim ,fushion_2_feature_bottleneck_,\
