@@ -79,12 +79,7 @@ class Net(nn.Module):
         self._input_prelu = nn.PReLU(num_segments)
         self.all_first_conv = nn.Sequential(
             nn.Conv2d(1, 1, kernel_size=3),
-            # nn.BatchNorm2d(2),
-            # nn.ReLU(),
-            # nn.Conv2d(2, 2, kernel_size=3),
-            # nn.BatchNorm2d(2),
-            # nn.ReLU(),
-            # nn.Dropout()
+
         )
         # 创建一个虚拟数据点并将其传递给卷积层来获得其输出尺寸
         x = torch.randn(1, 1, *[10,7])

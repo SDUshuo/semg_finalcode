@@ -79,10 +79,7 @@ class Net(nn.Module):
         # self._input_prelu = pelu((1, 12, 1, 1))
         self._input_prelu = nn.PReLU(num_segments)
         self.all_first_conv = []
-        self.all_first_conv.append(nn.Sequential(
-                nn.Conv2d(1, 1, kernel_size=3),
-            ))
-
+        self.all_first_conv = nn.ModuleList([nn.Conv2d(1, 1, kernel_size=3) for _ in range(4)])
         # 创建一个虚拟数据点并将其传递给卷积层来获得其输出尺寸
         x = torch.randn(1, 1, *[10, 7])
         print(self.all_first_conv[0])
