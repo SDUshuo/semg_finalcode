@@ -95,7 +95,7 @@ def calculate_fitness(seedlist):
 
     model = db_one_model.Net(tcn_inputs_channal=10,number_of_classes=number_of_class)
     print(alpha)
-    for dataset_index in range(1, 28):
+    for dataset_index in range(1, 2):
 
         # 在每次循环开始之前设置随机数种子
         setup_seed(seed)

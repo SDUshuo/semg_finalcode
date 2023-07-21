@@ -12,10 +12,10 @@ from scipy.stats import mode
 
 import LMF as LMFmodule
 import TCN as TCNmodule
-import db_one_myTRN_att3CNN as myTRN
+import db_one_myTRN_attention as myTRN
 import Wavelet_CNN_Source_Network
 import TRNmodule
-from params_contact import fushion_dim ,rank,hidden_dim ,fushion_2_feature_bottleneck_,\
+from params_db5 import fushion_dim ,rank,hidden_dim ,fushion_2_feature_bottleneck_,\
     num_channels,feature_bottleneck
 from final_eval_DB1 import window_len
 number_of_vector_per_example =window_len
@@ -27,7 +27,7 @@ class Net(nn.Module):
         # 创建TCN
         self.TCN = TCNmodule.TemporalConvNet(num_inputs=tcn_inputs_channal, num_channels=num_channels , fc1_dim=number_of_vector_per_example,
                                         fc2_dim=number_of_vector_per_example, class_num=number_of_classes,
-                                        kernel_size=3, dropout=0.3, fenlei=False).cuda()
+                                        kernel_size=3, dropout=0.3, fenlei=True).cuda()
         # self.Slowfushion=  Wavelet_CNN_Source_Network.Net(number_of_class=number_of_classes).cuda()
         # 创建LMF多模态融合
         self.fushion_dim = fushion_dim #两个特征融合后的维度
@@ -45,6 +45,7 @@ class Net(nn.Module):
             return number_params
     def forward(self, input_trn,input_tcn):
         tcn_output = self.TCN(input_tcn)
+        # print(input_trn.shape)
         trn_output = self.TRN(input_trn)
         # slow_fushion_output =self.Slowfushion(input_trn)
         # print("ssssssss")

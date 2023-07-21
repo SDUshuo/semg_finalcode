@@ -150,7 +150,7 @@ class Net(nn.Module):
         # 12帧图片
         for i in range(self.num_segments):
             # [(batchsize,feature_dim),]
-            print(x[:, i, :, :].unsqueeze(1).shape)  #: torch.Size([batchsize, 1, 8, 7])
+            # print(x[:, i, :, :].unsqueeze(1).shape)  #: torch.Size([batchsize, 1, 8, 7])
             '''去掉[i]就行'''
             j = i // 3
             conv_feature = self.all_first_conv[j](x[:, i, :, :].unsqueeze(1)).cuda().view(x.shape[0],
