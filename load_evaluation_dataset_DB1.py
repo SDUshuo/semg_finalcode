@@ -97,9 +97,9 @@ size_non_overlap = 50):
     print("Reading Data")
 
     #从0开始，loadDB1也要改
-    for i in tqdm(range(0, 27)):
+    for i in tqdm(range(0, 10)):
         #这是之前加载的字典的数据
-        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm_relax/data_dict_'
+        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jirm_relax_exer2/data_dict_'
         save_path = directory + str(i) + '.pkl'
         with open(save_path, 'rb') as file:
             data_dict = pickle.load(file)
