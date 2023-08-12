@@ -1,0 +1,2240 @@
+nohup: ignoring input
+++++++++++++
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:42: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.image_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:43: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.time_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:44: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.fusion_weights)
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 186294
+20520
+(20520, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+train Loss: 1.28070147 Acc: 0.66544837
+val Loss: 0.88323422 Acc: 0.73508775
+Epoch 1 of 25 took 7.228s
+train Loss: 0.85435184 Acc: 0.75019497
+val Loss: 0.68469709 Acc: 0.79385966
+Epoch 2 of 25 took 6.983s
+train Loss: 0.68241632 Acc: 0.80082852
+val Loss: 0.59080453 Acc: 0.82456142
+Epoch 3 of 25 took 7.982s
+train Loss: 0.58382515 Acc: 0.8215887
+val Loss: 0.52493243 Acc: 0.83903509
+Epoch 4 of 25 took 7.120s
+train Loss: 0.50836171 Acc: 0.84400588
+val Loss: 0.43548440 Acc: 0.87149125
+Epoch 5 of 25 took 5.927s
+train Loss: 0.43898000 Acc: 0.86642301
+val Loss: 0.49340720 Acc: 0.8644737
+Epoch 6 of 25 took 9.511s
+train Loss: 0.42699285 Acc: 0.87305069
+val Loss: 0.37113279 Acc: 0.8872807
+Epoch 7 of 25 took 8.634s
+train Loss: 0.36359531 Acc: 0.89142305
+val Loss: 0.35714738 Acc: 0.90438598
+Epoch 8 of 25 took 8.051s
+train Loss: 0.33437032 Acc: 0.89951271
+val Loss: 0.31207786 Acc: 0.90438598
+Epoch 9 of 25 took 10.227s
+train Loss: 0.31444670 Acc: 0.90696883
+val Loss: 0.30912384 Acc: 0.91491228
+Epoch 10 of 25 took 6.274s
+train Loss: 0.29750239 Acc: 0.9116472
+val Loss: 0.29777323 Acc: 0.90921056
+Epoch 11 of 25 took 8.613s
+train Loss: 0.26701681 Acc: 0.91959065
+val Loss: 0.23670294 Acc: 0.92763162
+Epoch 12 of 25 took 6.080s
+train Loss: 0.25769544 Acc: 0.92266083
+val Loss: 0.30040996 Acc: 0.91798246
+Epoch 13 of 25 took 6.649s
+train Loss: 0.24292908 Acc: 0.92704684
+val Loss: 0.22304521 Acc: 0.93333334
+Epoch 14 of 25 took 8.769s
+train Loss: 0.22529785 Acc: 0.93596494
+val Loss: 0.26759917 Acc: 0.92894739
+Epoch 15 of 25 took 8.743s
+train Loss: 0.23014278 Acc: 0.92884994
+val Loss: 0.23372917 Acc: 0.93026316
+Epoch 16 of 25 took 7.939s
+train Loss: 0.22060841 Acc: 0.93386942
+val Loss: 0.19861501 Acc: 0.93991232
+Epoch 17 of 25 took 6.873s
+train Loss: 0.20504490 Acc: 0.94010723
+val Loss: 0.21607665 Acc: 0.94166666
+Epoch 18 of 25 took 7.581s
+train Loss: 0.19013007 Acc: 0.94108188
+val Loss: 0.26176984 Acc: 0.94035089
+Epoch 19 of 25 took 11.487s
+train Loss: 0.17305003 Acc: 0.94824564
+val Loss: 0.22603684 Acc: 0.93991232
+Epoch 20 of 25 took 9.414s
+train Loss: 0.17526249 Acc: 0.94722223
+val Loss: 0.20236703 Acc: 0.93201756
+Epoch 21 of 25 took 7.478s
+train Loss: 0.17340872 Acc: 0.9474659
+val Loss: 0.17808180 Acc: 0.94605267
+Epoch 22 of 25 took 8.862s
+train Loss: 0.16140456 Acc: 0.95160824
+val Loss: 0.19955233 Acc: 0.94736844
+Epoch 23 of 25 took 7.096s
+train Loss: 0.16823904 Acc: 0.95004874
+val Loss: 0.16662189 Acc: 0.94692987
+Epoch 24 of 25 took 8.456s
+train Loss: 0.15893306 Acc: 0.95019495
+val Loss: 0.23726561 Acc: 0.94692987
+Epoch 25 of 25 took 7.367s
+
+Training complete in 3m 19s
+Best val loss: 0.166622
+ACCURACY TEST_0 FINAL : 87.233 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.943 %
+20546
+(20546, 12, 10, 7)
+train Loss: 1.42894783 Acc: 0.66966808
+val Loss: 0.74193129 Acc: 0.78264683
+Epoch 1 of 25 took 6.499s
+train Loss: 0.66171555 Acc: 0.79222232
+val Loss: 0.53722212 Acc: 0.83260298
+Epoch 2 of 25 took 7.012s
+train Loss: 0.49874230 Acc: 0.8427918
+val Loss: 0.42131184 Acc: 0.87160385
+Epoch 3 of 25 took 7.522s
+train Loss: 0.38874526 Acc: 0.87647229
+val Loss: 0.38067708 Acc: 0.89000875
+Epoch 4 of 25 took 7.432s
+train Loss: 0.34381770 Acc: 0.89462668
+val Loss: 0.32168279 Acc: 0.90578443
+Epoch 5 of 25 took 7.507s
+train Loss: 0.29402572 Acc: 0.90898472
+val Loss: 0.27291079 Acc: 0.91104293
+Epoch 6 of 25 took 8.187s
+train Loss: 0.26544074 Acc: 0.91759956
+val Loss: 0.26241523 Acc: 0.92594218
+Epoch 7 of 25 took 6.997s
+train Loss: 0.23951405 Acc: 0.92694443
+val Loss: 0.23598003 Acc: 0.92550397
+Epoch 8 of 25 took 8.013s
+train Loss: 0.21569364 Acc: 0.93156821
+val Loss: 0.21090538 Acc: 0.93207711
+Epoch 9 of 25 took 8.918s
+train Loss: 0.19860698 Acc: 0.94037771
+val Loss: 0.19107823 Acc: 0.94609994
+Epoch 10 of 25 took 9.096s
+train Loss: 0.18865217 Acc: 0.94354135
+val Loss: 0.17160973 Acc: 0.94785279
+Epoch 11 of 25 took 7.861s
+train Loss: 0.17332791 Acc: 0.94816512
+val Loss: 0.21588046 Acc: 0.93777388
+Epoch 12 of 25 took 8.018s
+train Loss: 0.19627824 Acc: 0.94125378
+val Loss: 0.19054580 Acc: 0.9417178
+Epoch 13 of 25 took 5.922s
+train Loss: 0.18001363 Acc: 0.94529349
+val Loss: 0.16422228 Acc: 0.94916743
+Epoch 14 of 25 took 11.342s
+train Loss: 0.16223559 Acc: 0.95171809
+val Loss: 0.17020769 Acc: 0.95442593
+Epoch 15 of 25 took 10.581s
+train Loss: 0.15299074 Acc: 0.95454103
+val Loss: 0.18947839 Acc: 0.95749342
+Epoch 16 of 25 took 6.337s
+train Loss: 0.14375179 Acc: 0.95785069
+val Loss: 0.16143381 Acc: 0.95486414
+Epoch 17 of 25 took 6.621s
+train Loss: 0.14589529 Acc: 0.95770466
+val Loss: 0.14262085 Acc: 0.95705521
+Epoch 18 of 25 took 9.272s
+train Loss: 0.14268047 Acc: 0.95804536
+val Loss: 0.14991674 Acc: 0.95398772
+Epoch 19 of 25 took 13.688s
+train Loss: 0.12711214 Acc: 0.96281517
+val Loss: 0.13243768 Acc: 0.96099913
+Epoch 20 of 25 took 11.569s
+train Loss: 0.11509932 Acc: 0.9670009
+val Loss: 0.12103439 Acc: 0.96187556
+Epoch 21 of 25 took 13.405s
+train Loss: 0.10376865 Acc: 0.96889907
+val Loss: 0.12607501 Acc: 0.96231377
+Epoch 22 of 25 took 15.948s
+train Loss: 0.11347771 Acc: 0.9673416
+val Loss: 0.13032071 Acc: 0.96231377
+Epoch 23 of 25 took 16.049s
+train Loss: 0.10759706 Acc: 0.96870434
+val Loss: 0.12218716 Acc: 0.96538126
+Epoch 24 of 25 took 15.612s
+train Loss: 0.10771618 Acc: 0.96792561
+val Loss: 0.12951511 Acc: 0.9666959
+Epoch 25 of 25 took 16.751s
+
+Training complete in 4m 6s
+Best val loss: 0.121034
+ACCURACY TEST_0 FINAL : 84.974 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.607 %
+20523
+(20523, 12, 10, 7)
+train Loss: 1.57755820 Acc: 0.69751006
+val Loss: 0.79422883 Acc: 0.75833333
+Epoch 1 of 25 took 16.787s
+train Loss: 0.70453077 Acc: 0.79101491
+val Loss: 0.50991532 Acc: 0.84956139
+Epoch 2 of 25 took 16.408s
+train Loss: 0.50193219 Acc: 0.85396868
+val Loss: 0.40397244 Acc: 0.88947368
+Epoch 3 of 25 took 16.849s
+train Loss: 0.40616585 Acc: 0.88183987
+val Loss: 0.35466921 Acc: 0.89298248
+Epoch 4 of 25 took 15.625s
+train Loss: 0.35284496 Acc: 0.89636016
+val Loss: 0.31114966 Acc: 0.91052634
+Epoch 5 of 25 took 16.215s
+train Loss: 0.31288348 Acc: 0.90936995
+val Loss: 0.27265381 Acc: 0.92236847
+Epoch 6 of 25 took 16.765s
+train Loss: 0.27353095 Acc: 0.91901767
+val Loss: 0.24155297 Acc: 0.92456144
+Epoch 7 of 25 took 15.854s
+train Loss: 0.25976985 Acc: 0.92403644
+val Loss: 0.21971188 Acc: 0.93508774
+Epoch 8 of 25 took 16.113s
+train Loss: 0.24734502 Acc: 0.92637527
+val Loss: 0.21660215 Acc: 0.93508774
+Epoch 9 of 25 took 15.986s
+train Loss: 0.21344218 Acc: 0.93573064
+val Loss: 0.20722934 Acc: 0.94078952
+Epoch 10 of 25 took 15.868s
+train Loss: 0.20959996 Acc: 0.93914145
+val Loss: 0.18958174 Acc: 0.94868422
+Epoch 11 of 25 took 16.299s
+train Loss: 0.19688324 Acc: 0.94250351
+val Loss: 0.18216155 Acc: 0.94780701
+Epoch 12 of 25 took 16.350s
+train Loss: 0.19091885 Acc: 0.94328314
+val Loss: 0.17470935 Acc: 0.94605267
+Epoch 13 of 25 took 16.065s
+train Loss: 0.18693865 Acc: 0.94503725
+val Loss: 0.20384537 Acc: 0.9438597
+Epoch 14 of 25 took 16.955s
+train Loss: 0.17923239 Acc: 0.94703501
+val Loss: 0.22055420 Acc: 0.94166666
+Epoch 15 of 25 took 16.829s
+train Loss: 0.23016319 Acc: 0.93485355
+val Loss: 0.19675940 Acc: 0.93859649
+Epoch 16 of 25 took 16.159s
+train Loss: 0.18491196 Acc: 0.94532961
+val Loss: 0.18243842 Acc: 0.95175439
+Epoch 17 of 25 took 16.498s
+train Loss: 0.16662469 Acc: 0.9511767
+val Loss: 0.18385529 Acc: 0.94912285
+Epoch 18 of 25 took 16.941s
+train Loss: 0.16257744 Acc: 0.95293081
+val Loss: 0.18925458 Acc: 0.94868422
+Epoch 00019: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 19 of 25 took 15.976s
+train Loss: 0.14622170 Acc: 0.95600057
+val Loss: 0.13977273 Acc: 0.96184212
+Epoch 20 of 25 took 15.701s
+train Loss: 0.11872405 Acc: 0.96540463
+val Loss: 0.13436241 Acc: 0.96096492
+Epoch 21 of 25 took 15.886s
+train Loss: 0.10896617 Acc: 0.96871799
+val Loss: 0.13191793 Acc: 0.96184212
+Epoch 22 of 25 took 17.003s
+train Loss: 0.10545842 Acc: 0.96959507
+val Loss: 0.12601235 Acc: 0.96447372
+Epoch 23 of 25 took 15.824s
+train Loss: 0.10086131 Acc: 0.97134918
+val Loss: 0.12483866 Acc: 0.9666667
+Epoch 24 of 25 took 15.819s
+train Loss: 0.09657777 Acc: 0.9719826
+val Loss: 0.11982772 Acc: 0.9666667
+Epoch 25 of 25 took 16.377s
+
+Training complete in 6m 47s
+Best val loss: 0.119828
+ACCURACY TEST_0 FINAL : 89.685 %
+TOP-3 ACCURACY TEST_0 FINAL : 97.253 %
+20654
+(20654, 12, 10, 7)
+train Loss: 1.59549018 Acc: 0.66055
+val Loss: 0.94257036 Acc: 0.73016566
+Epoch 1 of 25 took 16.706s
+train Loss: 0.89791096 Acc: 0.74014717
+val Loss: 0.72269698 Acc: 0.78465563
+Epoch 2 of 25 took 16.405s
+train Loss: 0.70949836 Acc: 0.79108167
+val Loss: 0.58737255 Acc: 0.82650393
+Epoch 3 of 25 took 15.951s
+train Loss: 0.58147035 Acc: 0.82468289
+val Loss: 0.49407203 Acc: 0.8565824
+Epoch 4 of 25 took 15.985s
+train Loss: 0.48907164 Acc: 0.8513605
+val Loss: 0.43928851 Acc: 0.86965996
+Epoch 5 of 25 took 16.185s
+train Loss: 0.44648091 Acc: 0.86661178
+val Loss: 0.38912127 Acc: 0.8809939
+Epoch 6 of 25 took 16.537s
+train Loss: 0.38691084 Acc: 0.88539749
+val Loss: 0.33904002 Acc: 0.89843071
+Epoch 7 of 25 took 16.418s
+train Loss: 0.35560491 Acc: 0.89449984
+val Loss: 0.34917145 Acc: 0.90235394
+Epoch 8 of 25 took 16.329s
+train Loss: 0.34687565 Acc: 0.89696914
+val Loss: 0.34005509 Acc: 0.89363557
+Epoch 9 of 25 took 15.889s
+train Loss: 0.32591616 Acc: 0.90277916
+val Loss: 0.31632220 Acc: 0.9093287
+Epoch 10 of 25 took 16.002s
+train Loss: 0.29116296 Acc: 0.91173625
+val Loss: 0.28175340 Acc: 0.91543156
+Epoch 11 of 25 took 16.647s
+train Loss: 0.26513109 Acc: 0.92117751
+val Loss: 0.27352090 Acc: 0.91891891
+Epoch 12 of 25 took 16.254s
+train Loss: 0.25061197 Acc: 0.92568028
+val Loss: 0.25991399 Acc: 0.9267655
+Epoch 13 of 25 took 16.899s
+train Loss: 0.25452371 Acc: 0.92505085
+val Loss: 0.28840344 Acc: 0.9163034
+Epoch 14 of 25 took 16.673s
+train Loss: 0.24578899 Acc: 0.92931151
+val Loss: 0.22259442 Acc: 0.93330425
+Epoch 15 of 25 took 14.830s
+train Loss: 0.27522676 Acc: 0.91846615
+val Loss: 0.24706344 Acc: 0.92153442
+Epoch 16 of 25 took 16.565s
+train Loss: 0.23732533 Acc: 0.92834318
+val Loss: 0.23202719 Acc: 0.93156058
+Epoch 17 of 25 took 16.090s
+train Loss: 0.20953166 Acc: 0.93710661
+val Loss: 0.20826685 Acc: 0.93330425
+Epoch 18 of 25 took 16.791s
+train Loss: 0.20938989 Acc: 0.93914014
+val Loss: 0.24539278 Acc: 0.93025285
+Epoch 19 of 25 took 17.366s
+train Loss: 0.20617158 Acc: 0.93768764
+val Loss: 0.20896455 Acc: 0.93722755
+Epoch 20 of 25 took 15.721s
+train Loss: 0.18330056 Acc: 0.94616055
+val Loss: 0.19619388 Acc: 0.93809938
+Epoch 21 of 25 took 16.910s
+train Loss: 0.16313865 Acc: 0.95129275
+val Loss: 0.19034396 Acc: 0.94594598
+Epoch 22 of 25 took 16.598s
+train Loss: 0.16414583 Acc: 0.95158327
+val Loss: 0.17919152 Acc: 0.94420224
+Epoch 23 of 25 took 16.020s
+train Loss: 0.16256048 Acc: 0.95197058
+val Loss: 0.18823378 Acc: 0.94899738
+Epoch 24 of 25 took 16.618s
+train Loss: 0.16449196 Acc: 0.95100224
+val Loss: 0.17372987 Acc: 0.94986922
+Epoch 25 of 25 took 15.742s
+
+Training complete in 6m 48s
+Best val loss: 0.173730
+ACCURACY TEST_0 FINAL : 83.217 %
+TOP-3 ACCURACY TEST_0 FINAL : 93.409 %
+20492
+(20492, 12, 10, 7)
+train Loss: 2.25513727 Acc: 0.58730239
+val Loss: 1.17911395 Acc: 0.66959578
+Epoch 1 of 25 took 16.874s
+train Loss: 1.14101296 Acc: 0.67699587
+val Loss: 0.89220008 Acc: 0.72803164
+Epoch 2 of 25 took 15.976s
+train Loss: 0.90426481 Acc: 0.72999221
+val Loss: 0.70180996 Acc: 0.7781195
+Epoch 3 of 25 took 15.833s
+train Loss: 0.75258013 Acc: 0.76654303
+val Loss: 0.59072596 Acc: 0.80667841
+Epoch 4 of 25 took 17.279s
+train Loss: 0.64849232 Acc: 0.79777473
+val Loss: 0.50915406 Acc: 0.83172232
+Epoch 5 of 25 took 16.844s
+train Loss: 0.56146185 Acc: 0.81836814
+val Loss: 0.44391372 Acc: 0.85237259
+Epoch 6 of 25 took 15.815s
+train Loss: 0.50699407 Acc: 0.83578956
+val Loss: 0.43077612 Acc: 0.85808438
+Epoch 7 of 25 took 16.091s
+train Loss: 0.46022696 Acc: 0.85262543
+val Loss: 0.40043362 Acc: 0.86335677
+Epoch 8 of 25 took 16.189s
+train Loss: 0.41371336 Acc: 0.86384928
+val Loss: 0.35704488 Acc: 0.88181019
+Epoch 9 of 25 took 16.372s
+train Loss: 0.37496410 Acc: 0.87629318
+val Loss: 0.34894514 Acc: 0.88576448
+Epoch 10 of 25 took 16.697s
+train Loss: 0.35383778 Acc: 0.8842963
+val Loss: 0.31816524 Acc: 0.89015818
+Epoch 11 of 25 took 15.211s
+train Loss: 0.32546448 Acc: 0.89376342
+val Loss: 0.29810451 Acc: 0.89850616
+Epoch 12 of 25 took 16.737s
+train Loss: 0.29881520 Acc: 0.90005857
+val Loss: 0.27710830 Acc: 0.9072935
+Epoch 13 of 25 took 16.362s
+train Loss: 0.27947082 Acc: 0.90723211
+val Loss: 0.24481861 Acc: 0.92530757
+Epoch 14 of 25 took 16.104s
+train Loss: 0.24947176 Acc: 0.91850477
+val Loss: 0.21866613 Acc: 0.93409491
+Epoch 15 of 25 took 16.031s
+train Loss: 0.24014720 Acc: 0.91865116
+val Loss: 0.23482793 Acc: 0.92179263
+Epoch 16 of 25 took 17.179s
+train Loss: 0.22862507 Acc: 0.92362875
+val Loss: 0.22212468 Acc: 0.92662567
+Epoch 17 of 25 took 15.689s
+train Loss: 0.22298550 Acc: 0.92577589
+val Loss: 0.24977506 Acc: 0.91739893
+Epoch 18 of 25 took 16.124s
+train Loss: 0.22291689 Acc: 0.9274351
+val Loss: 0.19642244 Acc: 0.93892795
+Epoch 19 of 25 took 17.377s
+train Loss: 0.19978929 Acc: 0.93226624
+val Loss: 0.22120755 Acc: 0.93321615
+Epoch 20 of 25 took 16.534s
+train Loss: 0.18877963 Acc: 0.9366582
+val Loss: 0.19708605 Acc: 0.93453425
+Epoch 21 of 25 took 16.468s
+train Loss: 0.17664158 Acc: 0.94075733
+val Loss: 0.19444901 Acc: 0.93629175
+Epoch 22 of 25 took 15.682s
+train Loss: 0.18138023 Acc: 0.94070858
+val Loss: 0.16345084 Acc: 0.94244289
+Epoch 23 of 25 took 16.905s
+train Loss: 0.16920249 Acc: 0.94207495
+val Loss: 0.18067915 Acc: 0.94024605
+Epoch 24 of 25 took 16.302s
+train Loss: 0.18786086 Acc: 0.93851256
+val Loss: 0.16248029 Acc: 0.94551843
+Epoch 25 of 25 took 16.981s
+
+Training complete in 6m 50s
+Best val loss: 0.162480
+ACCURACY TEST_0 FINAL : 79.064 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.081 %
+20544
+(20544, 12, 10, 7)
+train Loss: 1.68065579 Acc: 0.64928931
+val Loss: 0.93083422 Acc: 0.72918493
+Epoch 1 of 25 took 16.654s
+train Loss: 0.87189971 Acc: 0.74459696
+val Loss: 0.70709304 Acc: 0.79447854
+Epoch 2 of 25 took 16.773s
+train Loss: 0.67330929 Acc: 0.79755646
+val Loss: 0.57724401 Acc: 0.8299737
+Epoch 3 of 25 took 17.043s
+train Loss: 0.54758198 Acc: 0.83051008
+val Loss: 0.48364041 Acc: 0.85582823
+Epoch 4 of 25 took 16.001s
+train Loss: 0.47272662 Acc: 0.85032123
+val Loss: 0.41251224 Acc: 0.87423313
+Epoch 5 of 25 took 16.301s
+train Loss: 0.40572494 Acc: 0.86998636
+val Loss: 0.36957044 Acc: 0.88606489
+Epoch 6 of 25 took 16.030s
+train Loss: 0.37002391 Acc: 0.87962419
+val Loss: 0.34829181 Acc: 0.8983348
+Epoch 7 of 25 took 15.814s
+train Loss: 0.32136110 Acc: 0.89544392
+val Loss: 0.32508439 Acc: 0.90008765
+Epoch 8 of 25 took 16.271s
+train Loss: 0.30102066 Acc: 0.90255058
+val Loss: 0.30207047 Acc: 0.90578443
+Epoch 9 of 25 took 16.107s
+train Loss: 0.27482442 Acc: 0.90878111
+val Loss: 0.26862200 Acc: 0.90841365
+Epoch 10 of 25 took 16.363s
+train Loss: 0.26002694 Acc: 0.91394079
+val Loss: 0.28743021 Acc: 0.91454864
+Epoch 11 of 25 took 15.656s
+train Loss: 0.22415834 Acc: 0.92499024
+val Loss: 0.24580455 Acc: 0.92550397
+Epoch 12 of 25 took 16.868s
+train Loss: 0.20384414 Acc: 0.93224299
+val Loss: 0.22915382 Acc: 0.92594218
+Epoch 13 of 25 took 16.078s
+train Loss: 0.20688991 Acc: 0.93190223
+val Loss: 0.23044223 Acc: 0.92681861
+Epoch 14 of 25 took 16.973s
+train Loss: 0.18187867 Acc: 0.93847346
+val Loss: 0.22074987 Acc: 0.9382121
+Epoch 15 of 25 took 16.421s
+train Loss: 0.18119580 Acc: 0.93969041
+val Loss: 0.21363027 Acc: 0.93996495
+Epoch 16 of 25 took 16.056s
+train Loss: 0.16169970 Acc: 0.94611561
+val Loss: 0.22816113 Acc: 0.9417178
+Epoch 17 of 25 took 15.994s
+train Loss: 0.14478779 Acc: 0.9507885
+val Loss: 0.21515276 Acc: 0.9447853
+Epoch 18 of 25 took 15.629s
+train Loss: 0.15751821 Acc: 0.94674844
+val Loss: 0.19863393 Acc: 0.94127959
+Epoch 19 of 25 took 16.801s
+train Loss: 0.14365732 Acc: 0.95161599
+val Loss: 0.17979721 Acc: 0.94697636
+Epoch 20 of 25 took 16.001s
+train Loss: 0.16060597 Acc: 0.94976634
+val Loss: 0.21035070 Acc: 0.93777388
+Epoch 21 of 25 took 16.219s
+train Loss: 0.15419736 Acc: 0.94762456
+val Loss: 0.18743700 Acc: 0.94434708
+Epoch 22 of 25 took 16.515s
+train Loss: 0.15127604 Acc: 0.95171338
+val Loss: 0.21242533 Acc: 0.94040316
+Epoch 23 of 25 took 16.152s
+train Loss: 0.15389616 Acc: 0.94981498
+val Loss: 0.16889395 Acc: 0.95267308
+Epoch 24 of 25 took 16.863s
+train Loss: 0.11969914 Acc: 0.96144855
+val Loss: 0.15821277 Acc: 0.95617878
+Epoch 25 of 25 took 15.448s
+
+Training complete in 6m 47s
+Best val loss: 0.158213
+ACCURACY TEST_0 FINAL : 80.829 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.339 %
+20601
+(20601, 12, 10, 7)
+train Loss: 1.95603651 Acc: 0.64982283
+val Loss: 1.02008136 Acc: 0.71372378
+Epoch 1 of 25 took 17.070s
+train Loss: 0.85425543 Acc: 0.75350714
+val Loss: 0.68676134 Acc: 0.79632866
+Epoch 2 of 25 took 16.244s
+train Loss: 0.63328036 Acc: 0.81190234
+val Loss: 0.50018892 Acc: 0.84265733
+Epoch 3 of 25 took 16.053s
+train Loss: 0.49928828 Acc: 0.85131788
+val Loss: 0.41248009 Acc: 0.87281466
+Epoch 4 of 25 took 16.270s
+train Loss: 0.40743632 Acc: 0.87529731
+val Loss: 0.33810379 Acc: 0.89816433
+Epoch 5 of 25 took 16.315s
+train Loss: 0.34654972 Acc: 0.89393717
+val Loss: 0.29295555 Acc: 0.90472025
+Epoch 6 of 25 took 16.495s
+train Loss: 0.29627839 Acc: 0.90626669
+val Loss: 0.25188037 Acc: 0.91608393
+Epoch 7 of 25 took 16.855s
+train Loss: 0.28018394 Acc: 0.91291684
+val Loss: 0.24016625 Acc: 0.92395103
+Epoch 8 of 25 took 16.289s
+train Loss: 0.26285258 Acc: 0.91660601
+val Loss: 0.22497964 Acc: 0.93094403
+Epoch 9 of 25 took 16.499s
+train Loss: 0.23193532 Acc: 0.92747927
+val Loss: 0.21171273 Acc: 0.93312937
+Epoch 10 of 25 took 15.957s
+train Loss: 0.20644347 Acc: 0.93349838
+val Loss: 0.19685109 Acc: 0.93575174
+Epoch 11 of 25 took 16.738s
+train Loss: 0.19153617 Acc: 0.93927479
+val Loss: 0.17072621 Acc: 0.944493
+Epoch 12 of 25 took 16.841s
+train Loss: 0.17885299 Acc: 0.94165331
+val Loss: 0.16778389 Acc: 0.9453671
+Epoch 13 of 25 took 15.845s
+train Loss: 0.15866038 Acc: 0.94840056
+val Loss: 0.15217817 Acc: 0.94405591
+Epoch 14 of 25 took 16.867s
+train Loss: 0.15148305 Acc: 0.95131302
+val Loss: 0.15329890 Acc: 0.95104897
+Epoch 15 of 25 took 15.844s
+train Loss: 0.15701771 Acc: 0.94835204
+val Loss: 0.16012010 Acc: 0.94580418
+Epoch 16 of 25 took 15.529s
+train Loss: 0.15059074 Acc: 0.95204115
+val Loss: 0.15200874 Acc: 0.94973773
+Epoch 17 of 25 took 15.973s
+train Loss: 0.14063665 Acc: 0.95306051
+val Loss: 0.15760281 Acc: 0.94755244
+Epoch 18 of 25 took 16.103s
+train Loss: 0.13371383 Acc: 0.95466238
+val Loss: 0.13949479 Acc: 0.95236015
+Epoch 19 of 25 took 15.591s
+train Loss: 0.12513515 Acc: 0.95840007
+val Loss: 0.12782954 Acc: 0.95323426
+Epoch 20 of 25 took 16.344s
+train Loss: 0.11890974 Acc: 0.9606815
+val Loss: 0.11345763 Acc: 0.9632867
+Epoch 21 of 25 took 16.171s
+train Loss: 0.11436980 Acc: 0.96223485
+val Loss: 0.12995683 Acc: 0.95935315
+Epoch 22 of 25 took 15.492s
+train Loss: 0.12139797 Acc: 0.96077859
+val Loss: 0.13103571 Acc: 0.95891607
+Epoch 23 of 25 took 16.836s
+train Loss: 0.10772178 Acc: 0.96325421
+val Loss: 0.12619813 Acc: 0.95804197
+Epoch 24 of 25 took 15.976s
+train Loss: 0.09834761 Acc: 0.966555
+val Loss: 0.12933701 Acc: 0.95891607
+Epoch 25 of 25 took 16.072s
+
+Training complete in 6m 46s
+Best val loss: 0.113458
+ACCURACY TEST_0 FINAL : 85.573 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.916 %
+20518
+(20518, 12, 10, 7)
+train Loss: 1.50042782 Acc: 0.67340869
+val Loss: 0.88358168 Acc: 0.74901271
+Epoch 1 of 25 took 15.782s
+train Loss: 0.80620543 Acc: 0.77239496
+val Loss: 0.63524831 Acc: 0.82843351
+Epoch 2 of 25 took 16.326s
+train Loss: 0.60578488 Acc: 0.82678622
+val Loss: 0.49182483 Acc: 0.85739356
+Epoch 3 of 25 took 16.478s
+train Loss: 0.48891586 Acc: 0.85539526
+val Loss: 0.41325492 Acc: 0.88372093
+Epoch 4 of 25 took 16.435s
+train Loss: 0.41329125 Acc: 0.87337947
+val Loss: 0.36189809 Acc: 0.89381307
+Epoch 5 of 25 took 16.346s
+train Loss: 0.36114498 Acc: 0.88936543
+val Loss: 0.31514139 Acc: 0.90171129
+Epoch 6 of 25 took 15.855s
+train Loss: 0.32441392 Acc: 0.89999026
+val Loss: 0.30489766 Acc: 0.90390521
+Epoch 7 of 25 took 15.655s
+train Loss: 0.29456843 Acc: 0.9101277
+val Loss: 0.28390774 Acc: 0.91838527
+Epoch 8 of 25 took 15.838s
+train Loss: 0.27320833 Acc: 0.91802317
+val Loss: 0.29977968 Acc: 0.91575253
+Epoch 9 of 25 took 16.908s
+train Loss: 0.26009064 Acc: 0.91865677
+val Loss: 0.29192849 Acc: 0.91838527
+Epoch 10 of 25 took 16.237s
+train Loss: 0.25071219 Acc: 0.92533386
+val Loss: 0.30373218 Acc: 0.91048706
+Epoch 11 of 25 took 15.785s
+train Loss: 0.28715490 Acc: 0.91280824
+val Loss: 0.26328613 Acc: 0.9205792
+Epoch 12 of 25 took 15.849s
+train Loss: 0.23890988 Acc: 0.9273321
+val Loss: 0.23772359 Acc: 0.93023252
+Epoch 13 of 25 took 15.835s
+train Loss: 0.23190396 Acc: 0.930695
+val Loss: 0.21568619 Acc: 0.93242651
+Epoch 14 of 25 took 16.231s
+train Loss: 0.20567351 Acc: 0.93751824
+val Loss: 0.22434554 Acc: 0.93154889
+Epoch 15 of 25 took 16.041s
+train Loss: 0.18648536 Acc: 0.94336677
+val Loss: 0.20648520 Acc: 0.93769193
+Epoch 16 of 25 took 17.432s
+train Loss: 0.18995350 Acc: 0.94239205
+val Loss: 0.22643068 Acc: 0.93418163
+Epoch 17 of 25 took 15.960s
+train Loss: 0.18731034 Acc: 0.94205087
+val Loss: 0.23030090 Acc: 0.9280386
+Epoch 18 of 25 took 15.274s
+train Loss: 0.17315904 Acc: 0.94755822
+val Loss: 0.22039382 Acc: 0.93505925
+Epoch 19 of 25 took 16.779s
+train Loss: 0.15563548 Acc: 0.95252949
+val Loss: 0.20652895 Acc: 0.94076347
+Epoch 20 of 25 took 16.577s
+train Loss: 0.15462737 Acc: 0.95374793
+val Loss: 0.20578588 Acc: 0.93725318
+Epoch 21 of 25 took 15.659s
+train Loss: 0.16225923 Acc: 0.95238328
+val Loss: 0.20750891 Acc: 0.93856955
+Epoch 22 of 25 took 15.574s
+train Loss: 0.14855804 Acc: 0.95642847
+val Loss: 0.18582128 Acc: 0.94559014
+Epoch 23 of 25 took 15.285s
+train Loss: 0.14166760 Acc: 0.95774442
+val Loss: 0.19340420 Acc: 0.94032466
+Epoch 24 of 25 took 16.438s
+train Loss: 0.14043826 Acc: 0.95808554
+val Loss: 0.20510937 Acc: 0.94251865
+Epoch 25 of 25 took 15.663s
+
+Training complete in 6m 42s
+Best val loss: 0.185821
+ACCURACY TEST_0 FINAL : 89.212 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.580 %
+20576
+(20576, 12, 10, 7)
+train Loss: 1.60666005 Acc: 0.65970063
+val Loss: 0.96915567 Acc: 0.6977253
+Epoch 1 of 25 took 16.481s
+train Loss: 0.82081993 Acc: 0.74956262
+val Loss: 0.71265007 Acc: 0.77559054
+Epoch 2 of 25 took 16.862s
+train Loss: 0.64150739 Acc: 0.80219674
+val Loss: 0.55050852 Acc: 0.82764655
+Epoch 3 of 25 took 16.233s
+train Loss: 0.54866958 Acc: 0.8297531
+val Loss: 0.49797919 Acc: 0.85258096
+Epoch 4 of 25 took 16.403s
+train Loss: 0.47794391 Acc: 0.85016525
+val Loss: 0.44550972 Acc: 0.86307961
+Epoch 5 of 25 took 16.935s
+train Loss: 0.42030813 Acc: 0.86756414
+val Loss: 0.36915143 Acc: 0.8823272
+Epoch 6 of 25 took 16.135s
+train Loss: 0.37732999 Acc: 0.87854785
+val Loss: 0.34583696 Acc: 0.8888889
+Epoch 7 of 25 took 15.659s
+train Loss: 0.34823314 Acc: 0.8880735
+val Loss: 0.33721100 Acc: 0.89457572
+Epoch 8 of 25 took 16.204s
+train Loss: 0.32262668 Acc: 0.89657855
+val Loss: 0.33212009 Acc: 0.89457572
+Epoch 9 of 25 took 15.983s
+train Loss: 0.31028244 Acc: 0.89930016
+val Loss: 0.31164195 Acc: 0.90638673
+Epoch 10 of 25 took 16.240s
+train Loss: 0.27906785 Acc: 0.90833986
+val Loss: 0.31814710 Acc: 0.90419948
+Epoch 11 of 25 took 16.221s
+train Loss: 0.27297578 Acc: 0.90887445
+val Loss: 0.24207430 Acc: 0.91951007
+Epoch 12 of 25 took 16.058s
+train Loss: 0.26600082 Acc: 0.91480368
+val Loss: 0.24075165 Acc: 0.91951007
+Epoch 13 of 25 took 16.257s
+train Loss: 0.27043090 Acc: 0.91193622
+val Loss: 0.26335540 Acc: 0.91688544
+Epoch 14 of 25 took 16.031s
+train Loss: 0.24816475 Acc: 0.91849726
+val Loss: 0.23986314 Acc: 0.92607176
+Epoch 15 of 25 took 16.323s
+train Loss: 0.23738209 Acc: 0.92316294
+val Loss: 0.26649801 Acc: 0.92213476
+Epoch 16 of 25 took 16.800s
+train Loss: 0.22841720 Acc: 0.92709953
+val Loss: 0.24005033 Acc: 0.92607176
+Epoch 17 of 25 took 15.981s
+train Loss: 0.21162120 Acc: 0.93225116
+val Loss: 0.19714146 Acc: 0.93788278
+Epoch 18 of 25 took 16.363s
+train Loss: 0.21263270 Acc: 0.93341762
+val Loss: 0.22064141 Acc: 0.93000877
+Epoch 19 of 25 took 16.191s
+train Loss: 0.22515205 Acc: 0.92816877
+val Loss: 0.26812448 Acc: 0.91776031
+Epoch 20 of 25 took 16.655s
+train Loss: 0.24572248 Acc: 0.92223954
+val Loss: 0.19918231 Acc: 0.9370079
+Epoch 21 of 25 took 16.025s
+train Loss: 0.20204615 Acc: 0.93565321
+val Loss: 0.21855065 Acc: 0.93088365
+Epoch 22 of 25 took 16.176s
+train Loss: 0.18029897 Acc: 0.94095063
+val Loss: 0.17452209 Acc: 0.94400704
+Epoch 23 of 25 took 16.765s
+train Loss: 0.16238355 Acc: 0.94794911
+val Loss: 0.18127726 Acc: 0.94225723
+Epoch 24 of 25 took 16.112s
+train Loss: 0.18771829 Acc: 0.94095063
+val Loss: 0.18310242 Acc: 0.94181979
+Epoch 25 of 25 took 16.118s
+
+Training complete in 6m 47s
+Best val loss: 0.174522
+ACCURACY TEST_0 FINAL : 83.612 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.715 %
+20565
+(20565, 12, 10, 7)
+train Loss: 1.59007789 Acc: 0.6628738
+val Loss: 0.88938701 Acc: 0.73423815
+Epoch 1 of 25 took 16.569s
+train Loss: 0.88472932 Acc: 0.74403107
+val Loss: 0.70753964 Acc: 0.79991239
+Epoch 2 of 25 took 16.514s
+train Loss: 0.73737899 Acc: 0.78589833
+val Loss: 0.61688655 Acc: 0.8178634
+Epoch 3 of 25 took 8.143s
+train Loss: 0.63987512 Acc: 0.81069773
+val Loss: 0.55198263 Acc: 0.84413308
+Epoch 4 of 25 took 11.454s
+train Loss: 0.55042137 Acc: 0.83165568
+val Loss: 0.46657404 Acc: 0.86252189
+Epoch 5 of 25 took 10.363s
+train Loss: 0.48061840 Acc: 0.85105759
+val Loss: 0.44244865 Acc: 0.87434322
+Epoch 6 of 25 took 8.074s
+train Loss: 0.42906064 Acc: 0.86370045
+val Loss: 0.38029946 Acc: 0.88222414
+Epoch 7 of 25 took 7.562s
+train Loss: 0.38793507 Acc: 0.87823969
+val Loss: 0.38380772 Acc: 0.88922942
+Epoch 8 of 25 took 8.037s
+train Loss: 0.35233165 Acc: 0.88645756
+val Loss: 0.33608803 Acc: 0.89535898
+Epoch 9 of 25 took 8.270s
+train Loss: 0.33138908 Acc: 0.8961342
+val Loss: 0.30454333 Acc: 0.90455341
+Epoch 10 of 25 took 7.594s
+train Loss: 0.31019377 Acc: 0.90294188
+val Loss: 0.26569579 Acc: 0.91243428
+Epoch 11 of 25 took 6.591s
+train Loss: 0.28035391 Acc: 0.91383415
+val Loss: 0.26155634 Acc: 0.91768825
+Epoch 12 of 25 took 8.319s
+train Loss: 0.25933087 Acc: 0.91811329
+val Loss: 0.24489894 Acc: 0.92600697
+Epoch 13 of 25 took 8.255s
+train Loss: 0.25239765 Acc: 0.92302454
+val Loss: 0.23219466 Acc: 0.92338002
+Epoch 14 of 25 took 5.826s
+train Loss: 0.23461429 Acc: 0.92603934
+val Loss: 0.20974368 Acc: 0.93520141
+Epoch 15 of 25 took 7.278s
+train Loss: 0.22005704 Acc: 0.93114513
+val Loss: 0.22886243 Acc: 0.92775828
+Epoch 16 of 25 took 6.839s
+train Loss: 0.22082524 Acc: 0.93177724
+val Loss: 0.20883130 Acc: 0.9321366
+Epoch 17 of 25 took 6.219s
+train Loss: 0.19606016 Acc: 0.9362995
+val Loss: 0.19945196 Acc: 0.93695271
+Epoch 18 of 25 took 7.635s
+train Loss: 0.19106911 Acc: 0.93931437
+val Loss: 0.20061528 Acc: 0.93432575
+Epoch 19 of 25 took 10.609s
+train Loss: 0.17775888 Acc: 0.94310719
+val Loss: 0.18055819 Acc: 0.94483364
+Epoch 20 of 25 took 7.781s
+train Loss: 0.17486375 Acc: 0.94344759
+val Loss: 0.18014890 Acc: 0.94264448
+Epoch 21 of 25 took 8.268s
+train Loss: 0.17043854 Acc: 0.94670552
+val Loss: 0.18064176 Acc: 0.94001752
+Epoch 22 of 25 took 7.209s
+train Loss: 0.16229047 Acc: 0.94762945
+val Loss: 0.16620283 Acc: 0.94527143
+Epoch 23 of 25 took 5.788s
+train Loss: 0.14389541 Acc: 0.95312423
+val Loss: 0.18368681 Acc: 0.94527143
+Epoch 24 of 25 took 8.580s
+train Loss: 0.14502706 Acc: 0.95453435
+val Loss: 0.18987131 Acc: 0.94833624
+Epoch 25 of 25 took 11.533s
+
+Training complete in 3m 39s
+Best val loss: 0.166203
+ACCURACY TEST_0 FINAL : 81.463 %
+TOP-3 ACCURACY TEST_0 FINAL : 93.744 %
+20502
+(20502, 12, 10, 7)
+train Loss: 2.02517942 Acc: 0.58921081
+val Loss: 1.06773695 Acc: 0.67164183
+Epoch 1 of 25 took 8.617s
+train Loss: 1.03215719 Acc: 0.69539553
+val Loss: 0.77882816 Acc: 0.76777875
+Epoch 2 of 25 took 7.949s
+train Loss: 0.79894000 Acc: 0.75724316
+val Loss: 0.63560757 Acc: 0.81079894
+Epoch 3 of 25 took 9.626s
+train Loss: 0.65719530 Acc: 0.79431272
+val Loss: 0.49855091 Acc: 0.84416157
+Epoch 4 of 25 took 9.238s
+train Loss: 0.56055515 Acc: 0.82211488
+val Loss: 0.42584055 Acc: 0.86259878
+Epoch 5 of 25 took 7.657s
+train Loss: 0.48440178 Acc: 0.84616131
+val Loss: 0.39724159 Acc: 0.8735733
+Epoch 6 of 25 took 8.190s
+train Loss: 0.43862056 Acc: 0.85976976
+val Loss: 0.37072830 Acc: 0.88893771
+Epoch 7 of 25 took 7.481s
+train Loss: 0.38662642 Acc: 0.87420738
+val Loss: 0.30787402 Acc: 0.90254611
+Epoch 8 of 25 took 8.336s
+train Loss: 0.34160530 Acc: 0.88879132
+val Loss: 0.30785173 Acc: 0.89201057
+Epoch 9 of 25 took 7.754s
+train Loss: 0.32181823 Acc: 0.89415663
+val Loss: 0.27943006 Acc: 0.91044778
+Epoch 10 of 25 took 6.805s
+train Loss: 0.30005123 Acc: 0.90420443
+val Loss: 0.25151131 Acc: 0.91922742
+Epoch 11 of 25 took 5.865s
+train Loss: 0.27439582 Acc: 0.91044772
+val Loss: 0.25271051 Acc: 0.92449522
+Epoch 12 of 25 took 7.173s
+train Loss: 0.25088353 Acc: 0.91639835
+val Loss: 0.22083667 Acc: 0.92756808
+Epoch 13 of 25 took 7.281s
+train Loss: 0.24258517 Acc: 0.92108083
+val Loss: 0.23259469 Acc: 0.92537314
+Epoch 14 of 25 took 7.068s
+train Loss: 0.24127291 Acc: 0.920398
+val Loss: 0.21864070 Acc: 0.93020195
+Epoch 15 of 25 took 8.578s
+train Loss: 0.21491274 Acc: 0.92966539
+val Loss: 0.22172725 Acc: 0.92888498
+Epoch 16 of 25 took 8.546s
+train Loss: 0.21027270 Acc: 0.9322505
+val Loss: 0.21443425 Acc: 0.92888498
+Epoch 17 of 25 took 5.891s
+train Loss: 0.19105982 Acc: 0.93688416
+val Loss: 0.20070407 Acc: 0.93722564
+Epoch 18 of 25 took 7.471s
+train Loss: 0.17789234 Acc: 0.94122523
+val Loss: 0.17978234 Acc: 0.94249344
+Epoch 19 of 25 took 10.223s
+train Loss: 0.17420728 Acc: 0.94302994
+val Loss: 0.19322321 Acc: 0.94029856
+Epoch 20 of 25 took 11.186s
+train Loss: 0.19252496 Acc: 0.93932295
+val Loss: 0.20162957 Acc: 0.93898159
+Epoch 21 of 25 took 6.896s
+train Loss: 0.19372638 Acc: 0.9378109
+val Loss: 0.22245847 Acc: 0.93898159
+Epoch 22 of 25 took 6.295s
+train Loss: 0.17922130 Acc: 0.94093257
+val Loss: 0.19744118 Acc: 0.93590873
+Epoch 23 of 25 took 6.146s
+train Loss: 0.23444454 Acc: 0.92469025
+val Loss: 0.20310911 Acc: 0.93064094
+Epoch 24 of 25 took 6.338s
+train Loss: 0.19151060 Acc: 0.93722564
+val Loss: 0.19472121 Acc: 0.93766463
+Epoch 00025: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 25 of 25 took 6.966s
+
+Training complete in 3m 14s
+Best val loss: 0.179782
+ACCURACY TEST_0 FINAL : 83.497 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.192 %
+20479
+(20479, 12, 10, 7)
+train Loss: 1.56313253 Acc: 0.67347038
+val Loss: 0.88750936 Acc: 0.74637365
+Epoch 1 of 25 took 8.282s
+train Loss: 0.84988856 Acc: 0.74964595
+val Loss: 0.67191107 Acc: 0.80131871
+Epoch 2 of 25 took 8.727s
+train Loss: 0.71000523 Acc: 0.78582937
+val Loss: 0.55700975 Acc: 0.83516484
+Epoch 3 of 25 took 5.719s
+train Loss: 0.60959646 Acc: 0.81141657
+val Loss: 0.49618996 Acc: 0.84263736
+Epoch 4 of 25 took 6.297s
+train Loss: 0.54374535 Acc: 0.82948387
+val Loss: 0.44711294 Acc: 0.85758245
+Epoch 5 of 25 took 6.186s
+train Loss: 0.48308385 Acc: 0.8491137
+val Loss: 0.41849658 Acc: 0.86461538
+Epoch 6 of 25 took 7.977s
+train Loss: 0.43472990 Acc: 0.86273742
+val Loss: 0.37285347 Acc: 0.87692308
+Epoch 7 of 25 took 6.571s
+train Loss: 0.39552965 Acc: 0.87362665
+val Loss: 0.32746435 Acc: 0.8967033
+Epoch 8 of 25 took 10.097s
+train Loss: 0.35575978 Acc: 0.88363689
+val Loss: 0.31384924 Acc: 0.89714289
+Epoch 9 of 25 took 7.438s
+train Loss: 0.32950133 Acc: 0.89589334
+val Loss: 0.27311830 Acc: 0.91164839
+Epoch 10 of 25 took 7.575s
+train Loss: 0.29982531 Acc: 0.90526879
+val Loss: 0.26088468 Acc: 0.91956043
+Epoch 11 of 25 took 10.522s
+train Loss: 0.29509252 Acc: 0.90634304
+val Loss: 0.28019492 Acc: 0.91912091
+Epoch 12 of 25 took 11.202s
+train Loss: 0.28967056 Acc: 0.90805215
+val Loss: 0.26031128 Acc: 0.92307693
+Epoch 13 of 25 took 5.612s
+train Loss: 0.27350342 Acc: 0.91327703
+val Loss: 0.24731603 Acc: 0.9226374
+Epoch 14 of 25 took 5.747s
+train Loss: 0.25392824 Acc: 0.92108989
+val Loss: 0.24015644 Acc: 0.92615384
+Epoch 15 of 25 took 5.969s
+train Loss: 0.24556884 Acc: 0.92157817
+val Loss: 0.22092594 Acc: 0.93054944
+Epoch 16 of 25 took 7.267s
+train Loss: 0.22467272 Acc: 0.92592412
+val Loss: 0.20484181 Acc: 0.93450552
+Epoch 17 of 25 took 8.508s
+train Loss: 0.20579691 Acc: 0.93271154
+val Loss: 0.20774331 Acc: 0.93274724
+Epoch 18 of 25 took 7.804s
+train Loss: 0.20036214 Acc: 0.93700862
+val Loss: 0.18484539 Acc: 0.94065934
+Epoch 19 of 25 took 5.635s
+train Loss: 0.19423568 Acc: 0.93686211
+val Loss: 0.18808891 Acc: 0.94197804
+Epoch 20 of 25 took 7.326s
+train Loss: 0.18782794 Acc: 0.94023144
+val Loss: 0.18387755 Acc: 0.94637364
+Epoch 21 of 25 took 10.165s
+train Loss: 0.16859499 Acc: 0.94613993
+val Loss: 0.18366089 Acc: 0.94065934
+Epoch 22 of 25 took 7.793s
+train Loss: 0.16580507 Acc: 0.94638407
+val Loss: 0.16877435 Acc: 0.94373626
+Epoch 23 of 25 took 7.497s
+train Loss: 0.16788896 Acc: 0.94716537
+val Loss: 0.18355381 Acc: 0.94065934
+Epoch 24 of 25 took 6.693s
+train Loss: 0.17376701 Acc: 0.94599342
+val Loss: 0.18153414 Acc: 0.93626374
+Epoch 25 of 25 took 8.796s
+
+Training complete in 3m 11s
+Best val loss: 0.168774
+ACCURACY TEST_0 FINAL : 85.596 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.023 %
+20484
+(20484, 12, 10, 7)
+train Loss: 1.50212715 Acc: 0.70308536
+val Loss: 0.91909869 Acc: 0.75966609
+Epoch 1 of 25 took 7.882s
+train Loss: 0.75868424 Acc: 0.78441709
+val Loss: 0.60068741 Acc: 0.83347982
+Epoch 2 of 25 took 10.283s
+train Loss: 0.59469679 Acc: 0.82889086
+val Loss: 0.53009803 Acc: 0.84929705
+Epoch 3 of 25 took 6.085s
+train Loss: 0.50520103 Acc: 0.85066396
+val Loss: 0.43077274 Acc: 0.87829524
+Epoch 4 of 25 took 6.282s
+train Loss: 0.43358446 Acc: 0.86980081
+val Loss: 0.34867724 Acc: 0.89674866
+Epoch 5 of 25 took 9.117s
+train Loss: 0.38547844 Acc: 0.88273776
+val Loss: 0.32125674 Acc: 0.89850616
+Epoch 6 of 25 took 11.437s
+train Loss: 0.34873357 Acc: 0.89318496
+val Loss: 0.29426862 Acc: 0.90949035
+Epoch 7 of 25 took 6.315s
+train Loss: 0.31383358 Acc: 0.90011716
+val Loss: 0.26714365 Acc: 0.91520214
+Epoch 8 of 25 took 8.967s
+train Loss: 0.29079130 Acc: 0.90909982
+val Loss: 0.23508178 Acc: 0.92618632
+Epoch 9 of 25 took 7.022s
+train Loss: 0.26484968 Acc: 0.91500682
+val Loss: 0.22730040 Acc: 0.93057996
+Epoch 10 of 25 took 7.416s
+train Loss: 0.23760808 Acc: 0.92501467
+val Loss: 0.21017937 Acc: 0.93233746
+Epoch 11 of 25 took 6.896s
+train Loss: 0.22411851 Acc: 0.92784613
+val Loss: 0.19736725 Acc: 0.93717051
+Epoch 12 of 25 took 8.355s
+train Loss: 0.20841504 Acc: 0.93297207
+val Loss: 0.18606537 Acc: 0.93717051
+Epoch 13 of 25 took 7.330s
+train Loss: 0.22829445 Acc: 0.92838311
+val Loss: 0.18399111 Acc: 0.94156414
+Epoch 14 of 25 took 6.190s
+train Loss: 0.20136665 Acc: 0.93551064
+val Loss: 0.19440096 Acc: 0.9384886
+Epoch 15 of 25 took 6.425s
+train Loss: 0.18586562 Acc: 0.94005078
+val Loss: 0.16985922 Acc: 0.94595784
+Epoch 16 of 25 took 6.008s
+train Loss: 0.17396605 Acc: 0.94136888
+val Loss: 0.18587381 Acc: 0.9384886
+Epoch 17 of 25 took 5.573s
+train Loss: 0.17463150 Acc: 0.94327283
+val Loss: 0.15721998 Acc: 0.94903338
+Epoch 18 of 25 took 7.297s
+train Loss: 0.15646511 Acc: 0.94976568
+val Loss: 0.16764221 Acc: 0.94771528
+Epoch 19 of 25 took 7.169s
+train Loss: 0.15305328 Acc: 0.95030266
+val Loss: 0.16784111 Acc: 0.94991213
+Epoch 20 of 25 took 6.124s
+train Loss: 0.13859501 Acc: 0.95367116
+val Loss: 0.17409148 Acc: 0.94727594
+Epoch 21 of 25 took 9.521s
+train Loss: 0.16686510 Acc: 0.94752002
+val Loss: 0.15275451 Acc: 0.95210898
+Epoch 22 of 25 took 8.674s
+train Loss: 0.14704509 Acc: 0.95337826
+val Loss: 0.14065900 Acc: 0.95430583
+Epoch 23 of 25 took 11.483s
+train Loss: 0.14046310 Acc: 0.95557511
+val Loss: 0.15694801 Acc: 0.95035148
+Epoch 24 of 25 took 10.100s
+train Loss: 0.15830359 Acc: 0.94937515
+val Loss: 0.15230773 Acc: 0.95166963
+Epoch 25 of 25 took 6.559s
+
+Training complete in 3m 15s
+Best val loss: 0.140659
+ACCURACY TEST_0 FINAL : 88.466 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.722 %
+20539
+(20539, 12, 10, 7)
+train Loss: 1.63571387 Acc: 0.65670192
+val Loss: 0.93743612 Acc: 0.73269063
+Epoch 1 of 25 took 8.597s
+train Loss: 0.90552367 Acc: 0.74380451
+val Loss: 0.72019329 Acc: 0.7900964
+Epoch 2 of 25 took 5.736s
+train Loss: 0.74679999 Acc: 0.78811044
+val Loss: 0.66060642 Acc: 0.80718666
+Epoch 3 of 25 took 9.503s
+train Loss: 0.68385167 Acc: 0.80948442
+val Loss: 0.55369583 Acc: 0.83698511
+Epoch 4 of 25 took 7.010s
+train Loss: 0.56679492 Acc: 0.83757734
+val Loss: 0.46106943 Acc: 0.86108679
+Epoch 5 of 25 took 5.995s
+train Loss: 0.49326810 Acc: 0.8548615
+val Loss: 0.41163431 Acc: 0.87160385
+Epoch 6 of 25 took 9.641s
+train Loss: 0.45471052 Acc: 0.86430693
+val Loss: 0.38696341 Acc: 0.87817705
+Epoch 7 of 25 took 6.712s
+train Loss: 0.41529039 Acc: 0.87779349
+val Loss: 0.34693288 Acc: 0.89088517
+Epoch 8 of 25 took 7.133s
+train Loss: 0.38129811 Acc: 0.8868981
+val Loss: 0.32750910 Acc: 0.90140229
+Epoch 9 of 25 took 7.161s
+train Loss: 0.36103551 Acc: 0.89313018
+val Loss: 0.31284903 Acc: 0.90096408
+Epoch 10 of 25 took 6.844s
+train Loss: 0.32515893 Acc: 0.90126103
+val Loss: 0.27521535 Acc: 0.913234
+Epoch 11 of 25 took 8.604s
+train Loss: 0.30637989 Acc: 0.90793127
+val Loss: 0.27716714 Acc: 0.91761613
+Epoch 12 of 25 took 8.640s
+train Loss: 0.27777351 Acc: 0.91601348
+val Loss: 0.26074052 Acc: 0.91936898
+Epoch 13 of 25 took 6.564s
+train Loss: 0.27104077 Acc: 0.91873997
+val Loss: 0.25781984 Acc: 0.92112184
+Epoch 14 of 25 took 7.406s
+train Loss: 0.27031807 Acc: 0.91830182
+val Loss: 0.25502894 Acc: 0.92857146
+Epoch 15 of 25 took 6.168s
+train Loss: 0.26048605 Acc: 0.91985983
+val Loss: 0.24163388 Acc: 0.92900962
+Epoch 16 of 25 took 8.326s
+train Loss: 0.24821975 Acc: 0.92589712
+val Loss: 0.21348376 Acc: 0.93733567
+Epoch 17 of 25 took 11.545s
+train Loss: 0.23635134 Acc: 0.92653006
+val Loss: 0.21847775 Acc: 0.93952674
+Epoch 18 of 25 took 8.834s
+train Loss: 0.22234716 Acc: 0.93232387
+val Loss: 0.21203780 Acc: 0.93645924
+Epoch 19 of 25 took 7.370s
+train Loss: 0.21848021 Acc: 0.93509912
+val Loss: 0.19037457 Acc: 0.93645924
+Epoch 20 of 25 took 8.052s
+train Loss: 0.21525474 Acc: 0.93446618
+val Loss: 0.24182393 Acc: 0.92725682
+Epoch 21 of 25 took 8.769s
+train Loss: 0.20920612 Acc: 0.93539125
+val Loss: 0.21871092 Acc: 0.94084138
+Epoch 22 of 25 took 7.696s
+train Loss: 0.19428398 Acc: 0.94035739
+val Loss: 0.20069342 Acc: 0.9447853
+Epoch 23 of 25 took 8.542s
+train Loss: 0.18813487 Acc: 0.94201279
+val Loss: 0.18837626 Acc: 0.94609994
+Epoch 24 of 25 took 7.935s
+train Loss: 0.17546451 Acc: 0.9467842
+val Loss: 0.17795383 Acc: 0.94390887
+Epoch 25 of 25 took 8.325s
+
+Training complete in 3m 17s
+Best val loss: 0.177954
+ACCURACY TEST_0 FINAL : 80.728 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.911 %
+20728
+(20728, 12, 10, 7)
+train Loss: 1.70123835 Acc: 0.654863
+val Loss: 0.97911663 Acc: 0.71081197
+Epoch 1 of 25 took 6.451s
+train Loss: 0.91448142 Acc: 0.72481668
+val Loss: 0.78570220 Acc: 0.77377331
+Epoch 2 of 25 took 9.438s
+train Loss: 0.77263066 Acc: 0.76452142
+val Loss: 0.67534733 Acc: 0.79157621
+Epoch 3 of 25 took 6.960s
+train Loss: 0.67978183 Acc: 0.78767848
+val Loss: 0.59403291 Acc: 0.81502384
+Epoch 4 of 25 took 8.338s
+train Loss: 0.61678802 Acc: 0.80649364
+val Loss: 0.53580416 Acc: 0.82674772
+Epoch 5 of 25 took 5.796s
+train Loss: 0.55202814 Acc: 0.82410264
+val Loss: 0.50817585 Acc: 0.83803731
+Epoch 6 of 25 took 8.654s
+train Loss: 0.50384655 Acc: 0.83872056
+val Loss: 0.46024125 Acc: 0.85844547
+Epoch 7 of 25 took 16.630s
+train Loss: 0.45651760 Acc: 0.85372442
+val Loss: 0.43251682 Acc: 0.86669558
+Epoch 8 of 25 took 16.639s
+train Loss: 0.41946971 Acc: 0.86395216
+val Loss: 0.39702337 Acc: 0.8671298
+Epoch 9 of 25 took 16.357s
+train Loss: 0.39159942 Acc: 0.8725878
+val Loss: 0.37798156 Acc: 0.87320882
+Epoch 10 of 25 took 17.133s
+train Loss: 0.36387821 Acc: 0.88281548
+val Loss: 0.34872693 Acc: 0.8862353
+Epoch 11 of 25 took 16.870s
+train Loss: 0.33725772 Acc: 0.88850832
+val Loss: 0.33986427 Acc: 0.89405119
+Epoch 12 of 25 took 16.093s
+train Loss: 0.33220324 Acc: 0.89096874
+val Loss: 0.33259927 Acc: 0.88753796
+Epoch 13 of 25 took 16.648s
+train Loss: 0.30435545 Acc: 0.9001351
+val Loss: 0.30560843 Acc: 0.90751189
+Epoch 14 of 25 took 16.191s
+train Loss: 0.28596204 Acc: 0.90713042
+val Loss: 0.29268922 Acc: 0.90924877
+Epoch 15 of 25 took 16.902s
+train Loss: 0.27627114 Acc: 0.9108935
+val Loss: 0.29081599 Acc: 0.90664351
+Epoch 16 of 25 took 16.259s
+train Loss: 0.26380776 Acc: 0.91446352
+val Loss: 0.26161828 Acc: 0.92053843
+Epoch 17 of 25 took 16.353s
+train Loss: 0.24118895 Acc: 0.92324394
+val Loss: 0.26694141 Acc: 0.91706467
+Epoch 18 of 25 took 15.485s
+train Loss: 0.24264043 Acc: 0.9213624
+val Loss: 0.24085552 Acc: 0.92748588
+Epoch 19 of 25 took 10.034s
+train Loss: 0.22765349 Acc: 0.9272964
+val Loss: 0.24342624 Acc: 0.92835432
+Epoch 20 of 25 took 16.383s
+train Loss: 0.25332297 Acc: 0.92073524
+val Loss: 0.41837875 Acc: 0.87624836
+Epoch 21 of 25 took 16.218s
+train Loss: 0.35352407 Acc: 0.88961792
+val Loss: 0.29543303 Acc: 0.90099865
+Epoch 22 of 25 took 11.361s
+train Loss: 0.27542074 Acc: 0.91065228
+val Loss: 0.25809273 Acc: 0.91576201
+Epoch 23 of 25 took 10.441s
+train Loss: 0.24259589 Acc: 0.9223755
+val Loss: 0.29094502 Acc: 0.91272253
+Epoch 24 of 25 took 6.575s
+train Loss: 0.25769755 Acc: 0.91634506
+val Loss: 0.24270998 Acc: 0.92531478
+Epoch 00025: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 25 of 25 took 8.038s
+
+Training complete in 5m 22s
+Best val loss: 0.240856
+ACCURACY TEST_0 FINAL : 79.507 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.388 %
+20502
+(20502, 12, 10, 7)
+train Loss: 1.14581133 Acc: 0.73690373
+val Loss: 0.64528339 Acc: 0.79754061
+Epoch 1 of 25 took 5.446s
+train Loss: 0.63641277 Acc: 0.81406689
+val Loss: 0.46881511 Acc: 0.86649102
+Epoch 2 of 25 took 6.547s
+train Loss: 0.51585035 Acc: 0.84616131
+val Loss: 0.37215688 Acc: 0.89328063
+Epoch 3 of 25 took 5.584s
+train Loss: 0.43458376 Acc: 0.86962247
+val Loss: 0.32198287 Acc: 0.90338165
+Epoch 4 of 25 took 6.194s
+train Loss: 0.39473138 Acc: 0.88006043
+val Loss: 0.31586789 Acc: 0.90909094
+Epoch 5 of 25 took 9.045s
+train Loss: 0.35421210 Acc: 0.89259583
+val Loss: 0.28720909 Acc: 0.91040844
+Epoch 6 of 25 took 7.961s
+train Loss: 0.32421837 Acc: 0.8992781
+val Loss: 0.24771412 Acc: 0.91699606
+Epoch 7 of 25 took 7.038s
+train Loss: 0.29366483 Acc: 0.90961856
+val Loss: 0.23512177 Acc: 0.92753625
+Epoch 8 of 25 took 7.360s
+train Loss: 0.27318417 Acc: 0.9145937
+val Loss: 0.21155440 Acc: 0.93017131
+Epoch 9 of 25 took 7.191s
+train Loss: 0.24964995 Acc: 0.92078817
+val Loss: 0.20538236 Acc: 0.93763727
+Epoch 10 of 25 took 6.554s
+train Loss: 0.23300502 Acc: 0.92590964
+val Loss: 0.17795530 Acc: 0.94378567
+Epoch 11 of 25 took 7.586s
+train Loss: 0.22147289 Acc: 0.93156761
+val Loss: 0.18794349 Acc: 0.94422489
+Epoch 12 of 25 took 7.019s
+train Loss: 0.21317639 Acc: 0.93229926
+val Loss: 0.18012213 Acc: 0.94290733
+Epoch 13 of 25 took 7.886s
+train Loss: 0.20381744 Acc: 0.93590868
+val Loss: 0.16292661 Acc: 0.95213002
+Epoch 14 of 25 took 11.475s
+train Loss: 0.18754008 Acc: 0.9400546
+val Loss: 0.15812711 Acc: 0.95520425
+Epoch 15 of 25 took 8.733s
+train Loss: 0.18019275 Acc: 0.94346893
+val Loss: 0.15879945 Acc: 0.9468599
+Epoch 16 of 25 took 6.302s
+train Loss: 0.18262241 Acc: 0.94444442
+val Loss: 0.14877313 Acc: 0.95871764
+Epoch 17 of 25 took 8.361s
+train Loss: 0.16324555 Acc: 0.94839525
+val Loss: 0.14061146 Acc: 0.96003515
+Epoch 18 of 25 took 7.543s
+train Loss: 0.15668305 Acc: 0.94956589
+val Loss: 0.14533406 Acc: 0.95827842
+Epoch 19 of 25 took 8.735s
+train Loss: 0.15450959 Acc: 0.95122427
+val Loss: 0.16505925 Acc: 0.95344752
+Epoch 20 of 25 took 8.063s
+train Loss: 0.17405153 Acc: 0.94405419
+val Loss: 0.15806358 Acc: 0.95081246
+Epoch 21 of 25 took 7.197s
+train Loss: 0.14279680 Acc: 0.95654082
+val Loss: 0.14672399 Acc: 0.95652175
+Epoch 22 of 25 took 6.938s
+train Loss: 0.13859388 Acc: 0.9551751
+val Loss: 0.12505079 Acc: 0.96486604
+Epoch 23 of 25 took 5.816s
+train Loss: 0.14050468 Acc: 0.95649201
+val Loss: 0.12737261 Acc: 0.96398771
+Epoch 24 of 25 took 7.038s
+train Loss: 0.13416459 Acc: 0.95785773
+val Loss: 0.13363529 Acc: 0.96310937
+Epoch 25 of 25 took 8.813s
+
+Training complete in 3m 6s
+Best val loss: 0.125051
+ACCURACY TEST_0 FINAL : 86.879 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.104 %
+20785
+(20785, 12, 10, 7)
+train Loss: 1.32135702 Acc: 0.6954053
+val Loss: 0.84347025 Acc: 0.74361199
+Epoch 1 of 25 took 7.299s
+train Loss: 0.81749434 Acc: 0.75968248
+val Loss: 0.67432780 Acc: 0.80164576
+Epoch 2 of 25 took 8.519s
+train Loss: 0.68138387 Acc: 0.7970652
+val Loss: 0.56595215 Acc: 0.83369428
+Epoch 3 of 25 took 4.524s
+train Loss: 0.59824877 Acc: 0.82083231
+val Loss: 0.50256672 Acc: 0.85058469
+Epoch 4 of 25 took 7.923s
+train Loss: 0.53554779 Acc: 0.83507335
+val Loss: 0.44499053 Acc: 0.86790824
+Epoch 5 of 25 took 7.708s
+train Loss: 0.47855204 Acc: 0.85571325
+val Loss: 0.39842717 Acc: 0.88263321
+Epoch 6 of 25 took 7.913s
+train Loss: 0.42644981 Acc: 0.86976182
+val Loss: 0.35469339 Acc: 0.89432657
+Epoch 7 of 25 took 8.417s
+train Loss: 0.40261546 Acc: 0.87572765
+val Loss: 0.34247415 Acc: 0.89432657
+Epoch 8 of 25 took 11.577s
+train Loss: 0.38423957 Acc: 0.88116431
+val Loss: 0.31744642 Acc: 0.89909053
+Epoch 9 of 25 took 7.002s
+train Loss: 0.35915262 Acc: 0.88857347
+val Loss: 0.30312032 Acc: 0.90731919
+Epoch 10 of 25 took 13.331s
+train Loss: 0.32774546 Acc: 0.89752227
+val Loss: 0.27270820 Acc: 0.91641408
+Epoch 11 of 25 took 15.909s
+train Loss: 0.30120566 Acc: 0.90411353
+val Loss: 0.27386246 Acc: 0.91728026
+Epoch 12 of 25 took 13.539s
+train Loss: 0.28677936 Acc: 0.91051239
+val Loss: 0.26413618 Acc: 0.91814643
+Epoch 13 of 25 took 5.656s
+train Loss: 0.26770677 Acc: 0.91628575
+val Loss: 0.23758065 Acc: 0.92983979
+Epoch 14 of 25 took 5.749s
+train Loss: 0.25431125 Acc: 0.91873944
+val Loss: 0.25395980 Acc: 0.92897362
+Epoch 15 of 25 took 9.253s
+train Loss: 0.25954421 Acc: 0.9179697
+val Loss: 0.29177816 Acc: 0.92334348
+Epoch 16 of 25 took 7.201s
+train Loss: 0.31947625 Acc: 0.90242964
+val Loss: 0.25642178 Acc: 0.92161113
+Epoch 17 of 25 took 9.168s
+train Loss: 0.26815508 Acc: 0.91594899
+val Loss: 0.23360313 Acc: 0.93157214
+Epoch 18 of 25 took 7.658s
+train Loss: 0.24060473 Acc: 0.92398363
+val Loss: 0.21834379 Acc: 0.93070596
+Epoch 19 of 25 took 7.645s
+train Loss: 0.22782108 Acc: 0.92720711
+val Loss: 0.21417936 Acc: 0.93546993
+Epoch 20 of 25 took 7.340s
+train Loss: 0.21490156 Acc: 0.93134469
+val Loss: 0.21341125 Acc: 0.93546993
+Epoch 21 of 25 took 5.821s
+train Loss: 0.20937416 Acc: 0.93317294
+val Loss: 0.21947184 Acc: 0.93806845
+Epoch 22 of 25 took 5.775s
+train Loss: 0.21726173 Acc: 0.93206638
+val Loss: 0.20916054 Acc: 0.93590301
+Epoch 23 of 25 took 10.318s
+train Loss: 0.20411263 Acc: 0.93682945
+val Loss: 0.19215518 Acc: 0.9432655
+Epoch 24 of 25 took 11.394s
+train Loss: 0.18375705 Acc: 0.94236225
+val Loss: 0.19960868 Acc: 0.9432655
+Epoch 25 of 25 took 8.849s
+
+Training complete in 3m 35s
+Best val loss: 0.192155
+ACCURACY TEST_0 FINAL : 85.077 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.488 %
+20700
+(20700, 12, 10, 7)
+train Loss: 1.42125720 Acc: 0.67502415
+val Loss: 0.96653012 Acc: 0.72434783
+Epoch 1 of 25 took 7.947s
+train Loss: 0.90897700 Acc: 0.7478261
+val Loss: 0.75065803 Acc: 0.79304349
+Epoch 2 of 25 took 6.427s
+train Loss: 0.75434300 Acc: 0.78483093
+val Loss: 0.68179772 Acc: 0.81043482
+Epoch 3 of 25 took 7.680s
+train Loss: 0.66324954 Acc: 0.80864733
+val Loss: 0.59153070 Acc: 0.83347827
+Epoch 4 of 25 took 6.968s
+train Loss: 0.58364438 Acc: 0.82695651
+val Loss: 0.53020188 Acc: 0.84739131
+Epoch 5 of 25 took 6.890s
+train Loss: 0.54013593 Acc: 0.8411594
+val Loss: 0.48622330 Acc: 0.85652179
+Epoch 6 of 25 took 8.112s
+train Loss: 0.51265631 Acc: 0.84840578
+val Loss: 0.46024109 Acc: 0.86478263
+Epoch 7 of 25 took 6.650s
+train Loss: 0.46525820 Acc: 0.86091787
+val Loss: 0.44079449 Acc: 0.8678261
+Epoch 8 of 25 took 8.127s
+train Loss: 0.44148214 Acc: 0.86695653
+val Loss: 0.41618879 Acc: 0.87956524
+Epoch 9 of 25 took 7.506s
+train Loss: 0.40609630 Acc: 0.87661839
+val Loss: 0.40174166 Acc: 0.88043481
+Epoch 10 of 25 took 6.260s
+train Loss: 0.37902007 Acc: 0.88613528
+val Loss: 0.35418534 Acc: 0.89304352
+Epoch 11 of 25 took 8.556s
+train Loss: 0.35156977 Acc: 0.89304346
+val Loss: 0.37557600 Acc: 0.89347827
+Epoch 12 of 25 took 7.955s
+train Loss: 0.34824326 Acc: 0.89429951
+val Loss: 0.34443291 Acc: 0.8947826
+Epoch 13 of 25 took 11.201s
+train Loss: 0.32682601 Acc: 0.90115941
+val Loss: 0.33561695 Acc: 0.90043479
+Epoch 14 of 25 took 11.597s
+train Loss: 0.31764058 Acc: 0.90280193
+val Loss: 0.30412589 Acc: 0.89652175
+Epoch 15 of 25 took 6.145s
+train Loss: 0.29611957 Acc: 0.90985507
+val Loss: 0.30807369 Acc: 0.90565217
+Epoch 16 of 25 took 7.878s
+train Loss: 0.28585370 Acc: 0.91381645
+val Loss: 0.29228089 Acc: 0.90913045
+Epoch 17 of 25 took 14.253s
+train Loss: 0.27280604 Acc: 0.91526568
+val Loss: 0.27671655 Acc: 0.9130435
+Epoch 18 of 25 took 16.680s
+train Loss: 0.25662166 Acc: 0.92120773
+val Loss: 0.29758440 Acc: 0.91043478
+Epoch 19 of 25 took 16.260s
+train Loss: 0.27182906 Acc: 0.91850239
+val Loss: 0.30178967 Acc: 0.91217393
+Epoch 20 of 25 took 14.529s
+train Loss: 0.24596699 Acc: 0.92570049
+val Loss: 0.26682626 Acc: 0.91695654
+Epoch 21 of 25 took 15.577s
+train Loss: 0.24054049 Acc: 0.92570049
+val Loss: 0.28781644 Acc: 0.91043478
+Epoch 22 of 25 took 10.385s
+train Loss: 0.25057905 Acc: 0.92415458
+val Loss: 0.26236434 Acc: 0.91782612
+Epoch 23 of 25 took 7.572s
+train Loss: 0.22344987 Acc: 0.93246377
+val Loss: 0.23760844 Acc: 0.92782611
+Epoch 24 of 25 took 6.058s
+train Loss: 0.20650584 Acc: 0.93690825
+val Loss: 0.23123185 Acc: 0.92521739
+Epoch 25 of 25 took 8.314s
+
+Training complete in 3m 56s
+Best val loss: 0.231232
+ACCURACY TEST_0 FINAL : 78.699 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.070 %
+20619
+(20619, 12, 10, 7)
+train Loss: 1.77833254 Acc: 0.61404532
+val Loss: 1.16062364 Acc: 0.66826713
+Epoch 1 of 25 took 5.959s
+train Loss: 1.10162267 Acc: 0.68436879
+val Loss: 0.95030619 Acc: 0.73068529
+Epoch 2 of 25 took 7.345s
+train Loss: 0.92920281 Acc: 0.73383772
+val Loss: 0.83044657 Acc: 0.75512874
+Epoch 3 of 25 took 9.281s
+train Loss: 0.82183984 Acc: 0.76245213
+val Loss: 0.74638474 Acc: 0.78131819
+Epoch 4 of 25 took 11.474s
+train Loss: 0.75898822 Acc: 0.77782631
+val Loss: 0.68198652 Acc: 0.80139673
+Epoch 5 of 25 took 16.413s
+train Loss: 0.70304900 Acc: 0.79368544
+val Loss: 0.64098719 Acc: 0.8083806
+Epoch 6 of 25 took 16.557s
+train Loss: 0.67935293 Acc: 0.80304575
+val Loss: 0.61637054 Acc: 0.81405497
+Epoch 7 of 25 took 16.567s
+train Loss: 0.63011191 Acc: 0.81274551
+val Loss: 0.58267564 Acc: 0.81623745
+Epoch 8 of 25 took 16.273s
+train Loss: 0.58335205 Acc: 0.82598573
+val Loss: 0.54363556 Acc: 0.82802266
+Epoch 9 of 25 took 15.546s
+train Loss: 0.54806302 Acc: 0.83646154
+val Loss: 0.51366128 Acc: 0.84155387
+Epoch 10 of 25 took 16.104s
+train Loss: 0.51617667 Acc: 0.8413114
+val Loss: 0.50026001 Acc: 0.84548229
+Epoch 11 of 25 took 15.888s
+train Loss: 0.49123943 Acc: 0.84921676
+val Loss: 0.46908190 Acc: 0.85508507
+Epoch 12 of 25 took 16.551s
+train Loss: 0.49312226 Acc: 0.85396963
+val Loss: 0.52021351 Acc: 0.83544302
+Epoch 13 of 25 took 14.946s
+train Loss: 0.47633303 Acc: 0.85615212
+val Loss: 0.44920945 Acc: 0.85464859
+Epoch 14 of 25 took 15.510s
+train Loss: 0.45057419 Acc: 0.86522138
+val Loss: 0.43795659 Acc: 0.85770404
+Epoch 15 of 25 took 16.905s
+train Loss: 0.42860411 Acc: 0.86847085
+val Loss: 0.40412835 Acc: 0.87123525
+Epoch 16 of 25 took 16.206s
+train Loss: 0.40240072 Acc: 0.8755517
+val Loss: 0.39162382 Acc: 0.87821913
+Epoch 17 of 25 took 15.258s
+train Loss: 0.39136981 Acc: 0.87904364
+val Loss: 0.37379585 Acc: 0.88171101
+Epoch 18 of 25 took 15.634s
+train Loss: 0.37412349 Acc: 0.88374799
+val Loss: 0.40461627 Acc: 0.87123525
+Epoch 19 of 25 took 16.181s
+train Loss: 0.39577042 Acc: 0.87977111
+val Loss: 0.35582929 Acc: 0.88389349
+Epoch 20 of 25 took 16.527s
+train Loss: 0.37125058 Acc: 0.88500899
+val Loss: 0.34297307 Acc: 0.88738543
+Epoch 21 of 25 took 16.239s
+train Loss: 0.35544763 Acc: 0.8876279
+val Loss: 0.32691700 Acc: 0.89218682
+Epoch 22 of 25 took 14.807s
+train Loss: 0.33416680 Acc: 0.89490277
+val Loss: 0.33983359 Acc: 0.89524221
+Epoch 23 of 25 took 15.927s
+train Loss: 0.32664005 Acc: 0.89766723
+val Loss: 0.33056783 Acc: 0.89611518
+Epoch 24 of 25 took 14.172s
+train Loss: 0.31863913 Acc: 0.90033466
+val Loss: 0.31663097 Acc: 0.89175034
+Epoch 25 of 25 took 15.491s
+
+Training complete in 6m 8s
+Best val loss: 0.316631
+ACCURACY TEST_0 FINAL : 80.203 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.155 %
+20754
+(20754, 12, 10, 7)
+train Loss: 2.05244774 Acc: 0.62484342
+val Loss: 1.00634524 Acc: 0.70121425
+Epoch 1 of 25 took 15.009s
+train Loss: 0.97899437 Acc: 0.70029873
+val Loss: 0.77900787 Acc: 0.77276671
+Epoch 2 of 25 took 15.027s
+train Loss: 0.79861069 Acc: 0.76187724
+val Loss: 0.65469494 Acc: 0.8057242
+Epoch 3 of 25 took 16.280s
+train Loss: 0.68116042 Acc: 0.7937265
+val Loss: 0.55698343 Acc: 0.82740676
+Epoch 4 of 25 took 16.729s
+train Loss: 0.59422611 Acc: 0.81945652
+val Loss: 0.49172394 Acc: 0.8417173
+Epoch 5 of 25 took 15.872s
+train Loss: 0.53272567 Acc: 0.83824807
+val Loss: 0.45112203 Acc: 0.86296618
+Epoch 6 of 25 took 15.385s
+train Loss: 0.48687773 Acc: 0.85048664
+val Loss: 0.41243798 Acc: 0.87424111
+Epoch 7 of 25 took 16.797s
+train Loss: 0.43965638 Acc: 0.86412257
+val Loss: 0.36181858 Acc: 0.88551605
+Epoch 8 of 25 took 15.963s
+train Loss: 0.40099293 Acc: 0.87636119
+val Loss: 0.32661319 Acc: 0.89592367
+Epoch 9 of 25 took 15.980s
+train Loss: 0.36756229 Acc: 0.88672066
+val Loss: 0.30355303 Acc: 0.90286213
+Epoch 10 of 25 took 15.818s
+train Loss: 0.34834614 Acc: 0.89399636
+val Loss: 0.28465113 Acc: 0.91066784
+Epoch 11 of 25 took 15.558s
+train Loss: 0.32156088 Acc: 0.9017539
+val Loss: 0.26882682 Acc: 0.91673899
+Epoch 12 of 25 took 16.119s
+train Loss: 0.29992640 Acc: 0.90710223
+val Loss: 0.24804595 Acc: 0.92497832
+Epoch 13 of 25 took 15.951s
+train Loss: 0.28575421 Acc: 0.91187245
+val Loss: 0.26076629 Acc: 0.9232437
+Epoch 14 of 25 took 15.583s
+train Loss: 0.28176261 Acc: 0.91399246
+val Loss: 0.24130715 Acc: 0.92411101
+Epoch 15 of 25 took 15.385s
+train Loss: 0.26555258 Acc: 0.91683531
+val Loss: 0.22410373 Acc: 0.93495232
+Epoch 16 of 25 took 15.761s
+train Loss: 0.27486912 Acc: 0.91490799
+val Loss: 0.22996841 Acc: 0.93104947
+Epoch 17 of 25 took 14.741s
+train Loss: 0.24587702 Acc: 0.92362916
+val Loss: 0.19995371 Acc: 0.94275802
+Epoch 18 of 25 took 16.089s
+train Loss: 0.23139482 Acc: 0.92753208
+val Loss: 0.17887889 Acc: 0.94882917
+Epoch 19 of 25 took 16.414s
+train Loss: 0.21064330 Acc: 0.93394047
+val Loss: 0.18855579 Acc: 0.94145709
+Epoch 20 of 25 took 16.688s
+train Loss: 0.19567882 Acc: 0.93981886
+val Loss: 0.17075142 Acc: 0.95229834
+Epoch 21 of 25 took 15.527s
+train Loss: 0.19937165 Acc: 0.93880701
+val Loss: 0.16765431 Acc: 0.94709456
+Epoch 22 of 25 took 16.132s
+train Loss: 0.18685170 Acc: 0.94189072
+val Loss: 0.15898327 Acc: 0.9492628
+Epoch 23 of 25 took 16.269s
+train Loss: 0.16834096 Acc: 0.94752818
+val Loss: 0.17610536 Acc: 0.94622725
+Epoch 24 of 25 took 15.845s
+train Loss: 0.18079832 Acc: 0.94593817
+val Loss: 0.15867281 Acc: 0.95620126
+Epoch 25 of 25 took 16.638s
+
+Training complete in 6m 38s
+Best val loss: 0.158673
+ACCURACY TEST_0 FINAL : 87.185 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.140 %
+20698
+(20698, 12, 10, 7)
+train Loss: 1.33394830 Acc: 0.67972749
+val Loss: 0.74600384 Acc: 0.78381908
+Epoch 1 of 25 took 15.419s
+train Loss: 0.75758929 Acc: 0.76553291
+val Loss: 0.58398780 Acc: 0.82166159
+Epoch 2 of 25 took 14.838s
+train Loss: 0.63110539 Acc: 0.80099529
+val Loss: 0.50574873 Acc: 0.84428012
+Epoch 3 of 25 took 15.633s
+train Loss: 0.55019920 Acc: 0.82645667
+val Loss: 0.47278744 Acc: 0.85602438
+Epoch 4 of 25 took 14.637s
+train Loss: 0.48622004 Acc: 0.84607208
+val Loss: 0.41134807 Acc: 0.87255329
+Epoch 5 of 25 took 15.520s
+train Loss: 0.43768777 Acc: 0.86249876
+val Loss: 0.38839634 Acc: 0.88081777
+Epoch 6 of 25 took 15.910s
+train Loss: 0.39802906 Acc: 0.87254804
+val Loss: 0.34620589 Acc: 0.89430189
+Epoch 7 of 25 took 16.342s
+train Loss: 0.37799214 Acc: 0.8838535
+val Loss: 0.35119248 Acc: 0.89169204
+Epoch 8 of 25 took 16.544s
+train Loss: 0.34213882 Acc: 0.89148712
+val Loss: 0.31985045 Acc: 0.90778601
+Epoch 9 of 25 took 16.365s
+train Loss: 0.32233044 Acc: 0.89979708
+val Loss: 0.28113642 Acc: 0.91822535
+Epoch 10 of 25 took 14.834s
+train Loss: 0.29562929 Acc: 0.90709245
+val Loss: 0.27342122 Acc: 0.9151805
+Epoch 11 of 25 took 15.697s
+train Loss: 0.27151399 Acc: 0.91289014
+val Loss: 0.23639053 Acc: 0.92735976
+Epoch 12 of 25 took 15.297s
+train Loss: 0.28122326 Acc: 0.91177893
+val Loss: 0.30057156 Acc: 0.90474123
+Epoch 13 of 25 took 15.171s
+train Loss: 0.30675387 Acc: 0.90419364
+val Loss: 0.25703338 Acc: 0.91735536
+Epoch 14 of 25 took 16.502s
+train Loss: 0.25888676 Acc: 0.91709346
+val Loss: 0.24169048 Acc: 0.92344499
+Epoch 15 of 25 took 14.286s
+train Loss: 0.24640999 Acc: 0.92153829
+val Loss: 0.22239949 Acc: 0.93083954
+Epoch 16 of 25 took 15.979s
+train Loss: 0.22118354 Acc: 0.92791575
+val Loss: 0.24099095 Acc: 0.92605484
+Epoch 17 of 25 took 15.552s
+train Loss: 0.22417649 Acc: 0.93057299
+val Loss: 0.20924093 Acc: 0.93953896
+Epoch 18 of 25 took 15.815s
+train Loss: 0.20271922 Acc: 0.93419653
+val Loss: 0.18337780 Acc: 0.93997389
+Epoch 19 of 25 took 16.543s
+train Loss: 0.18898922 Acc: 0.93902791
+val Loss: 0.20249344 Acc: 0.93475425
+Epoch 20 of 25 took 15.666s
+train Loss: 0.19465384 Acc: 0.93801332
+val Loss: 0.17222650 Acc: 0.94562852
+Epoch 21 of 25 took 16.676s
+train Loss: 0.18269513 Acc: 0.94260317
+val Loss: 0.16477104 Acc: 0.95171815
+Epoch 22 of 25 took 15.428s
+train Loss: 0.17067788 Acc: 0.9441492
+val Loss: 0.17206101 Acc: 0.94388866
+Epoch 23 of 25 took 15.193s
+train Loss: 0.16079744 Acc: 0.94849741
+val Loss: 0.19991700 Acc: 0.93823403
+Epoch 24 of 25 took 16.165s
+train Loss: 0.16600738 Acc: 0.94670981
+val Loss: 0.17795770 Acc: 0.94258374
+Epoch 25 of 25 took 16.074s
+
+Training complete in 6m 32s
+Best val loss: 0.164771
+ACCURACY TEST_0 FINAL : 87.467 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.606 %
+20789
+(20789, 12, 10, 7)
+train Loss: 1.42872436 Acc: 0.67333686
+val Loss: 0.81875158 Acc: 0.76006931
+Epoch 1 of 25 took 11.486s
+train Loss: 0.82259387 Acc: 0.76617444
+val Loss: 0.65577925 Acc: 0.8103075
+Epoch 2 of 25 took 7.024s
+train Loss: 0.64443590 Acc: 0.81124634
+val Loss: 0.52885078 Acc: 0.83932441
+Epoch 3 of 25 took 7.683s
+train Loss: 0.54716714 Acc: 0.83895332
+val Loss: 0.46486022 Acc: 0.86184496
+Epoch 4 of 25 took 6.436s
+train Loss: 0.47458560 Acc: 0.85627019
+val Loss: 0.39728183 Acc: 0.88133395
+Epoch 5 of 25 took 5.860s
+train Loss: 0.43302105 Acc: 0.86810333
+val Loss: 0.39115152 Acc: 0.87656999
+Epoch 6 of 25 took 7.084s
+train Loss: 0.39460356 Acc: 0.87820482
+val Loss: 0.33622917 Acc: 0.89475965
+Epoch 7 of 25 took 7.054s
+train Loss: 0.36855501 Acc: 0.88392901
+val Loss: 0.31229581 Acc: 0.89562583
+Epoch 8 of 25 took 7.347s
+train Loss: 0.33856908 Acc: 0.89374191
+val Loss: 0.28779559 Acc: 0.90385449
+Epoch 9 of 25 took 8.583s
+train Loss: 0.31642308 Acc: 0.90095729
+val Loss: 0.28163948 Acc: 0.9068861
+Epoch 10 of 25 took 5.878s
+train Loss: 0.30803328 Acc: 0.9038915
+val Loss: 0.26301570 Acc: 0.91468173
+Epoch 11 of 25 took 7.545s
+train Loss: 0.28052350 Acc: 0.9096638
+val Loss: 0.25941793 Acc: 0.90818536
+Epoch 12 of 25 took 11.249s
+train Loss: 0.26564065 Acc: 0.91562849
+val Loss: 0.23505903 Acc: 0.91641408
+Epoch 13 of 25 took 8.562s
+train Loss: 0.25393064 Acc: 0.91745639
+val Loss: 0.22941215 Acc: 0.92724127
+Epoch 14 of 25 took 8.017s
+train Loss: 0.23770604 Acc: 0.92279571
+val Loss: 0.21293948 Acc: 0.93113905
+Epoch 15 of 25 took 6.640s
+train Loss: 0.22170304 Acc: 0.92698067
+val Loss: 0.20754330 Acc: 0.93503684
+Epoch 16 of 25 took 6.623s
+train Loss: 0.21324598 Acc: 0.93265671
+val Loss: 0.19733585 Acc: 0.93503684
+Epoch 17 of 25 took 9.620s
+train Loss: 0.22152709 Acc: 0.92948198
+val Loss: 0.21587612 Acc: 0.93330449
+Epoch 18 of 25 took 7.410s
+train Loss: 0.20861999 Acc: 0.9345808
+val Loss: 0.19974215 Acc: 0.93503684
+Epoch 19 of 25 took 8.050s
+train Loss: 0.19665667 Acc: 0.9383328
+val Loss: 0.18676428 Acc: 0.93503684
+Epoch 20 of 25 took 7.527s
+train Loss: 0.18634043 Acc: 0.93996829
+val Loss: 0.18938667 Acc: 0.94110006
+Epoch 21 of 25 took 5.614s
+train Loss: 0.18159573 Acc: 0.94155568
+val Loss: 0.18806705 Acc: 0.93850154
+Epoch 22 of 25 took 6.880s
+train Loss: 0.17900245 Acc: 0.9424215
+val Loss: 0.17908141 Acc: 0.94586402
+Epoch 23 of 25 took 7.720s
+train Loss: 0.19103541 Acc: 0.94112277
+val Loss: 0.18395797 Acc: 0.94196624
+Epoch 24 of 25 took 7.899s
+train Loss: 0.18300800 Acc: 0.9405455
+val Loss: 0.18433511 Acc: 0.93763536
+Epoch 25 of 25 took 5.872s
+
+Training complete in 3m 10s
+Best val loss: 0.179081
+ACCURACY TEST_0 FINAL : 86.563 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.431 %
+20646
+(20646, 12, 10, 7)
+train Loss: 1.78708404 Acc: 0.61062676
+val Loss: 1.09880776 Acc: 0.66027039
+Epoch 1 of 25 took 5.649s
+train Loss: 1.05337905 Acc: 0.68739706
+val Loss: 0.91784943 Acc: 0.73397297
+Epoch 2 of 25 took 6.456s
+train Loss: 0.89206946 Acc: 0.73142499
+val Loss: 0.75063819 Acc: 0.78150892
+Epoch 3 of 25 took 8.052s
+train Loss: 0.78688661 Acc: 0.75913012
+val Loss: 0.68305497 Acc: 0.7980811
+Epoch 4 of 25 took 6.922s
+train Loss: 0.69529481 Acc: 0.78257293
+val Loss: 0.58547998 Acc: 0.81988662
+Epoch 5 of 25 took 11.474s
+train Loss: 0.63385348 Acc: 0.79850823
+val Loss: 0.53390758 Acc: 0.83689487
+Epoch 6 of 25 took 8.915s
+train Loss: 0.58414086 Acc: 0.81468564
+val Loss: 0.50030915 Acc: 0.84430873
+Epoch 7 of 25 took 8.067s
+train Loss: 0.54165189 Acc: 0.82742423
+val Loss: 0.46605079 Acc: 0.85172266
+Epoch 8 of 25 took 8.626s
+train Loss: 0.51221875 Acc: 0.83672386
+val Loss: 0.43297933 Acc: 0.86175317
+Epoch 9 of 25 took 7.550s
+train Loss: 0.47819421 Acc: 0.84490943
+val Loss: 0.39919842 Acc: 0.87091148
+Epoch 10 of 25 took 5.488s
+train Loss: 0.44000797 Acc: 0.85735738
+val Loss: 0.38612776 Acc: 0.87527257
+Epoch 11 of 25 took 7.345s
+train Loss: 0.42950688 Acc: 0.86312121
+val Loss: 0.36171561 Acc: 0.89228088
+Epoch 12 of 25 took 8.310s
+train Loss: 0.39798020 Acc: 0.86970842
+val Loss: 0.35530501 Acc: 0.88573921
+Epoch 13 of 25 took 8.199s
+train Loss: 0.39329646 Acc: 0.87009591
+val Loss: 0.33957616 Acc: 0.89664197
+Epoch 14 of 25 took 7.402s
+train Loss: 0.37357258 Acc: 0.8774097
+val Loss: 0.31631779 Acc: 0.90013081
+Epoch 15 of 25 took 8.226s
+train Loss: 0.34279873 Acc: 0.88859826
+val Loss: 0.30562516 Acc: 0.90318358
+Epoch 16 of 25 took 7.775s
+train Loss: 0.32065202 Acc: 0.89344186
+val Loss: 0.27836025 Acc: 0.91365021
+Epoch 17 of 25 took 5.838s
+train Loss: 0.30708929 Acc: 0.89872134
+val Loss: 0.26730625 Acc: 0.92019188
+Epoch 18 of 25 took 5.709s
+train Loss: 0.29293877 Acc: 0.90278989
+val Loss: 0.26084436 Acc: 0.91670299
+Epoch 19 of 25 took 8.776s
+train Loss: 0.27929833 Acc: 0.90705222
+val Loss: 0.26828442 Acc: 0.92237246
+Epoch 20 of 25 took 7.873s
+train Loss: 0.27784323 Acc: 0.90855372
+val Loss: 0.25888322 Acc: 0.92150021
+Epoch 21 of 25 took 5.827s
+train Loss: 0.26102938 Acc: 0.91509253
+val Loss: 0.25830312 Acc: 0.92324466
+Epoch 22 of 25 took 8.741s
+train Loss: 0.25518559 Acc: 0.91741741
+val Loss: 0.23023383 Acc: 0.93065852
+Epoch 23 of 25 took 11.552s
+train Loss: 0.23800266 Acc: 0.92192197
+val Loss: 0.22312492 Acc: 0.93240297
+Epoch 24 of 25 took 9.317s
+train Loss: 0.23524324 Acc: 0.92371404
+val Loss: 0.21966216 Acc: 0.93458349
+Epoch 25 of 25 took 8.896s
+
+Training complete in 3m 17s
+Best val loss: 0.219662
+ACCURACY TEST_0 FINAL : 83.785 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.759 %
+20622
+(20622, 12, 10, 7)
+train Loss: 1.38398463 Acc: 0.70628452
+val Loss: 0.76380928 Acc: 0.75993013
+Epoch 1 of 25 took 7.903s
+train Loss: 0.77069761 Acc: 0.76360196
+val Loss: 0.58761844 Acc: 0.81056303
+Epoch 2 of 25 took 9.285s
+train Loss: 0.62409460 Acc: 0.80103767
+val Loss: 0.49031954 Acc: 0.8450458
+Epoch 3 of 25 took 7.698s
+train Loss: 0.54342289 Acc: 0.82654446
+val Loss: 0.44133433 Acc: 0.86294192
+Epoch 4 of 25 took 8.566s
+train Loss: 0.49415282 Acc: 0.84293473
+val Loss: 0.38653390 Acc: 0.87865561
+Epoch 5 of 25 took 7.017s
+train Loss: 0.44314064 Acc: 0.8583551
+val Loss: 0.34705468 Acc: 0.89000434
+Epoch 6 of 25 took 7.077s
+train Loss: 0.41538260 Acc: 0.8666957
+val Loss: 0.33780512 Acc: 0.89000434
+Epoch 7 of 25 took 5.932s
+train Loss: 0.37274390 Acc: 0.87944913
+val Loss: 0.30623002 Acc: 0.90091664
+Epoch 8 of 25 took 8.330s
+train Loss: 0.35005769 Acc: 0.88473469
+val Loss: 0.26848729 Acc: 0.91357481
+Epoch 9 of 25 took 7.842s
+train Loss: 0.32837864 Acc: 0.892057
+val Loss: 0.26226686 Acc: 0.91881275
+Epoch 10 of 25 took 8.501s
+train Loss: 0.31094170 Acc: 0.89763355
+val Loss: 0.24652703 Acc: 0.91837621
+Epoch 11 of 25 took 8.394s
+train Loss: 0.29122612 Acc: 0.90476185
+val Loss: 0.23770948 Acc: 0.92797905
+Epoch 12 of 25 took 6.330s
+train Loss: 0.27514401 Acc: 0.91009599
+val Loss: 0.22529534 Acc: 0.92623305
+Epoch 13 of 25 took 7.463s
+train Loss: 0.25802007 Acc: 0.91305399
+val Loss: 0.23663247 Acc: 0.92055869
+Epoch 14 of 25 took 7.190s
+train Loss: 0.25684399 Acc: 0.91547859
+val Loss: 0.22366678 Acc: 0.92666954
+Epoch 15 of 25 took 8.903s
+train Loss: 0.25157586 Acc: 0.91649693
+val Loss: 0.20317902 Acc: 0.93147093
+Epoch 16 of 25 took 7.150s
+train Loss: 0.23829470 Acc: 0.92134613
+val Loss: 0.21557834 Acc: 0.93190742
+Epoch 17 of 25 took 9.633s
+train Loss: 0.25709047 Acc: 0.91673934
+val Loss: 0.19691581 Acc: 0.93758184
+Epoch 18 of 25 took 8.182s
+train Loss: 0.22638045 Acc: 0.92488599
+val Loss: 0.20090227 Acc: 0.93103445
+Epoch 19 of 25 took 7.685s
+train Loss: 0.20938141 Acc: 0.92988068
+val Loss: 0.19290320 Acc: 0.93801832
+Epoch 20 of 25 took 10.260s
+train Loss: 0.19929531 Acc: 0.93376005
+val Loss: 0.18517728 Acc: 0.94631165
+Epoch 21 of 25 took 11.394s
+train Loss: 0.19693225 Acc: 0.93477833
+val Loss: 0.19070635 Acc: 0.94063723
+Epoch 22 of 25 took 8.646s
+train Loss: 0.22475577 Acc: 0.9262923
+val Loss: 0.17753373 Acc: 0.93889129
+Epoch 23 of 25 took 6.928s
+train Loss: 0.19352007 Acc: 0.93468136
+val Loss: 0.18980267 Acc: 0.94281971
+Epoch 24 of 25 took 7.722s
+train Loss: 0.19468264 Acc: 0.93603915
+val Loss: 0.17190880 Acc: 0.94718462
+Epoch 25 of 25 took 7.115s
+
+Training complete in 3m 21s
+Best val loss: 0.171909
+ACCURACY TEST_0 FINAL : 85.848 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.791 %
+20660
+(20660, 12, 10, 7)
+train Loss: 1.67298961 Acc: 0.65411425
+val Loss: 0.88484743 Acc: 0.72636169
+Epoch 1 of 25 took 5.516s
+train Loss: 0.87551879 Acc: 0.72168446
+val Loss: 0.69981852 Acc: 0.77777779
+Epoch 2 of 25 took 6.871s
+train Loss: 0.70201372 Acc: 0.77671832
+val Loss: 0.55327972 Acc: 0.822658
+Epoch 3 of 25 took 5.620s
+train Loss: 0.59384260 Acc: 0.81050342
+val Loss: 0.46038716 Acc: 0.85925931
+Epoch 4 of 25 took 7.138s
+train Loss: 0.53533137 Acc: 0.83228463
+val Loss: 0.44252660 Acc: 0.86840963
+Epoch 5 of 25 took 7.139s
+train Loss: 0.48473820 Acc: 0.84540176
+val Loss: 0.38494321 Acc: 0.88671029
+Epoch 6 of 25 took 8.341s
+train Loss: 0.43917967 Acc: 0.86021298
+val Loss: 0.35776503 Acc: 0.88801748
+Epoch 7 of 25 took 6.845s
+train Loss: 0.40814839 Acc: 0.86916751
+val Loss: 0.33552018 Acc: 0.9006536
+Epoch 8 of 25 took 7.374s
+train Loss: 0.38554009 Acc: 0.8759923
+val Loss: 0.28396060 Acc: 0.91328979
+Epoch 9 of 25 took 6.783s
+train Loss: 0.33757755 Acc: 0.89196515
+val Loss: 0.26282836 Acc: 0.91546845
+Epoch 10 of 25 took 6.480s
+train Loss: 0.31992052 Acc: 0.89598256
+val Loss: 0.25397782 Acc: 0.91633987
+Epoch 11 of 25 took 8.121s
+train Loss: 0.29967994 Acc: 0.90183932
+val Loss: 0.25259087 Acc: 0.92505449
+Epoch 12 of 25 took 11.583s
+train Loss: 0.30257900 Acc: 0.90140367
+val Loss: 0.23406966 Acc: 0.92592597
+Epoch 13 of 25 took 8.532s
+train Loss: 0.29232729 Acc: 0.90396905
+val Loss: 0.23901591 Acc: 0.92244011
+Epoch 14 of 25 took 7.755s
+train Loss: 0.27206350 Acc: 0.91098744
+val Loss: 0.21347034 Acc: 0.93769068
+Epoch 15 of 25 took 7.447s
+train Loss: 0.25642556 Acc: 0.91597289
+val Loss: 0.19696815 Acc: 0.94074076
+Epoch 16 of 25 took 5.754s
+train Loss: 0.24900060 Acc: 0.92158765
+val Loss: 0.19657664 Acc: 0.93769068
+Epoch 17 of 25 took 6.923s
+train Loss: 0.23205639 Acc: 0.92313653
+val Loss: 0.17236209 Acc: 0.94814819
+Epoch 18 of 25 took 7.781s
+train Loss: 0.23392981 Acc: 0.92444336
+val Loss: 0.19123762 Acc: 0.94335514
+Epoch 19 of 25 took 7.413s
+train Loss: 0.21701754 Acc: 0.93088096
+val Loss: 0.15694644 Acc: 0.95250547
+Epoch 20 of 25 took 6.809s
+train Loss: 0.20183334 Acc: 0.93339789
+val Loss: 0.16086004 Acc: 0.95337695
+Epoch 21 of 25 took 8.252s
+train Loss: 0.17970425 Acc: 0.94162637
+val Loss: 0.14356886 Acc: 0.95686275
+Epoch 22 of 25 took 8.752s
+train Loss: 0.17357852 Acc: 0.9440949
+val Loss: 0.13804265 Acc: 0.96034861
+Epoch 23 of 25 took 7.119s
+train Loss: 0.17072514 Acc: 0.94433689
+val Loss: 0.14720640 Acc: 0.95599133
+Epoch 24 of 25 took 8.014s
+train Loss: 0.18145541 Acc: 0.9428848
+val Loss: 0.13119585 Acc: 0.95816994
+Epoch 25 of 25 took 8.337s
+
+Training complete in 3m 7s
+Best val loss: 0.131196
+ACCURACY TEST_0 FINAL : 88.134 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.508 %
+20743
+(20743, 12, 10, 7)
+train Loss: 1.12537334 Acc: 0.74449211
+val Loss: 0.60379791 Acc: 0.81553823
+Epoch 1 of 25 took 5.966s
+train Loss: 0.62485722 Acc: 0.81184012
+val Loss: 0.45916248 Acc: 0.85503471
+Epoch 2 of 25 took 8.864s
+train Loss: 0.52105324 Acc: 0.84134406
+val Loss: 0.38829587 Acc: 0.87847221
+Epoch 3 of 25 took 10.033s
+train Loss: 0.45566052 Acc: 0.85995275
+val Loss: 0.34965450 Acc: 0.8923611
+Epoch 4 of 25 took 7.359s
+train Loss: 0.40281612 Acc: 0.87456006
+val Loss: 0.31597433 Acc: 0.90190971
+Epoch 5 of 25 took 7.794s
+train Loss: 0.36949409 Acc: 0.88285202
+val Loss: 0.29263605 Acc: 0.90972221
+Epoch 6 of 25 took 10.000s
+train Loss: 0.34274325 Acc: 0.89104754
+val Loss: 0.28426561 Acc: 0.91753471
+Epoch 7 of 25 took 11.485s
+train Loss: 0.31782015 Acc: 0.89765221
+val Loss: 0.26467670 Acc: 0.91883683
+Epoch 8 of 25 took 7.754s
+train Loss: 0.30838453 Acc: 0.89914668
+val Loss: 0.24884285 Acc: 0.921875
+Epoch 9 of 25 took 7.189s
+train Loss: 0.27931536 Acc: 0.90902954
+val Loss: 0.23654553 Acc: 0.921875
+Epoch 10 of 25 took 9.120s
+train Loss: 0.26310648 Acc: 0.91245234
+val Loss: 0.21611140 Acc: 0.93619794
+Epoch 11 of 25 took 5.916s
+train Loss: 0.24815064 Acc: 0.91669476
+val Loss: 0.20833902 Acc: 0.9314236
+Epoch 12 of 25 took 6.186s
+train Loss: 0.23447028 Acc: 0.92194957
+val Loss: 0.19682028 Acc: 0.94010419
+Epoch 13 of 25 took 7.177s
+train Loss: 0.21806802 Acc: 0.92585444
+val Loss: 0.19986389 Acc: 0.94053823
+Epoch 14 of 25 took 6.662s
+train Loss: 0.21700100 Acc: 0.92792743
+val Loss: 0.19431466 Acc: 0.93489581
+Epoch 15 of 25 took 8.030s
+train Loss: 0.19781722 Acc: 0.93453211
+val Loss: 0.18370061 Acc: 0.94227433
+Epoch 16 of 25 took 6.085s
+train Loss: 0.20080599 Acc: 0.9333269
+val Loss: 0.18000717 Acc: 0.94314235
+Epoch 17 of 25 took 6.616s
+train Loss: 0.18763275 Acc: 0.93790674
+val Loss: 0.16684907 Acc: 0.94791669
+Epoch 18 of 25 took 6.982s
+train Loss: 0.17843062 Acc: 0.9413296
+val Loss: 0.16227838 Acc: 0.95008683
+Epoch 19 of 25 took 9.346s
+train Loss: 0.17760215 Acc: 0.94118494
+val Loss: 0.17327266 Acc: 0.94791669
+Epoch 20 of 25 took 5.923s
+train Loss: 0.17758368 Acc: 0.94181168
+val Loss: 0.16943242 Acc: 0.94835073
+Epoch 21 of 25 took 7.352s
+train Loss: 0.17219652 Acc: 0.94301689
+val Loss: 0.16587568 Acc: 0.95355904
+Epoch 22 of 25 took 7.689s
+train Loss: 0.15413158 Acc: 0.94827169
+val Loss: 0.16245696 Acc: 0.95442706
+Epoch 23 of 25 took 9.438s
+train Loss: 0.15359443 Acc: 0.95097136
+val Loss: 0.16837895 Acc: 0.95399308
+Epoch 24 of 25 took 11.450s
+train Loss: 0.14778839 Acc: 0.95039284
+val Loss: 0.15498658 Acc: 0.95529515
+Epoch 25 of 25 took 7.050s
+
+Training complete in 3m 17s
+Best val loss: 0.154987
+ACCURACY TEST_0 FINAL : 89.528 %
+TOP-3 ACCURACY TEST_0 FINAL : 97.149 %
+20544
+(20544, 12, 10, 7)
+train Loss: 1.75154135 Acc: 0.61993766
+val Loss: 1.02361480 Acc: 0.68711656
+Epoch 1 of 25 took 7.563s
+train Loss: 1.08321278 Acc: 0.68628305
+val Loss: 0.85000164 Acc: 0.74145484
+Epoch 2 of 25 took 8.603s
+train Loss: 0.92417211 Acc: 0.7255646
+val Loss: 0.73816936 Acc: 0.77914113
+Epoch 3 of 25 took 7.677s
+train Loss: 0.81717254 Acc: 0.75282317
+val Loss: 0.67832624 Acc: 0.79535496
+Epoch 4 of 25 took 7.687s
+train Loss: 0.73993511 Acc: 0.77078462
+val Loss: 0.59805085 Acc: 0.81945664
+Epoch 5 of 25 took 8.268s
+train Loss: 0.69595630 Acc: 0.78679901
+val Loss: 0.56338112 Acc: 0.82427698
+Epoch 6 of 25 took 7.984s
+train Loss: 0.64910580 Acc: 0.79668027
+val Loss: 0.54623026 Acc: 0.83260298
+Epoch 7 of 25 took 8.666s
+train Loss: 0.61641088 Acc: 0.80704826
+val Loss: 0.50427427 Acc: 0.8431201
+Epoch 8 of 25 took 8.274s
+train Loss: 0.56480839 Acc: 0.82311136
+val Loss: 0.47875889 Acc: 0.85319895
+Epoch 9 of 25 took 8.782s
+train Loss: 0.52919201 Acc: 0.83026671
+val Loss: 0.47156417 Acc: 0.85056967
+Epoch 10 of 25 took 7.764s
+train Loss: 0.51656437 Acc: 0.83167833
+val Loss: 0.42896604 Acc: 0.86459249
+Epoch 11 of 25 took 7.111s
+train Loss: 0.48394994 Acc: 0.84394467
+val Loss: 0.42683794 Acc: 0.87116563
+Epoch 12 of 25 took 7.740s
+train Loss: 0.48312968 Acc: 0.84457749
+val Loss: 0.41076052 Acc: 0.86809814
+Epoch 13 of 25 took 8.471s
+train Loss: 0.44775592 Acc: 0.85426402
+val Loss: 0.38501682 Acc: 0.88212097
+Epoch 14 of 25 took 7.358s
+train Loss: 0.43852917 Acc: 0.85737926
+val Loss: 0.38325914 Acc: 0.88255918
+Epoch 15 of 25 took 10.192s
+train Loss: 0.42980717 Acc: 0.86249024
+val Loss: 0.37484387 Acc: 0.88343561
+Epoch 16 of 25 took 6.620s
+train Loss: 0.39502698 Acc: 0.86940223
+val Loss: 0.36383126 Acc: 0.88562667
+Epoch 17 of 25 took 9.906s
+train Loss: 0.38079300 Acc: 0.87388045
+val Loss: 0.35641191 Acc: 0.89088517
+Epoch 18 of 25 took 5.073s
+train Loss: 0.37894184 Acc: 0.87310159
+val Loss: 0.33072134 Acc: 0.89745837
+Epoch 19 of 25 took 9.616s
+train Loss: 0.35936282 Acc: 0.87962419
+val Loss: 0.34148752 Acc: 0.89219981
+Epoch 20 of 25 took 11.513s
+train Loss: 0.35437268 Acc: 0.88322622
+val Loss: 0.30907605 Acc: 0.90972829
+Epoch 21 of 25 took 8.088s
+train Loss: 0.34456306 Acc: 0.88463783
+val Loss: 0.31163875 Acc: 0.90140229
+Epoch 22 of 25 took 9.106s
+train Loss: 0.34442761 Acc: 0.88653618
+val Loss: 0.35701755 Acc: 0.88387382
+Epoch 23 of 25 took 6.201s
+train Loss: 0.35489305 Acc: 0.88424844
+val Loss: 0.32967422 Acc: 0.89614373
+Epoch 24 of 25 took 6.442s
+train Loss: 0.35081614 Acc: 0.88327491
+val Loss: 0.29924755 Acc: 0.90666085
+Epoch 25 of 25 took 7.655s
+
+Training complete in 3m 22s
+Best val loss: 0.299248
+ACCURACY TEST_0 FINAL : 80.798 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.361 %
+AVERAGE ACCURACY TEST 0 84.549
+AVERAGE TOP-3 ACCURACY TEST 0 94.718
+[87.23329835606856, 84.97427709774703, 89.68450903934774, 83.2169084721476, 79.06447091800982, 80.82937972236866, 85.57284299858557, 89.21205711263882, 83.61209964412811, 81.46315603463509, 83.4965034965035, 85.5962011959198, 88.46625766871166, 80.72816383686329, 79.50660792951543, 86.87918281084889, 85.07724719101124, 78.698752228164, 80.20295531422468, 87.18531468531468, 87.46736292428199, 86.56316916488223, 83.7847344354555, 85.84791269703794, 88.13412091730369, 89.52833509327702, 80.79761068165847]
+[95.94263728576425, 94.60706049317012, 97.25274725274726, 93.40856170517642, 92.0812894183602, 92.33878053066245, 95.91584158415841, 96.58029261413714, 94.7153024911032, 93.74447782293691, 95.1923076923077, 95.02286317270489, 96.72217353198948, 92.91090495361456, 92.38766519823788, 95.10390982740401, 95.4880617977528, 91.06951871657753, 90.15488695032936, 95.13986013986013, 96.60574412532637, 96.43112062812277, 94.75905733380232, 95.79075004330504, 96.5079916608756, 97.14889123548046, 94.36050597329586]
+ACCURACY FINAL TEST 0:  [[87.23329835606856, 84.97427709774703, 89.68450903934774, 83.2169084721476, 79.06447091800982, 80.82937972236866, 85.57284299858557, 89.21205711263882, 83.61209964412811, 81.46315603463509, 83.4965034965035, 85.5962011959198, 88.46625766871166, 80.72816383686329, 79.50660792951543, 86.87918281084889, 85.07724719101124, 78.698752228164, 80.20295531422468, 87.18531468531468, 87.46736292428199, 86.56316916488223, 83.7847344354555, 85.84791269703794, 88.13412091730369, 89.52833509327702, 80.79761068165847]]
+ACCURACY FINAL TEST 0:  84.54901598765373
+ACCURACY FINAL top3  TEST 0:  94.71789645108159
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)

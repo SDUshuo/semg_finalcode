@@ -82,30 +82,30 @@ def import_db1(folder_path, subject,rest_length_cap=5):
     fs = 100
 
 
-    data = sio.loadmat(
-        folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E2.mat')
+    # data = sio.loadmat(
+    #     folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E2.mat')
+    # emg = np.squeeze(np.array(data['emg']))
+    # rep = np.squeeze(np.array(data['rerepetition']))
+    # move = np.squeeze(np.array(data['restimulus']))
+
+    data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E1.mat')
     emg = np.squeeze(np.array(data['emg']))
     rep = np.squeeze(np.array(data['rerepetition']))
     move = np.squeeze(np.array(data['restimulus']))
 
-    # data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E1.mat')
-    # emg = np.squeeze(np.array(data['emg']))
-    # rep = np.squeeze(np.array(data['rerepetition']))
-    # move = np.squeeze(np.array(data['restimulus']))
-    #
-    # data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) +'_A1_E2.mat')
-    # emg = np.vstack((emg, np.array(data['emg'])))
-    # rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
-    # move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
-    # move_tmp[move_tmp != 0] += max(move)
-    # move = np.append(move, move_tmp)
+    data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) +'_A1_E2.mat')
+    emg = np.vstack((emg, np.array(data['emg'])))
+    rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
+    move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
+    move_tmp[move_tmp != 0] += max(move)
+    move = np.append(move, move_tmp)
 
-    # data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E3.mat')
-    # emg = np.vstack((emg, np.array(data['emg'])))
-    # rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
-    # move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
-    # move_tmp[move_tmp != 0] += max(move)
-    # move = np.append(move, move_tmp)
+    data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E3.mat')
+    emg = np.vstack((emg, np.array(data['emg'])))
+    rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
+    move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
+    move_tmp[move_tmp != 0] += max(move)
+    move = np.append(move, move_tmp)
 
     move = move.astype('int8')  # To minimise overhead
 

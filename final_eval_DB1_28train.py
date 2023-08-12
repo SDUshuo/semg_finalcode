@@ -22,9 +22,9 @@ from load_evaluation_dataset_DB1 import newpath, window_inc, window_len, window_
 
 number_of_class = 27
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-batchsize = 128
+batchsize = 512
 
-epochs = 120
+epochs = 6
 lr = 0.01
 
 

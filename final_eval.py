@@ -65,17 +65,18 @@ def setup_seed(seed):
 
 def calculate_fitness(examples_training, labels_training,examples_test_0, labels_test_0,examples_test_1,
                       labels_test_1,examples_training_TCN, examples_validation0_TCN,examples_validation1_TCN):
-    accuracy_test0 = [] # 存储测试集0的准确率
-    accuracy_test1 = []# 存储测试集1的准确率
+    accuracy_test0 = []  # 存储测试集0的准确率
+    top3_accuracy_test0 = []
 
     seed = 3
 
     # #创建slowfushion
     # CNN = Wavelet_CNN_Source_Network.Net(number_of_class=7, batch_size=batchsize, number_of_channel=12,
     #                                      learning_rate=0.0404709, dropout=.5).cuda()
+    setup_seed(seed)
     model = finalmodel.Net(tcn_inputs_channal=8,number_of_classes=7)
 
-    for dataset_index in range(1, 18):
+    for dataset_index in range(0, 18):
         # 在每次循环开始之前设置随机数种子
         setup_seed(seed)
         # 准备用于微调的训练集数据
@@ -102,7 +103,7 @@ def calculate_fitness(examples_training, labels_training,examples_test_0, labels
         # 打乱用于微调的训练数据
         X_fine_tune, Y_fine_tune,X_fine_tune_TCN = scramble(X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train)
 
-        val_scale=0.1
+        val_scale=0.01
         # 划分验证集
         valid_examples = X_fine_tune[0:int(len(X_fine_tune) * val_scale)]
         labels_valid = Y_fine_tune[0:int(len(Y_fine_tune) * val_scale)]
@@ -162,6 +163,7 @@ def calculate_fitness(examples_training, labels_training,examples_test_0, labels
         multi_model.eval()
         total = 0
         correct_prediction_test_0 = 0
+        top3_correct_prediction_test_0 = 0
 
 
         """
@@ -186,25 +188,31 @@ def calculate_fitness(examples_training, labels_training,examples_test_0, labels
 
 
             outputs_test_0 = multi_model(concat_input_trn,concat_input_TCN)
-            _, predicted = torch.max(outputs_test_0.data, 1)
+            _, predicted_top1 = torch.max(outputs_test_0.data, 1)
+            _, predicted_top3 = outputs_test_0.data.topk(3, 1, True, True)
             #将预测结果和真实标签进行比较，计算正确预测的数量 correct_prediction_test_0。
             # 这里使用了 mode() 函数来获取预测结果中出现最多的元素，并与真实标签进行比较。
             # correct_prediction_test_0 += (mode(predicted.cpu().numpy())[0][0] ==
             #                               ground_truth_test_0.data.cpu().numpy()).sum()
-            correct_prediction_test_0 += (predicted.cpu().numpy() ==
+            correct_prediction_test_0 += (predicted_top1.cpu().numpy() ==
                                           ground_truth_test_0.data.cpu().numpy()).sum()
+            top3_correct_prediction_test_0 += sum(
+                [ground_truth_test_0.data.cpu().numpy()[i] in predicted_top3.cpu().numpy()[i] for i in
+                 range(len(predicted_top3))])
             total += ground_truth_test_0.size(0)# 总样本数量
         print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
+        print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
+
         accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
-
-
+        top3_accuracy_test0.append(100 * float(top3_correct_prediction_test_0) / float(total))
 
     print("AVERAGE ACCURACY TEST 0 %.3f" % np.array(accuracy_test0).mean())
+    print("AVERAGE TOP-3 ACCURACY TEST 0 %.3f" % np.array(top3_accuracy_test0).mean())
 
-    return accuracy_test0
+    return accuracy_test0,top3_accuracy_test0
 
 #models=[CNN,TCN,LMF,TRN]
-def train_model(model,criterion, optimizer, scheduler,dataloaders, num_epochs=150, precision=1e-8):
+def train_model(model,criterion, optimizer, scheduler,dataloaders, num_epochs=60, precision=1e-8):
     since = time.time()
     best_loss = float('inf')
 
@@ -345,24 +353,22 @@ if __name__ == '__main__':
     array_validation_error = []
 
     test_0 = []
+    top3_test_0 = []
     test_1 = []
 
     for i in range(1):
-        accuracy_test_0 = calculate_fitness(examples_training, labels_training,
+        accuracy_test_0,top3_accuracy_test0  = calculate_fitness(examples_training, labels_training,
                                                                examples_validation0, labels_validation0,examples_validation1, labels_validation1,
                                                                TCN_examples_training, TCN_examples_validation0,TCN_examples_validation1)
-        print(accuracy_test_0)
+        print(top3_accuracy_test0)
+        test_0.append(accuracy_test_0)
+        top3_test_0.append(top3_accuracy_test0)
 
         test_0.append(accuracy_test_0)
 
-        print("TEST 0 SO FAR: ", test_0)
-        print("TEST 1 SO FAR: ", test_1)
-        print("CURRENT AVERAGE : ", (np.mean(test_0) + np.mean(test_1)) / 2.)
-
-    print("ACCURACY FINAL TEST 0: ", test_0)
-    print("ACCURACY FINAL TEST 0: ", np.mean(test_0))
-    print("ACCURACY FINAL TEST 1: ", test_1)
-    print("ACCURACY FINAL TEST 1: ", np.mean(test_1))
+        print("ACCURACY FINAL TEST 0: ", test_0)
+        print("ACCURACY FINAL TEST 0: ", np.mean(test_0))
+        print("ACCURACY FINAL top3  TEST 0: ", np.mean(top3_test_0))
 
     with open("Pytorch_results_4_cycles.txt", "a") as myfile:
         myfile.write("CNN STFT: \n\n")

@@ -21,7 +21,7 @@ for i in range(0,27):
     # 如果目录不存在，则创建目录
     if not os.path.exists(directory):
         os.makedirs(directory)
-    #保存到文件
+    #保存到文件ss
     with open(save_path, 'wb') as file:
         pickle.dump(data_dict, file)
 

@@ -71,7 +71,9 @@ class Net(nn.Module):
         self._dropout3 = McDropout()
 
 
+        '''改这个144,，不同通道不一样'''
         self._fc1 = nn.Linear(144, 100)
+        # self._fc1 = nn.Linear(48, 100) #Slowfushion
         self._batch_norm_fc1 = nn.BatchNorm1d(100, eps=1e-4)
         #self._prelu_fc1 = pelu(parameters_dimensions=(1, 100))
         self._prelu_fc1 = nn.PReLU(100)

@@ -1,0 +1,528 @@
+nohup: ignoring input
+++++++++++++
+Number Parameters: TCN 37742
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:42: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.image_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:43: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.time_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:44: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.fusion_weights)
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+Epoch 00020: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00036: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00047: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 22s
+Best val loss: 0.605023
+ACCURACY TEST_0 FINAL : 80.115 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.419 %
+AVERAGE ACCURACY TEST 0 80.115
+AVERAGE TOP-3 ACCURACY TEST 0 89.419
+[80.11542497376705]
+[89.41937740468695]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00041: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00051: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00078: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00089: reducing learning rate of group 0 to 1.6000e-05.
+Epoch 00096: reducing learning rate of group 0 to 3.2000e-06.
+
+Training complete in 2m 37s
+Best val loss: 0.294456
+ACCURACY TEST_0 FINAL : 81.357 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.644 %
+AVERAGE ACCURACY TEST 0 81.357
+AVERAGE TOP-3 ACCURACY TEST 0 90.644
+[81.35711787338231]
+[90.64358167191325]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00028: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00040: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00058: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 38s
+Best val loss: 0.414507
+ACCURACY TEST_0 FINAL : 80.623 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.644 %
+AVERAGE ACCURACY TEST 0 80.623
+AVERAGE TOP-3 ACCURACY TEST 0 90.644
+[80.62259531304652]
+[90.64358167191325]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00046: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00058: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 38s
+Best val loss: 0.551866
+ACCURACY TEST_0 FINAL : 80.448 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.367 %
+AVERAGE ACCURACY TEST 0 80.448
+AVERAGE TOP-3 ACCURACY TEST 0 89.367
+[80.44770898915705]
+[89.36691150752011]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00046: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00081: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 2m 15s
+Best val loss: 0.401176
+ACCURACY TEST_0 FINAL : 80.203 %
+TOP-3 ACCURACY TEST_0 FINAL : 88.458 %
+AVERAGE ACCURACY TEST 0 80.203
+AVERAGE TOP-3 ACCURACY TEST 0 88.458
+[80.20286813571178]
+[88.45750262329486]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00028: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00048: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00056: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 36s
+Best val loss: 0.708165
+ACCURACY TEST_0 FINAL : 78.996 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.227 %
+AVERAGE ACCURACY TEST 0 78.996
+AVERAGE TOP-3 ACCURACY TEST 0 89.227
+[78.99615250087443]
+[89.22700244840854]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00063: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00073: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00084: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00095: reducing learning rate of group 0 to 1.6000e-05.
+
+Training complete in 2m 37s
+Best val loss: 0.126881
+ACCURACY TEST_0 FINAL : 81.812 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.046 %
+AVERAGE ACCURACY TEST 0 81.812
+AVERAGE TOP-3 ACCURACY TEST 0 91.046
+[81.81182231549492]
+[91.04582021685904]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00056: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00075: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 2m 6s
+Best val loss: 0.177856
+ACCURACY TEST_0 FINAL : 80.920 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.927 %
+AVERAGE ACCURACY TEST 0 80.920
+AVERAGE TOP-3 ACCURACY TEST 0 89.927
+[80.91990206365863]
+[89.92654774396642]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00021: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00045: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 18s
+Best val loss: 0.482299
+ACCURACY TEST_0 FINAL : 79.276 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.416 %
+AVERAGE ACCURACY TEST 0 79.276
+AVERAGE TOP-3 ACCURACY TEST 0 90.416
+[79.27597061909759]
+[90.41622945085695]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00055: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00063: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00072: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 1s
+Best val loss: 0.376985
+ACCURACY TEST_0 FINAL : 81.375 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.836 %
+AVERAGE ACCURACY TEST 0 81.375
+AVERAGE TOP-3 ACCURACY TEST 0 90.836
+[81.37460650577125]
+[90.83595662819168]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00036: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00052: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00086: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 23s
+Best val loss: 0.297935
+ACCURACY TEST_0 FINAL : 81.445 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.308 %
+AVERAGE ACCURACY TEST 0 81.445
+AVERAGE TOP-3 ACCURACY TEST 0 91.308
+[81.44456103532704]
+[91.30814970269324]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00058: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00070: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00079: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 12s
+Best val loss: 0.200633
+ACCURACY TEST_0 FINAL : 81.584 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.154 %
+AVERAGE ACCURACY TEST 0 81.584
+AVERAGE TOP-3 ACCURACY TEST 0 90.154
+[81.58447009443861]
+[90.15389996502273]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00026: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00041: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00048: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 23s
+Best val loss: 0.535907
+ACCURACY TEST_0 FINAL : 79.608 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.419 %
+AVERAGE ACCURACY TEST 0 79.608
+AVERAGE TOP-3 ACCURACY TEST 0 89.419
+[79.60825463448758]
+[89.41937740468695]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00022: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00033: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00040: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00054: reducing learning rate of group 0 to 1.6000e-05.
+Epoch 00063: reducing learning rate of group 0 to 3.2000e-06.
+
+Training complete in 1m 47s
+Best val loss: 0.650468
+ACCURACY TEST_0 FINAL : 79.748 %
+TOP-3 ACCURACY TEST_0 FINAL : 88.772 %
+AVERAGE ACCURACY TEST 0 79.748
+AVERAGE TOP-3 ACCURACY TEST 0 88.772
+[79.74816369359917]
+[88.77229800629591]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00046: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00070: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 58s
+Best val loss: 0.407751
+ACCURACY TEST_0 FINAL : 80.413 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.927 %
+AVERAGE ACCURACY TEST 0 80.413
+AVERAGE TOP-3 ACCURACY TEST 0 89.927
+[80.41273172437916]
+[89.92654774396642]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00030: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00043: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 15s
+Best val loss: 0.655139
+ACCURACY TEST_0 FINAL : 79.853 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.052 %
+AVERAGE ACCURACY TEST 0 79.853
+AVERAGE TOP-3 ACCURACY TEST 0 89.052
+[79.85309548793285]
+[89.05211612451906]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00069: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00078: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00086: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00100: reducing learning rate of group 0 to 1.6000e-05.
+
+Training complete in 2m 45s
+Best val loss: 0.379298
+ACCURACY TEST_0 FINAL : 80.745 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.679 %
+AVERAGE ACCURACY TEST 0 80.745
+AVERAGE TOP-3 ACCURACY TEST 0 90.679
+[80.74501573976914]
+[90.67855893669115]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00029: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00053: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00070: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00077: reducing learning rate of group 0 to 1.6000e-05.
+Epoch 00084: reducing learning rate of group 0 to 3.2000e-06.
+
+Training complete in 2m 20s
+Best val loss: 0.165959
+ACCURACY TEST_0 FINAL : 81.602 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.763 %
+AVERAGE ACCURACY TEST 0 81.602
+AVERAGE TOP-3 ACCURACY TEST 0 91.763
+[81.60195872682756]
+[91.76285414480587]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00033: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00060: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00073: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 1s
+Best val loss: 0.267432
+ACCURACY TEST_0 FINAL : 80.150 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.262 %
+AVERAGE ACCURACY TEST 0 80.150
+AVERAGE TOP-3 ACCURACY TEST 0 89.262
+[80.15040223854494]
+[89.26197971318643]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00037: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00056: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00066: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00074: reducing learning rate of group 0 to 1.6000e-05.
+Epoch 00085: reducing learning rate of group 0 to 3.2000e-06.
+
+Training complete in 2m 21s
+Best val loss: 0.517700
+ACCURACY TEST_0 FINAL : 79.958 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.853 %
+AVERAGE ACCURACY TEST 0 79.958
+AVERAGE TOP-3 ACCURACY TEST 0 90.853
+[79.95802728226653]
+[90.85344526058063]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00042: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00064: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 47s
+Best val loss: 0.508787
+ACCURACY TEST_0 FINAL : 80.675 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.818 %
+AVERAGE ACCURACY TEST 0 80.675
+AVERAGE TOP-3 ACCURACY TEST 0 90.818
+[80.67506121021336]
+[90.81846799580273]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00039: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00066: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00076: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 5s
+Best val loss: 0.529291
+ACCURACY TEST_0 FINAL : 80.115 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.787 %
+AVERAGE ACCURACY TEST 0 80.115
+AVERAGE TOP-3 ACCURACY TEST 0 89.787
+[80.11542497376705]
+[89.78663868485485]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00039: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00046: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 20s
+Best val loss: 0.552428
+ACCURACY TEST_0 FINAL : 79.801 %
+TOP-3 ACCURACY TEST_0 FINAL : 88.825 %
+AVERAGE ACCURACY TEST 0 79.801
+AVERAGE TOP-3 ACCURACY TEST 0 88.825
+[79.80062959076601]
+[88.82476390346275]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00077: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00102: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00109: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 3m 8s
+Best val loss: 0.065905
+ACCURACY TEST_0 FINAL : 81.602 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.291 %
+AVERAGE ACCURACY TEST 0 81.602
+AVERAGE TOP-3 ACCURACY TEST 0 91.291
+[81.60195872682756]
+[91.2906610703043]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00035: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00042: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00052: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 30s
+Best val loss: 0.203197
+ACCURACY TEST_0 FINAL : 82.004 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.308 %
+AVERAGE ACCURACY TEST 0 82.004
+AVERAGE TOP-3 ACCURACY TEST 0 91.308
+[82.00419727177335]
+[91.30814970269324]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00082: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00099: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 2m 44s
+Best val loss: 0.203477
+ACCURACY TEST_0 FINAL : 82.127 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.151 %
+AVERAGE ACCURACY TEST 0 82.127
+AVERAGE TOP-3 ACCURACY TEST 0 91.151
+[82.12661769849598]
+[91.15075201119272]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00057: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00086: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00095: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 00105: reducing learning rate of group 0 to 1.6000e-05.
+
+Training complete in 2m 53s
+Best val loss: 0.143923
+ACCURACY TEST_0 FINAL : 81.515 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.629 %
+AVERAGE ACCURACY TEST 0 81.515
+AVERAGE TOP-3 ACCURACY TEST 0 89.629
+[81.51451556488283]
+[89.62924099335432]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00023: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00070: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00086: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 23s
+Best val loss: 0.284148
+ACCURACY TEST_0 FINAL : 80.203 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.259 %
+AVERAGE ACCURACY TEST 0 80.203
+AVERAGE TOP-3 ACCURACY TEST 0 90.259
+[80.20286813571178]
+[90.25883175935641]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00033: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00061: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00081: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 2m 15s
+Best val loss: 0.264188
+ACCURACY TEST_0 FINAL : 81.042 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.186 %
+AVERAGE ACCURACY TEST 0 81.042
+AVERAGE TOP-3 ACCURACY TEST 0 91.186
+[81.04232249038125]
+[91.18572927597062]
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 207586
+22572
+(22572, 12, 10, 7)
+Epoch 00040: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00054: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00066: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 51s
+Best val loss: 0.539820
+ACCURACY TEST_0 FINAL : 80.745 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.556 %
+AVERAGE ACCURACY TEST 0 80.745
+AVERAGE TOP-3 ACCURACY TEST 0 90.556
+[80.74501573976914]
+[90.55613850996852]
+ACCURACY FINAL TEST 0:  [[80.11542497376705], [81.35711787338231], [80.62259531304652], [80.44770898915705], [80.20286813571178], [78.99615250087443], [81.81182231549492], [80.91990206365863], [79.27597061909759], [81.37460650577125], [81.44456103532704], [81.58447009443861], [79.60825463448758], [79.74816369359917], [80.41273172437916], [79.85309548793285], [80.74501573976914], [81.60195872682756], [80.15040223854494], [79.95802728226653], [80.67506121021336], [80.11542497376705], [79.80062959076601], [81.60195872682756], [82.00419727177335], [82.12661769849598], [81.51451556488283], [80.20286813571178], [81.04232249038125], [80.74501573976914]]
+ACCURACY FINAL TEST 0:  80.66864871167076
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)

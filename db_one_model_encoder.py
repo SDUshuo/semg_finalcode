@@ -1,6 +1,8 @@
 import random
 
 import numpy as np
+
+import CNN_LSTM
 import Wavelet_CNN_Source_Network as Wavelet_CNN_Source_Network
 from torch.utils.data import TensorDataset
 import torch.nn as nn
@@ -43,9 +45,9 @@ class Net(nn.Module):
         """定义各类模型 """
         # 创建TCN
         # 创建TCN
-        self.TCN = TCNmodule.TemporalConvNet(num_inputs=tcn_inputs_channal, num_channels=num_channels , fc1_dim=number_of_vector_per_example,
-                                        fc2_dim=number_of_vector_per_example, class_num=number_of_classes,
-                                        kernel_size=3, dropout=0.3, fenlei=False).cuda()
+        self.lstm_out_dim = 52
+        self.CNN_LSTM = CNN_LSTM.ConvLSTM(in_channels=tcn_inputs_channal, out_channels=self.lstm_out_dim,
+                                          num_class=number_of_classes, fenlei=False).cuda()
         # self.Slowfushion=  Wavelet_CNN_Source_Network.Net(number_of_class=number_of_classes).cuda()
 
         # 创建 TRN模型
@@ -67,9 +69,9 @@ class Net(nn.Module):
             number_params = sum([np.prod(p.size()) for p in model_parameters])
             return number_params
     def forward(self, input_trn,input_tcn):
-        tcn_output = self.TCN(input_tcn)
+        lstm_output = self.CNN_LSTM(input_tcn)
         trn_output = self.TRN(input_trn)
-        encoded_tcn, _ = self.autoencoder_tcn(tcn_output)
+        encoded_tcn, _ = self.autoencoder_tcn(lstm_output)
         encoded_trn, _ = self.autoencoder_trn(trn_output)
         fused_features = torch.cat((encoded_tcn, encoded_trn), dim=1)
         # fused_features = torch.add(encoded_tcn, encoded_trn)

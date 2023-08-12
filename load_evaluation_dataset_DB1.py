@@ -81,6 +81,7 @@ def apply_jitter(X_train):
 window_len=52
 window_inc=5
 window_path=str(window_len)+'_'+str(window_inc)
+#_exercise1_jitr_norm_relax农错了，导致这个才是要用的
 newpath ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm_relax/subject_'
 """
 _exercise1_jitr_norm训练及测试机都是用了家噪音和normlize  家噪音确实效果编号了
@@ -97,7 +98,7 @@ size_non_overlap = 50):
     print("Reading Data")
 
     #从0开始，loadDB1也要改
-    for i in tqdm(range(0, 10)):
+    for i in tqdm(range(10, 11)):
         #这是之前加载的字典的数据
         directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jirm_relax_exer2/data_dict_'
         save_path = directory + str(i) + '.pkl'

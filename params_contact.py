@@ -23,10 +23,10 @@
 # num_channels=[50, 50, 32, 32,1]  #TCN输出的一直都是52
 
 """接下来就是单独对TCN进行解耦实验"""
-# num_channels=[50, 50, 32, 32,1]  84%  这个已经很好了
+# num_channels=[50, 50, 32, 32,1]  84%  这个已经很好了  [50, 50, 30,1]
 """对TRN进行解耦实验"""
 # #TCN参数
-num_channels=[50, 50, 30,1]  #TCN输出的一直都是52
+num_channels=[50, 50, 32, 32,1] #TCN输出的一直都是52
 # TRN 参数
 # #100-77%
 # feature_bottleneck = 100  #多尺度TRN源码输出的维度  #多尺度TRN源码输出的维度 40维度的图片传入TRN =>> nn.Linear(4 * self.img_feature_dim (160),  feature_bottleneck),
@@ -68,7 +68,7 @@ fushion_dim = 100  #两个特征融合后的维度 （fushion_2_feature_bottlene
 rank = 6  # 10- 82.441 % 15-85.240 %
 hidden_dim = 100 #全连接层分类，前一层的维度
 """不适用lmf，使用contact测试 80最好  180-85%  140-85.152 % 100-86.551 % 80-86.516 %  60-80% 120-86.4% """
-feature_bottleneck = 80
+feature_bottleneck = 100
 """  使用autoencoder 分类层使用cat 参数会很多，他会在60左右的epoch就达到94%，可以尝试一下epoch早停
 最后使用180   150-84.348 % 180-85.88 190-84.9%"""
 # encoding_dim =180

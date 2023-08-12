@@ -1,0 +1,4001 @@
+nohup: ignoring input
+++++++++++++
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 107984
+22572
+(22572, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+Epoch 0/24
+----------
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/db_one_model_contact.py:58: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return nn.functional.log_softmax(output)
+train Loss: 1.09947486 Acc: 0.71300727
+val Loss: 0.68723859 Acc: 0.81578946
+New best validation loss: 0.6872385928505346
+Epoch 1 of 25 took 11.974s
+Epoch 1/24
+----------
+train Loss: 0.69101110 Acc: 0.79514444
+val Loss: 0.59083831 Acc: 0.86842108
+New best validation loss: 0.5908383085016619
+Epoch 2 of 25 took 11.050s
+Epoch 2/24
+----------
+train Loss: 0.61490811 Acc: 0.81977671
+val Loss: 0.39822690 Acc: 0.89473683
+New best validation loss: 0.39822689524868077
+Epoch 3 of 25 took 11.116s
+Epoch 3/24
+----------
+train Loss: 0.50590203 Acc: 0.84609252
+val Loss: 0.34694374 Acc: 0.91228068
+New best validation loss: 0.34694373816774604
+Epoch 4 of 25 took 11.123s
+Epoch 4/24
+----------
+train Loss: 0.45755186 Acc: 0.85902888
+val Loss: 0.27185811 Acc: 0.91228068
+New best validation loss: 0.2718581149452611
+Epoch 5 of 25 took 11.228s
+Epoch 5/24
+----------
+train Loss: 0.38703932 Acc: 0.880117
+val Loss: 0.29860547 Acc: 0.90350878
+Epoch 6 of 25 took 11.096s
+Epoch 6/24
+----------
+train Loss: 0.36145659 Acc: 0.88729399
+val Loss: 0.25966910 Acc: 0.93859649
+New best validation loss: 0.2596691031205027
+Epoch 7 of 25 took 11.136s
+Epoch 7/24
+----------
+train Loss: 0.33356702 Acc: 0.89615452
+val Loss: 0.20307645 Acc: 0.92543858
+New best validation loss: 0.2030764537945128
+Epoch 8 of 25 took 11.126s
+Epoch 8/24
+----------
+train Loss: 0.30512762 Acc: 0.90350878
+val Loss: 0.21364407 Acc: 0.93421054
+Epoch 9 of 25 took 11.130s
+Epoch 9/24
+----------
+train Loss: 0.29344681 Acc: 0.90886939
+val Loss: 0.16667252 Acc: 0.94298244
+New best validation loss: 0.16667252172503555
+Epoch 10 of 25 took 11.036s
+Epoch 10/24
+----------
+train Loss: 0.26731993 Acc: 0.91631228
+val Loss: 0.27373632 Acc: 0.90789473
+Epoch 11 of 25 took 11.134s
+Epoch 11/24
+----------
+train Loss: 0.24878415 Acc: 0.92167288
+val Loss: 0.16268971 Acc: 0.93859649
+New best validation loss: 0.16268970757200008
+Epoch 12 of 25 took 11.142s
+Epoch 12/24
+----------
+train Loss: 0.22775012 Acc: 0.92933726
+val Loss: 0.16998493 Acc: 0.93421054
+Epoch 13 of 25 took 11.169s
+Epoch 13/24
+----------
+train Loss: 0.21140206 Acc: 0.93288147
+val Loss: 0.16948174 Acc: 0.93859649
+Epoch 14 of 25 took 11.054s
+Epoch 14/24
+----------
+train Loss: 0.20987744 Acc: 0.93279284
+val Loss: 0.14003898 Acc: 0.95614034
+New best validation loss: 0.14003898051747105
+Epoch 15 of 25 took 11.136s
+Epoch 15/24
+----------
+train Loss: 0.20583022 Acc: 0.93562824
+val Loss: 0.15550975 Acc: 0.93421054
+Epoch 16 of 25 took 11.082s
+Epoch 16/24
+----------
+train Loss: 0.19550715 Acc: 0.93740034
+val Loss: 0.13081429 Acc: 0.94736844
+New best validation loss: 0.1308142908832483
+Epoch 17 of 25 took 11.159s
+Epoch 17/24
+----------
+train Loss: 0.18055075 Acc: 0.94307107
+val Loss: 0.10760366 Acc: 0.95614034
+New best validation loss: 0.10760365870960972
+Epoch 18 of 25 took 10.944s
+Epoch 18/24
+----------
+train Loss: 0.16856831 Acc: 0.94887471
+val Loss: 0.13173583 Acc: 0.94736844
+Epoch 19 of 25 took 11.064s
+Epoch 19/24
+----------
+train Loss: 0.24221362 Acc: 0.92566013
+val Loss: 0.18419317 Acc: 0.94298244
+Epoch 20 of 25 took 11.083s
+Epoch 20/24
+----------
+train Loss: 0.21600587 Acc: 0.93128657
+val Loss: 0.12839802 Acc: 0.96929824
+Epoch 21 of 25 took 11.130s
+Epoch 21/24
+----------
+train Loss: 0.19310180 Acc: 0.93957114
+val Loss: 0.10180680 Acc: 0.95175439
+New best validation loss: 0.10180679538793731
+Epoch 22 of 25 took 11.134s
+Epoch 22/24
+----------
+train Loss: 0.17207860 Acc: 0.94603938
+val Loss: 0.18339587 Acc: 0.94736844
+Epoch 23 of 25 took 11.063s
+Epoch 23/24
+----------
+train Loss: 0.15486118 Acc: 0.95033669
+val Loss: 0.15164983 Acc: 0.9649123
+Epoch 24 of 25 took 11.119s
+Epoch 24/24
+----------
+train Loss: 0.15823969 Acc: 0.94905192
+val Loss: 0.09535587 Acc: 0.96929824
+New best validation loss: 0.09535587084920784
+Epoch 25 of 25 took 11.171s
+
+Training complete in 4m 39s
+Best val loss: 0.095356
+ACCURACY TEST_0 FINAL : 86.726 %
+22600
+(22600, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.39915726 Acc: 0.68402654
+val Loss: 0.71183088 Acc: 0.7850877
+New best validation loss: 0.711830875329804
+Epoch 1 of 25 took 11.221s
+Epoch 1/24
+----------
+train Loss: 0.67392426 Acc: 0.78893805
+val Loss: 0.51986949 Acc: 0.84649122
+New best validation loss: 0.5198694898371111
+Epoch 2 of 25 took 11.058s
+Epoch 2/24
+----------
+train Loss: 0.50242213 Acc: 0.8371681
+val Loss: 0.36551499 Acc: 0.87719297
+New best validation loss: 0.3655149861385948
+Epoch 3 of 25 took 11.026s
+Epoch 3/24
+----------
+train Loss: 0.41298958 Acc: 0.86553097
+val Loss: 0.30141088 Acc: 0.89912283
+New best validation loss: 0.3014108758223684
+Epoch 4 of 25 took 11.182s
+Epoch 4/24
+----------
+train Loss: 0.35312709 Acc: 0.88455749
+val Loss: 0.24486323 Acc: 0.90350878
+New best validation loss: 0.24486322570265384
+Epoch 5 of 25 took 11.112s
+Epoch 5/24
+----------
+train Loss: 0.31523586 Acc: 0.89743364
+val Loss: 0.25570230 Acc: 0.92543858
+Epoch 6 of 25 took 10.924s
+Epoch 6/24
+----------
+train Loss: 0.28901236 Acc: 0.9090265
+val Loss: 0.19416963 Acc: 0.93421054
+New best validation loss: 0.19416962590133935
+Epoch 7 of 25 took 11.087s
+Epoch 7/24
+----------
+train Loss: 0.26698868 Acc: 0.91469026
+val Loss: 0.16052964 Acc: 0.95175439
+New best validation loss: 0.16052963859156558
+Epoch 8 of 25 took 11.185s
+Epoch 8/24
+----------
+train Loss: 0.25713295 Acc: 0.91641593
+val Loss: 0.22531636 Acc: 0.93421054
+Epoch 9 of 25 took 11.132s
+Epoch 9/24
+----------
+train Loss: 0.23553178 Acc: 0.92438054
+val Loss: 0.16159757 Acc: 0.94736844
+Epoch 10 of 25 took 11.131s
+Epoch 10/24
+----------
+train Loss: 0.21215784 Acc: 0.93265486
+val Loss: 0.13665214 Acc: 0.94736844
+New best validation loss: 0.1366521350124426
+Epoch 11 of 25 took 11.107s
+Epoch 11/24
+----------
+train Loss: 0.22083701 Acc: 0.92871678
+val Loss: 0.18078618 Acc: 0.94736844
+Epoch 12 of 25 took 11.151s
+Epoch 12/24
+----------
+train Loss: 0.19506029 Acc: 0.9385398
+val Loss: 0.18318936 Acc: 0.95175439
+Epoch 13 of 25 took 11.132s
+Epoch 13/24
+----------
+train Loss: 0.17274021 Acc: 0.9470796
+val Loss: 0.14082340 Acc: 0.95614034
+Epoch 14 of 25 took 11.088s
+Epoch 14/24
+----------
+train Loss: 0.17407851 Acc: 0.94601768
+val Loss: 0.18082870 Acc: 0.95614034
+Epoch 15 of 25 took 11.261s
+Epoch 15/24
+----------
+train Loss: 0.17513280 Acc: 0.94548672
+val Loss: 0.15134662 Acc: 0.96929824
+Epoch 16 of 25 took 11.157s
+Epoch 16/24
+----------
+train Loss: 0.15307678 Acc: 0.95238936
+val Loss: 0.12360293 Acc: 0.96052635
+New best validation loss: 0.1236029256854141
+Epoch 17 of 25 took 11.141s
+Epoch 17/24
+----------
+train Loss: 0.15041082 Acc: 0.95389378
+val Loss: 0.19477966 Acc: 0.94298244
+Epoch 18 of 25 took 11.136s
+Epoch 18/24
+----------
+train Loss: 0.14369126 Acc: 0.95646018
+val Loss: 0.19567587 Acc: 0.94298244
+Epoch 19 of 25 took 11.202s
+Epoch 19/24
+----------
+train Loss: 0.14155179 Acc: 0.95592916
+val Loss: 0.15135794 Acc: 0.96052635
+Epoch 20 of 25 took 11.126s
+Epoch 20/24
+----------
+train Loss: 0.14245131 Acc: 0.95566368
+val Loss: 0.13808351 Acc: 0.95614034
+Epoch 21 of 25 took 11.022s
+Epoch 21/24
+----------
+train Loss: 0.13546268 Acc: 0.95809734
+val Loss: 0.17726456 Acc: 0.93421054
+Epoch 22 of 25 took 11.154s
+Epoch 22/24
+----------
+train Loss: 0.13344303 Acc: 0.95946902
+val Loss: 0.13018202 Acc: 0.96929824
+Epoch 00023: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 23 of 25 took 15.750s
+Epoch 23/24
+----------
+train Loss: 0.10542164 Acc: 0.96787608
+val Loss: 0.09747901 Acc: 0.96929824
+New best validation loss: 0.09747900628207022
+Epoch 24 of 25 took 16.560s
+Epoch 24/24
+----------
+train Loss: 0.08132598 Acc: 0.97544247
+val Loss: 0.09673226 Acc: 0.96929824
+New best validation loss: 0.0967322633977522
+Epoch 25 of 25 took 16.420s
+
+Training complete in 4m 53s
+Best val loss: 0.096732
+ACCURACY TEST_0 FINAL : 85.773 %
+22575
+(22575, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.51457253 Acc: 0.70108533
+val Loss: 0.78204640 Acc: 0.78947371
+New best validation loss: 0.782046401709841
+Epoch 1 of 25 took 16.668s
+Epoch 1/24
+----------
+train Loss: 0.68145341 Acc: 0.80660027
+val Loss: 0.50749018 Acc: 0.86403507
+New best validation loss: 0.5074901798315216
+Epoch 2 of 25 took 16.517s
+Epoch 2/24
+----------
+train Loss: 0.50623858 Acc: 0.85395354
+val Loss: 0.36956334 Acc: 0.88596493
+New best validation loss: 0.369563336957965
+Epoch 3 of 25 took 16.468s
+Epoch 3/24
+----------
+train Loss: 0.41158985 Acc: 0.87747514
+val Loss: 0.28869723 Acc: 0.90789473
+New best validation loss: 0.28869722600568803
+Epoch 4 of 25 took 16.356s
+Epoch 4/24
+----------
+train Loss: 0.35590234 Acc: 0.89355487
+val Loss: 0.28252347 Acc: 0.91666669
+New best validation loss: 0.2825234731038411
+Epoch 5 of 25 took 16.626s
+Epoch 5/24
+----------
+train Loss: 0.31261756 Acc: 0.90609086
+val Loss: 0.28539761 Acc: 0.90350878
+Epoch 6 of 25 took 16.489s
+Epoch 6/24
+----------
+train Loss: 0.28814854 Acc: 0.91167223
+val Loss: 0.22186903 Acc: 0.93859649
+New best validation loss: 0.22186903367962754
+Epoch 7 of 25 took 16.374s
+Epoch 7/24
+----------
+train Loss: 0.25562185 Acc: 0.92097455
+val Loss: 0.21820574 Acc: 0.93859649
+New best validation loss: 0.21820573639451413
+Epoch 8 of 25 took 16.401s
+Epoch 8/24
+----------
+train Loss: 0.24156249 Acc: 0.9274419
+val Loss: 0.18633960 Acc: 0.94298244
+New best validation loss: 0.1863396025540536
+Epoch 9 of 25 took 16.367s
+Epoch 9/24
+----------
+train Loss: 0.22366223 Acc: 0.93094134
+val Loss: 0.18639978 Acc: 0.94298244
+Epoch 10 of 25 took 16.303s
+Epoch 10/24
+----------
+train Loss: 0.21011657 Acc: 0.93732005
+val Loss: 0.20695552 Acc: 0.92543858
+Epoch 11 of 25 took 16.645s
+Epoch 11/24
+----------
+train Loss: 0.20349823 Acc: 0.93873757
+val Loss: 0.17709001 Acc: 0.95175439
+New best validation loss: 0.177090010726661
+Epoch 12 of 25 took 15.210s
+Epoch 12/24
+----------
+train Loss: 0.18208877 Acc: 0.94529349
+val Loss: 0.20361723 Acc: 0.94736844
+Epoch 13 of 25 took 16.243s
+Epoch 13/24
+----------
+train Loss: 0.18460696 Acc: 0.9452492
+val Loss: 0.18144193 Acc: 0.94298244
+Epoch 14 of 25 took 16.479s
+Epoch 14/24
+----------
+train Loss: 0.17716763 Acc: 0.94609082
+val Loss: 0.20731981 Acc: 0.95614034
+Epoch 15 of 25 took 16.301s
+Epoch 15/24
+----------
+train Loss: 0.16656488 Acc: 0.95021045
+val Loss: 0.15885686 Acc: 0.95614034
+New best validation loss: 0.15885685703210664
+Epoch 16 of 25 took 15.420s
+Epoch 16/24
+----------
+train Loss: 0.16388103 Acc: 0.95122927
+val Loss: 0.22471100 Acc: 0.92543858
+Epoch 17 of 25 took 14.668s
+Epoch 17/24
+----------
+train Loss: 0.15552847 Acc: 0.95335549
+val Loss: 0.20506988 Acc: 0.93859649
+Epoch 18 of 25 took 15.011s
+Epoch 18/24
+----------
+train Loss: 0.15813983 Acc: 0.95384276
+val Loss: 0.20267817 Acc: 0.94736844
+Epoch 19 of 25 took 14.493s
+Epoch 19/24
+----------
+train Loss: 0.15967352 Acc: 0.95300114
+val Loss: 0.16797966 Acc: 0.93859649
+Epoch 20 of 25 took 15.669s
+Epoch 20/24
+----------
+train Loss: 0.14427085 Acc: 0.95650059
+val Loss: 0.17400444 Acc: 0.95175439
+Epoch 21 of 25 took 15.015s
+Epoch 21/24
+----------
+train Loss: 0.12407254 Acc: 0.96380955
+val Loss: 0.17306609 Acc: 0.94298244
+Epoch 00022: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 22 of 25 took 16.084s
+Epoch 22/24
+----------
+train Loss: 0.10933911 Acc: 0.96779627
+val Loss: 0.13974022 Acc: 0.95175439
+New best validation loss: 0.13974021694116426
+Epoch 23 of 25 took 14.091s
+Epoch 23/24
+----------
+train Loss: 0.09836387 Acc: 0.97094136
+val Loss: 0.14363225 Acc: 0.94736844
+Epoch 24 of 25 took 16.830s
+Epoch 24/24
+----------
+train Loss: 0.09092883 Acc: 0.97359914
+val Loss: 0.13383354 Acc: 0.95175439
+New best validation loss: 0.13383354220473975
+Epoch 25 of 25 took 16.298s
+
+Training complete in 6m 39s
+Best val loss: 0.133834
+ACCURACY TEST_0 FINAL : 89.844 %
+22719
+(22719, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.61464297 Acc: 0.64294201
+val Loss: 0.97961739 Acc: 0.73362446
+New best validation loss: 0.9796173895290324
+Epoch 1 of 25 took 16.089s
+Epoch 1/24
+----------
+train Loss: 0.94525717 Acc: 0.73167831
+val Loss: 0.74132981 Acc: 0.76855898
+New best validation loss: 0.7413298094637009
+Epoch 2 of 25 took 15.922s
+Epoch 2/24
+----------
+train Loss: 0.77122496 Acc: 0.77212906
+val Loss: 0.62110514 Acc: 0.80786026
+New best validation loss: 0.6211051441175969
+Epoch 3 of 25 took 15.554s
+Epoch 3/24
+----------
+train Loss: 0.64395789 Acc: 0.80470091
+val Loss: 0.56625526 Acc: 0.78602624
+New best validation loss: 0.5662552612837746
+Epoch 4 of 25 took 14.869s
+Epoch 4/24
+----------
+train Loss: 0.56761801 Acc: 0.82688498
+val Loss: 0.45942898 Acc: 0.82969433
+New best validation loss: 0.4594289787992119
+Epoch 5 of 25 took 15.644s
+Epoch 5/24
+----------
+train Loss: 0.50772208 Acc: 0.84493154
+val Loss: 0.41315897 Acc: 0.86026204
+New best validation loss: 0.4131589664642467
+Epoch 6 of 25 took 15.880s
+Epoch 6/24
+----------
+train Loss: 0.45195721 Acc: 0.86011708
+val Loss: 0.40952141 Acc: 0.86899567
+New best validation loss: 0.4095214110795067
+Epoch 7 of 25 took 16.081s
+Epoch 7/24
+----------
+train Loss: 0.41866875 Acc: 0.86958051
+val Loss: 0.32986067 Acc: 0.87336248
+New best validation loss: 0.3298606705977927
+Epoch 8 of 25 took 16.495s
+Epoch 8/24
+----------
+train Loss: 0.38127789 Acc: 0.88357764
+val Loss: 0.34140994 Acc: 0.89082968
+Epoch 9 of 25 took 16.397s
+Epoch 9/24
+----------
+train Loss: 0.34892561 Acc: 0.89194065
+val Loss: 0.25481840 Acc: 0.88646287
+New best validation loss: 0.25481839575621756
+Epoch 10 of 25 took 16.381s
+Epoch 10/24
+----------
+train Loss: 0.35353580 Acc: 0.89022404
+val Loss: 0.28834794 Acc: 0.89956331
+Epoch 11 of 25 took 16.532s
+Epoch 11/24
+----------
+train Loss: 0.31426588 Acc: 0.9016242
+val Loss: 0.23467266 Acc: 0.91266376
+New best validation loss: 0.23467266465899206
+Epoch 12 of 25 took 16.436s
+Epoch 12/24
+----------
+train Loss: 0.28594134 Acc: 0.90906292
+val Loss: 0.25207346 Acc: 0.92139739
+Epoch 13 of 25 took 16.390s
+Epoch 13/24
+----------
+train Loss: 0.27737200 Acc: 0.9131124
+val Loss: 0.20538170 Acc: 0.92139739
+New best validation loss: 0.20538170160685043
+Epoch 14 of 25 took 16.490s
+Epoch 14/24
+----------
+train Loss: 0.26447434 Acc: 0.91720587
+val Loss: 0.22463093 Acc: 0.93013102
+Epoch 15 of 25 took 16.318s
+Epoch 15/24
+----------
+train Loss: 0.24987650 Acc: 0.92306
+val Loss: 0.22161974 Acc: 0.91266376
+Epoch 16 of 25 took 16.474s
+Epoch 16/24
+----------
+train Loss: 0.22957015 Acc: 0.92860603
+val Loss: 0.19911740 Acc: 0.9257642
+New best validation loss: 0.19911740232242767
+Epoch 17 of 25 took 16.410s
+Epoch 17/24
+----------
+train Loss: 0.21667820 Acc: 0.93331575
+val Loss: 0.14158035 Acc: 0.93449783
+New best validation loss: 0.14158034678629913
+Epoch 18 of 25 took 16.516s
+Epoch 18/24
+----------
+train Loss: 0.21719046 Acc: 0.93159908
+val Loss: 0.20280484 Acc: 0.93886465
+Epoch 19 of 25 took 16.344s
+Epoch 19/24
+----------
+train Loss: 0.20958307 Acc: 0.9348563
+val Loss: 0.28244478 Acc: 0.91703057
+Epoch 20 of 25 took 16.394s
+Epoch 20/24
+----------
+train Loss: 0.25636737 Acc: 0.92024297
+val Loss: 0.21193916 Acc: 0.93449783
+Epoch 21 of 25 took 16.577s
+Epoch 21/24
+----------
+train Loss: 0.21377684 Acc: 0.93498832
+val Loss: 0.18575753 Acc: 0.95633191
+Epoch 22 of 25 took 16.426s
+Epoch 22/24
+----------
+train Loss: 0.20177203 Acc: 0.93732119
+val Loss: 0.16660860 Acc: 0.95196509
+Epoch 23 of 25 took 16.362s
+Epoch 23/24
+----------
+train Loss: 0.18526398 Acc: 0.94251508
+val Loss: 0.12151783 Acc: 0.96506554
+New best validation loss: 0.1215178310610842
+Epoch 24 of 25 took 16.468s
+Epoch 24/24
+----------
+train Loss: 0.17331782 Acc: 0.94630045
+val Loss: 0.14443390 Acc: 0.94323146
+Epoch 25 of 25 took 16.224s
+
+Training complete in 6m 46s
+Best val loss: 0.121518
+ACCURACY TEST_0 FINAL : 81.354 %
+22541
+(22541, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 2.11491289 Acc: 0.58027595
+val Loss: 1.15855025 Acc: 0.64317179
+New best validation loss: 1.1585502456463381
+Epoch 1 of 25 took 16.557s
+Epoch 1/24
+----------
+train Loss: 1.18896925 Acc: 0.65746862
+val Loss: 0.90488383 Acc: 0.71806163
+New best validation loss: 0.9048838342338932
+Epoch 2 of 25 took 16.400s
+Epoch 2/24
+----------
+train Loss: 0.97775404 Acc: 0.70897478
+val Loss: 0.74837049 Acc: 0.76211452
+New best validation loss: 0.7483704856838949
+Epoch 3 of 25 took 16.362s
+Epoch 3/24
+----------
+train Loss: 0.84961235 Acc: 0.74167073
+val Loss: 0.66801365 Acc: 0.77533036
+New best validation loss: 0.6680136525158314
+Epoch 4 of 25 took 16.603s
+Epoch 4/24
+----------
+train Loss: 0.74405824 Acc: 0.77010781
+val Loss: 0.59467050 Acc: 0.79295152
+New best validation loss: 0.5946705015745457
+Epoch 5 of 25 took 16.298s
+Epoch 5/24
+----------
+train Loss: 0.66526706 Acc: 0.78913981
+val Loss: 0.50718938 Acc: 0.8325991
+New best validation loss: 0.5071893767638354
+Epoch 6 of 25 took 16.396s
+Epoch 6/24
+----------
+train Loss: 0.58401326 Acc: 0.80919218
+val Loss: 0.42008102 Acc: 0.8634361
+New best validation loss: 0.420081016775795
+Epoch 7 of 25 took 16.412s
+Epoch 7/24
+----------
+train Loss: 0.53377151 Acc: 0.82995433
+val Loss: 0.38379116 Acc: 0.88546252
+New best validation loss: 0.3837911631042212
+Epoch 8 of 25 took 16.395s
+Epoch 8/24
+----------
+train Loss: 0.49944122 Acc: 0.83598781
+val Loss: 0.40034448 Acc: 0.86784136
+Epoch 9 of 25 took 16.481s
+Epoch 9/24
+----------
+train Loss: 0.44911003 Acc: 0.85151505
+val Loss: 0.35626571 Acc: 0.8942731
+New best validation loss: 0.3562657125195743
+Epoch 10 of 25 took 16.442s
+Epoch 10/24
+----------
+train Loss: 0.41452531 Acc: 0.86415869
+val Loss: 0.33458451 Acc: 0.88986778
+New best validation loss: 0.3345845092235683
+Epoch 11 of 25 took 16.539s
+Epoch 11/24
+----------
+train Loss: 0.40672068 Acc: 0.86566705
+val Loss: 0.30449556 Acc: 0.90308368
+New best validation loss: 0.3044955551886874
+Epoch 12 of 25 took 16.616s
+Epoch 12/24
+----------
+train Loss: 0.37383153 Acc: 0.87724596
+val Loss: 0.26448338 Acc: 0.89867836
+New best validation loss: 0.2644833804227182
+Epoch 13 of 25 took 16.380s
+Epoch 13/24
+----------
+train Loss: 0.34520147 Acc: 0.88443285
+val Loss: 0.23739170 Acc: 0.92070478
+New best validation loss: 0.2373917029292573
+Epoch 14 of 25 took 16.265s
+Epoch 14/24
+----------
+train Loss: 0.32168908 Acc: 0.89366049
+val Loss: 0.25073717 Acc: 0.92070478
+Epoch 15 of 25 took 16.354s
+Epoch 15/24
+----------
+train Loss: 0.30922758 Acc: 0.89423722
+val Loss: 0.28704484 Acc: 0.92070478
+Epoch 16 of 25 took 16.523s
+Epoch 16/24
+----------
+train Loss: 0.30592000 Acc: 0.89760882
+val Loss: 0.27027135 Acc: 0.91629952
+Epoch 17 of 25 took 16.366s
+Epoch 17/24
+----------
+train Loss: 0.27797011 Acc: 0.90390843
+val Loss: 0.24822311 Acc: 0.92070478
+Epoch 18 of 25 took 16.418s
+Epoch 18/24
+----------
+train Loss: 0.26733373 Acc: 0.90869975
+val Loss: 0.24421319 Acc: 0.92070478
+Epoch 19 of 25 took 15.949s
+Epoch 19/24
+----------
+train Loss: 0.26698860 Acc: 0.91020811
+val Loss: 0.20656123 Acc: 0.93392068
+New best validation loss: 0.20656123224334047
+Epoch 20 of 25 took 14.881s
+Epoch 20/24
+----------
+train Loss: 0.26226834 Acc: 0.91393465
+val Loss: 0.20838431 Acc: 0.94713652
+Epoch 21 of 25 took 15.230s
+Epoch 21/24
+----------
+train Loss: 0.23911943 Acc: 0.918859
+val Loss: 0.33072527 Acc: 0.89867836
+Epoch 22 of 25 took 13.456s
+Epoch 22/24
+----------
+train Loss: 0.23893884 Acc: 0.9192583
+val Loss: 0.22384717 Acc: 0.92951536
+Epoch 23 of 25 took 14.763s
+Epoch 23/24
+----------
+train Loss: 0.23180271 Acc: 0.91956884
+val Loss: 0.23086030 Acc: 0.93832594
+Epoch 24 of 25 took 14.749s
+Epoch 24/24
+----------
+train Loss: 0.22138116 Acc: 0.9243601
+val Loss: 0.21657036 Acc: 0.94273126
+Epoch 25 of 25 took 14.237s
+
+Training complete in 6m 39s
+Best val loss: 0.206561
+ACCURACY TEST_0 FINAL : 77.278 %
+22598
+(22598, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.64410044 Acc: 0.63992393
+val Loss: 0.81239560 Acc: 0.78070176
+New best validation loss: 0.812395597759046
+Epoch 1 of 25 took 15.152s
+Epoch 1/24
+----------
+train Loss: 0.89832016 Acc: 0.73400301
+val Loss: 0.63797238 Acc: 0.82017547
+New best validation loss: 0.6379723799856085
+Epoch 2 of 25 took 15.144s
+Epoch 2/24
+----------
+train Loss: 0.73706478 Acc: 0.78024608
+val Loss: 0.51390283 Acc: 0.85964912
+New best validation loss: 0.5139028314958539
+Epoch 3 of 25 took 15.417s
+Epoch 3/24
+----------
+train Loss: 0.63536890 Acc: 0.8045845
+val Loss: 0.43375751 Acc: 0.86842108
+New best validation loss: 0.43375751428436815
+Epoch 4 of 25 took 14.443s
+Epoch 4/24
+----------
+train Loss: 0.55743350 Acc: 0.82626784
+val Loss: 0.37389384 Acc: 0.86842108
+New best validation loss: 0.3738938381797389
+Epoch 5 of 25 took 14.275s
+Epoch 5/24
+----------
+train Loss: 0.49217318 Acc: 0.84348172
+val Loss: 0.31717569 Acc: 0.89035088
+New best validation loss: 0.3171756911696049
+Epoch 6 of 25 took 14.208s
+Epoch 6/24
+----------
+train Loss: 0.44578463 Acc: 0.85702276
+val Loss: 0.30213888 Acc: 0.89035088
+New best validation loss: 0.3021388806794819
+Epoch 7 of 25 took 13.622s
+Epoch 7/24
+----------
+train Loss: 0.41483186 Acc: 0.86574036
+val Loss: 0.26389197 Acc: 0.89912283
+New best validation loss: 0.26389197299354955
+Epoch 8 of 25 took 13.375s
+Epoch 8/24
+----------
+train Loss: 0.38047183 Acc: 0.87534297
+val Loss: 0.25787681 Acc: 0.91666669
+New best validation loss: 0.2578768144574082
+Epoch 9 of 25 took 15.191s
+Epoch 9/24
+----------
+train Loss: 0.36672805 Acc: 0.88153821
+val Loss: 0.22522709 Acc: 0.91666669
+New best validation loss: 0.22522708825897753
+Epoch 10 of 25 took 14.789s
+Epoch 10/24
+----------
+train Loss: 0.33065094 Acc: 0.89233565
+val Loss: 0.19593249 Acc: 0.92105263
+New best validation loss: 0.1959324886924342
+Epoch 11 of 25 took 14.900s
+Epoch 11/24
+----------
+train Loss: 0.31499330 Acc: 0.89680505
+val Loss: 0.21723267 Acc: 0.92543858
+Epoch 12 of 25 took 14.531s
+Epoch 12/24
+----------
+train Loss: 0.29181656 Acc: 0.90569967
+val Loss: 0.21726648 Acc: 0.92982459
+Epoch 13 of 25 took 14.492s
+Epoch 13/24
+----------
+train Loss: 0.27984671 Acc: 0.90981507
+val Loss: 0.18525011 Acc: 0.93859649
+New best validation loss: 0.18525011497631408
+Epoch 14 of 25 took 15.573s
+Epoch 14/24
+----------
+train Loss: 0.27072660 Acc: 0.91092134
+val Loss: 0.22627864 Acc: 0.92543858
+Epoch 15 of 25 took 14.940s
+Epoch 15/24
+----------
+train Loss: 0.24754894 Acc: 0.91950619
+val Loss: 0.17872379 Acc: 0.95175439
+New best validation loss: 0.17872378700657895
+Epoch 16 of 25 took 14.684s
+Epoch 16/24
+----------
+train Loss: 0.24249898 Acc: 0.92092222
+val Loss: 0.16832583 Acc: 0.95175439
+New best validation loss: 0.16832582574141652
+Epoch 17 of 25 took 16.702s
+Epoch 17/24
+----------
+train Loss: 0.22685425 Acc: 0.92459512
+val Loss: 0.16964046 Acc: 0.93859649
+Epoch 18 of 25 took 16.239s
+Epoch 18/24
+----------
+train Loss: 0.23144793 Acc: 0.92410833
+val Loss: 0.15839145 Acc: 0.95175439
+New best validation loss: 0.1583914505807977
+Epoch 19 of 25 took 16.317s
+Epoch 19/24
+----------
+train Loss: 0.21364706 Acc: 0.93017083
+val Loss: 0.15308743 Acc: 0.95175439
+New best validation loss: 0.15308743192438493
+Epoch 20 of 25 took 16.303s
+Epoch 20/24
+----------
+train Loss: 0.20085909 Acc: 0.93410921
+val Loss: 0.15816416 Acc: 0.95175439
+Epoch 21 of 25 took 16.484s
+Epoch 21/24
+----------
+train Loss: 0.18875655 Acc: 0.93672007
+val Loss: 0.15139686 Acc: 0.94298244
+New best validation loss: 0.15139686350236858
+Epoch 22 of 25 took 16.324s
+Epoch 22/24
+----------
+train Loss: 0.18589831 Acc: 0.93941945
+val Loss: 0.16006244 Acc: 0.94736844
+Epoch 23 of 25 took 16.254s
+Epoch 23/24
+----------
+train Loss: 0.18819026 Acc: 0.93787062
+val Loss: 0.13410888 Acc: 0.95614034
+New best validation loss: 0.13410887801856325
+Epoch 24 of 25 took 15.912s
+Epoch 24/24
+----------
+train Loss: 0.18839988 Acc: 0.93667585
+val Loss: 0.14742495 Acc: 0.95175439
+Epoch 25 of 25 took 15.613s
+
+Training complete in 6m 21s
+Best val loss: 0.134109
+ACCURACY TEST_0 FINAL : 79.968 %
+22661
+(22661, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 2.04392864 Acc: 0.6269803
+val Loss: 1.20009533 Acc: 0.63596493
+New best validation loss: 1.2000953272769326
+Epoch 1 of 25 took 15.353s
+Epoch 1/24
+----------
+train Loss: 1.01021584 Acc: 0.70623541
+val Loss: 0.83069035 Acc: 0.78070176
+New best validation loss: 0.8306903504488761
+Epoch 2 of 25 took 14.177s
+Epoch 2/24
+----------
+train Loss: 0.80399684 Acc: 0.75989586
+val Loss: 0.68702817 Acc: 0.82456142
+New best validation loss: 0.6870281687954016
+Epoch 3 of 25 took 13.884s
+Epoch 3/24
+----------
+train Loss: 0.65565396 Acc: 0.8039363
+val Loss: 0.55885425 Acc: 0.82456142
+New best validation loss: 0.5588542536685341
+Epoch 4 of 25 took 14.234s
+Epoch 4/24
+----------
+train Loss: 0.55813348 Acc: 0.82913375
+val Loss: 0.48397808 Acc: 0.85087723
+New best validation loss: 0.4839780757301732
+Epoch 5 of 25 took 14.716s
+Epoch 5/24
+----------
+train Loss: 0.47569973 Acc: 0.85393405
+val Loss: 0.43450215 Acc: 0.86403507
+New best validation loss: 0.4345021498830695
+Epoch 6 of 25 took 15.009s
+Epoch 6/24
+----------
+train Loss: 0.42712646 Acc: 0.86809939
+val Loss: 0.41049141 Acc: 0.89912283
+New best validation loss: 0.41049140796326755
+Epoch 7 of 25 took 13.943s
+Epoch 7/24
+----------
+train Loss: 0.41131682 Acc: 0.87286526
+val Loss: 0.38508552 Acc: 0.89035088
+New best validation loss: 0.38508552417420505
+Epoch 8 of 25 took 15.163s
+Epoch 8/24
+----------
+train Loss: 0.35836650 Acc: 0.89060503
+val Loss: 0.36190495 Acc: 0.89473683
+New best validation loss: 0.36190494738127055
+Epoch 9 of 25 took 14.397s
+Epoch 9/24
+----------
+train Loss: 0.32779995 Acc: 0.89673889
+val Loss: 0.35033109 Acc: 0.90350878
+New best validation loss: 0.35033108895285087
+Epoch 10 of 25 took 14.283s
+Epoch 10/24
+----------
+train Loss: 0.28816585 Acc: 0.90847713
+val Loss: 0.32342847 Acc: 0.90350878
+New best validation loss: 0.323428471883138
+Epoch 11 of 25 took 15.275s
+Epoch 11/24
+----------
+train Loss: 0.26889111 Acc: 0.91399318
+val Loss: 0.36349487 Acc: 0.90350878
+Epoch 12 of 25 took 15.467s
+Epoch 12/24
+----------
+train Loss: 0.25275283 Acc: 0.91964167
+val Loss: 0.30794003 Acc: 0.90350878
+New best validation loss: 0.3079400313527961
+Epoch 13 of 25 took 13.690s
+Epoch 13/24
+----------
+train Loss: 0.23114224 Acc: 0.92436343
+val Loss: 0.27054633 Acc: 0.92982459
+New best validation loss: 0.27054632755748015
+Epoch 14 of 25 took 14.718s
+Epoch 14/24
+----------
+train Loss: 0.21612643 Acc: 0.92983538
+val Loss: 0.26209272 Acc: 0.92543858
+New best validation loss: 0.2620927241810581
+Epoch 15 of 25 took 15.104s
+Epoch 15/24
+----------
+train Loss: 0.20811442 Acc: 0.93089449
+val Loss: 0.27418873 Acc: 0.91228068
+Epoch 16 of 25 took 13.640s
+Epoch 16/24
+----------
+train Loss: 0.21011543 Acc: 0.9315564
+val Loss: 0.29532275 Acc: 0.92105263
+Epoch 17 of 25 took 13.752s
+Epoch 17/24
+----------
+train Loss: 0.19190130 Acc: 0.9378227
+val Loss: 0.27385099 Acc: 0.92105263
+Epoch 18 of 25 took 15.003s
+Epoch 18/24
+----------
+train Loss: 0.18812355 Acc: 0.93967611
+val Loss: 0.26585361 Acc: 0.92543858
+Epoch 19 of 25 took 14.647s
+Epoch 19/24
+----------
+train Loss: 0.18785467 Acc: 0.93945545
+val Loss: 0.28961556 Acc: 0.91666669
+Epoch 20 of 25 took 15.141s
+Epoch 20/24
+----------
+train Loss: 0.17539713 Acc: 0.94444197
+val Loss: 0.27149063 Acc: 0.91666669
+Epoch 00021: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 21 of 25 took 14.173s
+Epoch 21/24
+----------
+train Loss: 0.14921255 Acc: 0.94995809
+val Loss: 0.22668823 Acc: 0.92982459
+New best validation loss: 0.2266882344296104
+Epoch 22 of 25 took 15.800s
+Epoch 22/24
+----------
+train Loss: 0.13427784 Acc: 0.95600373
+val Loss: 0.19597948 Acc: 0.94298244
+New best validation loss: 0.19597947639331484
+Epoch 23 of 25 took 16.226s
+Epoch 23/24
+----------
+train Loss: 0.12138339 Acc: 0.95891619
+val Loss: 0.19743170 Acc: 0.94736844
+Epoch 24 of 25 took 16.193s
+Epoch 24/24
+----------
+train Loss: 0.12038906 Acc: 0.96006352
+val Loss: 0.20835159 Acc: 0.93859649
+Epoch 25 of 25 took 16.359s
+
+Training complete in 6m 10s
+Best val loss: 0.195979
+ACCURACY TEST_0 FINAL : 87.270 %
+22570
+(22570, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.55739492 Acc: 0.66978288
+val Loss: 1.01609896 Acc: 0.73568279
+New best validation loss: 1.0160989635316287
+Epoch 1 of 25 took 16.570s
+Epoch 1/24
+----------
+train Loss: 0.88131132 Acc: 0.74479395
+val Loss: 0.77680996 Acc: 0.78414094
+New best validation loss: 0.7768099612601528
+Epoch 2 of 25 took 16.327s
+Epoch 2/24
+----------
+train Loss: 0.69397313 Acc: 0.79831636
+val Loss: 0.61000021 Acc: 0.82378852
+New best validation loss: 0.610000207035552
+Epoch 3 of 25 took 16.481s
+Epoch 3/24
+----------
+train Loss: 0.58507681 Acc: 0.82906514
+val Loss: 0.56406460 Acc: 0.81497794
+New best validation loss: 0.5640645972432544
+Epoch 4 of 25 took 16.467s
+Epoch 4/24
+----------
+train Loss: 0.50796513 Acc: 0.84993356
+val Loss: 0.53553587 Acc: 0.83700436
+New best validation loss: 0.5355358711948479
+Epoch 5 of 25 took 16.439s
+Epoch 5/24
+----------
+train Loss: 0.46822050 Acc: 0.86047852
+val Loss: 0.45370003 Acc: 0.8502202
+New best validation loss: 0.453700027801917
+Epoch 6 of 25 took 16.396s
+Epoch 6/24
+----------
+train Loss: 0.42256651 Acc: 0.8749668
+val Loss: 0.46178225 Acc: 0.85903078
+Epoch 7 of 25 took 16.432s
+Epoch 7/24
+----------
+train Loss: 0.39924740 Acc: 0.88059372
+val Loss: 0.41244924 Acc: 0.8634361
+New best validation loss: 0.4124492359581498
+Epoch 8 of 25 took 16.346s
+Epoch 8/24
+----------
+train Loss: 0.36625523 Acc: 0.88825876
+val Loss: 0.36385577 Acc: 0.88546252
+New best validation loss: 0.3638557736569039
+Epoch 9 of 25 took 16.425s
+Epoch 9/24
+----------
+train Loss: 0.34104580 Acc: 0.89552504
+val Loss: 0.35145670 Acc: 0.87224668
+New best validation loss: 0.35145669676658864
+Epoch 10 of 25 took 16.350s
+Epoch 10/24
+----------
+train Loss: 0.33500432 Acc: 0.8973859
+val Loss: 0.35853970 Acc: 0.85462552
+Epoch 11 of 25 took 16.434s
+Epoch 11/24
+----------
+train Loss: 0.32258310 Acc: 0.90097475
+val Loss: 0.42594237 Acc: 0.88105726
+Epoch 12 of 25 took 16.393s
+Epoch 12/24
+----------
+train Loss: 0.30115323 Acc: 0.90633583
+val Loss: 0.28786885 Acc: 0.89867836
+New best validation loss: 0.28786885265736856
+Epoch 13 of 25 took 16.451s
+Epoch 13/24
+----------
+train Loss: 0.28606678 Acc: 0.91333628
+val Loss: 0.34674697 Acc: 0.90748894
+Epoch 14 of 25 took 16.407s
+Epoch 14/24
+----------
+train Loss: 0.26468918 Acc: 0.91891891
+val Loss: 0.28370485 Acc: 0.91629952
+New best validation loss: 0.2837048501170154
+Epoch 15 of 25 took 16.301s
+Epoch 15/24
+----------
+train Loss: 0.26327431 Acc: 0.91887462
+val Loss: 0.33433260 Acc: 0.9251101
+Epoch 16 of 25 took 11.329s
+Epoch 16/24
+----------
+train Loss: 0.25751214 Acc: 0.91967213
+val Loss: 0.31072430 Acc: 0.91629952
+Epoch 17 of 25 took 11.089s
+Epoch 17/24
+----------
+train Loss: 0.23859699 Acc: 0.92662829
+val Loss: 0.26530055 Acc: 0.90748894
+New best validation loss: 0.26530054907441664
+Epoch 18 of 25 took 11.110s
+Epoch 18/24
+----------
+train Loss: 0.23281672 Acc: 0.92813468
+val Loss: 0.28430974 Acc: 0.92070478
+Epoch 19 of 25 took 11.178s
+Epoch 19/24
+----------
+train Loss: 0.22775504 Acc: 0.92990696
+val Loss: 0.30111143 Acc: 0.9251101
+Epoch 20 of 25 took 11.102s
+Epoch 20/24
+----------
+train Loss: 0.21561645 Acc: 0.9343819
+val Loss: 0.37818374 Acc: 0.87665194
+Epoch 21 of 25 took 10.927s
+Epoch 21/24
+----------
+train Loss: 0.23732876 Acc: 0.92910945
+val Loss: 0.25824921 Acc: 0.92070478
+New best validation loss: 0.2582492072151621
+Epoch 22 of 25 took 11.061s
+Epoch 22/24
+----------
+train Loss: 0.22641395 Acc: 0.93123615
+val Loss: 0.28245628 Acc: 0.9251101
+Epoch 23 of 25 took 11.104s
+Epoch 23/24
+----------
+train Loss: 0.21366423 Acc: 0.934825
+val Loss: 0.28093115 Acc: 0.92070478
+Epoch 24 of 25 took 11.158s
+Epoch 24/24
+----------
+train Loss: 0.20007942 Acc: 0.93947721
+val Loss: 0.29173376 Acc: 0.90748894
+Epoch 25 of 25 took 11.115s
+
+Training complete in 5m 57s
+Best val loss: 0.258249
+ACCURACY TEST_0 FINAL : 88.489 %
+22634
+(22634, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.58246058 Acc: 0.63342762
+val Loss: 0.92479378 Acc: 0.67543858
+New best validation loss: 0.9247937788043106
+Epoch 1 of 25 took 11.151s
+Epoch 1/24
+----------
+train Loss: 0.85683500 Acc: 0.73628169
+val Loss: 0.71184734 Acc: 0.76754385
+New best validation loss: 0.7118473387601083
+Epoch 2 of 25 took 11.236s
+Epoch 2/24
+----------
+train Loss: 0.68094675 Acc: 0.79124326
+val Loss: 0.58675545 Acc: 0.78947371
+New best validation loss: 0.5867554514031661
+Epoch 3 of 25 took 11.102s
+Epoch 3/24
+----------
+train Loss: 0.58258260 Acc: 0.81881243
+val Loss: 0.46053435 Acc: 0.83771932
+New best validation loss: 0.4605343467310855
+Epoch 4 of 25 took 10.903s
+Epoch 4/24
+----------
+train Loss: 0.51517614 Acc: 0.83683842
+val Loss: 0.47195143 Acc: 0.83771932
+Epoch 5 of 25 took 11.461s
+Epoch 5/24
+----------
+train Loss: 0.46992302 Acc: 0.8502695
+val Loss: 0.48699861 Acc: 0.82456142
+Epoch 6 of 25 took 11.443s
+Epoch 6/24
+----------
+train Loss: 0.43954635 Acc: 0.85853142
+val Loss: 0.43414514 Acc: 0.83771932
+New best validation loss: 0.4341451410661664
+Epoch 7 of 25 took 10.435s
+Epoch 7/24
+----------
+train Loss: 0.41011908 Acc: 0.86847222
+val Loss: 0.36895170 Acc: 0.86842108
+New best validation loss: 0.3689516970985814
+Epoch 8 of 25 took 11.112s
+Epoch 8/24
+----------
+train Loss: 0.37135634 Acc: 0.87836885
+val Loss: 0.37486672 Acc: 0.87280703
+Epoch 9 of 25 took 10.829s
+Epoch 9/24
+----------
+train Loss: 0.35363091 Acc: 0.88150573
+val Loss: 0.33151071 Acc: 0.88596493
+New best validation loss: 0.3315107111345258
+Epoch 10 of 25 took 11.374s
+Epoch 10/24
+----------
+train Loss: 0.34405491 Acc: 0.88786781
+val Loss: 0.33636548 Acc: 0.87280703
+Epoch 11 of 25 took 11.150s
+Epoch 11/24
+----------
+train Loss: 0.32832039 Acc: 0.89361137
+val Loss: 0.29918127 Acc: 0.87719297
+New best validation loss: 0.2991812655800267
+Epoch 12 of 25 took 11.828s
+Epoch 12/24
+----------
+train Loss: 0.31002034 Acc: 0.89855969
+val Loss: 0.32473317 Acc: 0.89035088
+Epoch 13 of 25 took 11.266s
+Epoch 13/24
+----------
+train Loss: 0.31362843 Acc: 0.89635062
+val Loss: 0.27689057 Acc: 0.89912283
+New best validation loss: 0.2768905706572951
+Epoch 14 of 25 took 9.785s
+Epoch 14/24
+----------
+train Loss: 0.29991276 Acc: 0.89922243
+val Loss: 0.31034712 Acc: 0.87280703
+Epoch 15 of 25 took 11.153s
+Epoch 15/24
+----------
+train Loss: 0.28283458 Acc: 0.90695417
+val Loss: 0.25235350 Acc: 0.90350878
+New best validation loss: 0.252353500901607
+Epoch 16 of 25 took 10.654s
+Epoch 16/24
+----------
+train Loss: 0.27389663 Acc: 0.90744013
+val Loss: 0.26141731 Acc: 0.90350878
+Epoch 17 of 25 took 10.143s
+Epoch 17/24
+----------
+train Loss: 0.26341955 Acc: 0.91088629
+val Loss: 0.21290324 Acc: 0.92543858
+New best validation loss: 0.21290324027078195
+Epoch 18 of 25 took 6.382s
+Epoch 18/24
+----------
+train Loss: 0.25649199 Acc: 0.91486263
+val Loss: 0.25936542 Acc: 0.90350878
+Epoch 19 of 25 took 6.420s
+Epoch 19/24
+----------
+train Loss: 0.27383194 Acc: 0.90903068
+val Loss: 0.24460943 Acc: 0.91666669
+Epoch 20 of 25 took 6.039s
+Epoch 20/24
+----------
+train Loss: 0.25108692 Acc: 0.91716003
+val Loss: 0.26588544 Acc: 0.88157898
+Epoch 21 of 25 took 6.165s
+Epoch 21/24
+----------
+train Loss: 0.25614870 Acc: 0.91517186
+val Loss: 0.21086664 Acc: 0.89912283
+New best validation loss: 0.21086664367140384
+Epoch 22 of 25 took 5.723s
+Epoch 22/24
+----------
+train Loss: 0.23450262 Acc: 0.92082709
+val Loss: 0.20425810 Acc: 0.91228068
+New best validation loss: 0.20425809642724824
+Epoch 23 of 25 took 6.530s
+Epoch 23/24
+----------
+train Loss: 0.22175054 Acc: 0.92674738
+val Loss: 0.23222195 Acc: 0.91666669
+Epoch 24 of 25 took 6.554s
+Epoch 24/24
+----------
+train Loss: 0.21936095 Acc: 0.92643809
+val Loss: 0.18901878 Acc: 0.93421054
+New best validation loss: 0.1890187849078262
+Epoch 25 of 25 took 5.981s
+
+Training complete in 3m 57s
+Best val loss: 0.189019
+ACCURACY TEST_0 FINAL : 84.395 %
+22621
+(22621, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.60853902 Acc: 0.64727467
+val Loss: 0.91218487 Acc: 0.7280702
+New best validation loss: 0.9121848658511513
+Epoch 1 of 25 took 5.981s
+Epoch 1/24
+----------
+train Loss: 0.95241835 Acc: 0.73038328
+val Loss: 0.65163234 Acc: 0.80701756
+New best validation loss: 0.6516323424222177
+Epoch 2 of 25 took 6.036s
+Epoch 2/24
+----------
+train Loss: 0.79255989 Acc: 0.77180493
+val Loss: 0.54464946 Acc: 0.82894737
+New best validation loss: 0.544649458768075
+Epoch 3 of 25 took 6.283s
+Epoch 3/24
+----------
+train Loss: 0.69400225 Acc: 0.79859424
+val Loss: 0.48664672 Acc: 0.85526317
+New best validation loss: 0.4866467191461931
+Epoch 4 of 25 took 6.223s
+Epoch 4/24
+----------
+train Loss: 0.62800475 Acc: 0.81207728
+val Loss: 0.44575725 Acc: 0.87280703
+New best validation loss: 0.44575724685401247
+Epoch 5 of 25 took 4.626s
+Epoch 5/24
+----------
+train Loss: 0.58674954 Acc: 0.82365942
+val Loss: 0.41273532 Acc: 0.89035088
+New best validation loss: 0.41273531997412966
+Epoch 6 of 25 took 5.393s
+Epoch 6/24
+----------
+train Loss: 0.54554354 Acc: 0.83705407
+val Loss: 0.36570596 Acc: 0.87719297
+New best validation loss: 0.3657059585838987
+Epoch 7 of 25 took 6.558s
+Epoch 7/24
+----------
+train Loss: 0.50203799 Acc: 0.84563017
+val Loss: 0.35093354 Acc: 0.90789473
+New best validation loss: 0.3509335434227659
+Epoch 8 of 25 took 5.861s
+Epoch 8/24
+----------
+train Loss: 0.46660508 Acc: 0.85469252
+val Loss: 0.33717480 Acc: 0.90350878
+New best validation loss: 0.3371748004043311
+Epoch 9 of 25 took 6.290s
+Epoch 9/24
+----------
+train Loss: 0.45026064 Acc: 0.86052781
+val Loss: 0.31571034 Acc: 0.90789473
+New best validation loss: 0.31571033544707716
+Epoch 10 of 25 took 6.172s
+Epoch 10/24
+----------
+train Loss: 0.43022191 Acc: 0.86720306
+val Loss: 0.34879464 Acc: 0.89035088
+Epoch 11 of 25 took 6.460s
+Epoch 11/24
+----------
+train Loss: 0.41175353 Acc: 0.8701207
+val Loss: 0.30101569 Acc: 0.90350878
+New best validation loss: 0.30101568657055233
+Epoch 12 of 25 took 5.768s
+Epoch 12/24
+----------
+train Loss: 0.38414694 Acc: 0.87905043
+val Loss: 0.32227195 Acc: 0.90350878
+Epoch 13 of 25 took 6.088s
+Epoch 13/24
+----------
+train Loss: 0.36803566 Acc: 0.88687503
+val Loss: 0.27870106 Acc: 0.91666669
+New best validation loss: 0.27870106278804313
+Epoch 14 of 25 took 6.296s
+Epoch 14/24
+----------
+train Loss: 0.35843808 Acc: 0.88638872
+val Loss: 0.27042672 Acc: 0.92105263
+New best validation loss: 0.2704267167208487
+Epoch 15 of 25 took 5.922s
+Epoch 15/24
+----------
+train Loss: 0.32678054 Acc: 0.89615846
+val Loss: 0.26902448 Acc: 0.92543858
+New best validation loss: 0.2690244808531644
+Epoch 16 of 25 took 5.674s
+Epoch 16/24
+----------
+train Loss: 0.31433393 Acc: 0.90044647
+val Loss: 0.22512782 Acc: 0.94736844
+New best validation loss: 0.22512782247442947
+Epoch 17 of 25 took 6.757s
+Epoch 17/24
+----------
+train Loss: 0.30114088 Acc: 0.90292203
+val Loss: 0.21142638 Acc: 0.95175439
+New best validation loss: 0.21142638357062088
+Epoch 18 of 25 took 6.381s
+Epoch 18/24
+----------
+train Loss: 0.29149169 Acc: 0.90601653
+val Loss: 0.22820924 Acc: 0.94298244
+Epoch 19 of 25 took 5.269s
+Epoch 19/24
+----------
+train Loss: 0.28761108 Acc: 0.90774059
+val Loss: 0.27344098 Acc: 0.92543858
+Epoch 20 of 25 took 6.920s
+Epoch 20/24
+----------
+train Loss: 0.27981270 Acc: 0.90893418
+val Loss: 0.23483489 Acc: 0.93859649
+Epoch 21 of 25 took 6.899s
+Epoch 21/24
+----------
+train Loss: 0.27485472 Acc: 0.91189599
+val Loss: 0.29337187 Acc: 0.93421054
+Epoch 22 of 25 took 6.623s
+Epoch 22/24
+----------
+train Loss: 0.26255826 Acc: 0.9172008
+val Loss: 0.26188195 Acc: 0.92982459
+Epoch 23 of 25 took 6.840s
+Epoch 23/24
+----------
+train Loss: 0.26255888 Acc: 0.91658193
+val Loss: 0.22737739 Acc: 0.92543858
+Epoch 00024: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 24 of 25 took 6.790s
+Epoch 24/24
+----------
+train Loss: 0.22865864 Acc: 0.92537904
+val Loss: 0.18118681 Acc: 0.95175439
+New best validation loss: 0.1811868098744175
+Epoch 25 of 25 took 7.095s
+
+Training complete in 2m 35s
+Best val loss: 0.181187
+ACCURACY TEST_0 FINAL : 84.149 %
+22553
+(22553, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.96353291 Acc: 0.57810491
+val Loss: 1.27363660 Acc: 0.59471363
+New best validation loss: 1.2736366036704982
+Epoch 1 of 25 took 6.381s
+Epoch 1/24
+----------
+train Loss: 1.13562822 Acc: 0.6605773
+val Loss: 0.99489140 Acc: 0.69162995
+New best validation loss: 0.994891397753476
+Epoch 2 of 25 took 6.267s
+Epoch 2/24
+----------
+train Loss: 0.90941723 Acc: 0.72238725
+val Loss: 0.77400154 Acc: 0.74449337
+New best validation loss: 0.7740015374406319
+Epoch 3 of 25 took 6.257s
+Epoch 3/24
+----------
+train Loss: 0.78422589 Acc: 0.75604129
+val Loss: 0.71533049 Acc: 0.77533036
+New best validation loss: 0.7153304852052932
+Epoch 4 of 25 took 6.034s
+Epoch 4/24
+----------
+train Loss: 0.69739237 Acc: 0.78268963
+val Loss: 0.61033496 Acc: 0.81057262
+New best validation loss: 0.610334959324236
+Epoch 5 of 25 took 6.660s
+Epoch 5/24
+----------
+train Loss: 0.63216202 Acc: 0.8000266
+val Loss: 0.58071402 Acc: 0.8017621
+New best validation loss: 0.5807140199098293
+Epoch 6 of 25 took 5.887s
+Epoch 6/24
+----------
+train Loss: 0.56420330 Acc: 0.81975788
+val Loss: 0.57133780 Acc: 0.82378852
+New best validation loss: 0.5713377965179309
+Epoch 7 of 25 took 6.287s
+Epoch 7/24
+----------
+train Loss: 0.51852128 Acc: 0.83044386
+val Loss: 0.56756188 Acc: 0.83700436
+New best validation loss: 0.5675618848086453
+Epoch 8 of 25 took 5.655s
+Epoch 8/24
+----------
+train Loss: 0.49216817 Acc: 0.83926749
+val Loss: 0.54212760 Acc: 0.8502202
+New best validation loss: 0.5421276008505128
+Epoch 9 of 25 took 5.812s
+Epoch 9/24
+----------
+train Loss: 0.46318630 Acc: 0.84853452
+val Loss: 0.43771631 Acc: 0.8502202
+New best validation loss: 0.4377163118202781
+Epoch 10 of 25 took 6.546s
+Epoch 10/24
+----------
+train Loss: 0.43075567 Acc: 0.85421008
+val Loss: 0.38186256 Acc: 0.87665194
+New best validation loss: 0.38186255635669053
+Epoch 11 of 25 took 6.553s
+Epoch 11/24
+----------
+train Loss: 0.40458052 Acc: 0.86870927
+val Loss: 0.41430452 Acc: 0.85903078
+Epoch 12 of 25 took 6.072s
+Epoch 12/24
+----------
+train Loss: 0.37855032 Acc: 0.87163568
+val Loss: 0.38539926 Acc: 0.85462552
+Epoch 13 of 25 took 6.405s
+Epoch 13/24
+----------
+train Loss: 0.35693855 Acc: 0.87997162
+val Loss: 0.29584056 Acc: 0.89867836
+New best validation loss: 0.2958405616524986
+Epoch 14 of 25 took 6.113s
+Epoch 14/24
+----------
+train Loss: 0.35296393 Acc: 0.88303107
+val Loss: 0.32773540 Acc: 0.90308368
+Epoch 15 of 25 took 5.884s
+Epoch 15/24
+----------
+train Loss: 0.33220279 Acc: 0.88724339
+val Loss: 0.29606444 Acc: 0.9251101
+Epoch 16 of 25 took 6.605s
+Epoch 16/24
+----------
+train Loss: 0.30661665 Acc: 0.89566797
+val Loss: 0.30586451 Acc: 0.9251101
+Epoch 17 of 25 took 6.569s
+Epoch 17/24
+----------
+train Loss: 0.30408027 Acc: 0.89620006
+val Loss: 0.26939012 Acc: 0.90308368
+New best validation loss: 0.2693901230060056
+Epoch 18 of 25 took 6.305s
+Epoch 18/24
+----------
+train Loss: 0.29639333 Acc: 0.90001327
+val Loss: 0.30305992 Acc: 0.92070478
+Epoch 19 of 25 took 6.730s
+Epoch 19/24
+----------
+train Loss: 0.27901729 Acc: 0.90489072
+val Loss: 0.24909365 Acc: 0.92951536
+New best validation loss: 0.24909364809548803
+Epoch 20 of 25 took 5.509s
+Epoch 20/24
+----------
+train Loss: 0.26708961 Acc: 0.90874827
+val Loss: 0.28159989 Acc: 0.92070478
+Epoch 21 of 25 took 5.993s
+Epoch 21/24
+----------
+train Loss: 0.31156971 Acc: 0.89886045
+val Loss: 0.30454237 Acc: 0.91189426
+Epoch 22 of 25 took 6.156s
+Epoch 22/24
+----------
+train Loss: 0.30442275 Acc: 0.89925951
+val Loss: 0.27520145 Acc: 0.92070478
+Epoch 23 of 25 took 5.781s
+Epoch 23/24
+----------
+train Loss: 0.25947397 Acc: 0.91180772
+val Loss: 0.21690625 Acc: 0.93392068
+New best validation loss: 0.21690624505937886
+Epoch 24 of 25 took 6.593s
+Epoch 24/24
+----------
+train Loss: 0.25502736 Acc: 0.91517758
+val Loss: 0.21219803 Acc: 0.93392068
+New best validation loss: 0.21219803058103318
+Epoch 25 of 25 took 6.190s
+
+Training complete in 2m 35s
+Best val loss: 0.212198
+ACCURACY TEST_0 FINAL : 83.357 %
+22527
+(22527, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.78035416 Acc: 0.64007634
+val Loss: 1.03953754 Acc: 0.71365637
+New best validation loss: 1.0395375390409898
+Epoch 1 of 25 took 6.076s
+Epoch 1/24
+----------
+train Loss: 0.99593804 Acc: 0.71341056
+val Loss: 0.82255628 Acc: 0.75330395
+New best validation loss: 0.8225562814048734
+Epoch 2 of 25 took 5.955s
+Epoch 2/24
+----------
+train Loss: 0.84316519 Acc: 0.74901229
+val Loss: 0.73793682 Acc: 0.75770921
+New best validation loss: 0.737936818127065
+Epoch 3 of 25 took 6.172s
+Epoch 3/24
+----------
+train Loss: 0.74904301 Acc: 0.77364939
+val Loss: 0.60893539 Acc: 0.7885462
+New best validation loss: 0.6089353855485958
+Epoch 4 of 25 took 5.587s
+Epoch 4/24
+----------
+train Loss: 0.67972157 Acc: 0.79287076
+val Loss: 0.58573719 Acc: 0.8017621
+New best validation loss: 0.5857371863814702
+Epoch 5 of 25 took 6.241s
+Epoch 5/24
+----------
+train Loss: 0.62890222 Acc: 0.80574417
+val Loss: 0.48986803 Acc: 0.8325991
+New best validation loss: 0.48986802962382986
+Epoch 6 of 25 took 5.542s
+Epoch 6/24
+----------
+train Loss: 0.59043946 Acc: 0.81595415
+val Loss: 0.45900061 Acc: 0.85462552
+New best validation loss: 0.45900060846942115
+Epoch 7 of 25 took 6.037s
+Epoch 7/24
+----------
+train Loss: 0.54343974 Acc: 0.82878321
+val Loss: 0.42202208 Acc: 0.85462552
+New best validation loss: 0.4220220759051487
+Epoch 8 of 25 took 6.239s
+Epoch 8/24
+----------
+train Loss: 0.50661484 Acc: 0.83859366
+val Loss: 0.37013050 Acc: 0.88105726
+New best validation loss: 0.37013049692834527
+Epoch 9 of 25 took 5.848s
+Epoch 9/24
+----------
+train Loss: 0.46478155 Acc: 0.84827095
+val Loss: 0.35821738 Acc: 0.88986778
+New best validation loss: 0.3582173822209698
+Epoch 10 of 25 took 6.520s
+Epoch 10/24
+----------
+train Loss: 0.44583638 Acc: 0.85710478
+val Loss: 0.35932545 Acc: 0.89867836
+Epoch 11 of 25 took 6.715s
+Epoch 11/24
+----------
+train Loss: 0.42064980 Acc: 0.86536157
+val Loss: 0.33571763 Acc: 0.90308368
+New best validation loss: 0.3357176255549628
+Epoch 12 of 25 took 6.655s
+Epoch 12/24
+----------
+train Loss: 0.39982578 Acc: 0.8706885
+val Loss: 0.29042934 Acc: 0.89867836
+New best validation loss: 0.2904293379594576
+Epoch 13 of 25 took 6.435s
+Epoch 13/24
+----------
+train Loss: 0.37662129 Acc: 0.87756914
+val Loss: 0.29221720 Acc: 0.90308368
+Epoch 14 of 25 took 6.881s
+Epoch 14/24
+----------
+train Loss: 0.35675915 Acc: 0.88045454
+val Loss: 0.28841478 Acc: 0.88986778
+New best validation loss: 0.2884147812091306
+Epoch 15 of 25 took 6.637s
+Epoch 15/24
+----------
+train Loss: 0.33843060 Acc: 0.8876459
+val Loss: 0.31261279 Acc: 0.89867836
+Epoch 16 of 25 took 6.645s
+Epoch 16/24
+----------
+train Loss: 0.33677284 Acc: 0.88502681
+val Loss: 0.30289705 Acc: 0.91629952
+Epoch 17 of 25 took 6.641s
+Epoch 17/24
+----------
+train Loss: 0.32414776 Acc: 0.8926177
+val Loss: 0.32929075 Acc: 0.93832594
+Epoch 18 of 25 took 6.861s
+Epoch 18/24
+----------
+train Loss: 0.30800481 Acc: 0.89785588
+val Loss: 0.25405862 Acc: 0.91629952
+New best validation loss: 0.254058619427786
+Epoch 19 of 25 took 6.752s
+Epoch 19/24
+----------
+train Loss: 0.28271580 Acc: 0.90407068
+val Loss: 0.24853832 Acc: 0.91629952
+New best validation loss: 0.2485383155587486
+Epoch 20 of 25 took 6.760s
+Epoch 20/24
+----------
+train Loss: 0.34126013 Acc: 0.89226258
+val Loss: 0.32267583 Acc: 0.8942731
+Epoch 21 of 25 took 6.752s
+Epoch 21/24
+----------
+train Loss: 0.31999953 Acc: 0.89750075
+val Loss: 0.31143656 Acc: 0.8942731
+Epoch 22 of 25 took 6.523s
+Epoch 22/24
+----------
+train Loss: 0.29084543 Acc: 0.90384871
+val Loss: 0.25245670 Acc: 0.90308368
+Epoch 23 of 25 took 6.770s
+Epoch 23/24
+----------
+train Loss: 0.25822358 Acc: 0.91334838
+val Loss: 0.24952907 Acc: 0.90748894
+Epoch 24 of 25 took 6.738s
+Epoch 24/24
+----------
+train Loss: 0.25299669 Acc: 0.91490209
+val Loss: 0.18741430 Acc: 0.93832594
+New best validation loss: 0.1874143045904353
+Epoch 25 of 25 took 6.739s
+
+Training complete in 2m 41s
+Best val loss: 0.187414
+ACCURACY TEST_0 FINAL : 85.069 %
+22533
+(22533, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.61614175 Acc: 0.68246573
+val Loss: 1.15132309 Acc: 0.70484579
+New best validation loss: 1.1513230916161894
+Epoch 1 of 25 took 6.911s
+Epoch 1/24
+----------
+train Loss: 0.96235523 Acc: 0.72782141
+val Loss: 0.82194015 Acc: 0.79735678
+New best validation loss: 0.8219401489795567
+Epoch 2 of 25 took 6.636s
+Epoch 2/24
+----------
+train Loss: 0.75700394 Acc: 0.78280741
+val Loss: 0.66605992 Acc: 0.82378852
+New best validation loss: 0.6660599225418158
+Epoch 3 of 25 took 6.750s
+Epoch 3/24
+----------
+train Loss: 0.63924585 Acc: 0.81134337
+val Loss: 0.54136285 Acc: 0.84581494
+New best validation loss: 0.5413628464753407
+Epoch 4 of 25 took 6.802s
+Epoch 4/24
+----------
+train Loss: 0.54463112 Acc: 0.83286732
+val Loss: 0.48933703 Acc: 0.85903078
+New best validation loss: 0.4893370304863884
+Epoch 5 of 25 took 6.923s
+Epoch 5/24
+----------
+train Loss: 0.49427811 Acc: 0.84618115
+val Loss: 0.42458582 Acc: 0.88105726
+New best validation loss: 0.424585821344989
+Epoch 6 of 25 took 6.364s
+Epoch 6/24
+----------
+train Loss: 0.43561952 Acc: 0.86455423
+val Loss: 0.40008568 Acc: 0.8942731
+New best validation loss: 0.4000856844864228
+Epoch 7 of 25 took 5.548s
+Epoch 7/24
+----------
+train Loss: 0.41083582 Acc: 0.87556028
+val Loss: 0.36096064 Acc: 0.88986778
+New best validation loss: 0.3609606368951335
+Epoch 8 of 25 took 6.218s
+Epoch 8/24
+----------
+train Loss: 0.38253850 Acc: 0.88070828
+val Loss: 0.34951890 Acc: 0.88105726
+New best validation loss: 0.34951889777498624
+Epoch 9 of 25 took 6.439s
+Epoch 9/24
+----------
+train Loss: 0.35839782 Acc: 0.88683265
+val Loss: 0.33309321 Acc: 0.89867836
+New best validation loss: 0.33309321466521546
+Epoch 10 of 25 took 5.877s
+Epoch 10/24
+----------
+train Loss: 0.34805516 Acc: 0.8901611
+val Loss: 0.27541122 Acc: 0.91189426
+New best validation loss: 0.275411222684751
+Epoch 11 of 25 took 6.449s
+Epoch 11/24
+----------
+train Loss: 0.32353949 Acc: 0.89797187
+val Loss: 0.27387019 Acc: 0.91629952
+New best validation loss: 0.2738701908598912
+Epoch 12 of 25 took 5.678s
+Epoch 12/24
+----------
+train Loss: 0.29904677 Acc: 0.90569389
+val Loss: 0.26354665 Acc: 0.92070478
+New best validation loss: 0.2635466453787514
+Epoch 13 of 25 took 6.397s
+Epoch 13/24
+----------
+train Loss: 0.27553056 Acc: 0.909688
+val Loss: 0.27304716 Acc: 0.92070478
+Epoch 14 of 25 took 6.697s
+Epoch 14/24
+----------
+train Loss: 0.27421368 Acc: 0.91181821
+val Loss: 0.25998298 Acc: 0.9251101
+New best validation loss: 0.2599829787199718
+Epoch 15 of 25 took 6.508s
+Epoch 15/24
+----------
+train Loss: 0.26247155 Acc: 0.91399282
+val Loss: 0.23961293 Acc: 0.93392068
+New best validation loss: 0.23961293224721228
+Epoch 16 of 25 took 5.886s
+Epoch 16/24
+----------
+train Loss: 0.25089331 Acc: 0.91945148
+val Loss: 0.23892377 Acc: 0.92951536
+New best validation loss: 0.23892376601433438
+Epoch 17 of 25 took 6.161s
+Epoch 17/24
+----------
+train Loss: 0.24837626 Acc: 0.91843075
+val Loss: 0.22930943 Acc: 0.92951536
+New best validation loss: 0.22930943493275915
+Epoch 18 of 25 took 6.123s
+Epoch 18/24
+----------
+train Loss: 0.23490479 Acc: 0.92277992
+val Loss: 0.22128674 Acc: 0.92951536
+New best validation loss: 0.22128674007197308
+Epoch 19 of 25 took 5.983s
+Epoch 19/24
+----------
+train Loss: 0.22820369 Acc: 0.92428881
+val Loss: 0.23470856 Acc: 0.93832594
+Epoch 20 of 25 took 6.389s
+Epoch 20/24
+----------
+train Loss: 0.22237115 Acc: 0.92570895
+val Loss: 0.26174710 Acc: 0.9251101
+Epoch 21 of 25 took 5.999s
+Epoch 21/24
+----------
+train Loss: 0.21170885 Acc: 0.92877114
+val Loss: 0.30092698 Acc: 0.9251101
+Epoch 22 of 25 took 6.866s
+Epoch 22/24
+----------
+train Loss: 0.22469256 Acc: 0.92659652
+val Loss: 0.24553976 Acc: 0.92951536
+Epoch 23 of 25 took 6.319s
+Epoch 23/24
+----------
+train Loss: 0.21474865 Acc: 0.92952555
+val Loss: 0.21419310 Acc: 0.93392068
+New best validation loss: 0.21419310044612128
+Epoch 24 of 25 took 6.013s
+Epoch 24/24
+----------
+train Loss: 0.19477391 Acc: 0.93396354
+val Loss: 0.21197751 Acc: 0.94273126
+New best validation loss: 0.21197750914989588
+Epoch 25 of 25 took 5.741s
+
+Training complete in 2m 38s
+Best val loss: 0.211978
+ACCURACY TEST_0 FINAL : 87.029 %
+22593
+(22593, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.59916219 Acc: 0.62820345
+val Loss: 1.15920164 Acc: 0.65350878
+New best validation loss: 1.1592016387404056
+Epoch 1 of 25 took 6.052s
+Epoch 1/24
+----------
+train Loss: 1.05990758 Acc: 0.69508255
+val Loss: 0.88264668 Acc: 0.71929824
+New best validation loss: 0.8826466811330695
+Epoch 2 of 25 took 6.534s
+Epoch 2/24
+----------
+train Loss: 0.90140404 Acc: 0.73416549
+val Loss: 0.70489642 Acc: 0.77192986
+New best validation loss: 0.7048964249460321
+Epoch 3 of 25 took 6.168s
+Epoch 3/24
+----------
+train Loss: 0.79602071 Acc: 0.76691896
+val Loss: 0.60283627 Acc: 0.82456142
+New best validation loss: 0.6028362742641515
+Epoch 4 of 25 took 6.476s
+Epoch 4/24
+----------
+train Loss: 0.70037494 Acc: 0.794007
+val Loss: 0.53169910 Acc: 0.84210527
+New best validation loss: 0.5316990969473856
+Epoch 5 of 25 took 5.688s
+Epoch 5/24
+----------
+train Loss: 0.63531933 Acc: 0.81281817
+val Loss: 0.47490699 Acc: 0.85087723
+New best validation loss: 0.4749069883112322
+Epoch 6 of 25 took 6.346s
+Epoch 6/24
+----------
+train Loss: 0.58462536 Acc: 0.82676053
+val Loss: 0.42774612 Acc: 0.86403507
+New best validation loss: 0.42774612025210734
+Epoch 7 of 25 took 6.166s
+Epoch 7/24
+----------
+train Loss: 0.54193175 Acc: 0.83747178
+val Loss: 0.38002195 Acc: 0.87280703
+New best validation loss: 0.38002194856342514
+Epoch 8 of 25 took 6.290s
+Epoch 8/24
+----------
+train Loss: 0.49588274 Acc: 0.85110438
+val Loss: 0.36683645 Acc: 0.89912283
+New best validation loss: 0.3668364474647923
+Epoch 9 of 25 took 5.717s
+Epoch 9/24
+----------
+train Loss: 0.46638905 Acc: 0.86124021
+val Loss: 0.32409614 Acc: 0.89473683
+New best validation loss: 0.32409614429139255
+Epoch 10 of 25 took 6.707s
+Epoch 10/24
+----------
+train Loss: 0.43073014 Acc: 0.87155318
+val Loss: 0.30330755 Acc: 0.89912283
+New best validation loss: 0.30330754999528853
+Epoch 11 of 25 took 5.697s
+Epoch 11/24
+----------
+train Loss: 0.42054950 Acc: 0.87181872
+val Loss: 0.28770059 Acc: 0.90350878
+New best validation loss: 0.28770058615165844
+Epoch 12 of 25 took 6.403s
+Epoch 12/24
+----------
+train Loss: 0.40233431 Acc: 0.87682027
+val Loss: 0.25675200 Acc: 0.91228068
+New best validation loss: 0.2567519974290279
+Epoch 13 of 25 took 6.576s
+Epoch 13/24
+----------
+train Loss: 0.37227743 Acc: 0.88881516
+val Loss: 0.26059868 Acc: 0.92543858
+Epoch 14 of 25 took 6.704s
+Epoch 14/24
+----------
+train Loss: 0.36940925 Acc: 0.8864693
+val Loss: 0.24737912 Acc: 0.92543858
+New best validation loss: 0.24737911893610368
+Epoch 15 of 25 took 6.447s
+Epoch 15/24
+----------
+train Loss: 0.34420571 Acc: 0.89487898
+val Loss: 0.23662755 Acc: 0.92543858
+New best validation loss: 0.23662754527309485
+Epoch 16 of 25 took 6.604s
+Epoch 16/24
+----------
+train Loss: 0.34065679 Acc: 0.89602977
+val Loss: 0.27170577 Acc: 0.92982459
+Epoch 17 of 25 took 6.053s
+Epoch 17/24
+----------
+train Loss: 0.33566540 Acc: 0.89607406
+val Loss: 0.22498574 Acc: 0.92105263
+New best validation loss: 0.2249857417324133
+Epoch 18 of 25 took 6.797s
+Epoch 18/24
+----------
+train Loss: 0.33446510 Acc: 0.89616257
+val Loss: 0.27015229 Acc: 0.92105263
+Epoch 19 of 25 took 6.863s
+Epoch 19/24
+----------
+train Loss: 0.30701828 Acc: 0.90528041
+val Loss: 0.21428254 Acc: 0.92105263
+New best validation loss: 0.21428253776148745
+Epoch 20 of 25 took 6.735s
+Epoch 20/24
+----------
+train Loss: 0.29631981 Acc: 0.90966231
+val Loss: 0.20301464 Acc: 0.92543858
+New best validation loss: 0.2030146414773506
+Epoch 21 of 25 took 6.893s
+Epoch 21/24
+----------
+train Loss: 0.28092802 Acc: 0.91333604
+val Loss: 0.18136908 Acc: 0.92543858
+New best validation loss: 0.1813690787867496
+Epoch 22 of 25 took 6.867s
+Epoch 22/24
+----------
+train Loss: 0.27526226 Acc: 0.91399992
+val Loss: 0.18681253 Acc: 0.92543858
+Epoch 23 of 25 took 6.877s
+Epoch 23/24
+----------
+train Loss: 0.26370094 Acc: 0.91714251
+val Loss: 0.17737461 Acc: 0.92982459
+New best validation loss: 0.17737460554691784
+Epoch 24 of 25 took 6.758s
+Epoch 24/24
+----------
+train Loss: 0.25238100 Acc: 0.92276371
+val Loss: 0.17847125 Acc: 0.95175439
+Epoch 25 of 25 took 6.733s
+
+Training complete in 2m 41s
+Best val loss: 0.177375
+ACCURACY TEST_0 FINAL : 82.041 %
+22801
+(22801, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.60176970 Acc: 0.64334899
+val Loss: 0.96791377 Acc: 0.68260866
+New best validation loss: 0.9679137719195823
+Epoch 1 of 25 took 6.962s
+Epoch 1/24
+----------
+train Loss: 1.01791802 Acc: 0.69676769
+val Loss: 0.74530646 Acc: 0.7521739
+New best validation loss: 0.7453064628269361
+Epoch 2 of 25 took 6.951s
+Epoch 2/24
+----------
+train Loss: 0.87906714 Acc: 0.73308188
+val Loss: 0.67498401 Acc: 0.77391303
+New best validation loss: 0.674984011442765
+Epoch 3 of 25 took 6.872s
+Epoch 3/24
+----------
+train Loss: 0.79012203 Acc: 0.75470376
+val Loss: 0.58094877 Acc: 0.80869561
+New best validation loss: 0.5809487716011379
+Epoch 4 of 25 took 6.865s
+Epoch 4/24
+----------
+train Loss: 0.71113840 Acc: 0.77623791
+val Loss: 0.54483706 Acc: 0.81739128
+New best validation loss: 0.5448370560355809
+Epoch 5 of 25 took 6.941s
+Epoch 5/24
+----------
+train Loss: 0.67052956 Acc: 0.79049164
+val Loss: 0.51408602 Acc: 0.80869561
+New best validation loss: 0.5140860184379246
+Epoch 6 of 25 took 6.860s
+Epoch 6/24
+----------
+train Loss: 0.62725164 Acc: 0.79952633
+val Loss: 0.44716102 Acc: 0.84782606
+New best validation loss: 0.4471610177081564
+Epoch 7 of 25 took 6.871s
+Epoch 7/24
+----------
+train Loss: 0.59300647 Acc: 0.80834174
+val Loss: 0.44106399 Acc: 0.86086953
+New best validation loss: 0.44106398872707203
+Epoch 8 of 25 took 6.728s
+Epoch 8/24
+----------
+train Loss: 0.56679433 Acc: 0.81842905
+val Loss: 0.39881068 Acc: 0.86521733
+New best validation loss: 0.39881067690641986
+Epoch 9 of 25 took 6.867s
+Epoch 9/24
+----------
+train Loss: 0.52540288 Acc: 0.82746375
+val Loss: 0.39823847 Acc: 0.89565212
+New best validation loss: 0.39823846568232
+Epoch 10 of 25 took 6.748s
+Epoch 10/24
+----------
+train Loss: 0.50786106 Acc: 0.83347225
+val Loss: 0.38029271 Acc: 0.88695645
+New best validation loss: 0.38029271001401155
+Epoch 11 of 25 took 6.518s
+Epoch 11/24
+----------
+train Loss: 0.48205787 Acc: 0.84132278
+val Loss: 0.37233383 Acc: 0.86521733
+New best validation loss: 0.37233382515285324
+Epoch 12 of 25 took 6.672s
+Epoch 12/24
+----------
+train Loss: 0.46286672 Acc: 0.84838384
+val Loss: 0.37074112 Acc: 0.87826085
+New best validation loss: 0.37074112436045775
+Epoch 13 of 25 took 6.866s
+Epoch 13/24
+----------
+train Loss: 0.45126797 Acc: 0.85360295
+val Loss: 0.34847485 Acc: 0.89130431
+New best validation loss: 0.34847485086192254
+Epoch 14 of 25 took 6.934s
+Epoch 14/24
+----------
+train Loss: 0.42422967 Acc: 0.85886586
+val Loss: 0.32284035 Acc: 0.90434778
+New best validation loss: 0.3228403506071671
+Epoch 15 of 25 took 6.875s
+Epoch 15/24
+----------
+train Loss: 0.41923304 Acc: 0.85978687
+val Loss: 0.30702972 Acc: 0.88695645
+New best validation loss: 0.30702972412109375
+Epoch 16 of 25 took 6.675s
+Epoch 16/24
+----------
+train Loss: 0.39447663 Acc: 0.87035656
+val Loss: 0.31219250 Acc: 0.90869564
+Epoch 17 of 25 took 6.937s
+Epoch 17/24
+----------
+train Loss: 0.38357212 Acc: 0.87219858
+val Loss: 0.30739542 Acc: 0.90434778
+Epoch 18 of 25 took 6.787s
+Epoch 18/24
+----------
+train Loss: 0.36333651 Acc: 0.88092631
+val Loss: 0.33708078 Acc: 0.89565212
+Epoch 19 of 25 took 6.884s
+Epoch 19/24
+----------
+train Loss: 0.35661940 Acc: 0.87921584
+val Loss: 0.26563321 Acc: 0.91304344
+New best validation loss: 0.2656332057455312
+Epoch 20 of 25 took 6.807s
+Epoch 20/24
+----------
+train Loss: 0.36013218 Acc: 0.88061929
+val Loss: 0.31813348 Acc: 0.90434778
+Epoch 21 of 25 took 6.720s
+Epoch 21/24
+----------
+train Loss: 0.35009361 Acc: 0.88351387
+val Loss: 0.29795977 Acc: 0.90434778
+Epoch 22 of 25 took 6.735s
+Epoch 22/24
+----------
+train Loss: 0.33265349 Acc: 0.88728565
+val Loss: 0.26618017 Acc: 0.91739124
+Epoch 23 of 25 took 6.990s
+Epoch 23/24
+----------
+train Loss: 0.33091330 Acc: 0.88925928
+val Loss: 0.28850784 Acc: 0.9217391
+Epoch 24 of 25 took 5.819s
+Epoch 24/24
+----------
+train Loss: 0.31729204 Acc: 0.89487302
+val Loss: 0.28013853 Acc: 0.90869564
+Epoch 25 of 25 took 6.042s
+
+Training complete in 2m 49s
+Best val loss: 0.265633
+ACCURACY TEST_0 FINAL : 81.445 %
+22552
+(22552, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.18049817 Acc: 0.72135514
+val Loss: 0.67675750 Acc: 0.79735678
+New best validation loss: 0.6767574999300918
+Epoch 1 of 25 took 6.659s
+Epoch 1/24
+----------
+train Loss: 0.74557279 Acc: 0.77545232
+val Loss: 0.51417756 Acc: 0.83700436
+New best validation loss: 0.5141775610163348
+Epoch 2 of 25 took 5.792s
+Epoch 2/24
+----------
+train Loss: 0.60589886 Acc: 0.81345338
+val Loss: 0.42983901 Acc: 0.86784136
+New best validation loss: 0.42983901238126376
+Epoch 3 of 25 took 6.416s
+Epoch 3/24
+----------
+train Loss: 0.52722520 Acc: 0.8392604
+val Loss: 0.42897985 Acc: 0.85903078
+New best validation loss: 0.4289798484499759
+Epoch 4 of 25 took 6.321s
+Epoch 4/24
+----------
+train Loss: 0.47772632 Acc: 0.85242999
+val Loss: 0.39754321 Acc: 0.87224668
+New best validation loss: 0.39754321396613435
+Epoch 5 of 25 took 6.366s
+Epoch 5/24
+----------
+train Loss: 0.43350491 Acc: 0.86724019
+val Loss: 0.33966612 Acc: 0.90748894
+New best validation loss: 0.3396661229070588
+Epoch 6 of 25 took 6.673s
+Epoch 6/24
+----------
+train Loss: 0.40698736 Acc: 0.8717187
+val Loss: 0.30764397 Acc: 0.90308368
+New best validation loss: 0.3076439744050282
+Epoch 7 of 25 took 6.310s
+Epoch 7/24
+----------
+train Loss: 0.38601056 Acc: 0.87987763
+val Loss: 0.29092794 Acc: 0.91629952
+New best validation loss: 0.2909279373773919
+Epoch 8 of 25 took 6.455s
+Epoch 8/24
+----------
+train Loss: 0.38491094 Acc: 0.88111919
+val Loss: 0.30419955 Acc: 0.90308368
+Epoch 9 of 25 took 5.468s
+Epoch 9/24
+----------
+train Loss: 0.35118315 Acc: 0.88914514
+val Loss: 0.27733789 Acc: 0.90308368
+New best validation loss: 0.27733788511301455
+Epoch 10 of 25 took 6.345s
+Epoch 10/24
+----------
+train Loss: 0.32734198 Acc: 0.89561903
+val Loss: 0.24886827 Acc: 0.91629952
+New best validation loss: 0.24886826670642467
+Epoch 11 of 25 took 6.002s
+Epoch 11/24
+----------
+train Loss: 0.31210864 Acc: 0.90058535
+val Loss: 0.23249188 Acc: 0.91189426
+New best validation loss: 0.2324918839374828
+Epoch 12 of 25 took 6.058s
+Epoch 12/24
+----------
+train Loss: 0.30253726 Acc: 0.90306848
+val Loss: 0.25200243 Acc: 0.90748894
+Epoch 13 of 25 took 6.149s
+Epoch 13/24
+----------
+train Loss: 0.28402640 Acc: 0.90821218
+val Loss: 0.21056312 Acc: 0.92070478
+New best validation loss: 0.21056312191328813
+Epoch 14 of 25 took 5.953s
+Epoch 14/24
+----------
+train Loss: 0.27125174 Acc: 0.9108727
+val Loss: 0.20665149 Acc: 0.93392068
+New best validation loss: 0.20665149436648197
+Epoch 15 of 25 took 6.207s
+Epoch 15/24
+----------
+train Loss: 0.27183115 Acc: 0.91109437
+val Loss: 0.20168874 Acc: 0.92951536
+New best validation loss: 0.20168874127224154
+Epoch 16 of 25 took 6.298s
+Epoch 16/24
+----------
+train Loss: 0.26217213 Acc: 0.91521817
+val Loss: 0.19642567 Acc: 0.93832594
+New best validation loss: 0.19642566899371042
+Epoch 17 of 25 took 6.771s
+Epoch 17/24
+----------
+train Loss: 0.26014568 Acc: 0.91419834
+val Loss: 0.19490629 Acc: 0.92070478
+New best validation loss: 0.19490629355812913
+Epoch 18 of 25 took 5.969s
+Epoch 18/24
+----------
+train Loss: 0.24538832 Acc: 0.92058355
+val Loss: 0.15681818 Acc: 0.94713652
+New best validation loss: 0.15681817563094758
+Epoch 19 of 25 took 6.605s
+Epoch 19/24
+----------
+train Loss: 0.24173877 Acc: 0.92018449
+val Loss: 0.16793524 Acc: 0.94713652
+Epoch 20 of 25 took 6.182s
+Epoch 20/24
+----------
+train Loss: 0.23521173 Acc: 0.92470735
+val Loss: 0.17952483 Acc: 0.93392068
+Epoch 21 of 25 took 6.262s
+Epoch 21/24
+----------
+train Loss: 0.21890997 Acc: 0.92665839
+val Loss: 0.18447150 Acc: 0.9251101
+Epoch 22 of 25 took 5.974s
+Epoch 22/24
+----------
+train Loss: 0.22628131 Acc: 0.9270575
+val Loss: 0.14554623 Acc: 0.93392068
+New best validation loss: 0.14554622834999656
+Epoch 23 of 25 took 6.190s
+Epoch 23/24
+----------
+train Loss: 0.20851012 Acc: 0.9317134
+val Loss: 0.17066858 Acc: 0.91629952
+Epoch 24 of 25 took 5.929s
+Epoch 24/24
+----------
+train Loss: 0.20655669 Acc: 0.93233418
+val Loss: 0.17954876 Acc: 0.92951536
+Epoch 25 of 25 took 5.972s
+
+Training complete in 2m 35s
+Best val loss: 0.145546
+ACCURACY TEST_0 FINAL : 86.104 %
+22864
+(22864, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.32830185 Acc: 0.6739853
+val Loss: 0.95148481 Acc: 0.71739125
+New best validation loss: 0.9514848128609036
+Epoch 1 of 25 took 6.298s
+Epoch 1/24
+----------
+train Loss: 0.88892637 Acc: 0.73757875
+val Loss: 0.78575804 Acc: 0.7521739
+New best validation loss: 0.7857580433721127
+Epoch 2 of 25 took 6.450s
+Epoch 2/24
+----------
+train Loss: 0.76835840 Acc: 0.76688248
+val Loss: 0.67762252 Acc: 0.80434781
+New best validation loss: 0.6776225214419158
+Epoch 3 of 25 took 6.253s
+Epoch 3/24
+----------
+train Loss: 0.67514318 Acc: 0.79566133
+val Loss: 0.59815170 Acc: 0.80869561
+New best validation loss: 0.5981516962466032
+Epoch 4 of 25 took 5.972s
+Epoch 4/24
+----------
+train Loss: 0.61902355 Acc: 0.81389958
+val Loss: 0.55750049 Acc: 0.8391304
+New best validation loss: 0.5575004909349525
+Epoch 5 of 25 took 5.880s
+Epoch 5/24
+----------
+train Loss: 0.56844164 Acc: 0.82514
+val Loss: 0.48029122 Acc: 0.8434782
+New best validation loss: 0.48029121730638585
+Epoch 6 of 25 took 5.957s
+Epoch 6/24
+----------
+train Loss: 0.57274357 Acc: 0.8288576
+val Loss: 0.53080994 Acc: 0.83043474
+Epoch 7 of 25 took 6.641s
+Epoch 7/24
+----------
+train Loss: 0.57454002 Acc: 0.83397484
+val Loss: 0.44451304 Acc: 0.86086953
+New best validation loss: 0.4445130389669667
+Epoch 8 of 25 took 5.827s
+Epoch 8/24
+----------
+train Loss: 0.54277013 Acc: 0.8375175
+val Loss: 0.50704626 Acc: 0.8434782
+Epoch 9 of 25 took 7.113s
+Epoch 9/24
+----------
+train Loss: 0.52929959 Acc: 0.84324706
+val Loss: 0.45267566 Acc: 0.86086953
+Epoch 10 of 25 took 5.429s
+Epoch 10/24
+----------
+train Loss: 0.51949460 Acc: 0.84727085
+val Loss: 0.49386481 Acc: 0.8391304
+Epoch 11 of 25 took 6.113s
+Epoch 11/24
+----------
+train Loss: 0.50475245 Acc: 0.85251927
+val Loss: 0.43626148 Acc: 0.8391304
+New best validation loss: 0.43626148389733355
+Epoch 12 of 25 took 6.397s
+Epoch 12/24
+----------
+train Loss: 0.49211941 Acc: 0.85439992
+val Loss: 0.43475807 Acc: 0.86086953
+New best validation loss: 0.4347580652651579
+Epoch 13 of 25 took 6.797s
+Epoch 13/24
+----------
+train Loss: 0.48141238 Acc: 0.85601819
+val Loss: 0.41058758 Acc: 0.86521733
+New best validation loss: 0.4105875761612602
+Epoch 14 of 25 took 6.584s
+Epoch 14/24
+----------
+train Loss: 0.45820786 Acc: 0.86161655
+val Loss: 0.35679560 Acc: 0.88695645
+New best validation loss: 0.3567956012228261
+Epoch 15 of 25 took 6.152s
+Epoch 15/24
+----------
+train Loss: 0.43159483 Acc: 0.87101996
+val Loss: 0.35837300 Acc: 0.87391299
+Epoch 16 of 25 took 6.503s
+Epoch 16/24
+----------
+train Loss: 0.40508936 Acc: 0.87849897
+val Loss: 0.36012348 Acc: 0.88695645
+Epoch 17 of 25 took 6.306s
+Epoch 17/24
+----------
+train Loss: 0.42405680 Acc: 0.87434399
+val Loss: 0.33612352 Acc: 0.89565212
+New best validation loss: 0.33612352454144023
+Epoch 18 of 25 took 6.470s
+Epoch 18/24
+----------
+train Loss: 0.39476142 Acc: 0.88072956
+val Loss: 0.34225354 Acc: 0.88695645
+Epoch 19 of 25 took 5.907s
+Epoch 19/24
+----------
+train Loss: 0.41224813 Acc: 0.87674952
+val Loss: 0.33296486 Acc: 0.89565212
+New best validation loss: 0.332964855691661
+Epoch 20 of 25 took 6.142s
+Epoch 20/24
+----------
+train Loss: 0.38030599 Acc: 0.88698393
+val Loss: 0.27859182 Acc: 0.90434778
+New best validation loss: 0.27859181943147077
+Epoch 21 of 25 took 6.384s
+Epoch 21/24
+----------
+train Loss: 0.35907913 Acc: 0.89201367
+val Loss: 0.29358235 Acc: 0.90434778
+Epoch 22 of 25 took 5.479s
+Epoch 22/24
+----------
+train Loss: 0.34435766 Acc: 0.89529395
+val Loss: 0.25110661 Acc: 0.9217391
+New best validation loss: 0.2511066105054772
+Epoch 23 of 25 took 6.782s
+Epoch 23/24
+----------
+train Loss: 0.33752780 Acc: 0.89656228
+val Loss: 0.31709283 Acc: 0.90869564
+Epoch 24 of 25 took 6.797s
+Epoch 24/24
+----------
+train Loss: 0.32989186 Acc: 0.89796185
+val Loss: 0.27674892 Acc: 0.91739124
+Epoch 25 of 25 took 6.683s
+
+Training complete in 2m 37s
+Best val loss: 0.251107
+ACCURACY TEST_0 FINAL : 85.428 %
+22770
+(22770, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.50791755 Acc: 0.65375495
+val Loss: 1.15398894 Acc: 0.6695652
+New best validation loss: 1.1539889393682063
+Epoch 1 of 25 took 6.996s
+Epoch 1/24
+----------
+train Loss: 1.02455037 Acc: 0.72257358
+val Loss: 0.89859254 Acc: 0.77391303
+New best validation loss: 0.8985925425653872
+Epoch 2 of 25 took 6.892s
+Epoch 2/24
+----------
+train Loss: 0.87575115 Acc: 0.75696093
+val Loss: 0.78880602 Acc: 0.79565215
+New best validation loss: 0.7888060196586277
+Epoch 3 of 25 took 6.662s
+Epoch 3/24
+----------
+train Loss: 0.78955145 Acc: 0.77843654
+val Loss: 0.70525572 Acc: 0.80869561
+New best validation loss: 0.7052557240361753
+Epoch 4 of 25 took 6.896s
+Epoch 4/24
+----------
+train Loss: 0.73794490 Acc: 0.79090911
+val Loss: 0.69401411 Acc: 0.82173908
+New best validation loss: 0.6940141097359035
+Epoch 5 of 25 took 6.814s
+Epoch 5/24
+----------
+train Loss: 0.69023920 Acc: 0.80127364
+val Loss: 0.63175991 Acc: 0.81304342
+New best validation loss: 0.6317599089249321
+Epoch 6 of 25 took 6.773s
+Epoch 6/24
+----------
+train Loss: 0.65647863 Acc: 0.81159425
+val Loss: 0.60739501 Acc: 0.82608694
+New best validation loss: 0.6073950062627378
+Epoch 7 of 25 took 6.846s
+Epoch 7/24
+----------
+train Loss: 0.61711034 Acc: 0.81730348
+val Loss: 0.57456214 Acc: 0.83043474
+New best validation loss: 0.5745621390964674
+Epoch 8 of 25 took 6.672s
+Epoch 8/24
+----------
+train Loss: 0.58401111 Acc: 0.82876593
+val Loss: 0.54601384 Acc: 0.8434782
+New best validation loss: 0.5460138403851053
+Epoch 9 of 25 took 6.855s
+Epoch 9/24
+----------
+train Loss: 0.56232443 Acc: 0.83574879
+val Loss: 0.52221547 Acc: 0.8391304
+New best validation loss: 0.5222154700237772
+Epoch 10 of 25 took 6.899s
+Epoch 10/24
+----------
+train Loss: 0.54128507 Acc: 0.8390426
+val Loss: 0.52744177 Acc: 0.86086953
+Epoch 11 of 25 took 6.648s
+Epoch 11/24
+----------
+train Loss: 0.52870974 Acc: 0.84233642
+val Loss: 0.50507819 Acc: 0.8434782
+New best validation loss: 0.5050781913425612
+Epoch 12 of 25 took 6.196s
+Epoch 12/24
+----------
+train Loss: 0.50706410 Acc: 0.84576201
+val Loss: 0.47114935 Acc: 0.85652173
+New best validation loss: 0.4711493450662364
+Epoch 13 of 25 took 6.788s
+Epoch 13/24
+----------
+train Loss: 0.48127797 Acc: 0.8551603
+val Loss: 0.47069364 Acc: 0.86086953
+New best validation loss: 0.4706936380137568
+Epoch 14 of 25 took 6.818s
+Epoch 14/24
+----------
+train Loss: 0.47309763 Acc: 0.85867369
+val Loss: 0.46671179 Acc: 0.84782606
+New best validation loss: 0.4667117906653363
+Epoch 15 of 25 took 6.877s
+Epoch 15/24
+----------
+train Loss: 0.45327746 Acc: 0.86095744
+val Loss: 0.48530104 Acc: 0.87391299
+Epoch 16 of 25 took 6.657s
+Epoch 16/24
+----------
+train Loss: 0.44987167 Acc: 0.8619675
+val Loss: 0.41155943 Acc: 0.87391299
+New best validation loss: 0.41155942833941916
+Epoch 17 of 25 took 6.744s
+Epoch 17/24
+----------
+train Loss: 0.45208776 Acc: 0.86231887
+val Loss: 0.41914490 Acc: 0.86956519
+Epoch 18 of 25 took 6.767s
+Epoch 18/24
+----------
+train Loss: 0.43861503 Acc: 0.86824775
+val Loss: 0.41505754 Acc: 0.86086953
+Epoch 19 of 25 took 6.754s
+Epoch 19/24
+----------
+train Loss: 0.41571723 Acc: 0.87184894
+val Loss: 0.44619539 Acc: 0.86956519
+Epoch 20 of 25 took 6.749s
+Epoch 20/24
+----------
+train Loss: 0.41031562 Acc: 0.87338609
+val Loss: 0.37674554 Acc: 0.88260865
+New best validation loss: 0.37674553912618886
+Epoch 21 of 25 took 6.737s
+Epoch 21/24
+----------
+train Loss: 0.40301106 Acc: 0.87742645
+val Loss: 0.38431901 Acc: 0.87826085
+Epoch 22 of 25 took 6.477s
+Epoch 22/24
+----------
+train Loss: 0.41596582 Acc: 0.87509882
+val Loss: 0.50509325 Acc: 0.85652173
+Epoch 23 of 25 took 5.924s
+Epoch 23/24
+----------
+train Loss: 0.42925478 Acc: 0.86965305
+val Loss: 0.41456329 Acc: 0.86521733
+Epoch 24 of 25 took 5.644s
+Epoch 24/24
+----------
+train Loss: 0.41119380 Acc: 0.87400091
+val Loss: 0.37190157 Acc: 0.86956519
+New best validation loss: 0.3719015701957371
+Epoch 25 of 25 took 5.858s
+
+Training complete in 2m 46s
+Best val loss: 0.371902
+ACCURACY TEST_0 FINAL : 77.611 %
+22681
+(22681, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.78777859 Acc: 0.59675503
+val Loss: 1.21109395 Acc: 0.65065503
+New best validation loss: 1.2110939525620905
+Epoch 1 of 25 took 6.195s
+Epoch 1/24
+----------
+train Loss: 1.23510091 Acc: 0.65301353
+val Loss: 0.96029990 Acc: 0.73362446
+New best validation loss: 0.9602998958404407
+Epoch 2 of 25 took 6.204s
+Epoch 2/24
+----------
+train Loss: 1.08992746 Acc: 0.68921125
+val Loss: 0.84994760 Acc: 0.75109172
+New best validation loss: 0.8499476003855077
+Epoch 3 of 25 took 6.141s
+Epoch 3/24
+----------
+train Loss: 1.00419563 Acc: 0.71363699
+val Loss: 0.80849187 Acc: 0.76419216
+New best validation loss: 0.8084918692642945
+Epoch 4 of 25 took 5.739s
+Epoch 4/24
+----------
+train Loss: 0.92785249 Acc: 0.73158151
+val Loss: 0.70304437 Acc: 0.79475981
+New best validation loss: 0.7030443749573554
+Epoch 5 of 25 took 6.176s
+Epoch 5/24
+----------
+train Loss: 0.88269918 Acc: 0.74423528
+val Loss: 0.66376312 Acc: 0.79039305
+New best validation loss: 0.6637631212259484
+Epoch 6 of 25 took 5.939s
+Epoch 6/24
+----------
+train Loss: 0.83469097 Acc: 0.75441998
+val Loss: 0.62023146 Acc: 0.80349344
+New best validation loss: 0.6202314618373022
+Epoch 7 of 25 took 6.048s
+Epoch 7/24
+----------
+train Loss: 0.80280610 Acc: 0.76416385
+val Loss: 0.60604272 Acc: 0.81659389
+New best validation loss: 0.6060427203449099
+Epoch 8 of 25 took 6.063s
+Epoch 8/24
+----------
+train Loss: 0.76941270 Acc: 0.77302587
+val Loss: 0.58841855 Acc: 0.82532752
+New best validation loss: 0.5884185524486558
+Epoch 9 of 25 took 5.946s
+Epoch 9/24
+----------
+train Loss: 0.73625087 Acc: 0.78060931
+val Loss: 0.59066546 Acc: 0.8209607
+Epoch 10 of 25 took 5.813s
+Epoch 10/24
+----------
+train Loss: 0.71770096 Acc: 0.78691417
+val Loss: 0.51688158 Acc: 0.83842796
+New best validation loss: 0.5168815846005902
+Epoch 11 of 25 took 6.115s
+Epoch 11/24
+----------
+train Loss: 0.68722519 Acc: 0.7949385
+val Loss: 0.54570264 Acc: 0.83406115
+Epoch 12 of 25 took 5.969s
+Epoch 12/24
+----------
+train Loss: 0.66288502 Acc: 0.80115515
+val Loss: 0.47966027 Acc: 0.85589522
+New best validation loss: 0.47966026739262074
+Epoch 13 of 25 took 5.938s
+Epoch 13/24
+----------
+train Loss: 0.64489443 Acc: 0.80296284
+val Loss: 0.48351938 Acc: 0.83842796
+Epoch 14 of 25 took 6.178s
+Epoch 14/24
+----------
+train Loss: 0.62069071 Acc: 0.81200123
+val Loss: 0.46857712 Acc: 0.85152841
+New best validation loss: 0.46857712258418055
+Epoch 15 of 25 took 6.072s
+Epoch 15/24
+----------
+train Loss: 0.60827158 Acc: 0.81407344
+val Loss: 0.44233337 Acc: 0.86462885
+New best validation loss: 0.4423333713581468
+Epoch 16 of 25 took 5.887s
+Epoch 16/24
+----------
+train Loss: 0.58823560 Acc: 0.81962878
+val Loss: 0.44172965 Acc: 0.84716159
+New best validation loss: 0.44172964970617834
+Epoch 17 of 25 took 5.973s
+Epoch 17/24
+----------
+train Loss: 0.58292619 Acc: 0.82134825
+val Loss: 0.42328944 Acc: 0.85589522
+New best validation loss: 0.42328943644028044
+Epoch 18 of 25 took 6.241s
+Epoch 18/24
+----------
+train Loss: 0.56135836 Acc: 0.82491952
+val Loss: 0.42080718 Acc: 0.87336248
+New best validation loss: 0.4208071846108249
+Epoch 19 of 25 took 6.367s
+Epoch 19/24
+----------
+train Loss: 0.57372594 Acc: 0.82394958
+val Loss: 0.41558788 Acc: 0.82969433
+New best validation loss: 0.41558787916425016
+Epoch 20 of 25 took 5.841s
+Epoch 20/24
+----------
+train Loss: 0.54303548 Acc: 0.83215028
+val Loss: 0.43260616 Acc: 0.85152841
+Epoch 21 of 25 took 6.646s
+Epoch 21/24
+----------
+train Loss: 0.52493491 Acc: 0.83827877
+val Loss: 0.39756175 Acc: 0.88209611
+New best validation loss: 0.3975617521194391
+Epoch 22 of 25 took 6.168s
+Epoch 22/24
+----------
+train Loss: 0.52162179 Acc: 0.83827877
+val Loss: 0.37240281 Acc: 0.8777293
+New best validation loss: 0.37240280751057586
+Epoch 23 of 25 took 6.576s
+Epoch 23/24
+----------
+train Loss: 0.50868625 Acc: 0.84061551
+val Loss: 0.37398276 Acc: 0.86899567
+Epoch 24 of 25 took 5.920s
+Epoch 24/24
+----------
+train Loss: 0.51450867 Acc: 0.83863145
+val Loss: 0.38204633 Acc: 0.8777293
+Epoch 25 of 25 took 5.256s
+
+Training complete in 2m 31s
+Best val loss: 0.372403
+ACCURACY TEST_0 FINAL : 78.903 %
+22830
+(22830, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.83916393 Acc: 0.61699516
+val Loss: 1.02958732 Acc: 0.68695647
+New best validation loss: 1.0295873227326766
+Epoch 1 of 25 took 5.947s
+Epoch 1/24
+----------
+train Loss: 1.12464802 Acc: 0.6654402
+val Loss: 0.86418603 Acc: 0.73478258
+New best validation loss: 0.8641860298488451
+Epoch 2 of 25 took 6.488s
+Epoch 2/24
+----------
+train Loss: 0.97105498 Acc: 0.70906699
+val Loss: 0.72443383 Acc: 0.80434781
+New best validation loss: 0.7244338325832201
+Epoch 3 of 25 took 6.343s
+Epoch 3/24
+----------
+train Loss: 0.86396213 Acc: 0.73780113
+val Loss: 0.63133114 Acc: 0.79999995
+New best validation loss: 0.6313311369522758
+Epoch 4 of 25 took 6.054s
+Epoch 4/24
+----------
+train Loss: 0.78325076 Acc: 0.76548398
+val Loss: 0.53580339 Acc: 0.81739128
+New best validation loss: 0.5358033885126529
+Epoch 5 of 25 took 6.390s
+Epoch 5/24
+----------
+train Loss: 0.69985882 Acc: 0.78493208
+val Loss: 0.46551394 Acc: 0.84782606
+New best validation loss: 0.46551394255264944
+Epoch 6 of 25 took 6.302s
+Epoch 6/24
+----------
+train Loss: 0.66455374 Acc: 0.79553217
+val Loss: 0.47531056 Acc: 0.85652173
+Epoch 7 of 25 took 6.273s
+Epoch 7/24
+----------
+train Loss: 0.61379386 Acc: 0.81414807
+val Loss: 0.43155866 Acc: 0.88260865
+New best validation loss: 0.4315586587657099
+Epoch 8 of 25 took 6.172s
+Epoch 8/24
+----------
+train Loss: 0.57211757 Acc: 0.82562417
+val Loss: 0.40151188 Acc: 0.89130431
+New best validation loss: 0.4015118806258492
+Epoch 9 of 25 took 5.804s
+Epoch 9/24
+----------
+train Loss: 0.53328305 Acc: 0.83552343
+val Loss: 0.39072135 Acc: 0.87391299
+New best validation loss: 0.3907213476429815
+Epoch 10 of 25 took 5.870s
+Epoch 10/24
+----------
+train Loss: 0.51078353 Acc: 0.84270698
+val Loss: 0.37313302 Acc: 0.88260865
+New best validation loss: 0.373133020815642
+Epoch 11 of 25 took 6.394s
+Epoch 11/24
+----------
+train Loss: 0.48422479 Acc: 0.84699953
+val Loss: 0.34809769 Acc: 0.88695645
+New best validation loss: 0.3480976934018342
+Epoch 12 of 25 took 6.128s
+Epoch 12/24
+----------
+train Loss: 0.46196574 Acc: 0.85567236
+val Loss: 0.33616691 Acc: 0.90869564
+New best validation loss: 0.3361669125764266
+Epoch 13 of 25 took 5.888s
+Epoch 13/24
+----------
+train Loss: 0.44570418 Acc: 0.86241788
+val Loss: 0.34519557 Acc: 0.90869564
+Epoch 14 of 25 took 6.168s
+Epoch 14/24
+----------
+train Loss: 0.42181516 Acc: 0.86776173
+val Loss: 0.29420305 Acc: 0.91304344
+New best validation loss: 0.294203053350034
+Epoch 15 of 25 took 6.377s
+Epoch 15/24
+----------
+train Loss: 0.40093807 Acc: 0.87363118
+val Loss: 0.30969959 Acc: 0.91739124
+Epoch 16 of 25 took 6.706s
+Epoch 16/24
+----------
+train Loss: 0.39465435 Acc: 0.8748576
+val Loss: 0.28023579 Acc: 0.91304344
+New best validation loss: 0.2802357880965523
+Epoch 17 of 25 took 5.754s
+Epoch 17/24
+----------
+train Loss: 0.41826914 Acc: 0.87284273
+val Loss: 0.35054739 Acc: 0.90869564
+Epoch 18 of 25 took 6.440s
+Epoch 18/24
+----------
+train Loss: 0.44712798 Acc: 0.86395091
+val Loss: 0.29640105 Acc: 0.90434778
+Epoch 19 of 25 took 6.470s
+Epoch 19/24
+----------
+train Loss: 0.39109426 Acc: 0.87656593
+val Loss: 0.25919252 Acc: 0.9260869
+New best validation loss: 0.25919252478558086
+Epoch 20 of 25 took 6.439s
+Epoch 20/24
+----------
+train Loss: 0.36266039 Acc: 0.88751644
+val Loss: 0.25969014 Acc: 0.9260869
+Epoch 21 of 25 took 5.743s
+Epoch 21/24
+----------
+train Loss: 0.36712759 Acc: 0.88694698
+val Loss: 0.30071769 Acc: 0.9217391
+Epoch 22 of 25 took 6.172s
+Epoch 22/24
+----------
+train Loss: 0.35222717 Acc: 0.88988173
+val Loss: 0.28286972 Acc: 0.9217391
+Epoch 23 of 25 took 6.325s
+Epoch 23/24
+----------
+train Loss: 0.32830787 Acc: 0.89636439
+val Loss: 0.23170153 Acc: 0.93478256
+New best validation loss: 0.2317015274711277
+Epoch 24 of 25 took 6.803s
+Epoch 24/24
+----------
+train Loss: 0.31722933 Acc: 0.90201485
+val Loss: 0.23306749 Acc: 0.91739124
+Epoch 25 of 25 took 6.626s
+
+Training complete in 2m 36s
+Best val loss: 0.231702
+ACCURACY TEST_0 FINAL : 84.580 %
+22768
+(22768, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.26145350 Acc: 0.67594868
+val Loss: 0.80585057 Acc: 0.76419216
+New best validation loss: 0.805850566214349
+Epoch 1 of 25 took 6.850s
+Epoch 1/24
+----------
+train Loss: 0.80350442 Acc: 0.75553405
+val Loss: 0.62311597 Acc: 0.81222707
+New best validation loss: 0.6231159726605144
+Epoch 2 of 25 took 6.932s
+Epoch 2/24
+----------
+train Loss: 0.68409733 Acc: 0.78421468
+val Loss: 0.57638377 Acc: 0.83406115
+New best validation loss: 0.5763837656079421
+Epoch 3 of 25 took 6.900s
+Epoch 3/24
+----------
+train Loss: 0.60721338 Acc: 0.80648279
+val Loss: 0.49745438 Acc: 0.84279478
+New best validation loss: 0.4974543808849618
+Epoch 4 of 25 took 6.884s
+Epoch 4/24
+----------
+train Loss: 0.58626175 Acc: 0.81878072
+val Loss: 0.52672334 Acc: 0.85152841
+Epoch 5 of 25 took 6.686s
+Epoch 5/24
+----------
+train Loss: 0.53621200 Acc: 0.83248419
+val Loss: 0.49348560 Acc: 0.86462885
+New best validation loss: 0.4934855965027122
+Epoch 6 of 25 took 6.843s
+Epoch 6/24
+----------
+train Loss: 0.50580004 Acc: 0.83951157
+val Loss: 0.43966448 Acc: 0.88209611
+New best validation loss: 0.43966448254980894
+Epoch 7 of 25 took 6.794s
+Epoch 7/24
+----------
+train Loss: 0.46094361 Acc: 0.85036016
+val Loss: 0.43380384 Acc: 0.90393013
+New best validation loss: 0.4338038415367426
+Epoch 8 of 25 took 6.802s
+Epoch 8/24
+----------
+train Loss: 0.44941610 Acc: 0.85554284
+val Loss: 0.40891329 Acc: 0.88646287
+New best validation loss: 0.4089132916979394
+Epoch 9 of 25 took 6.584s
+Epoch 9/24
+----------
+train Loss: 0.42651438 Acc: 0.86401969
+val Loss: 0.38942429 Acc: 0.88646287
+New best validation loss: 0.38942428655499456
+Epoch 10 of 25 took 6.807s
+Epoch 10/24
+----------
+train Loss: 0.40585246 Acc: 0.8655569
+val Loss: 0.35091210 Acc: 0.89956331
+New best validation loss: 0.3509121024452443
+Epoch 11 of 25 took 6.925s
+Epoch 11/24
+----------
+train Loss: 0.38905478 Acc: 0.87095922
+val Loss: 0.37523964 Acc: 0.90829694
+Epoch 12 of 25 took 6.882s
+Epoch 12/24
+----------
+train Loss: 0.38238783 Acc: 0.87442899
+val Loss: 0.35975084 Acc: 0.90393013
+Epoch 13 of 25 took 6.303s
+Epoch 13/24
+----------
+train Loss: 0.36556794 Acc: 0.8777231
+val Loss: 0.35091423 Acc: 0.89956331
+Epoch 14 of 25 took 6.765s
+Epoch 14/24
+----------
+train Loss: 0.34510312 Acc: 0.88527757
+val Loss: 0.34671294 Acc: 0.8951965
+New best validation loss: 0.3467129370010576
+Epoch 15 of 25 took 6.644s
+Epoch 15/24
+----------
+train Loss: 0.33993800 Acc: 0.88668305
+val Loss: 0.31816354 Acc: 0.8951965
+New best validation loss: 0.31816354276832015
+Epoch 16 of 25 took 6.815s
+Epoch 16/24
+----------
+train Loss: 0.32699096 Acc: 0.89120692
+val Loss: 0.31185850 Acc: 0.91266376
+New best validation loss: 0.31185849785284186
+Epoch 17 of 25 took 6.828s
+Epoch 17/24
+----------
+train Loss: 0.32411682 Acc: 0.89322734
+val Loss: 0.33434779 Acc: 0.89956331
+Epoch 18 of 25 took 6.806s
+Epoch 18/24
+----------
+train Loss: 0.32227551 Acc: 0.89296383
+val Loss: 0.30613878 Acc: 0.91266376
+New best validation loss: 0.306138784083737
+Epoch 19 of 25 took 6.821s
+Epoch 19/24
+----------
+train Loss: 0.30573509 Acc: 0.89647752
+val Loss: 0.28950154 Acc: 0.91703057
+New best validation loss: 0.28950154000494677
+Epoch 20 of 25 took 6.957s
+Epoch 20/24
+----------
+train Loss: 0.29432148 Acc: 0.90126491
+val Loss: 0.29823623 Acc: 0.90829694
+Epoch 21 of 25 took 5.926s
+Epoch 21/24
+----------
+train Loss: 0.29639228 Acc: 0.8997277
+val Loss: 0.28997316 Acc: 0.90829694
+Epoch 22 of 25 took 6.088s
+Epoch 22/24
+----------
+train Loss: 0.28092777 Acc: 0.90455902
+val Loss: 0.28488922 Acc: 0.89082968
+New best validation loss: 0.28488922119140625
+Epoch 23 of 25 took 6.566s
+Epoch 23/24
+----------
+train Loss: 0.27210843 Acc: 0.90881938
+val Loss: 0.29104807 Acc: 0.8951965
+Epoch 24 of 25 took 6.086s
+Epoch 24/24
+----------
+train Loss: 0.27015862 Acc: 0.90912682
+val Loss: 0.26155172 Acc: 0.91703057
+New best validation loss: 0.26155171956557893
+Epoch 25 of 25 took 6.617s
+
+Training complete in 2m 47s
+Best val loss: 0.261552
+ACCURACY TEST_0 FINAL : 86.319 %
+22868
+(22868, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.42560044 Acc: 0.67872137
+val Loss: 0.84139139 Acc: 0.74347824
+New best validation loss: 0.8413913892663043
+Epoch 1 of 25 took 6.631s
+Epoch 1/24
+----------
+train Loss: 0.87410756 Acc: 0.74335319
+val Loss: 0.67992010 Acc: 0.79130429
+New best validation loss: 0.6799200970193614
+Epoch 2 of 25 took 6.208s
+Epoch 2/24
+----------
+train Loss: 0.75322898 Acc: 0.77326393
+val Loss: 0.62514303 Acc: 0.80869561
+New best validation loss: 0.6251430345618206
+Epoch 3 of 25 took 6.988s
+Epoch 3/24
+----------
+train Loss: 0.67068983 Acc: 0.79770857
+val Loss: 0.55288829 Acc: 0.80869561
+New best validation loss: 0.5528882897418478
+Epoch 4 of 25 took 6.136s
+Epoch 4/24
+----------
+train Loss: 0.63025731 Acc: 0.8068043
+val Loss: 0.54822573 Acc: 0.81739128
+New best validation loss: 0.5482257345448369
+Epoch 5 of 25 took 5.694s
+Epoch 5/24
+----------
+train Loss: 0.58486480 Acc: 0.82031661
+val Loss: 0.48119248 Acc: 0.82173908
+New best validation loss: 0.48119248099949047
+Epoch 6 of 25 took 6.114s
+Epoch 6/24
+----------
+train Loss: 0.55425545 Acc: 0.83054924
+val Loss: 0.43974135 Acc: 0.8347826
+New best validation loss: 0.4397413502568784
+Epoch 7 of 25 took 6.702s
+Epoch 7/24
+----------
+train Loss: 0.52295001 Acc: 0.84130663
+val Loss: 0.43799458 Acc: 0.8434782
+New best validation loss: 0.4379945837933084
+Epoch 8 of 25 took 6.337s
+Epoch 8/24
+----------
+train Loss: 0.49476928 Acc: 0.84659785
+val Loss: 0.43537482 Acc: 0.8347826
+New best validation loss: 0.43537481556768004
+Epoch 9 of 25 took 6.642s
+Epoch 9/24
+----------
+train Loss: 0.46696257 Acc: 0.85429424
+val Loss: 0.39515796 Acc: 0.86521733
+New best validation loss: 0.39515795500382134
+Epoch 10 of 25 took 6.247s
+Epoch 10/24
+----------
+train Loss: 0.44301209 Acc: 0.86238414
+val Loss: 0.33670488 Acc: 0.88695645
+New best validation loss: 0.33670488440472146
+Epoch 11 of 25 took 6.248s
+Epoch 11/24
+----------
+train Loss: 0.43773045 Acc: 0.86032885
+val Loss: 0.35702263 Acc: 0.88260865
+Epoch 12 of 25 took 6.109s
+Epoch 12/24
+----------
+train Loss: 0.41987706 Acc: 0.86443943
+val Loss: 0.36502317 Acc: 0.86521733
+Epoch 13 of 25 took 6.088s
+Epoch 13/24
+----------
+train Loss: 0.41120067 Acc: 0.86959946
+val Loss: 0.34721663 Acc: 0.88260865
+Epoch 14 of 25 took 5.764s
+Epoch 14/24
+----------
+train Loss: 0.39202132 Acc: 0.87812668
+val Loss: 0.31309945 Acc: 0.89130431
+New best validation loss: 0.31309945147970447
+Epoch 15 of 25 took 6.741s
+Epoch 15/24
+----------
+train Loss: 0.38508225 Acc: 0.87817037
+val Loss: 0.30445467 Acc: 0.87391299
+New best validation loss: 0.3044546707816746
+Epoch 16 of 25 took 5.747s
+Epoch 16/24
+----------
+train Loss: 0.36988658 Acc: 0.88381147
+val Loss: 0.29962785 Acc: 0.89130431
+New best validation loss: 0.29962785140327786
+Epoch 17 of 25 took 6.627s
+Epoch 17/24
+----------
+train Loss: 0.35346831 Acc: 0.88827181
+val Loss: 0.30947047 Acc: 0.89999998
+Epoch 18 of 25 took 6.276s
+Epoch 18/24
+----------
+train Loss: 0.34549297 Acc: 0.88932133
+val Loss: 0.28008864 Acc: 0.90434778
+New best validation loss: 0.2800886402959409
+Epoch 19 of 25 took 6.249s
+Epoch 19/24
+----------
+train Loss: 0.32394998 Acc: 0.89675528
+val Loss: 0.27396811 Acc: 0.90434778
+New best validation loss: 0.27396810780400815
+Epoch 20 of 25 took 6.267s
+Epoch 20/24
+----------
+train Loss: 0.32923836 Acc: 0.89732379
+val Loss: 0.28738612 Acc: 0.90869564
+Epoch 21 of 25 took 5.988s
+Epoch 21/24
+----------
+train Loss: 0.33914201 Acc: 0.89321321
+val Loss: 0.27502977 Acc: 0.9260869
+Epoch 22 of 25 took 5.905s
+Epoch 22/24
+----------
+train Loss: 0.31884855 Acc: 0.89832956
+val Loss: 0.25794625 Acc: 0.93913037
+New best validation loss: 0.2579462466032609
+Epoch 23 of 25 took 6.481s
+Epoch 23/24
+----------
+train Loss: 0.30411962 Acc: 0.90278995
+val Loss: 0.27846540 Acc: 0.9217391
+Epoch 24 of 25 took 6.067s
+Epoch 24/24
+----------
+train Loss: 0.29502940 Acc: 0.90585101
+val Loss: 0.26070664 Acc: 0.91739124
+Epoch 25 of 25 took 6.735s
+
+Training complete in 2m 37s
+Best val loss: 0.257946
+ACCURACY TEST_0 FINAL : 86.527 %
+22710
+(22710, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.73713023 Acc: 0.59066492
+val Loss: 1.29863129 Acc: 0.62008733
+New best validation loss: 1.2986312932843205
+Epoch 1 of 25 took 6.895s
+Epoch 1/24
+----------
+train Loss: 1.16923314 Acc: 0.65777194
+val Loss: 1.00248199 Acc: 0.65065503
+New best validation loss: 1.002481985300389
+Epoch 2 of 25 took 6.781s
+Epoch 2/24
+----------
+train Loss: 1.00042391 Acc: 0.69867903
+val Loss: 0.87838099 Acc: 0.71179038
+New best validation loss: 0.8783809878420101
+Epoch 3 of 25 took 6.588s
+Epoch 3/24
+----------
+train Loss: 0.89140707 Acc: 0.72857773
+val Loss: 0.82145604 Acc: 0.73362446
+New best validation loss: 0.8214560429602211
+Epoch 4 of 25 took 6.884s
+Epoch 4/24
+----------
+train Loss: 0.79244148 Acc: 0.7553941
+val Loss: 0.71694646 Acc: 0.76855898
+New best validation loss: 0.7169464644386259
+Epoch 5 of 25 took 6.880s
+Epoch 5/24
+----------
+train Loss: 0.74323261 Acc: 0.77084988
+val Loss: 0.68379718 Acc: 0.78602624
+New best validation loss: 0.6837971783100778
+Epoch 6 of 25 took 6.777s
+Epoch 6/24
+----------
+train Loss: 0.69992429 Acc: 0.78529286
+val Loss: 0.61718084 Acc: 0.78602624
+New best validation loss: 0.6171808367733351
+Epoch 7 of 25 took 6.618s
+Epoch 7/24
+----------
+train Loss: 0.66739224 Acc: 0.79088509
+val Loss: 0.58236654 Acc: 0.79475981
+New best validation loss: 0.5823665435657751
+Epoch 8 of 25 took 6.769s
+Epoch 8/24
+----------
+train Loss: 0.63201073 Acc: 0.80220169
+val Loss: 0.56874658 Acc: 0.81659389
+New best validation loss: 0.5687465751014943
+Epoch 9 of 25 took 6.773s
+Epoch 9/24
+----------
+train Loss: 0.59389731 Acc: 0.81303394
+val Loss: 0.52235984 Acc: 0.81659389
+New best validation loss: 0.5223598396934276
+Epoch 10 of 25 took 6.883s
+Epoch 10/24
+----------
+train Loss: 0.58425661 Acc: 0.81488335
+val Loss: 0.50467285 Acc: 0.81222707
+New best validation loss: 0.5046728542277906
+Epoch 11 of 25 took 6.739s
+Epoch 11/24
+----------
+train Loss: 0.56826582 Acc: 0.82043153
+val Loss: 0.50783382 Acc: 0.83842796
+Epoch 12 of 25 took 6.885s
+Epoch 12/24
+----------
+train Loss: 0.55712232 Acc: 0.82377809
+val Loss: 0.47233588 Acc: 0.84279478
+New best validation loss: 0.47233588206195415
+Epoch 13 of 25 took 6.869s
+Epoch 13/24
+----------
+train Loss: 0.52796489 Acc: 0.82923824
+val Loss: 0.49339135 Acc: 0.84279478
+Epoch 14 of 25 took 6.339s
+Epoch 14/24
+----------
+train Loss: 0.50261182 Acc: 0.83835316
+val Loss: 0.44524157 Acc: 0.84279478
+New best validation loss: 0.4452415699521527
+Epoch 15 of 25 took 6.473s
+Epoch 15/24
+----------
+train Loss: 0.48671079 Acc: 0.84121531
+val Loss: 0.41895681 Acc: 0.85589522
+New best validation loss: 0.4189568065659969
+Epoch 16 of 25 took 6.833s
+Epoch 16/24
+----------
+train Loss: 0.54052359 Acc: 0.8340379
+val Loss: 0.50891606 Acc: 0.82969433
+Epoch 17 of 25 took 6.763s
+Epoch 17/24
+----------
+train Loss: 0.52866195 Acc: 0.83452225
+val Loss: 0.48379960 Acc: 0.8209607
+Epoch 18 of 25 took 6.749s
+Epoch 18/24
+----------
+train Loss: 0.51184757 Acc: 0.83588731
+val Loss: 0.42212034 Acc: 0.84279478
+Epoch 19 of 25 took 6.745s
+Epoch 19/24
+----------
+train Loss: 0.47629923 Acc: 0.84619111
+val Loss: 0.36997619 Acc: 0.85589522
+New best validation loss: 0.3699761936237718
+Epoch 20 of 25 took 6.614s
+Epoch 20/24
+----------
+train Loss: 0.45457987 Acc: 0.85191548
+val Loss: 0.35925176 Acc: 0.86462885
+New best validation loss: 0.3592517636228337
+Epoch 21 of 25 took 6.899s
+Epoch 21/24
+----------
+train Loss: 0.43671260 Acc: 0.85473359
+val Loss: 0.32837917 Acc: 0.88209611
+New best validation loss: 0.3283791687811306
+Epoch 22 of 25 took 6.752s
+Epoch 22/24
+----------
+train Loss: 0.42398276 Acc: 0.86111844
+val Loss: 0.31777511 Acc: 0.89082968
+New best validation loss: 0.3177751099698929
+Epoch 23 of 25 took 6.798s
+Epoch 23/24
+----------
+train Loss: 0.42057675 Acc: 0.86428887
+val Loss: 0.31072122 Acc: 0.8951965
+New best validation loss: 0.3107212183256857
+Epoch 24 of 25 took 6.749s
+Epoch 24/24
+----------
+train Loss: 0.40397557 Acc: 0.86759138
+val Loss: 0.29986995 Acc: 0.89082968
+New best validation loss: 0.29986995380518217
+Epoch 25 of 25 took 6.628s
+
+Training complete in 2m 49s
+Best val loss: 0.299870
+ACCURACY TEST_0 FINAL : 82.448 %
+22684
+(22684, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.57805957 Acc: 0.64662319
+val Loss: 1.01838324 Acc: 0.67685592
+New best validation loss: 1.0183832426779136
+Epoch 1 of 25 took 6.943s
+Epoch 1/24
+----------
+train Loss: 0.97977078 Acc: 0.70516664
+val Loss: 0.83588013 Acc: 0.74235809
+New best validation loss: 0.8358801296184156
+Epoch 2 of 25 took 6.748s
+Epoch 2/24
+----------
+train Loss: 0.83606186 Acc: 0.74290246
+val Loss: 0.69521448 Acc: 0.76419216
+New best validation loss: 0.6952144839357601
+Epoch 3 of 25 took 6.838s
+Epoch 3/24
+----------
+train Loss: 0.73599023 Acc: 0.76992595
+val Loss: 0.66174770 Acc: 0.78602624
+New best validation loss: 0.6617476950566321
+Epoch 4 of 25 took 6.745s
+Epoch 4/24
+----------
+train Loss: 0.68049838 Acc: 0.78398871
+val Loss: 0.60319859 Acc: 0.79912663
+New best validation loss: 0.6031985886752865
+Epoch 5 of 25 took 6.571s
+Epoch 5/24
+----------
+train Loss: 0.64090920 Acc: 0.79611182
+val Loss: 0.58584808 Acc: 0.79912663
+New best validation loss: 0.5858480794981578
+Epoch 6 of 25 took 6.736s
+Epoch 6/24
+----------
+train Loss: 0.59684498 Acc: 0.81207019
+val Loss: 0.52948061 Acc: 0.81659389
+New best validation loss: 0.5294806134752832
+Epoch 7 of 25 took 6.941s
+Epoch 7/24
+----------
+train Loss: 0.55856000 Acc: 0.81762475
+val Loss: 0.49085464 Acc: 0.85152841
+New best validation loss: 0.49085463811216395
+Epoch 8 of 25 took 6.664s
+Epoch 8/24
+----------
+train Loss: 0.55790711 Acc: 0.82309115
+val Loss: 0.48726525 Acc: 0.84279478
+New best validation loss: 0.4872652495271774
+Epoch 9 of 25 took 6.735s
+Epoch 9/24
+----------
+train Loss: 0.54494527 Acc: 0.82697058
+val Loss: 0.46399386 Acc: 0.86462885
+New best validation loss: 0.46399385543889876
+Epoch 10 of 25 took 6.727s
+Epoch 10/24
+----------
+train Loss: 0.49814935 Acc: 0.84310526
+val Loss: 0.47117035 Acc: 0.83406115
+Epoch 11 of 25 took 6.874s
+Epoch 11/24
+----------
+train Loss: 0.47470484 Acc: 0.84672016
+val Loss: 0.42669278 Acc: 0.86026204
+New best validation loss: 0.4266927794077511
+Epoch 12 of 25 took 6.770s
+Epoch 12/24
+----------
+train Loss: 0.45123837 Acc: 0.85337681
+val Loss: 0.39709939 Acc: 0.87336248
+New best validation loss: 0.3970993908211654
+Epoch 13 of 25 took 6.502s
+Epoch 13/24
+----------
+train Loss: 0.45032380 Acc: 0.85386175
+val Loss: 0.38537278 Acc: 0.8777293
+New best validation loss: 0.38537277821370086
+Epoch 14 of 25 took 6.219s
+Epoch 14/24
+----------
+train Loss: 0.44122614 Acc: 0.85743254
+val Loss: 0.39130851 Acc: 0.86026204
+Epoch 15 of 25 took 6.737s
+Epoch 15/24
+----------
+train Loss: 0.41838651 Acc: 0.86519134
+val Loss: 0.40040738 Acc: 0.87336248
+Epoch 16 of 25 took 6.876s
+Epoch 16/24
+----------
+train Loss: 0.39630750 Acc: 0.87021691
+val Loss: 0.37426358 Acc: 0.86899567
+New best validation loss: 0.3742635801890011
+Epoch 17 of 25 took 6.622s
+Epoch 17/24
+----------
+train Loss: 0.39107156 Acc: 0.87043732
+val Loss: 0.34752349 Acc: 0.86899567
+New best validation loss: 0.3475234852087029
+Epoch 18 of 25 took 6.837s
+Epoch 18/24
+----------
+train Loss: 0.36776603 Acc: 0.87771118
+val Loss: 0.34144676 Acc: 0.88209611
+New best validation loss: 0.3414467557548956
+Epoch 19 of 25 took 6.838s
+Epoch 19/24
+----------
+train Loss: 0.36358916 Acc: 0.87890142
+val Loss: 0.35469192 Acc: 0.88646287
+Epoch 20 of 25 took 6.897s
+Epoch 20/24
+----------
+train Loss: 0.36675376 Acc: 0.87660909
+val Loss: 0.33190057 Acc: 0.88209611
+New best validation loss: 0.331900565801229
+Epoch 21 of 25 took 6.569s
+Epoch 21/24
+----------
+train Loss: 0.35092113 Acc: 0.88013577
+val Loss: 0.29090541 Acc: 0.89082968
+New best validation loss: 0.2909054052361234
+Epoch 22 of 25 took 6.833s
+Epoch 22/24
+----------
+train Loss: 0.33498342 Acc: 0.88793862
+val Loss: 0.28352619 Acc: 0.88646287
+New best validation loss: 0.2835261915448451
+Epoch 23 of 25 took 6.837s
+Epoch 23/24
+----------
+train Loss: 0.33263687 Acc: 0.88882029
+val Loss: 0.27546284 Acc: 0.90393013
+New best validation loss: 0.2754628377189803
+Epoch 24 of 25 took 6.917s
+Epoch 24/24
+----------
+train Loss: 0.33473692 Acc: 0.88648385
+val Loss: 0.29362514 Acc: 0.90393013
+Epoch 25 of 25 took 6.662s
+
+Training complete in 2m 49s
+Best val loss: 0.275463
+ACCURACY TEST_0 FINAL : 82.557 %
+22726
+(22726, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.46185605 Acc: 0.64916831
+val Loss: 0.84964729 Acc: 0.72925764
+New best validation loss: 0.849647288759723
+Epoch 1 of 25 took 6.950s
+Epoch 1/24
+----------
+train Loss: 0.90984134 Acc: 0.71486402
+val Loss: 0.66339185 Acc: 0.77292579
+New best validation loss: 0.6633918462361831
+Epoch 2 of 25 took 6.869s
+Epoch 2/24
+----------
+train Loss: 0.77551873 Acc: 0.75411421
+val Loss: 0.54315189 Acc: 0.81659389
+New best validation loss: 0.5431518887848833
+Epoch 3 of 25 took 6.768s
+Epoch 3/24
+----------
+train Loss: 0.68276807 Acc: 0.7827158
+val Loss: 0.47562348 Acc: 0.81659389
+New best validation loss: 0.4756234847822564
+Epoch 4 of 25 took 6.778s
+Epoch 4/24
+----------
+train Loss: 0.62730972 Acc: 0.80027282
+val Loss: 0.43190052 Acc: 0.85152841
+New best validation loss: 0.43190052415606234
+Epoch 5 of 25 took 6.650s
+Epoch 5/24
+----------
+train Loss: 0.56797527 Acc: 0.81857783
+val Loss: 0.40209598 Acc: 0.87336248
+New best validation loss: 0.4020959779164677
+Epoch 6 of 25 took 6.840s
+Epoch 6/24
+----------
+train Loss: 0.52959601 Acc: 0.83103055
+val Loss: 0.39738847 Acc: 0.86899567
+New best validation loss: 0.3973884749100198
+Epoch 7 of 25 took 6.743s
+Epoch 7/24
+----------
+train Loss: 0.49780343 Acc: 0.83692688
+val Loss: 0.40413691 Acc: 0.87336248
+Epoch 8 of 25 took 6.795s
+Epoch 8/24
+----------
+train Loss: 0.48430717 Acc: 0.84445125
+val Loss: 0.38224613 Acc: 0.8777293
+New best validation loss: 0.382246125733488
+Epoch 9 of 25 took 6.630s
+Epoch 9/24
+----------
+train Loss: 0.45966527 Acc: 0.85430783
+val Loss: 0.36181471 Acc: 0.89082968
+New best validation loss: 0.3618147071272005
+Epoch 10 of 25 took 6.736s
+Epoch 10/24
+----------
+train Loss: 0.44366496 Acc: 0.85681599
+val Loss: 0.35872090 Acc: 0.87336248
+New best validation loss: 0.35872090435444526
+Epoch 11 of 25 took 6.864s
+Epoch 11/24
+----------
+train Loss: 0.42033671 Acc: 0.86297631
+val Loss: 0.34286776 Acc: 0.89082968
+New best validation loss: 0.3428677554734409
+Epoch 12 of 25 took 6.861s
+Epoch 12/24
+----------
+train Loss: 0.39949704 Acc: 0.87111676
+val Loss: 0.30786523 Acc: 0.90829694
+New best validation loss: 0.3078652261125989
+Epoch 13 of 25 took 6.865s
+Epoch 13/24
+----------
+train Loss: 0.38195060 Acc: 0.87802517
+val Loss: 0.31149485 Acc: 0.90393013
+Epoch 14 of 25 took 6.549s
+Epoch 14/24
+----------
+train Loss: 0.37531117 Acc: 0.87912524
+val Loss: 0.36645441 Acc: 0.88646287
+Epoch 15 of 25 took 6.430s
+Epoch 15/24
+----------
+train Loss: 0.37714210 Acc: 0.8767491
+val Loss: 0.33110796 Acc: 0.89956331
+Epoch 16 of 25 took 6.622s
+Epoch 16/24
+----------
+train Loss: 0.34768343 Acc: 0.88409752
+val Loss: 0.31199899 Acc: 0.90829694
+Epoch 17 of 25 took 6.840s
+Epoch 17/24
+----------
+train Loss: 0.33559595 Acc: 0.89166594
+val Loss: 0.29128169 Acc: 0.90393013
+New best validation loss: 0.29128168764072737
+Epoch 18 of 25 took 6.773s
+Epoch 18/24
+----------
+train Loss: 0.31756880 Acc: 0.89597815
+val Loss: 0.24562449 Acc: 0.91703057
+New best validation loss: 0.24562449226212815
+Epoch 19 of 25 took 6.718s
+Epoch 19/24
+----------
+train Loss: 0.31409797 Acc: 0.89773828
+val Loss: 0.25497558 Acc: 0.91703057
+Epoch 20 of 25 took 6.796s
+Epoch 20/24
+----------
+train Loss: 0.30753886 Acc: 0.89870632
+val Loss: 0.27180731 Acc: 0.90393013
+Epoch 21 of 25 took 6.795s
+Epoch 21/24
+----------
+train Loss: 0.31410861 Acc: 0.90130246
+val Loss: 0.24656346 Acc: 0.91703057
+Epoch 22 of 25 took 6.570s
+Epoch 22/24
+----------
+train Loss: 0.29054126 Acc: 0.90521866
+val Loss: 0.23828350 Acc: 0.91703057
+New best validation loss: 0.23828349883899938
+Epoch 23 of 25 took 6.772s
+Epoch 23/24
+----------
+train Loss: 0.27861745 Acc: 0.90799081
+val Loss: 0.25592173 Acc: 0.91703057
+Epoch 24 of 25 took 6.859s
+Epoch 24/24
+----------
+train Loss: 0.27741488 Acc: 0.91019094
+val Loss: 0.27379012 Acc: 0.90829694
+Epoch 25 of 25 took 6.630s
+
+Training complete in 2m 49s
+Best val loss: 0.238283
+ACCURACY TEST_0 FINAL : 86.553 %
+22817
+(22817, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.30312753 Acc: 0.70403647
+val Loss: 0.92859238 Acc: 0.69565213
+New best validation loss: 0.9285923833432405
+Epoch 1 of 25 took 6.913s
+Epoch 1/24
+----------
+train Loss: 0.80356140 Acc: 0.7601788
+val Loss: 0.81294549 Acc: 0.72608691
+New best validation loss: 0.8129454902980638
+Epoch 2 of 25 took 6.793s
+Epoch 2/24
+----------
+train Loss: 0.71511118 Acc: 0.78388917
+val Loss: 0.77559012 Acc: 0.77826083
+New best validation loss: 0.775590117081352
+Epoch 3 of 25 took 6.637s
+Epoch 3/24
+----------
+train Loss: 0.63887243 Acc: 0.8045755
+val Loss: 0.67784915 Acc: 0.78260869
+New best validation loss: 0.6778491476307744
+Epoch 4 of 25 took 6.904s
+Epoch 4/24
+----------
+train Loss: 0.58766247 Acc: 0.81776744
+val Loss: 0.62647212 Acc: 0.79999995
+New best validation loss: 0.6264721182118291
+Epoch 5 of 25 took 6.956s
+Epoch 5/24
+----------
+train Loss: 0.54994860 Acc: 0.82705879
+val Loss: 0.58185962 Acc: 0.81739128
+New best validation loss: 0.5818596217943275
+Epoch 6 of 25 took 6.819s
+Epoch 6/24
+----------
+train Loss: 0.51869923 Acc: 0.84064513
+val Loss: 0.56079022 Acc: 0.81739128
+New best validation loss: 0.5607902195142663
+Epoch 7 of 25 took 6.884s
+Epoch 7/24
+----------
+train Loss: 0.49457233 Acc: 0.84739447
+val Loss: 0.56098009 Acc: 0.80434781
+Epoch 8 of 25 took 6.709s
+Epoch 8/24
+----------
+train Loss: 0.47343357 Acc: 0.84949815
+val Loss: 0.49852972 Acc: 0.82608694
+New best validation loss: 0.4985297161599864
+Epoch 9 of 25 took 6.806s
+Epoch 9/24
+----------
+train Loss: 0.46668969 Acc: 0.8539685
+val Loss: 0.55839917 Acc: 0.80869561
+Epoch 10 of 25 took 6.906s
+Epoch 10/24
+----------
+train Loss: 0.44375750 Acc: 0.86426789
+val Loss: 0.49638519 Acc: 0.8347826
+New best validation loss: 0.49638519287109373
+Epoch 11 of 25 took 6.610s
+Epoch 11/24
+----------
+train Loss: 0.42342273 Acc: 0.86781782
+val Loss: 0.46211753 Acc: 0.85652173
+New best validation loss: 0.46211752684220025
+Epoch 12 of 25 took 6.964s
+Epoch 12/24
+----------
+train Loss: 0.39890278 Acc: 0.87675858
+val Loss: 0.42492862 Acc: 0.86086953
+New best validation loss: 0.42492861540421195
+Epoch 13 of 25 took 6.898s
+Epoch 13/24
+----------
+train Loss: 0.38528595 Acc: 0.87680238
+val Loss: 0.47254300 Acc: 0.84782606
+Epoch 14 of 25 took 6.897s
+Epoch 14/24
+----------
+train Loss: 0.37660247 Acc: 0.88153571
+val Loss: 0.45349380 Acc: 0.86521733
+Epoch 15 of 25 took 6.318s
+Epoch 15/24
+----------
+train Loss: 0.38682292 Acc: 0.87816101
+val Loss: 0.45237669 Acc: 0.86521733
+Epoch 16 of 25 took 6.672s
+Epoch 16/24
+----------
+train Loss: 0.36783536 Acc: 0.88267517
+val Loss: 0.47034590 Acc: 0.85217386
+Epoch 17 of 25 took 6.860s
+Epoch 17/24
+----------
+train Loss: 0.36055690 Acc: 0.88420916
+val Loss: 0.40603067 Acc: 0.87391299
+New best validation loss: 0.40603067149286687
+Epoch 18 of 25 took 6.865s
+Epoch 18/24
+----------
+train Loss: 0.34148805 Acc: 0.89126527
+val Loss: 0.37577117 Acc: 0.87391299
+New best validation loss: 0.3757711709063986
+Epoch 19 of 25 took 6.880s
+Epoch 19/24
+----------
+train Loss: 0.33064333 Acc: 0.89371961
+val Loss: 0.42805295 Acc: 0.86521733
+Epoch 20 of 25 took 6.752s
+Epoch 20/24
+----------
+train Loss: 0.32309333 Acc: 0.89573562
+val Loss: 0.43229944 Acc: 0.87826085
+Epoch 21 of 25 took 6.863s
+Epoch 21/24
+----------
+train Loss: 0.30857440 Acc: 0.89972389
+val Loss: 0.39506896 Acc: 0.86956519
+Epoch 22 of 25 took 6.864s
+Epoch 22/24
+----------
+train Loss: 0.30358699 Acc: 0.89911032
+val Loss: 0.37506054 Acc: 0.87391299
+New best validation loss: 0.37506053758704144
+Epoch 23 of 25 took 6.862s
+Epoch 23/24
+----------
+train Loss: 0.28814049 Acc: 0.90691149
+val Loss: 0.37211221 Acc: 0.86956519
+New best validation loss: 0.3721122078273607
+Epoch 24 of 25 took 6.694s
+Epoch 24/24
+----------
+train Loss: 0.28852545 Acc: 0.90774423
+val Loss: 0.39108619 Acc: 0.87391299
+Epoch 25 of 25 took 6.980s
+
+Training complete in 2m 50s
+Best val loss: 0.372112
+ACCURACY TEST_0 FINAL : 88.068 %
+22598
+(22598, 12, 10, 7)
+Epoch 0/24
+----------
+train Loss: 1.66752311 Acc: 0.62762195
+val Loss: 1.16072605 Acc: 0.66666669
+New best validation loss: 1.1607260453073602
+Epoch 1 of 25 took 6.832s
+Epoch 1/24
+----------
+train Loss: 1.14413097 Acc: 0.6790424
+val Loss: 0.98084085 Acc: 0.72368419
+New best validation loss: 0.980840850294682
+Epoch 2 of 25 took 6.875s
+Epoch 2/24
+----------
+train Loss: 1.02188081 Acc: 0.70904505
+val Loss: 0.88230180 Acc: 0.75438595
+New best validation loss: 0.8823017990380003
+Epoch 3 of 25 took 6.661s
+Epoch 3/24
+----------
+train Loss: 0.94882276 Acc: 0.72510844
+val Loss: 0.84124568 Acc: 0.75438595
+New best validation loss: 0.8412456847073739
+Epoch 4 of 25 took 6.858s
+Epoch 4/24
+----------
+train Loss: 0.89388732 Acc: 0.73962301
+val Loss: 0.82548663 Acc: 0.75877196
+New best validation loss: 0.8254866349069696
+Epoch 5 of 25 took 6.911s
+Epoch 5/24
+----------
+train Loss: 0.85470841 Acc: 0.75019914
+val Loss: 0.77255543 Acc: 0.7631579
+New best validation loss: 0.772555434912966
+Epoch 6 of 25 took 6.856s
+Epoch 6/24
+----------
+train Loss: 0.81235964 Acc: 0.75962478
+val Loss: 0.72296839 Acc: 0.78070176
+New best validation loss: 0.7229683859306469
+Epoch 7 of 25 took 6.680s
+Epoch 7/24
+----------
+train Loss: 0.79121409 Acc: 0.76604128
+val Loss: 0.72034133 Acc: 0.78947371
+New best validation loss: 0.7203413310803866
+Epoch 8 of 25 took 6.875s
+Epoch 8/24
+----------
+train Loss: 0.76789814 Acc: 0.77263474
+val Loss: 0.71319272 Acc: 0.78070176
+New best validation loss: 0.7131927222536322
+Epoch 9 of 25 took 6.911s
+Epoch 9/24
+----------
+train Loss: 0.74289943 Acc: 0.77639616
+val Loss: 0.65529894 Acc: 0.7850877
+New best validation loss: 0.6552989357396176
+Epoch 10 of 25 took 6.873s
+Epoch 10/24
+----------
+train Loss: 0.72246708 Acc: 0.78378618
+val Loss: 0.63104783 Acc: 0.81140351
+New best validation loss: 0.6310478344298246
+Epoch 11 of 25 took 6.873s
+Epoch 11/24
+----------
+train Loss: 0.72098543 Acc: 0.78551203
+val Loss: 0.64393207 Acc: 0.79824561
+Epoch 12 of 25 took 6.665s
+Epoch 12/24
+----------
+train Loss: 0.72332602 Acc: 0.78316665
+val Loss: 0.65257129 Acc: 0.82017547
+Epoch 13 of 25 took 6.851s
+Epoch 13/24
+----------
+train Loss: 0.68631911 Acc: 0.79250377
+val Loss: 0.57528359 Acc: 0.81140351
+New best validation loss: 0.5752835859332168
+Epoch 14 of 25 took 6.921s
+Epoch 14/24
+----------
+train Loss: 0.65566492 Acc: 0.79918581
+val Loss: 0.56640839 Acc: 0.82456142
+New best validation loss: 0.5664083915844298
+Epoch 15 of 25 took 3.521s
+Epoch 15/24
+----------
+train Loss: 0.63315017 Acc: 0.80692983
+val Loss: 0.53854919 Acc: 0.83333331
+New best validation loss: 0.5385491889819765
+Epoch 16 of 25 took 1.279s
+Epoch 16/24
+----------
+train Loss: 0.61673184 Acc: 0.81108952
+val Loss: 0.52528850 Acc: 0.84649122
+New best validation loss: 0.5252884981925028
+Epoch 17 of 25 took 1.311s
+Epoch 17/24
+----------
+train Loss: 0.66164096 Acc: 0.80617756
+val Loss: 0.65343007 Acc: 0.82894737
+Epoch 18 of 25 took 1.358s
+Epoch 18/24
+----------
+train Loss: 0.67784252 Acc: 0.80091161
+val Loss: 0.60356850 Acc: 0.81578946
+Epoch 19 of 25 took 1.309s
+Epoch 19/24
+----------
+train Loss: 0.61940458 Acc: 0.81263828
+val Loss: 0.53058209 Acc: 0.84210527
+Epoch 20 of 25 took 1.307s
+Epoch 20/24
+----------
+train Loss: 0.59859700 Acc: 0.81963009
+val Loss: 0.55626705 Acc: 0.84210527
+Epoch 21 of 25 took 1.308s
+Epoch 21/24
+----------
+train Loss: 0.58133899 Acc: 0.82091337
+val Loss: 0.50635060 Acc: 0.85964912
+New best validation loss: 0.506350600928591
+Epoch 22 of 25 took 1.360s
+Epoch 22/24
+----------
+train Loss: 0.56818071 Acc: 0.82440925
+val Loss: 0.48114268 Acc: 0.85964912
+New best validation loss: 0.48114267985026044
+Epoch 23 of 25 took 1.311s
+Epoch 23/24
+----------
+train Loss: 0.55802508 Acc: 0.82755113
+val Loss: 0.46927051 Acc: 0.85964912
+New best validation loss: 0.4692705054032175
+Epoch 24 of 25 took 1.314s
+Epoch 24/24
+----------
+train Loss: 0.54365729 Acc: 0.82799363
+val Loss: 0.47359841 Acc: 0.85526317
+Epoch 25 of 25 took 1.308s
+
+Training complete in 1m 52s
+Best val loss: 0.469271
+ACCURACY TEST_0 FINAL : 80.552 %
+AVERAGE ACCURACY TEST 0 84.068
+[86.72612801678909, 85.77257406421856, 89.84402694080113, 81.35411069317571, 77.27750525578136, 79.96837111228255, 87.27015558698727, 88.48933544861626, 84.3950177935943, 84.14914295811981, 83.35664335664336, 85.06858951811466, 87.02892199824716, 82.04095921582356, 81.44493392070484, 86.10426206410708, 85.42837078651685, 77.61140819964349, 78.9033291792772, 84.58041958041959, 86.31853785900783, 86.52748037116345, 82.44811818501583, 82.55672960332582, 86.55316191799861, 88.0675818373812, 80.55165144061841]
+TEST 0 SO FAR:  [[86.72612801678909, 85.77257406421856, 89.84402694080113, 81.35411069317571, 77.27750525578136, 79.96837111228255, 87.27015558698727, 88.48933544861626, 84.3950177935943, 84.14914295811981, 83.35664335664336, 85.06858951811466, 87.02892199824716, 82.04095921582356, 81.44493392070484, 86.10426206410708, 85.42837078651685, 77.61140819964349, 78.9033291792772, 84.58041958041959, 86.31853785900783, 86.52748037116345, 82.44811818501583, 82.55672960332582, 86.55316191799861, 88.0675818373812, 80.55165144061841]]
+TEST 1 SO FAR:  []
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+CURRENT AVERAGE :  nan
+ACCURACY FINAL TEST 0:  [[86.72612801678909, 85.77257406421856, 89.84402694080113, 81.35411069317571, 77.27750525578136, 79.96837111228255, 87.27015558698727, 88.48933544861626, 84.3950177935943, 84.14914295811981, 83.35664335664336, 85.06858951811466, 87.02892199824716, 82.04095921582356, 81.44493392070484, 86.10426206410708, 85.42837078651685, 77.61140819964349, 78.9033291792772, 84.58041958041959, 86.31853785900783, 86.52748037116345, 82.44811818501583, 82.55672960332582, 86.55316191799861, 88.0675818373812, 80.55165144061841]]
+ACCURACY FINAL TEST 0:  84.06805432979166
+ACCURACY FINAL TEST 1:  []
+ACCURACY FINAL TEST 1:  nan

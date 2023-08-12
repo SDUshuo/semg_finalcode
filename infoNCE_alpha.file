@@ -1,0 +1,1409 @@
+nohup: ignoring input
+++++++++++++
+Number Parameters: TCN 37742
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:42: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.image_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:43: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.time_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:44: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.fusion_weights)
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 00026: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 00040: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 00048: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 00055: reducing learning rate of group 0 to 1.6000e-05.
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+Epoch 57/99
+----------
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+
+Training complete in 1m 54s
+Best val loss: 0.315510
+ACCURACY TEST_0 FINAL : 85.799 %
+AVERAGE ACCURACY TEST 0 85.799
+[85.79923050017489]
+TEST 0 SO FAR:  [[85.79923050017489]]
+TEST 1 SO FAR:  []
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 00045: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+Epoch 00057: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 57/99
+----------
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+Epoch 60/99
+----------
+Epoch 61/99
+----------
+Epoch 62/99
+----------
+Epoch 63/99
+----------
+Epoch 64/99
+----------
+Epoch 65/99
+----------
+Epoch 66/99
+----------
+Epoch 67/99
+----------
+Epoch 68/99
+----------
+Epoch 69/99
+----------
+Epoch 70/99
+----------
+Epoch 71/99
+----------
+Epoch 72/99
+----------
+Epoch 73/99
+----------
+Epoch 74/99
+----------
+Epoch 00075: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 75/99
+----------
+Epoch 76/99
+----------
+Epoch 77/99
+----------
+Epoch 78/99
+----------
+Epoch 79/99
+----------
+
+Training complete in 2m 32s
+Best val loss: 0.263256
+ACCURACY TEST_0 FINAL : 85.694 %
+AVERAGE ACCURACY TEST 0 85.694
+[85.6942987058412]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 00027: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 00042: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 00052: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+
+Training complete in 1m 44s
+Best val loss: 0.350807
+ACCURACY TEST_0 FINAL : 86.062 %
+AVERAGE ACCURACY TEST 0 86.062
+[86.0615599860091]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 00029: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 00056: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 56/99
+----------
+Epoch 57/99
+----------
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+Epoch 60/99
+----------
+Epoch 61/99
+----------
+Epoch 62/99
+----------
+Epoch 63/99
+----------
+Epoch 64/99
+----------
+Epoch 65/99
+----------
+Epoch 66/99
+----------
+Epoch 67/99
+----------
+Epoch 68/99
+----------
+Epoch 69/99
+----------
+Epoch 70/99
+----------
+Epoch 71/99
+----------
+Epoch 72/99
+----------
+Epoch 73/99
+----------
+Epoch 74/99
+----------
+Epoch 75/99
+----------
+Epoch 76/99
+----------
+Epoch 00077: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 77/99
+----------
+Epoch 78/99
+----------
+Epoch 79/99
+----------
+Epoch 80/99
+----------
+Epoch 81/99
+----------
+
+Training complete in 2m 32s
+Best val loss: 0.301308
+ACCURACY TEST_0 FINAL : 85.887 %
+AVERAGE ACCURACY TEST 0 85.887
+[85.88667366211962]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091], [85.88667366211962]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 00044: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+Epoch 57/99
+----------
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+Epoch 60/99
+----------
+Epoch 61/99
+----------
+Epoch 62/99
+----------
+Epoch 63/99
+----------
+Epoch 64/99
+----------
+Epoch 65/99
+----------
+Epoch 66/99
+----------
+Epoch 67/99
+----------
+Epoch 68/99
+----------
+Epoch 69/99
+----------
+Epoch 70/99
+----------
+Epoch 71/99
+----------
+Epoch 00072: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 72/99
+----------
+Epoch 73/99
+----------
+Epoch 74/99
+----------
+Epoch 75/99
+----------
+Epoch 76/99
+----------
+
+Training complete in 2m 20s
+Best val loss: 0.288562
+ACCURACY TEST_0 FINAL : 86.516 %
+AVERAGE ACCURACY TEST 0 86.516
+[86.51626442812172]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091], [85.88667366211962], [86.51626442812172]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 00029: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+Epoch 57/99
+----------
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+Epoch 00060: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 60/99
+----------
+Epoch 61/99
+----------
+Epoch 62/99
+----------
+Epoch 63/99
+----------
+Epoch 64/99
+----------
+
+Training complete in 1m 59s
+Best val loss: 0.293913
+ACCURACY TEST_0 FINAL : 85.275 %
+AVERAGE ACCURACY TEST 0 85.275
+[85.27457152850647]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091], [85.88667366211962], [86.51626442812172], [85.27457152850647]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 00054: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+Epoch 57/99
+----------
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+Epoch 60/99
+----------
+Epoch 61/99
+----------
+Epoch 62/99
+----------
+Epoch 63/99
+----------
+Epoch 64/99
+----------
+Epoch 00065: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 65/99
+----------
+Epoch 66/99
+----------
+Epoch 67/99
+----------
+Epoch 68/99
+----------
+Epoch 69/99
+----------
+Epoch 70/99
+----------
+Epoch 71/99
+----------
+Epoch 72/99
+----------
+Epoch 73/99
+----------
+Epoch 74/99
+----------
+Epoch 75/99
+----------
+Epoch 76/99
+----------
+Epoch 77/99
+----------
+Epoch 00078: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 78/99
+----------
+Epoch 79/99
+----------
+Epoch 80/99
+----------
+Epoch 81/99
+----------
+Epoch 82/99
+----------
+
+Training complete in 2m 34s
+Best val loss: 0.232939
+ACCURACY TEST_0 FINAL : 85.992 %
+AVERAGE ACCURACY TEST 0 85.992
+[85.9916054564533]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091], [85.88667366211962], [86.51626442812172], [85.27457152850647], [85.9916054564533]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 00025: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 00048: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+
+Training complete in 1m 40s
+Best val loss: 0.331056
+ACCURACY TEST_0 FINAL : 85.135 %
+AVERAGE ACCURACY TEST 0 85.135
+[85.1346624693949]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091], [85.88667366211962], [86.51626442812172], [85.27457152850647], [85.9916054564533], [85.1346624693949]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Number Parameters: TCN 37742
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 182342
+22572
+(22572, 12, 10, 7)
+Epoch 0/99
+----------
+Epoch 1/99
+----------
+Epoch 2/99
+----------
+Epoch 3/99
+----------
+Epoch 4/99
+----------
+Epoch 5/99
+----------
+Epoch 6/99
+----------
+Epoch 7/99
+----------
+Epoch 8/99
+----------
+Epoch 9/99
+----------
+Epoch 10/99
+----------
+Epoch 11/99
+----------
+Epoch 12/99
+----------
+Epoch 13/99
+----------
+Epoch 14/99
+----------
+Epoch 15/99
+----------
+Epoch 16/99
+----------
+Epoch 17/99
+----------
+Epoch 18/99
+----------
+Epoch 19/99
+----------
+Epoch 20/99
+----------
+Epoch 21/99
+----------
+Epoch 22/99
+----------
+Epoch 23/99
+----------
+Epoch 24/99
+----------
+Epoch 25/99
+----------
+Epoch 26/99
+----------
+Epoch 27/99
+----------
+Epoch 28/99
+----------
+Epoch 29/99
+----------
+Epoch 30/99
+----------
+Epoch 31/99
+----------
+Epoch 32/99
+----------
+Epoch 33/99
+----------
+Epoch 34/99
+----------
+Epoch 35/99
+----------
+Epoch 36/99
+----------
+Epoch 00037: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 37/99
+----------
+Epoch 38/99
+----------
+Epoch 39/99
+----------
+Epoch 40/99
+----------
+Epoch 41/99
+----------
+Epoch 42/99
+----------
+Epoch 43/99
+----------
+Epoch 44/99
+----------
+Epoch 45/99
+----------
+Epoch 46/99
+----------
+Epoch 47/99
+----------
+Epoch 00048: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 48/99
+----------
+Epoch 49/99
+----------
+Epoch 50/99
+----------
+Epoch 51/99
+----------
+Epoch 52/99
+----------
+Epoch 53/99
+----------
+Epoch 54/99
+----------
+Epoch 55/99
+----------
+Epoch 56/99
+----------
+Epoch 57/99
+----------
+Epoch 00058: reducing learning rate of group 0 to 8.0000e-05.
+Epoch 58/99
+----------
+Epoch 59/99
+----------
+Epoch 60/99
+----------
+Epoch 61/99
+----------
+Epoch 62/99
+----------
+
+Training complete in 1m 56s
+Best val loss: 0.321571
+ACCURACY TEST_0 FINAL : 85.729 %
+AVERAGE ACCURACY TEST 0 85.729
+[85.7292759706191]
+TEST 0 SO FAR:  [[85.79923050017489], [85.6942987058412], [86.0615599860091], [85.88667366211962], [86.51626442812172], [85.27457152850647], [85.9916054564533], [85.1346624693949], [85.7292759706191]]
+TEST 1 SO FAR:  []
+CURRENT AVERAGE :  nan
+Traceback (most recent call last):
+  File "/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/final_eval_DB1_infoNCE.py", line 394, in <module>
+    alpha=alphalist[i]
+IndexError: list index out of range

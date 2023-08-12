@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 import pywt
 from scipy.ndimage import zoom
@@ -37,6 +39,8 @@ N表示数据集中示例的数量，P表示小波系数矩阵的行数，M'表�
 dataset_spectrogram是一个四维数组，包含了数据集中每个示例的小波谱图。
 综上所述，通过对数据集中的每个示例进行小波变换，代码生成了小波系数矩阵，并对通道和小波系数矩阵的维度进行了交换，最终得到了数据集的小波谱图表示。这种表示可以更好地捕捉信号在不同尺度和时间位置上的频率特征，为后续的信号处理和分类任务提供了有用的信息
 """
+
+
 def calculate_wavelet_dataset(dataset):
 
     dataset_spectrogram = []
@@ -62,6 +66,7 @@ def calculate_wavelet_dataset(dataset):
             canals.append(np.swapaxes(coefs, 0, 1))
 
         example_to_classify = np.swapaxes(canals, 0, 1)#(12.8.7)
+
         # print(example_to_classify.shape)
         # example_to_classify_str = np.array_str(example_to_classify)
         # my_dict[example_to_classify_str] = examples
@@ -73,6 +78,7 @@ def calculate_wavelet_dataset(dataset):
 def calculate_wavelet_vector(vector, mother_wavelet='mexh', scales=np.arange(1, 32)):
     coef, freqs = pywt.cwt(vector, scales=scales, wavelet=mother_wavelet)
     return coef
+
 """
 函数calculate_wavelet_vector接受三个参数：
 

@@ -1,6 +1,8 @@
 import random
 
 import numpy as np
+from matplotlib import pyplot as plt
+
 import Wavelet_CNN_Source_Network as Wavelet_CNN_Source_Network
 from torch.utils.data import TensorDataset
 import torch.nn as nn
@@ -11,7 +13,9 @@ import time
 from torch.nn import functional as F
 from scipy.stats import mode
 import db_one_model as db_one_model
+import CNN_LSTM
 import LMF as LMFmodule
+
 import TCN as TCNmodule
 import myTRN as myTRN
 import TRNmodule
@@ -24,7 +28,7 @@ number_of_class = 18
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 batchsize = 512
 
-epochs = 120
+epochs = 25
 lr = 0.01
 
 
@@ -92,8 +96,44 @@ def setup_seed(seed):
     torch.backends.cudnn.enabled = True
 
 
-# examples_training, labels_training,examples_test_0, labels_test_0,
-# examples_training_TCN, examples_validation0_TCN
+def save_images(example_to_classify, save_dir):
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
+
+    num_examples, num_channels, time_dim = example_to_classify.shape
+    for i in range(num_examples):
+        example = example_to_classify[i]  # Extract the i-th example
+        fig, axs = plt.subplots(num_channels, 1, figsize=(10, num_channels*2)) # Create subplots for each channel
+        for j in range(num_channels):
+            axs[j].imshow(example[j].reshape(1, -1), cmap='gray', aspect='auto')  # Display the j-th channel as an image
+            axs[j].axis('off')  # Hide axis
+        image_filename = os.path.join(save_dir, f"example_{i}.png")  # Create a unique filename for each example
+        plt.savefig(image_filename, bbox_inches='tight', pad_inches=0)  # Save the image
+        plt.close(fig)  # Close the figure to free up memory
+
+
+
+def plot_and_save_emg(data, save_path):
+    num_channels, time_dim = data.shape
+    time = np.linspace(0, 260, time_dim)  # Set time range from 0 to 260
+
+    # Create a new figure
+    fig, ax = plt.subplots(figsize=(10, 6))
+
+    # For each channel
+    for i in range(num_channels):
+        ax.plot(time, data[i, :], label=f'Channel {i+1}')  # Plot the data for this channel
+
+    # Add labels and title
+    ax.set_xlabel('Time')
+    ax.set_ylabel('Amplitude')
+    ax.set_title('EMG signals')
+    ax.legend()
+
+    # Save the figure as a PDF
+    plt.savefig(save_path, format='pdf')
+    plt.close(fig)  # Close the figure
+
 def calculate_fitness(seedlist):
     accuracy_test0 = []  # 存储测试集0的准确率
     top3_accuracy_test0=[]
@@ -104,8 +144,8 @@ def calculate_fitness(seedlist):
     #                                      learning_rate=0.0404709, dropout=.5).cuda()
     setup_seed(seed)
     model = db_one_model.Net(tcn_inputs_channal=10, number_of_classes=number_of_class)
-
-    for dataset_index in range(1, 2):
+    #
+    for dataset_index in range(1, 28):
         setup_seed(seed)
         # 在每次循环开始之前设置随机数种子
         first_path ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_' + str(
@@ -148,7 +188,7 @@ def calculate_fitness(seedlist):
                                                              X_TCN_fine_tune_train)
         # X_fine_tune, Y_fine_tune, X_fine_tune_TCN = X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train
 
-        val_scale = 0.01
+        val_scale = 0.1
         # 划分验证集
         valid_examples = X_fine_tune[0:int(len(X_fine_tune) * val_scale)]
         labels_valid = Y_fine_tune[0:int(len(Y_fine_tune) * val_scale)]
@@ -253,7 +293,6 @@ def combined_loss(features1, features2, labels, temperature=0.5):
     temperature = temperature
     log_ratio = torch.logsumexp(negative_pairs / temperature, dim=1)
     contrastive_loss = -positive_pairs[:, 0] / temperature + log_ratio
-
     return contrastive_loss.mean()
 
 
@@ -377,23 +416,13 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
 
 
 if __name__ == '__main__':
-
-    # Comment between here
-    #     accuracy_test_0, accuracy_test_1 = calculate_fitness(examples_training, labels_training,
-    #                                                            examples_validation0, labels_validation0,
-    #                                                            examples_validation1, labels_validation1)
-    # examples_training,labels_training=np.load("saved_pre_training_dataset.npy", allow_pickle=True)
-    # examples_validation0, labels_validation0=pickle.load(open("saved_dataset_test0.p", "rb"))
-    # examples_validation1, labels_validation1 = pickle.load(open("saved_dataset_test1.p", "rb"))
-    # # calculate_fitness(examples_training, labels_training,
-    #                                                            examples_validation0, labels_validation0,
-    #                                                            examples_validation1, labels_validation1)
-    # and here if the evaluation dataset was already processed and saved with "load_evaluation_dataset"
-
-    # YS/FinalCode/PyTorchImplementation/CWT
-    # print(os.listdir("../"))
-
-    # print("SHAPE of training:   ", np.shape(examples_training))
+    # first_path = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_' + str(
+    #     1)
+    # directory = first_path + '/train'
+    # X_TCN_fine_tune_train = np.load(directory + 'X_train.npy', encoding="bytes", allow_pickle=True)
+    # print(X_TCN_fine_tune_train.shape)
+    # plot_and_save_emg(X_TCN_fine_tune_train[0],'wavelet_images/rawSemg.pdf')
+    # save_images(X_TCN_fine_tune_train[0],'wavelet_images')
     print("++++++++++++")
     accuracy_one_by_one = []
     array_training_error = []
@@ -413,7 +442,7 @@ if __name__ == '__main__':
 
     print("ACCURACY FINAL TEST 0: ", test_0)
     print("ACCURACY FINAL TEST 0: ", np.mean(test_0))
-
+    print("ACCURACY FINAL top3  TEST 0: ", np.mean(top3_test_0))
 
     with open("../Pytorch_results_4_cycles.txt", "a") as myfile:
         myfile.write("CNN STFT: \n\n")
@@ -425,3 +454,10 @@ if __name__ == '__main__':
         myfile.write(str(np.mean(test_1, axis=0)) + '\n')
         myfile.write(str(np.mean(test_1)) + '\n')
         myfile.write("\n\n\n")
+#
+#[88.62434417628542, 84.38885932233458, 88.72740163062744, 82.61973849185026, 79.85704274702172, 78.7735020207345, 85.32531824611033, 86.9381279746166, 84.37722419928825, 83.44230429404489, 83.02447552447552, 84.20682377769961, 86.60823838737949, 80.72816383686329, 81.33039647577093, 85.71680169073618, 85.49859550561797, 81.59180035650624, 80.40181591596938, 86.52097902097903, 86.23150565709312, 86.75945753033548, 81.39289482940556, 84.25428719902996, 89.9006254343294, 86.71242520239352, 79.19747013352072]
+# 最大值：89.9006254343294
+#8
+# 最小值：78.7735020207345
+#
+# 平均值：84.65169983302152
