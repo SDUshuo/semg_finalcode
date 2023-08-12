@@ -10,7 +10,7 @@ import torchvision.models as models
 # import PyTorchImplementation.CWT.model.TRNmodule as TRNmodule
 import TRNmodule
 # from TRNmodule import return_TRN
-from params_db5 import fushion_2_feature_bottleneck_,feature_bottleneck,attention_dim
+from params_contact import fushion_2_feature_bottleneck_,feature_bottleneck,attention_dim
 class Attention(nn.Module):
     def __init__(self, input_dim, attention_dim):
         super(Attention, self).__init__()
@@ -77,10 +77,8 @@ class Net(nn.Module):
         self._input_batch_norm = nn.BatchNorm2d(num_segments, eps=1e-4)
         #self._input_prelu = pelu((1, 12, 1, 1))
         self._input_prelu = nn.PReLU(num_segments)
-        self.all_first_conv = nn.Sequential(
-            nn.Conv2d(1, 1, kernel_size=3),
+        self.all_first_conv = nn.Conv2d(1, 1, kernel_size=3)
 
-        )
         # 创建一个虚拟数据点并将其传递给卷积层来获得其输出尺寸
         x = torch.randn(1, 1, *[10,7])
         self.img_feature_dim = self.num_flat_features(self.all_first_conv(x))

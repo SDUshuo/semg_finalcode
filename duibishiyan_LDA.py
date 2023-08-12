@@ -57,8 +57,8 @@ batchsize = 512
 d_model = 52  # input feature dimension
 nhead = 4  # head number in multi-head attention
 num_layers = 1  # layer number in transformer encoder
-num_classes = 18  # output class number
-epochs = 120
+num_classes = 27  # output class number
+epochs = 5
 lr = 0.01
 
 
@@ -214,18 +214,18 @@ def calculate_fitness(seedlist):
     test_0_loader = torch.utils.data.DataLoader(test_0, batch_size=batchsize, shuffle=False)
 
 
-    # X_train =extract_features(np.array(X_fine_tune_TCN, dtype=np.float32)).squeeze().transpose()
-    # Y_train =np.array(Y_fine_tune, dtype=np.int32)
-    # X_test=extract_features(np.array(X_TCN_fine_tune_test, dtype=np.float32)).squeeze().transpose()
-    # Y_test= np.array(Y_test_0, dtype=np.int32)
-    TD_features  = extract_TD_features(np.array(X_fine_tune_TCN, dtype=np.float32)).squeeze()
-    print(TD_features.shape)
-    X_train = TD_features.reshape(len(TD_features), -1)
-    print(X_train.shape)
-    Y_train = np.array(Y_fine_tune, dtype=np.int32)
-    TD_features_test = extract_TD_features(np.array(X_TCN_fine_tune_test, dtype=np.float32)).squeeze()
-    X_test=TD_features_test.reshape(len(TD_features_test), -1)
-    Y_test = np.array(Y_test_0, dtype=np.int32)
+    X_train =extract_features(np.array(X_fine_tune_TCN, dtype=np.float32)).squeeze().transpose()
+    Y_train =np.array(Y_fine_tune, dtype=np.int32)
+    X_test=extract_features(np.array(X_TCN_fine_tune_test, dtype=np.float32)).squeeze().transpose()
+    Y_test= np.array(Y_test_0, dtype=np.int32)
+    # TD_features  = extract_TD_features(np.array(X_fine_tune_TCN, dtype=np.float32)).squeeze()
+    # print(TD_features.shape)
+    # X_train = TD_features.reshape(len(TD_features), -1)
+    # print(X_train.shape)
+    # Y_train = np.array(Y_fine_tune, dtype=np.int32)
+    # TD_features_test = extract_TD_features(np.array(X_TCN_fine_tune_test, dtype=np.float32)).squeeze()
+    # X_test=TD_features_test.reshape(len(TD_features_test), -1)
+    # Y_test = np.array(Y_test_0, dtype=np.int32)
 
     clf = LinearDiscriminantAnalysis()
     print(np.array(Y_fine_tune, dtype=np.int32).shape)

@@ -10,7 +10,7 @@ from torch.autograd import Variable
 import time
 from torch.nn import functional as F
 from scipy.stats import mode
-import db_one_model as db_one_model
+import db_one_model_contact as db_one_model
 import LMF as LMFmodule
 import TCN as TCNmodule
 import myTRN as myTRN
@@ -23,7 +23,7 @@ number_of_class =18
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
 batchsize=512
 
-epochs=100
+epochs=25
 lr =0.01
 def infoNCE_loss(features1, features2, temperature=0.5):
     # 归一化特征
@@ -97,7 +97,7 @@ def calculate_fitness():
     #                                      learning_rate=0.0404709, dropout=.5).cuda()
     model = db_one_model.Net(tcn_inputs_channal=10,number_of_classes=number_of_class)
 
-    for dataset_index in range(1, 2):
+    for dataset_index in range(1, 28):
 
         # 在每次循环开始之前设置随机数种子
         setup_seed(seed)
@@ -134,31 +134,7 @@ def calculate_fitness():
             indices = [1,3,5,7,9,11,13,15,17,19,21,23]
             # 使用这些索引从第二个维度选择数据
             X_test_0 = X_test_0[:, indices, :, :]
-        # 打乱用于微调的训练数据
 
-        # X=np.concatenate([X_fine_tune_train,X_test_0],axis=0)
-        # Y=np.concatenate([Y_fine_tune_train,Y_test_0],axis=0)
-        # X_tcn =np.concatenate([X_TCN_fine_tune_train,X_TCN_fine_tune_test],axis=0)
-        # print(X.shape)
-        # print(Y.shape)
-        # print(X_tcn.shape)
-        # X_fine_tune, Y_fine_tune,X_fine_tune_TCN = X, Y,X_tcn
-        # #
-        # # X_test_0,Y_test_0,X_TCN_fine_tune_test = scramble(X_test_0,Y_test_0,X_TCN_fine_tune_test)
-        # val_scale=0.1
-        # test_scale=0.3
-        # # 划分验证集
-        # valid_examples = X_fine_tune[0:int(len(X) * val_scale)]
-        # labels_valid = Y_fine_tune[0:int(len(Y) * val_scale)]
-        # valid_examples_TCN=X_fine_tune_TCN[0:int(len(X_tcn) * val_scale)]
-        #
-        # X_test_0 = X_fine_tune[int(len(X) * val_scale):int(len(X) * test_scale)]
-        # Y_test_0 = Y_fine_tune[int(len(Y) * val_scale):int(len(Y) * test_scale)]
-        # X_TCN_fine_tune_test=X_fine_tune_TCN[int(len(X_tcn) * val_scale):int(len(X_tcn) * test_scale)]
-        #
-        # X_fine_tune = X_fine_tune[int(len(X) * test_scale):]
-        # Y_fine_tune = Y_fine_tune[int(len(Y) * test_scale):]
-        # X_fine_tune_TCN = X_fine_tune_TCN[int(len(X_tcn) * test_scale):]
         # 打乱用于微调的训练数据
         X_fine_tune, Y_fine_tune, X_fine_tune_TCN = scramble(X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train)
         # X_fine_tune, Y_fine_tune, X_fine_tune_TCN = X_fine_tune_train, Y_fine_tune_train,X_TCN_fine_tune_train
@@ -366,7 +342,7 @@ def train_model(model,criterion, optimizer, scheduler,dataloaders, num_epochs=ep
                         print("New best validation loss:", epoch_loss)
                         best_loss = epoch_loss
                         #在验证集上获得最佳损失时保存模型，并将其保存为文件
-                        torch.save(model.state_dict(), 'best_weights_source_wavelet_db1.pt')
+                        torch.save(model.state_dict(), 'best_weights_source_wavelet_db1_contact.pt')
                         patience = patience_increase + epoch #更新耐心值为当前epoch加上预定义的耐心增加值。
             print("Epoch {} of {} took {:.3f}s".format(
                 epoch + 1, num_epochs, time.time() - epoch_start))
@@ -380,12 +356,12 @@ def train_model(model,criterion, optimizer, scheduler,dataloaders, num_epochs=ep
             time_elapsed // 60, time_elapsed % 60))
         print('Best val loss: {:4f}'.format(best_loss))
         # load best model weights
-        model_weights = torch.load('best_weights_source_wavelet_db1.pt')
+        model_weights = torch.load('best_weights_source_wavelet_db1_contact.pt')
         model.load_state_dict(model_weights)
         model.eval()
         return  model
     else:
-        model_weights = torch.load('best_weights_source_wavelet_db1.pt')
+        model_weights = torch.load('best_weights_source_wavelet_db1_contact.pt')
         model.load_state_dict(model_weights)
         model.eval()
         return model

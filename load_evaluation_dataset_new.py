@@ -155,29 +155,4 @@ def read_data(path,preOrEva):
             examples.append(dataset_example)  # 将示例添加到示例集中
             #广播，labels一维，全为class值
             labels.append((i % number_of_classes) + np.zeros(dataset_example.shape[0]))  # 构建标签
-        examples, labels = shift_electrodes(examples, labels)  # 对示例进行电极转换
-        #这里是所有的28个文件的总和，也就是一个测试者的所有数据，labels有28个，每一个都是一个全为class值的一维向量
-        #examples也是28个，每一个都是一个(189,12,8,7)的数据 189是时间窗的个数，12是时间戳个数（采样点），8是通道，7是CWT转换的尺度数量，
-        list_dataset.append(examples)  # 将示例集添加到数据集中
-        list_labels.append(labels)  # 将标签集添加到标签集中
-
-    for candidate in range(Female[index]):#7 female
-        labels = []  # 存储标签
-        examples = []  # 存储示例
-        for i in range(number_of_classes * 4):
-            data_read_from_file = np.fromfile(path + '/Female' + str(candidate) +'/'+preOrEva+'/classe_%d.dat' % i,
-                                              dtype=np.int16)
-            data_read_from_file = np.array(data_read_from_file, dtype=np.float32)
-            dataset_example = format_data_to_train(data_read_from_file)  # 格式化数据
-            examples.append(dataset_example)  # 将示例添加到示例集中
-            #将当前的dataset都打上标签，这里的label的维度和dataset一致，这样就能一一对应起来了
-            labels.append((i % number_of_classes) + np.zeros(dataset_example.shape[0]))  # 构建标签
-        examples, labels = shift_electrodes(examples, labels)  # 对示例进行电极转换
-        list_dataset.append(examples)  # 将示例集添加到数据集中
-        list_labels.append(labels)  # 将标签集添加到标签集中
-
-    print("Finished Reading Data")
-    return list_dataset, list_labels
-
-if __name__ == '__main__':
-    read_data("../../EvaluationDataset",'Test0')
+        examples, labels = shif

@@ -1,0 +1,249 @@
+nohup: ignoring input
+++++++++++++
+Number Parameters: TCN 37742
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:42: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.image_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:43: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.time_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:44: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.fusion_weights)
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 168942
+22572
+(22572, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+Epoch 00037: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00056: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 35s
+Best val loss: 0.328682
+ACCURACY TEST_0 FINAL : 85.065 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.439 %
+22600
+(22600, 12, 10, 7)
+Epoch 00039: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.116439
+ACCURACY TEST_0 FINAL : 84.531 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.589 %
+22575
+(22575, 12, 10, 7)
+Epoch 00056: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.099772
+ACCURACY TEST_0 FINAL : 88.958 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.048 %
+22719
+(22719, 12, 10, 7)
+Epoch 00041: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00057: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 35s
+Best val loss: 0.180974
+ACCURACY TEST_0 FINAL : 80.226 %
+TOP-3 ACCURACY TEST_0 FINAL : 91.868 %
+22541
+(22541, 12, 10, 7)
+Epoch 00029: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00038: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 8s
+Best val loss: 0.430123
+ACCURACY TEST_0 FINAL : 74.930 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.470 %
+22598
+(22598, 12, 10, 7)
+Epoch 00026: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00049: reducing learning rate of group 0 to 4.0000e-04.
+Epoch 00058: reducing learning rate of group 0 to 8.0000e-05.
+
+Training complete in 1m 34s
+Best val loss: 0.220007
+ACCURACY TEST_0 FINAL : 79.301 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.107 %
+22661
+(22661, 12, 10, 7)
+Epoch 00054: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 35s
+Best val loss: 0.185184
+ACCURACY TEST_0 FINAL : 84.760 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.332 %
+22570
+(22570, 12, 10, 7)
+Epoch 00041: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.179104
+ACCURACY TEST_0 FINAL : 85.687 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.870 %
+22634
+(22634, 12, 10, 7)
+Epoch 00022: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00060: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 35s
+Best val loss: 0.416908
+ACCURACY TEST_0 FINAL : 82.527 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.662 %
+22621
+(22621, 12, 10, 7)
+Epoch 00055: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 35s
+Best val loss: 0.260492
+ACCURACY TEST_0 FINAL : 82.205 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.928 %
+22553
+(22553, 12, 10, 7)
+Epoch 00039: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00049: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 25s
+Best val loss: 0.284163
+ACCURACY TEST_0 FINAL : 84.143 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.161 %
+22527
+(22527, 12, 10, 7)
+Epoch 00035: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00047: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 33s
+Best val loss: 0.292925
+ACCURACY TEST_0 FINAL : 84.435 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.530 %
+22533
+(22533, 12, 10, 7)
+Epoch 00039: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00049: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 25s
+Best val loss: 0.266079
+ACCURACY TEST_0 FINAL : 87.344 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.354 %
+22593
+(22593, 12, 10, 7)
+
+Training complete in 1m 35s
+Best val loss: 0.365079
+ACCURACY TEST_0 FINAL : 81.148 %
+TOP-3 ACCURACY TEST_0 FINAL : 93.103 %
+22801
+(22801, 12, 10, 7)
+Epoch 00054: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 35s
+Best val loss: 0.465262
+ACCURACY TEST_0 FINAL : 79.930 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.018 %
+22552
+(22552, 12, 10, 7)
+Epoch 00029: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 0m 54s
+Best val loss: 0.285457
+ACCURACY TEST_0 FINAL : 86.016 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.681 %
+22864
+(22864, 12, 10, 7)
+Epoch 00043: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00052: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 30s
+Best val loss: 0.187680
+ACCURACY TEST_0 FINAL : 84.445 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.066 %
+22770
+(22770, 12, 10, 7)
+Epoch 00050: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 35s
+Best val loss: 0.444423
+ACCURACY TEST_0 FINAL : 79.269 %
+TOP-3 ACCURACY TEST_0 FINAL : 90.339 %
+22681
+(22681, 12, 10, 7)
+Epoch 00050: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.497316
+ACCURACY TEST_0 FINAL : 78.939 %
+TOP-3 ACCURACY TEST_0 FINAL : 89.567 %
+22830
+(22830, 12, 10, 7)
+Epoch 00057: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.326641
+ACCURACY TEST_0 FINAL : 85.559 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.441 %
+22768
+(22768, 12, 10, 7)
+Epoch 00040: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00057: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 34s
+Best val loss: 0.305055
+ACCURACY TEST_0 FINAL : 85.448 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.405 %
+22868
+(22868, 12, 10, 7)
+Epoch 00028: reducing learning rate of group 0 to 2.0000e-03.
+Epoch 00043: reducing learning rate of group 0 to 4.0000e-04.
+
+Training complete in 1m 15s
+Best val loss: 0.269725
+ACCURACY TEST_0 FINAL : 84.475 %
+TOP-3 ACCURACY TEST_0 FINAL : 96.021 %
+22710
+(22710, 12, 10, 7)
+Epoch 00042: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.424758
+ACCURACY TEST_0 FINAL : 80.918 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.948 %
+22684
+(22684, 12, 10, 7)
+Epoch 00051: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.252739
+ACCURACY TEST_0 FINAL : 84.705 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.340 %
+22726
+(22726, 12, 10, 7)
+Epoch 00042: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 14s
+Best val loss: 0.324982
+ACCURACY TEST_0 FINAL : 86.987 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.031 %
+22817
+(22817, 12, 10, 7)
+
+Training complete in 1m 35s
+Best val loss: 0.253527
+ACCURACY TEST_0 FINAL : 86.888 %
+TOP-3 ACCURACY TEST_0 FINAL : 94.896 %
+22598
+(22598, 12, 10, 7)
+Epoch 00041: reducing learning rate of group 0 to 2.0000e-03.
+
+Training complete in 1m 34s
+Best val loss: 0.428840
+ACCURACY TEST_0 FINAL : 77.126 %
+TOP-3 ACCURACY TEST_0 FINAL : 92.990 %
+AVERAGE ACCURACY TEST 0 83.184
+AVERAGE TOP-3 ACCURACY TEST 0 93.822
+[85.06470793983911, 84.53077878304063, 88.95781637717121, 80.22568511552929, 74.92992291520673, 79.30065014935863, 84.75954738330977, 85.68658558082143, 82.52669039145907, 82.20533663191377, 84.14335664335664, 84.4354555047485, 87.34443470639789, 81.14825835813058, 79.9295154185022, 86.01620288834097, 84.44522471910112, 79.26916221033868, 78.9389353747552, 85.55944055944056, 85.44821583986075, 84.47537473233405, 80.91804431938094, 84.70465962238005, 86.9874913134121, 86.88841957057375, 77.12579058327478]
+[94.43861490031479, 94.58932056058187, 96.04750088621056, 91.86817123410353, 90.46951646811493, 90.10718678615358, 95.33239038189534, 94.87043892120572, 94.66192170818505, 94.92843258526241, 94.16083916083916, 94.53042560675343, 96.35407537248028, 93.10344827586206, 92.01762114537445, 94.68122578372666, 94.06601123595506, 90.33868092691623, 89.56738472494214, 94.44055944055944, 95.40469973890339, 96.02069950035688, 92.94759057333802, 95.34037761995496, 95.03127171646977, 94.89616332277367, 92.9901616303584]
+ACCURACY FINAL TEST 0:  [[85.06470793983911, 84.53077878304063, 88.95781637717121, 80.22568511552929, 74.92992291520673, 79.30065014935863, 84.75954738330977, 85.68658558082143, 82.52669039145907, 82.20533663191377, 84.14335664335664, 84.4354555047485, 87.34443470639789, 81.14825835813058, 79.9295154185022, 86.01620288834097, 84.44522471910112, 79.26916221033868, 78.9389353747552, 85.55944055944056, 85.44821583986075, 84.47537473233405, 80.91804431938094, 84.70465962238005, 86.9874913134121, 86.88841957057375, 77.12579058327478]]
+ACCURACY FINAL TEST 0:  83.18391494933255
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/fromnumeric.py:3504: RuntimeWarning: Mean of empty slice.
+  return _methods._mean(a, axis=axis, dtype=dtype,
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)

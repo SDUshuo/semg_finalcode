@@ -157,24 +157,4 @@ def read_data(path,preOrEva='training0'):
                                               dtype=np.int16)
             data_read_from_file = np.array(data_read_from_file, dtype=np.float32)
             dataset_example = format_data_to_train(data_read_from_file)  # 格式化数据
-            # 这是为了diversify构建 y 二维数组，时间窗个数*3  列中第一列为label第二列为人类编号第三列都是0
-            label = (i % number_of_classes) + np.zeros(dataset_example.shape[0])
-            people = bianhao + np.zeros(dataset_example.shape[0])
-
-            domain = np.zeros(dataset_example.shape[0])
-            y_candidate_class = np.transpose([label, people, domain])
-
-            y_candidate.append(y_candidate_class)
-            # 对28个class文件获取的dataset_example加入examples中
-            list_dataset.append(dataset_example)
-        # examples, labels = shift_electrodes(examples, labels)  # 对示例进行电极转换
-
-    list_dataset = np.concatenate(list_dataset, axis=0)
-    y_candidate = np.concatenate(y_candidate, axis=0)
-
-    print("Finished Reading Data")
-    return list_dataset,y_candidate
-
-
-if __name__ == '__main__':
-    read_data("../../PreTrainingDataset")
+            # 这是为了diversify构建 y 二维数组，时间窗个数*3  列中第一列为label第二列为人类编号�

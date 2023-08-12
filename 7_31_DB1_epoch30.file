@@ -1,0 +1,117 @@
+nohup: ignoring input
+++++++++++++
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:42: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.image_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:43: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.time_factor)
+/home/yanshuo/YS/FinalCode/PyTorchImplementation/CWT/LMF.py:44: UserWarning: nn.init.xavier_normal is now deprecated in favor of nn.init.xavier_normal_.
+  xavier_normal(self.fusion_weights)
+Multi-Scale Temporal Relation Network Module in use ['3-frame relation', '2-frame relation']
+Number Parameters: DB1_finalemode 186294
+22600
+(22600, 12, 10, 7)
+/home/yanshuo/anaconda3/envs/diversify/lib/python3.10/site-packages/torch/nn/_reduction.py:42: UserWarning: size_average and reduce args will be deprecated, please use reduction='sum' instead.
+  warnings.warn(warning.format(ret))
+train Loss: 1.26664639 Acc: 0.63035399
+val Loss: 0.81250293 Acc: 0.71052635
+Epoch 1 of 30 took 12.198s
+train Loss: 0.81273010 Acc: 0.74486727
+val Loss: 0.69840294 Acc: 0.7631579
+Epoch 2 of 30 took 11.686s
+train Loss: 0.67267936 Acc: 0.78955752
+val Loss: 0.49789571 Acc: 0.84210527
+Epoch 3 of 30 took 8.239s
+train Loss: 0.51378378 Acc: 0.83915925
+val Loss: 0.44155328 Acc: 0.86842108
+Epoch 4 of 30 took 6.364s
+train Loss: 0.43297424 Acc: 0.86783183
+val Loss: 0.25647292 Acc: 0.92105263
+Epoch 5 of 30 took 7.529s
+train Loss: 0.38897768 Acc: 0.88278759
+val Loss: 0.26106779 Acc: 0.91666669
+Epoch 6 of 30 took 6.446s
+train Loss: 0.34404224 Acc: 0.89694691
+val Loss: 0.30382300 Acc: 0.91228068
+Epoch 7 of 30 took 5.165s
+train Loss: 0.31589829 Acc: 0.90707964
+val Loss: 0.18970180 Acc: 0.94298244
+Epoch 8 of 30 took 4.134s
+train Loss: 0.28648446 Acc: 0.91380531
+val Loss: 0.13782398 Acc: 0.94736844
+Epoch 9 of 30 took 5.327s
+train Loss: 0.26265840 Acc: 0.92101771
+val Loss: 0.19422972 Acc: 0.94298244
+Epoch 10 of 30 took 7.549s
+train Loss: 0.28388005 Acc: 0.91473448
+val Loss: 0.11922240 Acc: 0.96052635
+Epoch 11 of 30 took 6.479s
+train Loss: 0.24475442 Acc: 0.92539823
+val Loss: 0.11795946 Acc: 0.95614034
+Epoch 12 of 30 took 7.020s
+train Loss: 0.22126312 Acc: 0.93300885
+val Loss: 0.11742345 Acc: 0.95175439
+Epoch 13 of 30 took 5.191s
+train Loss: 0.21127626 Acc: 0.93637168
+val Loss: 0.13129214 Acc: 0.96052635
+Epoch 14 of 30 took 7.780s
+train Loss: 0.19777320 Acc: 0.94075221
+val Loss: 0.10835961 Acc: 0.96929824
+Epoch 15 of 30 took 12.865s
+train Loss: 0.18440964 Acc: 0.94393802
+val Loss: 0.15658379 Acc: 0.95175439
+Epoch 16 of 30 took 11.195s
+train Loss: 0.20106510 Acc: 0.94017696
+val Loss: 0.09110438 Acc: 0.97368419
+Epoch 17 of 30 took 11.974s
+train Loss: 0.16438106 Acc: 0.94973451
+val Loss: 0.09664634 Acc: 0.97368419
+Epoch 18 of 30 took 11.042s
+train Loss: 0.15572724 Acc: 0.95433629
+val Loss: 0.13923440 Acc: 0.94298244
+Epoch 19 of 30 took 12.053s
+train Loss: 0.15943380 Acc: 0.9531858
+val Loss: 0.11028055 Acc: 0.9649123
+Epoch 20 of 30 took 12.198s
+train Loss: 0.15628987 Acc: 0.95336282
+val Loss: 0.06748661 Acc: 0.97368419
+Epoch 21 of 30 took 12.805s
+train Loss: 0.13250382 Acc: 0.9615044
+val Loss: 0.07136583 Acc: 0.98245615
+Epoch 22 of 30 took 12.175s
+train Loss: 0.14569635 Acc: 0.95783186
+val Loss: 0.10665981 Acc: 0.95175439
+Epoch 23 of 30 took 10.811s
+train Loss: 0.13122256 Acc: 0.96101767
+val Loss: 0.06559511 Acc: 0.97368419
+Epoch 24 of 30 took 11.040s
+train Loss: 0.12972127 Acc: 0.96172565
+val Loss: 0.07804249 Acc: 0.98245615
+Epoch 25 of 30 took 13.031s
+train Loss: 0.11107978 Acc: 0.96942478
+val Loss: 0.14830326 Acc: 0.95175439
+Epoch 26 of 30 took 11.664s
+train Loss: 0.17312639 Acc: 0.95256633
+val Loss: 0.20288768 Acc: 0.95614034
+Epoch 27 of 30 took 13.003s
+train Loss: 0.15089220 Acc: 0.95610619
+val Loss: 0.06386709 Acc: 0.97368419
+Epoch 28 of 30 took 12.181s
+train Loss: 0.11610174 Acc: 0.96522123
+val Loss: 0.08557152 Acc: 0.9780702
+Epoch 29 of 30 took 12.721s
+train Loss: 0.11384768 Acc: 0.96769911
+val Loss: 0.07157404 Acc: 0.96929824
+Epoch 30 of 30 took 11.390s
+
+Training complete in 4m 53s
+Best val loss: 0.063867
+ACCURACY TEST_0 FINAL : 86.482 %
+TOP-3 ACCURACY TEST_0 FINAL : 95.246 %
+22575
+(22575, 12, 10, 7)
+train Loss: 1.37364157 Acc: 0.71915841
+val Loss: 0.50206910 Acc: 0.86403507
+Epoch 1 of 30 took 11.980s
+train Loss: 0.55879955 Acc: 0.83862686
+val Loss: 0.30784077 Acc: 0.90789473
+Epoch 2 of 30 took 11.699s
