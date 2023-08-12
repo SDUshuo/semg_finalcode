@@ -25,14 +25,14 @@ from sklearn.metrics import confusion_matrix
 import seaborn as sns
 number_of_class = 27
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-batchsize = 128
+batchsize = 512
 
-epochs = 30
+epochs = 10
 lr = 0.01
 
 
 
-def confusion_matrix(pred, Y, number_class=18):
+def confusion_matrix(pred, Y, number_class=27):
     confusion_matrice = []
     for x in range(0, number_class):
         vector = []
@@ -245,7 +245,7 @@ def calculate_fitness(seedlist):
     plt.title('Confusion matrix for test')
     plt.ylabel('Actual label')
     plt.xlabel('Predicted label')
-    plt.savefig('wavelet_images_fenlei/confusion_matrix_test.pdf', format='pdf')
+    plt.savefig('paper_image2/confusion_matrix_test.pdf', format='pdf')
 
     print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
     print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
@@ -391,7 +391,7 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, num_epochs=
         plt.xlabel('Epoch')
         plt.ylabel('Loss')
         plt.legend()
-        plt.savefig('wavelet_images_fenlei/loss.pdf')
+        plt.savefig('paper_image2/loss.pdf')
 
         # 生成准确率曲线
         plt.figure()
@@ -401,7 +401,7 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, num_epochs=
         plt.xlabel('Epoch')
         plt.ylabel('Accuracy')
         plt.legend()
-        plt.savefig('wavelet_images_fenlei/accuracy.pdf')
+        plt.savefig('paper_image2/accuracy.pdf')
         print()
 
         time_elapsed = time.time() - since
@@ -427,8 +427,8 @@ if __name__ == '__main__':
     # directory = first_path + '/train'
     # X_TCN_fine_tune_train = np.load(directory + 'X_train.npy', encoding="bytes", allow_pickle=True)
     # print(X_TCN_fine_tune_train.shape)
-    # plot_and_save_emg(X_TCN_fine_tune_train[0],'wavelet_images_fenlei/rawSemg.pdf')
-    # save_images(X_TCN_fine_tune_train[0],'wavelet_images_fenlei')
+    # plot_and_save_emg(X_TCN_fine_tune_train[0],'paper_image2/rawSemg.pdf')
+    # save_images(X_TCN_fine_tune_train[0],'paper_image2')
     print("++++++++++++")
     accuracy_one_by_one = []
     array_training_error = []

@@ -41,7 +41,7 @@ class Net(nn.Module):
         # self.LMF = LMFmodule.LMF((feature_bottleneck, number_of_vector_per_example), self.fushion_dim, self.rank, self.hidden_dim, number_of_classes).cuda()
         self.LMF = LMFmodule.LMF((feature_bottleneck,  self.lstm_out_dim), self.fushion_dim, self.rank, self.hidden_dim, number_of_classes).cuda()
         # 创建 TRN模型
-        self.TRN = myTRN.Net(number_of_class=number_of_classes, num_segments=12, fenlei=True).cuda()
+        self.TRN = myTRN.Net(number_of_class=number_of_classes, num_segments=12, fenlei=False).cuda()
 
         print("Number Parameters: DB1_finalemode", self.get_n_params())
     def get_n_params(self):
@@ -54,9 +54,9 @@ class Net(nn.Module):
         # tcn_output = self.TCN(input_tcn)
         trn_output = self.TRN(input_trn)
 
-        # lstm_output =self.CNN_LSTM(input_tcn)
+        lstm_output =self.CNN_LSTM(input_tcn)
         # output =self.Slowfushion(input_trn)
         # lmf_output = self.LMF(trn_output, tcn_output)
-        # lmf_output = self.LMF(trn_output, lstm_output)
-        return trn_output
+        lmf_output = self.LMF(trn_output, lstm_output)
+        return lmf_output
 
