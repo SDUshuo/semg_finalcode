@@ -80,30 +80,32 @@ def import_db1(folder_path, subject,rest_length_cap=5):
 
     """
     fs = 100
-    data = sio.loadmat(
-        folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E2.mat')
+
+
+    # data = sio.loadmat(
+    #     folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E2.mat')
+    # emg = np.squeeze(np.array(data['emg']))
+    # rep = np.squeeze(np.array(data['rerepetition']))
+    # move = np.squeeze(np.array(data['restimulus']))
+
+    data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E1.mat')
     emg = np.squeeze(np.array(data['emg']))
     rep = np.squeeze(np.array(data['rerepetition']))
     move = np.squeeze(np.array(data['restimulus']))
 
-    # data = sio.loadmat(folder_path+'DB1_s'+str(subject)+'/DB1_s'+str(subject)+  '/S' + str(subject) + '_A1_E1.mat')
-    # emg = np.squeeze(np.array(data['emg']))
-    # rep = np.squeeze(np.array(data['rerepetition']))
-    # move = np.squeeze(np.array(data['restimulus']))
-    #
-    # data = sio.loadmat(folder_path+'DB1_s'+str(subject)+'/DB1_s'+str(subject)+  '/S' + str(subject) + '_A1_E2.mat')
-    # emg = np.vstack((emg, np.array(data['emg'])))
-    # rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
-    # move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
-    # move_tmp[move_tmp != 0] += max(move)
-    # move = np.append(move, move_tmp)
-    #
-    # data = sio.loadmat(folder_path+'DB1_s'+str(subject)+'/DB1_s'+str(subject)+  '/S' + str(subject) + '_A1_E3.mat')
-    # emg = np.vstack((emg, np.array(data['emg'])))
-    # rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
-    # move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
-    # move_tmp[move_tmp != 0] += max(move)
-    # move = np.append(move, move_tmp)
+    data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) +'_A1_E2.mat')
+    emg = np.vstack((emg, np.array(data['emg'])))
+    rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
+    move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
+    move_tmp[move_tmp != 0] += max(move)
+    move = np.append(move, move_tmp)
+
+    data = sio.loadmat(folder_path + 'DB1_s' + str(subject) + '/DB1_s' + str(subject) + '/S' + str(subject) + '_A1_E3.mat')
+    emg = np.vstack((emg, np.array(data['emg'])))
+    rep = np.append(rep, np.squeeze(np.array(data['rerepetition'])))
+    move_tmp = np.squeeze(np.array(data['restimulus']))  # Fix for numbering
+    move_tmp[move_tmp != 0] += max(move)
+    move = np.append(move, move_tmp)
 
     move = move.astype('int8')  # To minimise overhead
 
@@ -140,13 +142,11 @@ def import_db1(folder_path, subject,rest_length_cap=5):
         cur_rep += 1
         if cur_rep > nb_unique_reps:
             cur_rep = 1
-
+    # emg=DA_Jitter(emg)
     end_idx = int(round((emg.shape[0] + move_regions[-1]) / 2))
     rep[last_end_idx:end_idx] = cur_rep
     rep_regions[-2] = last_end_idx
     rep_regions[-1] = end_idx - 1
-    emg=DA_Jitter(emg)
-    print(emg.shape)
     return {'emg': emg,
             'rep': rep,
             'move': move,
@@ -335,8 +335,8 @@ def gen_split_rand(rep_ids, nb_test, nb_splits, base=None):
 
 def Jitter(emg, reps, train_reps):
     train_targets = get_idxs(reps, train_reps)
-    print(emg.shape)
-    print(train_targets.shape)
+    # print(emg.shape)
+    # print(train_targets.shape)
     '''(142976, 10)
 (114010,)'''
     return DA_Jitter(emg[train_targets, :])
@@ -408,7 +408,7 @@ def normalise_emg_all(emg, reps, train_reps):
 
     return scaler.transform(emg)
 
-def get_windows(which_reps, window_len, window_inc, emg, movements, repetitons, which_moves=None, dtype=np.float32):
+def get_windows(subject,which_reps, window_len, window_inc, emg, movements, repetitons, which_moves=None, dtype=np.float32):
     """Get set of windows based on repetition and movement criteria and associated label + repetition data.
 
     Args:
@@ -459,11 +459,20 @@ def get_windows(which_reps, window_len, window_inc, emg, movements, repetitons, 
     # X_data = X_data[mask]
     # Y_data = Y_data[mask]
     # R_data = R_data[mask]
-    # Instantiate the LabelEncoder
-    le = preprocessing.LabelEncoder()
+
+    #只使用休息手势
+    mask = Y_data == 0
+
+    # Apply the mask to X_data, Y_data, and R_data
+    X_data = X_data[mask]
+    Y_data = Y_data[mask]
+    R_data = R_data[mask]
+    Y_data[:] = subject
+    # # Instantiate the LabelEncoder
+    # le = preprocessing.LabelEncoder()
 
     # Fit and transform Y_data to encode labels
-    Y_data = le.fit_transform(Y_data)
+    # Y_data = le.fit_transform(Y_data)
     return X_data, Y_data, R_data
 
 def jitter(x, snr_db=25):

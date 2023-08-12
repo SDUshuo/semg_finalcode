@@ -20,9 +20,9 @@ from save_data import number_of_vector_per_example, number_of_classes, size_non_
 import os
 from load_evaluation_dataset_DB1 import newpath, window_inc, window_len, window_path
 
-number_of_class = 18
+number_of_class = 27
 os.environ['CUDA_LAUNCH_BLOCKING'] = '1'
-batchsize = 512
+batchsize = 128
 
 epochs = 120
 lr = 0.01
@@ -105,10 +105,12 @@ def calculate_fitness(seedlist):
     setup_seed(seed)
     model = db_one_model.Net(tcn_inputs_channal=10, number_of_classes=number_of_class)
     X,Y,X_TCN = [],[],[]
-    for dataset_index in range(1, 28):
+    X_val, Y_val, X_TCN_val = [], [], []
+    X_test, Y_test, X_TCN_test = [], [], []
+    for dataset_index in range(0, 27):
         setup_seed(seed)
         # 在每次循环开始之前设置随机数种子
-        first_path ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_' + str(
+        first_path ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm_relax/subject_' + str(
             dataset_index)
         # 准备训练集
         # directory = 'saved_data/DB1/52_5/subject_' + str(dataset_index) + '/train'
@@ -133,6 +135,10 @@ def calculate_fitness(seedlist):
         X_test_0 = np.load(directory + 'X_test_CWT.npy', encoding="bytes", allow_pickle=True)
         Y_test_0 = np.load(directory + 'Y_test.npy', encoding="bytes", allow_pickle=True)
         X_TCN_fine_tune_test = np.load(directory + 'X_test.npy', encoding="bytes", allow_pickle=True)
+
+        X_test.append(X_test_0)
+        Y_test.append(Y_test_0)
+        X_TCN_test.append(X_TCN_fine_tune_test)
         # 维度为 (N, M, 10, 7)
         N = X_test_0.shape[0]
         M = X_test_0.shape[1]
@@ -159,84 +165,104 @@ def calculate_fitness(seedlist):
         X_fine_tune_TCN = X_fine_tune_TCN[int(len(X_fine_tune_TCN) * val_scale):]
 
         X.append(X_fine_tune)
+        Y.append(Y_fine_tune)
+        X_TCN.append(X_fine_tune_TCN)
+
+        X_val.append(valid_examples)
+        Y_val.append(labels_valid)
+        X_TCN_val.append(valid_examples_TCN)
 
 
-        # 转换为TensorDataset对象
-        print(torch.from_numpy(np.array(Y_fine_tune, dtype=np.int32)).size(0))
-        #
-        print(np.shape(np.array(X_fine_tune, dtype=np.float32)))
-        train = TensorDataset(torch.from_numpy(np.array(X_fine_tune, dtype=np.float32)),
-                              torch.from_numpy(np.array(Y_fine_tune, dtype=np.int32)),
-                              torch.from_numpy(np.array(X_fine_tune_TCN, dtype=np.float32)))
-        validation = TensorDataset(torch.from_numpy(np.array(valid_examples, dtype=np.float32)),
-                                   torch.from_numpy(np.array(labels_valid, dtype=np.int32)),
-                                   torch.from_numpy(np.array(valid_examples_TCN, dtype=np.float32)))
-        # 创建数据加载器
-        trainloader = torch.utils.data.DataLoader(train, batch_size=batchsize, shuffle=True)
-        validationloader = torch.utils.data.DataLoader(validation, batch_size=batchsize, shuffle=True)
+    X_fine_tune = np.concatenate(X, axis=0)
+    Y_fine_tune = np.concatenate(Y, axis=0)
+    X_fine_tune_TCN = np.concatenate(X_TCN, axis=0)
 
-        # 创建测试集的数据加载器
-        test_0 = TensorDataset(torch.from_numpy(np.array(X_test_0, dtype=np.float32)),
-                               torch.from_numpy(np.array(Y_test_0, dtype=np.int32)),
-                               torch.from_numpy(np.array(X_TCN_fine_tune_test, dtype=np.float32)), )
+    valid_examples = np.concatenate(X_val, axis=0)
+    labels_valid = np.concatenate(Y_val, axis=0)
+    valid_examples_TCN = np.concatenate(X_TCN_val, axis=0)
 
-        test_0_loader = torch.utils.data.DataLoader(test_0, batch_size=batchsize, shuffle=False)
 
-        """
-        定义损失函数
-        """
-        criterion = nn.NLLLoss(size_average=False)
-        precision = 1e-8
+    X_test_0 = np.concatenate(X_test, axis=0)
+    Y_test_0 = np.concatenate(Y_test, axis=0)
+    X_TCN_fine_tune_test = np.concatenate(X_TCN_test, axis=0)
 
-        optimizer = optim.Adam(model.parameters(), lr=lr)
 
-        # 学习率调度器（scheduler）
-        scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer=optimizer, mode='min', factor=.2, patience=5,
-                                                         verbose=True, eps=precision)
+    # 转换为TensorDataset对象
+    print(torch.from_numpy(np.array(Y_fine_tune, dtype=np.int32)).size(0))
+    #
+    print(np.shape(np.array(X_fine_tune, dtype=np.float32)))
+    train = TensorDataset(torch.from_numpy(np.array(X_fine_tune, dtype=np.float32)),
+                          torch.from_numpy(np.array(Y_fine_tune, dtype=np.int32)),
+                          torch.from_numpy(np.array(X_fine_tune_TCN, dtype=np.float32)))
+    validation = TensorDataset(torch.from_numpy(np.array(valid_examples, dtype=np.float32)),
+                               torch.from_numpy(np.array(labels_valid, dtype=np.int32)),
+                               torch.from_numpy(np.array(valid_examples_TCN, dtype=np.float32)))
+    # 创建数据加载器
+    trainloader = torch.utils.data.DataLoader(train, batch_size=batchsize, shuffle=True)
+    validationloader = torch.utils.data.DataLoader(validation, batch_size=batchsize, shuffle=True)
 
-        """
-        进行训练
-        """
+    # 创建测试集的数据加载器
+    test_0 = TensorDataset(torch.from_numpy(np.array(X_test_0, dtype=np.float32)),
+                           torch.from_numpy(np.array(Y_test_0, dtype=np.int32)),
+                           torch.from_numpy(np.array(X_TCN_fine_tune_test, dtype=np.float32)), )
 
-        multi_model = train_model(model, criterion, optimizer, scheduler,
-                                  dataloaders={"train": trainloader, "val": validationloader}, people=dataset_index,
-                                  precision=precision)
+    test_0_loader = torch.utils.data.DataLoader(test_0, batch_size=batchsize, shuffle=False)
 
-        # print(multi_model)
-        multi_model.eval()
-        total = 0
-        correct_prediction_test_0 = 0
-        top3_correct_prediction_test_0=0
-        """
-        进行测试集测试
-        由于测试集的 batch size 设置为1，每个样本都能独立地传递给模型，避免了批量归一化层等模型组件对批量大小的依赖。
-        """
-        for k, data_test_0 in enumerate(test_0_loader, 0):
-            # get the inputs
-            inputs_test_0, ground_truth_test_0, inputs_test_0_TCN = data_test_0
-            inputs_test_0, ground_truth_test_0, inputs_test_0_TCN = Variable(inputs_test_0.cuda()), Variable(
-                ground_truth_test_0.cuda()), Variable(inputs_test_0_TCN.cuda())
+    """
+    定义损失函数
+    """
+    criterion = nn.NLLLoss(size_average=False)
+    precision = 1e-8
 
-            concat_input_TCN = inputs_test_0_TCN
-            concat_input_trn = inputs_test_0
+    optimizer = optim.Adam(model.parameters(), lr=lr)
 
-            outputs_test_0 = multi_model(concat_input_trn, concat_input_TCN)
-            _, predicted_top1 = torch.max(outputs_test_0.data, 1)
-            _, predicted_top3 = outputs_test_0.data.topk(3, 1, True, True)
+    # 学习率调度器（scheduler）
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer=optimizer, mode='min', factor=.2, patience=5,
+                                                     verbose=True, eps=precision)
 
-            correct_prediction_test_0 += (predicted_top1.cpu().numpy() ==
-                                          ground_truth_test_0.data.cpu().numpy()).sum()
-            top3_correct_prediction_test_0 += sum(
-                [ground_truth_test_0.data.cpu().numpy()[i] in predicted_top3.cpu().numpy()[i] for i in
-                 range(len(predicted_top3))])
+    """
+    进行训练
+    """
 
-            total += ground_truth_test_0.size(0)  # 总样本数量
+    multi_model = train_model(model, criterion, optimizer, scheduler,
+                              dataloaders={"train": trainloader, "val": validationloader},
+                              precision=precision)
 
-        print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
-        print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
+    # print(multi_model)
+    multi_model.eval()
+    total = 0
+    correct_prediction_test_0 = 0
+    top3_correct_prediction_test_0=0
+    """
+    进行测试集测试
+    由于测试集的 batch size 设置为1，每个样本都能独立地传递给模型，避免了批量归一化层等模型组件对批量大小的依赖。
+    """
+    for k, data_test_0 in enumerate(test_0_loader, 0):
+        # get the inputs
+        inputs_test_0, ground_truth_test_0, inputs_test_0_TCN = data_test_0
+        inputs_test_0, ground_truth_test_0, inputs_test_0_TCN = Variable(inputs_test_0.cuda()), Variable(
+            ground_truth_test_0.cuda()), Variable(inputs_test_0_TCN.cuda())
 
-        accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
-        top3_accuracy_test0.append(100 * float(top3_correct_prediction_test_0) / float(total))
+        concat_input_TCN = inputs_test_0_TCN
+        concat_input_trn = inputs_test_0
+
+        outputs_test_0 = multi_model(concat_input_trn, concat_input_TCN)
+        _, predicted_top1 = torch.max(outputs_test_0.data, 1)
+        _, predicted_top3 = outputs_test_0.data.topk(3, 1, True, True)
+
+        correct_prediction_test_0 += (predicted_top1.cpu().numpy() ==
+                                      ground_truth_test_0.data.cpu().numpy()).sum()
+        top3_correct_prediction_test_0 += sum(
+            [ground_truth_test_0.data.cpu().numpy()[i] in predicted_top3.cpu().numpy()[i] for i in
+             range(len(predicted_top3))])
+
+        total += ground_truth_test_0.size(0)  # 总样本数量
+
+    print("ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(correct_prediction_test_0) / float(total)))
+    print("TOP-3 ACCURACY TEST_0 FINAL : %.3f %%" % (100 * float(top3_correct_prediction_test_0) / float(total)))
+
+    accuracy_test0.append(100 * float(correct_prediction_test_0) / float(total))
+    top3_accuracy_test0.append(100 * float(top3_correct_prediction_test_0) / float(total))
 
     print("AVERAGE ACCURACY TEST 0 %.3f" % np.array(accuracy_test0).mean())
     print("AVERAGE TOP-3 ACCURACY TEST 0 %.3f" % np.array(top3_accuracy_test0).mean())
@@ -261,7 +287,7 @@ def combined_loss(features1, features2, labels, temperature=0.5):
 
 
 # models=[CNN,TCN,LMF,TRN]
-def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num_epochs=epochs, precision=1e-8,
+def train_model(model, criterion, optimizer, scheduler, dataloaders, num_epochs=epochs, precision=1e-8,
                 justtest=False):
     since = time.time()
     best_loss = float('inf')
@@ -276,8 +302,8 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
         for epoch in range(num_epochs):
 
             epoch_start = time.time()
-            # print('Epoch {}/{}'.format(epoch, num_epochs - 1))
-            # print('-' * 10)
+            print('Epoch {}/{}'.format(epoch, num_epochs - 1))
+            print('-' * 10)
 
             # 对于每个epoch都有train和val环节
             for phase in ['train', 'val']:
@@ -354,7 +380,7 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
                         # print("New best validation loss:", epoch_loss)
                         best_loss = epoch_loss
                         # 在验证集上获得最佳损失时保存模型，并将其保存为文件
-                        torch.save(model.state_dict(), 'best_weights_source_wavelet_db1.pt')
+                        torch.save(model.state_dict(), 'best_weights_db1_fenlei.pt')
                         patience = patience_increase + epoch  # 更新耐心值为当前epoch加上预定义的耐心增加值。
             print("Epoch {} of {} took {:.3f}s".format(
                 epoch + 1, num_epochs, time.time() - epoch_start))
@@ -368,12 +394,12 @@ def train_model(model, criterion, optimizer, scheduler, dataloaders, people, num
             time_elapsed // 60, time_elapsed % 60))
         print('Best val loss: {:4f}'.format(best_loss))
         # load best model weights
-        model_weights = torch.load('best_weights_source_wavelet_db1.pt')
+        model_weights = torch.load('best_weights_db1_fenlei.pt')
         model.load_state_dict(model_weights)
         model.eval()
         return model
     else:
-        model_weights = torch.load('best_weights_source_wavelet_db1.pt')
+        model_weights = torch.load('best_weights_db1_fenlei.pt')
         model.load_state_dict(model_weights)
         model.eval()
         return model

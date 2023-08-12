@@ -81,20 +81,25 @@ def apply_jitter(X_train):
 window_len=52
 window_inc=5
 window_path=str(window_len)+'_'+str(window_inc)
-newpath ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/subject_'
+newpath ='saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm_relax/subject_'
 """
 _exercise1_jitr_norm训练及测试机都是用了家噪音和normlize  家噪音确实效果编号了
 _exercise1只用了norm
 _exercise1_4ge_dataAug  加入了四种数据增强的方式扩充数据及  都很差，不用了
 _all_jitr_norm 全部联系
+_exercise1_jitr_norm_train 训练用了家噪音,测试集没有
+_exercise1_jitr_DAjitr  emg加了DAjitter
+_exercise1_jitr_norm_no5   改了ninahelper里的get_windows 没有标签5
+_exercise1_jitr_norm_relax  改了ninahelper里的get_windows 只有0
 """
 def read_data(number_of_vector_per_example = 200,
 size_non_overlap = 50):
     print("Reading Data")
 
-    for i in tqdm(range(2, 28)):
+    #从0开始，loadDB1也要改
+    for i in tqdm(range(0, 27)):
         #这是之前加载的字典的数据
-        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm/data_dict_'
+        directory = 'saved_data/DB1/' + window_path + '/' + window_path + '_exercise1_jitr_norm_relax/data_dict_'
         save_path = directory + str(i) + '.pkl'
         with open(save_path, 'rb') as file:
             data_dict = pickle.load(file)
@@ -107,11 +112,11 @@ size_non_overlap = 50):
         emg_normalized = nina_helper.normalise_emg(data_dict['emg'], data_dict['rep'], reps)
 
         # Generate training data
-        X_train, Y_train, R_train = nina_helper.get_windows(train_reps[0, :], number_of_vector_per_example, size_non_overlap, emg_normalized,
+        X_train, Y_train, R_train = nina_helper.get_windows(i,train_reps[0, :], number_of_vector_per_example, size_non_overlap, emg_normalized,
                                                             data_dict["move"], data_dict["rep"])
         X_train = np.transpose(np.squeeze(X_train), (0, 2, 1))
         apply_jitter(X_train)
-        X_test, Y_test, R_test = nina_helper.get_windows(test_reps[0, :], number_of_vector_per_example, size_non_overlap, emg_normalized,
+        X_test, Y_test, R_test = nina_helper.get_windows(i,test_reps[0, :], number_of_vector_per_example, size_non_overlap, emg_normalized,
                                                          data_dict["move"], data_dict["rep"])
         apply_jitter(X_test)
         X_test = np.transpose(np.squeeze(X_test), (0, 2, 1))

@@ -13,9 +13,10 @@ db1_path= '../../DB1/'
 window_len=52
 window_inc=5
 window_path=str(window_len)+'_'+str(window_inc)
-for i in range(1,28):
+for i in range(0,27):
     data_dict = nina_helper.import_db1(db1_path, i, rest_length_cap=5)
-    directory ='saved_data/DB1/'+window_path+'/'+window_path+'_exercise1_jitr_norm/data_dict_'
+    #1和2我给倒过来了
+    directory ='saved_data/DB1/'+window_path+'/'+window_path+'_exercise1_jitr_norm_relax/data_dict_'
     save_path =directory+str(i)+'.pkl'
     # 如果目录不存在，则创建目录
     if not os.path.exists(directory):
